@@ -3,9 +3,25 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="stylesheet" href="./output.css" />
+    <script
+      src="https://kit.fontawesome.com/93ab4da208.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Tailwind Bootcamp</title>
   </head>
   <body>
-    <p></p>
+    <header class="shadow shadow-gray-400 py-4 px-10">
+      <div class="container flex justify-between items-center">
+        <h1 class="font-bold text-2xl text-indigo-600">Logo</h1>
+        <span class="md:hidden"><i class="fa-solid fa-bars"></i></span>
+        <ul class="hidden md:flex space-x-4 text-gray-600">
+          <li><a href="">Home</a></li>
+          <li><a href="">About</a></li>
+          <li><a href="">Service</a></li>
+          <li><a href="">Contact</a></li>
+        </ul>
+      </div>
+    </header>
   </body>
 </html>
