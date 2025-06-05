@@ -4,24 +4,257 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./output.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
     <script
       src="https://kit.fontawesome.com/93ab4da208.js"
       crossorigin="anonymous"
     ></script>
+    <link rel="icon" type="image/svg+xml" href="./assets/tailwindCssSvg.svg" />
     <title>Tailwind Bootcamp</title>
   </head>
-  <body>
-    <header class="shadow shadow-gray-400 py-4 px-10">
+  <body class="font-openSans no-scrollbar">
+    <header class="shadow shadow-gray-400 py-2 px-8">
       <div class="container flex justify-between items-center">
-        <h1 class="font-bold text-2xl text-indigo-600">Logo</h1>
+        <div id="logo" class="flex items-center space-x-2">
+          <a
+            href="https://tailwindcss.com/"
+            class="flex items-center space-x-2 w-[30%]"
+          >
+            <img
+              src="./assets/tailwindCssLogo.png"
+              alt=""
+              class="w-[35px] h-[35px] hover:rotate-z-360 hover:scale-130 transition-ease-in-out duration-300"
+            />
+            <p class="font-semibold text-xl text-blue-600">tailwindcss</p>
+          </a>
+        </div>
+
         <span class="md:hidden"><i class="fa-solid fa-bars"></i></span>
-        <ul class="hidden md:flex space-x-4 text-gray-600">
-          <li><a href="">Home</a></li>
-          <li><a href="">About</a></li>
-          <li><a href="">Service</a></li>
-          <li><a href="">Contact</a></li>
+        <ul
+          class="hidden md:flex justify-center items-center space-x-4 text-gray-600 transition-ease-in-out"
+        >
+          <li>
+            <a
+              href="#"
+              class="inline-block hover:scale-105 hover:text-blue-600 duration-300"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="inline-block hover:scale-105 hover:text-blue-600 duration-300"
+              >About</a
+            >
+          </li>
+          <li>
+            <a
+              href="#contact"
+              class="inline-block hover:scale-105 hover:text-blue-600 duration-300"
+            >
+              Contact
+            </a>
+          </li>
+          <li>
+            <a
+              href="#"
+              class="inline-block bg-blue-600 text-white px-4 py-2 rounded hover:scale-105 hover:shadow-md shadow-gray-400 duration-300"
+              >Login</a
+            >
+          </li>
         </ul>
       </div>
     </header>
+
+    <section class="py-10 px-8" id="hero">
+      <div class="grid gap-8 grid-cols-1 md:grid-cols-2">
+        <div
+          id="left"
+          class="max-w-[680px] flex flex-col space-y-4 justify-center"
+        >
+          <h2 class="text-3xl lg:text-4xl font-extrabold text-gray-700">
+            Accelerate Modern UI Development using
+            <a
+              href="https://tailwindcss.com/"
+              class="inline-block text-blue-600 hover:scale-95 transition-ease-in-out duration-300"
+              >Tailwind CSS</a
+            >
+          </h2>
+          <p class="sm:text-sm lg:text-md">
+            Tailwind CSS is a utility-first CSS-framework for rapidly building
+            custom and responsive User Interfaces.
+          </p>
+          <button
+            href="https://tailwindcss.com/"
+            class="w-[145px] lg:w-[150px] bg-blue-600 text-white font-semibold px-6 py-3 rounded hover:scale-105 hover:shadow-md shadow-blue-400 transition-ease-in-out duration-300"
+          >
+            Get Started
+          </button>
+        </div>
+        <div id="right" class="flex justify-center items-center">
+          <img
+            class="w-full sm:h-full lg:h-[90%] shadow-xl shadow-blue-400 rounded-2xl"
+            src="./assets/heroImage.jpg"
+            alt=""
+          />
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="py-10 px-8 flex flex-col gap-10 justify-center items-center"
+      id="features"
+    >
+      <h2 class="text-3xl text-blue-600 font-bold">Features</h2>
+
+      <div
+        class="grid grid-cols-1 md:grid-cols-3 gap-15 transition-ease-in-out"
+      >
+        <div
+          class="flex flex-col gap-8 justify-center items-center bg-gradient-to-b from-blue-600 to-blue-950 shadow-lg shadow-blue-400 rounded-lg py-4 h-[250px] hover:rotate-y-180 duration-1500"
+          id="feature1"
+        >
+          <span class="text-6xl py-4">⚡</span>
+          <h3 class="text-2xl text-white font-bold">Blazing Fast</h3>
+          <p class="hidden">
+            Tailwind's Just-in-Time Engine compiles only the styles you use,
+            making development incredibly fast and efficient.
+          </p>
+        </div>
+
+        <div
+          class="flex flex-col gap-8 justify-center items-center bg-gradient-to-b from-blue-600 to-blue-950 shadow-lg shadow-blue-400 rounded-lg py-4 h-[250px] hover:rotate-y-180 duration-1500"
+          id="feature2"
+        >
+          <span class="text-6xl py-4">🔧</span>
+          <h3 class="text-2xl text-white font-bold">Utility First</h3>
+          <p class="hidden">
+            Build UIs with Low-Level Utility-Classes that are your first and
+            main styling method and give you complete control over design
+            without the need for Custom CSS.
+          </p>
+        </div>
+
+        <div
+          class="flex flex-col gap-8 justify-center items-center bg-gradient-to-b from-blue-600 to-blue-950 shadow-lg shadow-blue-400 rounded-lg py-4 h-[250px] hover:rotate-y-180 duration-1500"
+          id="feature3"
+        >
+          <span class="text-6xl py-4">🌙</span>
+          <h3 class="text-2xl text-white font-bold px-5">Supports Dark Mode</h3>
+          <p class="hidden">
+            Effortlessly create Light and Dark themes using Tailwind's built-in
+            Dark Mode support.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="py-15 px-8 flex flex-col gap-10 justify-center items-center"
+      id="applications"
+    >
+      <h2 class="text-3xl text-blue-600 font-bold">Applications</h2>
+
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 transition-ease-in-out">
+        <div
+          class="flex flex-col justify-center space-y-4 px-6 py-5 bg-gradient-to-b from-blue-300 to-blue-900 shadow-xl shadow-blue-400 rounded-lg hover:scale-105 duration-300"
+          id="application1"
+        >
+          <img
+            class="rounded-lg w-full h-[80%]"
+            src="./assets/responsiveWebDesign.jpg"
+            alt=""
+          />
+          <h3 class="text-white text-2xl font-bold">Responsive Web Design</h3>
+          <p class="text-white text-sm">
+            Quickly build mobile-friendly, responsive layouts using utility
+            classes and breakpoints.
+          </p>
+          <button
+            class="w-full h-[30px] bg-blue-600 font-semibold text-white hover:shadow-md shadow-blue-950 rounded hover:scale-101 duration-300"
+          >
+            Explore
+          </button>
+        </div>
+
+        <div
+          class="flex flex-col justify-center space-y-4 px-6 py-5 bg-gradient-to-b from-blue-300 to-blue-900 shadow-xl shadow-blue-400 rounded-lg hover:scale-105 duration-300"
+          id="application2"
+        >
+          <img
+            class="rounded-lg w-full h-[80%]"
+            src="./assets/componentBasedUI.jpg"
+            alt=""
+          />
+          <h3 class="text-white text-2xl font-bold">
+            Component-Based UI Development
+          </h3>
+          <p class="text-white text-sm">
+            Create reusable, consistent UI components without writing custom
+            CSS.
+          </p>
+          <button
+            class="w-full h-[30px] bg-blue-600 font-semibold text-white hover:shadow-md shadow-blue-950 rounded hover:scale-101 duration-300"
+          >
+            Explore
+          </button>
+        </div>
+
+        <div
+          class="flex flex-col justify-center space-y-4 px-6 py-5 bg-gradient-to-b from-blue-300 to-blue-900 shadow-xl shadow-blue-400 rounded-lg hover:scale-105 duration-300"
+          id="application3"
+        >
+          <img
+            class="rounded-lg w-full h-[80%]"
+            src="./assets/customDesignSystems.jpg"
+            alt=""
+          />
+          <h3 class="text-white text-2xl font-bold">Custom Design Systems</h3>
+          <p class="text-white text-sm">
+            Build and maintain scalable design systems using Tailwind's
+            configuration and theming tools.
+          </p>
+          <button
+            class="w-full h-[30px] bg-blue-600 font-semibold text-white hover:shadow-md shadow-blue-950 rounded hover:scale-101 duration-300"
+          >
+            Explore
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Connect With Us!</h2>
+      <form action="">
+        <div id="nameInput">
+          <label for="name">Name</label>
+          <input id="name" type="text" />
+        </div>
+        <div id="emailInput">
+          <label for="email">Email</label>
+          <input id="email" type="email" />
+        </div>
+        <div id="messageInput">
+          <label for="message">Message</label>
+          <input id="message" type="text" />
+        </div>
+        <button type="submit">Send Message</button>
+      </form>
+
+      <div>
+        <div>
+          <a href="" id="Instagram"><img src="" alt="" /></a>
+          <a href="" id="Facebook"><img src="" alt="" /></a>
+          <a href="" id="Twitter"><img src="" alt="" /></a>
+        </div>
+      </div>
+    </section>
+
+    <footer>&copy; 2025 Tailwind-Bootcamp. All Rights Reserved!</footer>
   </body>
 </html>
