@@ -672,6 +672,9 @@
   .px-15 {
     padding-inline: calc(var(--spacing) * 15);
   }
+  .py-1 {
+    padding-block: calc(var(--spacing) * 1);
+  }
   .py-2 {
     padding-block: calc(var(--spacing) * 2);
   }
@@ -692,6 +695,15 @@
   }
   .py-15 {
     padding-block: calc(var(--spacing) * 15);
+  }
+  .pt-12 {
+    padding-top: calc(var(--spacing) * 12);
+  }
+  .pt-15 {
+    padding-top: calc(var(--spacing) * 15);
+  }
+  .pb-5 {
+    padding-bottom: calc(var(--spacing) * 5);
   }
   .pl-2 {
     padding-left: calc(var(--spacing) * 2);
