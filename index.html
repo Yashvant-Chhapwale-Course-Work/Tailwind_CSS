@@ -107,49 +107,86 @@
     </section>
 
     <section
-      class="py-10 px-8 flex flex-col gap-10 justify-center items-center"
+      class="py-10 mx-auto flex flex-col gap-10 justify-center items-center"
       id="features"
     >
       <h2 class="text-3xl text-blue-600 font-bold">Features</h2>
 
       <div
-        class="grid grid-cols-1 md:grid-cols-3 gap-15 transition-ease-in-out"
+        class="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-5 lg:gap-8 [perspective:200px]"
       >
-        <div
-          class="flex flex-col gap-8 justify-center items-center bg-gradient-to-b from-blue-600 to-blue-950 shadow-lg shadow-blue-400 rounded-lg py-4 h-[250px] hover:rotate-y-180 duration-1500"
-          id="feature1"
-        >
-          <span class="text-6xl py-4">⚡</span>
-          <h3 class="text-2xl text-white font-bold">Blazing Fast</h3>
-          <p class="hidden">
-            Tailwind's Just-in-Time Engine compiles only the styles you use,
-            making development incredibly fast and efficient.
-          </p>
+        <div class="group" id="feature1">
+          <div
+            class="relative w-[250px] md:w-[230px] lg:w-[250px] flex flex-col gap-8 justify-center items-center bg-gradient-to-b from-blue-600 to-blue-950 shadow-lg shadow-blue-400 rounded-lg py-4 h-[250px] transition-all [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)] duration-1200"
+          >
+            <div
+              class="absolute inset-0 flex flex-col justify-center items-center space-y-8 [backface-visibility:hidden]"
+              id="front"
+            >
+              <span class="text-6xl py-4">⚡</span>
+              <h3 class="text-2xl text-white font-bold">Blazing Fast</h3>
+            </div>
+
+            <div
+              class="absolute inset-0 flex flex-col justify-center items-center px-8 bg-gradient-to-br from-white to-cyan-200 border border-blue-900 rounded-lg [transform:rotateY(180deg)] [backface-visibility:hidden]"
+              id="back"
+            >
+              <p class="text-md md:text-xl text-blue-900">
+                Tailwind's Just-in-Time Engine compiles only the styles you use,
+                making development fast.
+              </p>
+            </div>
+          </div>
         </div>
 
-        <div
-          class="flex flex-col gap-8 justify-center items-center bg-gradient-to-b from-blue-600 to-blue-950 shadow-lg shadow-blue-400 rounded-lg py-4 h-[250px] hover:rotate-y-180 duration-1500"
-          id="feature2"
-        >
-          <span class="text-6xl py-4">🔧</span>
-          <h3 class="text-2xl text-white font-bold">Utility First</h3>
-          <p class="hidden">
-            Build UIs with Low-Level Utility-Classes that are your first and
-            main styling method and give you complete control over design
-            without the need for Custom CSS.
-          </p>
+        <div class="group" id="feature2">
+          <div
+            class="relative w-[250px] md:w-[230px] lg:w-[250px] flex flex-col gap-8 justify-center items-center bg-gradient-to-b from-blue-600 to-blue-950 shadow-lg shadow-blue-400 rounded-lg py-4 h-[250px] transition-all [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)] duration-1200"
+          >
+            <div
+              class="absolute inset-0 flex flex-col justify-center items-center space-y-8 [backface-visibility:hidden]"
+              id="front"
+            >
+              <span class="text-6xl py-4">🔧</span>
+              <h3 class="text-2xl text-white font-bold">Utility First</h3>
+            </div>
+
+            <div
+              class="absolute inset-0 flex flex-col justify-center items-center px-8 bg-gradient-to-br from-white to-cyan-200 border border-blue-900 rounded-lg [transform:rotateY(180deg)] [backface-visibility:hidden]"
+              id="back"
+            >
+              <p class="text-md md:text-xl text-blue-900">
+                Build UIs with Low-Level Utility-Classes that are your first and
+                main styling method!
+              </p>
+            </div>
+          </div>
         </div>
 
-        <div
-          class="flex flex-col gap-8 justify-center items-center bg-gradient-to-b from-blue-600 to-blue-950 shadow-lg shadow-blue-400 rounded-lg py-4 h-[250px] hover:rotate-y-180 duration-1500"
-          id="feature3"
-        >
-          <span class="text-6xl py-4">🌙</span>
-          <h3 class="text-2xl text-white font-bold px-5">Supports Dark Mode</h3>
-          <p class="hidden">
-            Effortlessly create Light and Dark themes using Tailwind's built-in
-            Dark Mode support.
-          </p>
+        <div class="group" id="feature3">
+          <div
+            class="relative w-[250px] md:w-[230px] lg:w-[250px] flex flex-col gap-8 justify-center items-center bg-gradient-to-b from-blue-600 to-blue-950 shadow-lg shadow-blue-400 rounded-lg py-4 h-[250px] transition-all [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)] duration-1200"
+          >
+            <div
+              class="absolute inset-0 flex flex-col justify-center items-center space-y-8 [backface-visibility:hidden]"
+              id="front"
+            >
+              <span class="text-6xl py-4">🌙</span>
+              <h3 class="text-2xl text-white font-bold text-center">
+                Supports Dark Mode
+              </h3>
+            </div>
+
+            <div
+              class="absolute inset-0 flex flex-col justify-center items-center px-8 bg-gradient-to-br from-white to-cyan-200 border border-blue-900 rounded-lg [transform:rotateY(180deg)] [backface-visibility:hidden]"
+              id="back"
+            >
+              <p class="text-md md:text-xl text-blue-900">
+                Effortlessly create Light and Dark themes using Tailwind's
+                built-in Dark Mode support.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -270,7 +307,7 @@
             >Message</label
           >
           <textarea
-            class="w-full px-2 bg-white rounded-lg focus:outline-none focus:shadow-md hover:shadow-md shadow-blue-700 duration-600"
+            class="w-full px-2 bg-white rounded-lg focus:outline-none focus:shadow-md hover:shadow-md hover:scale-103 shadow-blue-700 duration-600"
             id="message"
             rows="3"
           ></textarea>
