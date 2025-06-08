@@ -78,6 +78,7 @@ This **Repository** documents my my `Notes`, `Learnings`, and `UI_Project` as I 
 - Tailwind CLI is the official Command-Line Interface provided by Tailwind CSS that allows you to:
   - **Compile** your Tailwind CSS from Source to a **usable CSS_File** (typically `output.css`).
   - **Without needing a Build_Tool** (Ex: Vite).
+- `Note:` You need to [`Install and Setup Node_Js`](https://nodejs.org/en/download) for this Method.
 - Go to [`Tailwind_CLI Docs`](https://tailwindcss.com/docs/installation/tailwind-cli).
 - **Copy** and **Run** the `npm Command` from the Page, in your `Terminal`, to install `Tailwind_CSS` and `Tailwind_CLI`:
   ```
@@ -113,6 +114,13 @@ This **Repository** documents my my `Notes`, `Learnings`, and `UI_Project` as I 
 
 ### 3. Using Vite:
 - `Vite` is a **Modern Build_Tool** and **Development_Server** that dramatically improves the `UI_development (Frontend)` experience.
+- **Prerequisites:**
+  - You need to [`Install and Setup Node_Js`](https://nodejs.org/en/download) for this Method.
+  - You also need to [`Utilize the Vite Build_Tool`](https://vite.dev/guide/), by using the following **Command**:
+    ```
+    npm create vite@latest my-app --template react
+    ```
+    After **Executing** the **Command**, Follow the `Guided_Steps` shown in the `Terminal` to Setup `React` using the `Vite Build Tool`.
 - Go to [`Tailwind_CLI Docs`](https://tailwindcss.com/docs/installation/tailwind-cli).
 - **Copy** and **Run** the `npm Command` from the Page, in your `Terminal`, to install `Tailwind` and `@tailwindcss/vite`:
   ```
@@ -161,6 +169,9 @@ This **Repository** documents my my `Notes`, `Learnings`, and `UI_Project` as I 
   ```
   ![Tailwind_for_Vite](https://github.com/user-attachments/assets/946af695-d2c9-4856-94b9-2c27bbc1bb2e)<br>
 - Now you are all set to use `Tailwind's Utility_Classes` in your **Vite: React_Project** efficiently!
+<br>
+
+**`Note:` The above steps are aligned with the Latest `Tailwind_CSS Version` at the Time, i.e., `Tailwind_CSS v4.1`.**
 <br>
    
 ---
