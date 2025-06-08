@@ -95,6 +95,7 @@ This **Repository** documents my my `Notes`, `Learnings`, and `UI_Project` as I 
   - `-i:` It specifies the path to your **Input CSS_File** (`./path/to/main.css` or `./path/to/style.css`).
   - `-o:` It specifies the path where you want to define your **Output CSS_File** (`./path/to/output.css`).
   - `--watch:` Keeps **Watching / Scanning** the Project_Files(`.html`) for changes while you develop.
+  - `NOTE:` You need to **Run** the **Above Command** `Each Time you Start your Project` to **Compile** and **Watch** `Tailwind CSS` for changes.
 - Add the **newly compiled** `CSS_File` (`output.css`) inside the `<head> Tag` of your `HTML`:
   ```
   <head>
