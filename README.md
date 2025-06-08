@@ -106,7 +106,7 @@ This **Repository** documents my my `Notes`, `Learnings`, and `UI_Project` as I 
      <link href="./output.css" rel="stylesheet">
   </head>
   ```
-  ![Tailwind_CLI](https://github.com/user-attachments/assets/1d4d70f4-f4f5-48c5-90a3-4c59a6da7e11)
+  ![Tailwind_CLI](https://github.com/user-attachments/assets/1d4d70f4-f4f5-48c5-90a3-4c59a6da7e11)<br>
 - Now you are all set to use `Tailwind's Utility_Classes` in your Project efficiently!
 <br>
 
