@@ -111,21 +111,8 @@ This **Repository** documents my my `Notes`, `Learnings`, and `UI_Project` as I 
 - Now you are all set to use `Tailwind's Utility_Classes` in your Project efficiently!
 <br>
 
-### 3. Activate the Virtual Environment:
-- **For ` Windows ` Systems:** <br>
-     `Activate` the `Virtual Environment` in Python by running the following **prompt**:
-     ```
-     # For Command Prompt:
-     myenv\Scripts\activate
-
-     # For Powershell:
-     myenv\Scripts\Activate.ps1
-     ```
-- **For ` Linux / MacOS ` Systems:** <br>
-     `Activate` the `Virtual Environment` in Python by running the following **prompt**:
-     ```
-     source myenv/bin/activate
-     ```
+### 3. Using Vite [For React_Projects]:
+- 
 <br>
 
 ### 4. Deactivate the Virtual Environment:
