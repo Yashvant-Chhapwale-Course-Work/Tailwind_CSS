@@ -38,29 +38,16 @@ This **Repository** documents my my `Notes`, `Learnings`, and `UI_Project` as I 
  
 | TITLE                                                                                                          | SECTION_LINK                                                                                  |
 |----------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|
-| 1.  **Creating a Python Virtual Environment**                                                                  | >> [` CHECK CONTENT `](#creating-a-python-virtual-environment)                                |
+| 1.  **Tailwind Installation and Setup**                                                                        | >> [` CHECK CONTENT `](#tailwind-installation-and-setup)                                      |
 | 2.  **Installing and Importing required Modules for the Application**                                          | >> [` CHECK CONTENT `](#installing-and-importing-required-modules)                            |
 | 3.  **Custom-Tkinter Window Themes**                                                                           | >> [` CHECK CONTENT `](#custom_tkinter-window-themes)                                         |
 | 4.  **Custom-Tkinter Window Geometry(Width x Height)**                                                         | >> [` CHECK CONTENT `](#adjusting-custom_tkinter_window-dimensions)                           |
 | 5.  **Creating Custom-Tkinter Window Instance (CTk( ))**                                                       | >> [` CHECK CONTENT `](#creating-custom_tkinter_window_instance-CTk)                          |
-| 6.  **Set Application Logo i.e, Window Icon**                                                                  | >> [` CHECK CONTENT `](#setting-window-icon)                                                  |
-| 7.  **Custom-Tkinter Frames and Scrollable-Frames**                                                            | >> [` CHECK CONTENT `](#creating-custom_tkinter-frames-and-scrollable_frames)                 |
-| 8.  **Displaying Text and Images using Custom-Tkinter Labels**                                                 | >> [` CHECK CONTENT `](#creating-custom_tkinter-labels-for-displaying-text-and-images)        |
-| 9.  **Custom-Tkinter Buttons and Segmented-Buttons**                                                           | >> [` CHECK CONTENT `](#creating-custom_tkinter-buttons-and-segmented_buttons)                |
-| 10. **Custom-Tkinter Check_Box and Combo_Box**                                                                 | >> [` CHECK CONTENT `](#creating-custom_tkinter-check_box-and-combo_box)                      |
-| 11. **Custom-Tkinter Switch and Slider**                                                                       | >> [` CHECK CONTENT `](#creating-custom_tkinter-switch-and-slider)                            |
-| 12. **Custom-Tkinter Entry and Text_Box**                                                                      | >> [` CHECK CONTENT `](#creating-custom_tkinter-entry-and-text_box)                           |
-| 13. **Custom-Tkinter Widget Attributes_List**                                                                  | >> [` CHECK CONTENT `](#listing-custom_tkinter-widget-attributes)                             |
-| 14. **Manipulating Widget Attributes at Runtime using `.configure()`**                                         | >> [` CHECK CONTENT `](#manipulating-attributes-using-configure--method)                      |
-| 15. **Widget Layout Methods (`Pack`, `Place` and `Grid`)**                                                     | >> [` CHECK CONTENT `](#widget-layout-methods-pack-place-and-grid)                            |
-| 16. **Creating a Tabbed Interface using Tkinter's Notebook Widget**                                            | >> [` CHECK CONTENT `](#creating-a-tabbed-interface-using-ttknotebook-)                       |
-| 17. **Styling Tkinter's Notebook Widget using Style() Function**                                               | >> [` CHECK CONTENT `](#styling-ttknotebook--using-ttkstyle--function)                           |
-| 18. **Packaging a Python Script into an EXE using PyInstaller**                                                | >> [` CHECK CONTENT `](#packaging-a-python-script-into-a-standalone-exe-using-pyinstaller)    |
 </div>
 
 ---
 
-## Creating a Python Virtual Environment
+## Tailwind Installation and Setup
 ### 1. Ensure Python is Installed:
 - **For ` Windows ` Systems:** <br>
      Ensure Python is installed by running the following **prompt**:
