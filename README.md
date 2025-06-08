@@ -22,6 +22,7 @@ This **Repository** documents my my `Notes`, `Learnings`, and `UI_Project` as I 
 ### Features:
 - `Utility-First Approach:` The **Utility_Classes** are your First and Main Styling_Method.
 - `Responsive Design:` Easily build **UI_layouts that Adapt to different Screen_Sizes** with Mobile-First breakpoints.
+- `Customizable:` **Fully Customizable via the `tailwind.config.js` file** for colors, spacing, fonts, and more.
 - `Component-Friendly:`  Encourages **Reusable UI_Components** without the need to leave HTML.
 - `JIT(Just-In-Time) Engine:`  **Utilizes Just-In-Time Compilation** for fast build times and smaller final CSS output. It generates the CSS you need, only when you need it, instead of generating everything up front.
 <br>
@@ -48,7 +49,7 @@ This **Repository** documents my my `Notes`, `Learnings`, and `UI_Project` as I 
 ---
 
 ## Tailwind Installation and Setup
-### 1. Ensure Python is Installed:
+### 1. Using CDN(Content Delivery Network) [QUICKEST METHOD]:
 - **For ` Windows ` Systems:** <br>
      Ensure Python is installed by running the following **prompt**:
      ```
