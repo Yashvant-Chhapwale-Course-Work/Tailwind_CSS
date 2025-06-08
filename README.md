@@ -1,5 +1,5 @@
 <div align="center">
-   <img src="https://github.com/user-attachments/assets/832d3d55-c593-478d-8b81-4e6dabdeb172" alt="Scribe Logo" height="200" style="border-radius: 10px;">
+   <img src="https://github.com/user-attachments/assets/832d3d55-c593-478d-8b81-4e6dabdeb172" alt="Tailwind Logo" height="200" style="border-radius: 10px;">
 </div>
 
 # Tailwind CSS
