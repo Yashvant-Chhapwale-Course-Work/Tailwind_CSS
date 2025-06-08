@@ -4,7 +4,7 @@
 
 # Tailwind CSS
 
-This repository contains my notes, examples, and projects as I progress through a Tailwind CSS bootcamp to master modern UI development.<br>
+This **Repository** documents my my `Notes`, `Learnings`, and `UI_Project` as I progress through a `Tailwind_CSS Bootcamp` to Master **Modern UI development**.<br>
 
 <div align="center">
    
