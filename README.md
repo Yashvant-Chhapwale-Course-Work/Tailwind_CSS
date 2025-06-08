@@ -1,5 +1,5 @@
 <div align="center">
-   <img src="https://github.com/user-attachments/assets/832d3d55-c593-478d-8b81-4e6dabdeb172" alt="Tailwind Logo" height="200" style="border-radius:50%;">
+   <img src="https://github.com/user-attachments/assets/5f875ede-34c9-424f-90a7-c860996c51fb" alt="Tailwind Logo" height="200">
 </div>
 
 # Tailwind CSS
