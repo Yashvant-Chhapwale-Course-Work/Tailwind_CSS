@@ -40,6 +40,7 @@ This **Repository** documents my my `Notes`, `Learnings`, and `UI_Project` as I 
 | TITLE                                                                                                          | SECTION_LINK                                                                                  |
 |----------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|
 | 1.  **Tailwind Installation and Setup**                                                                        | >> [` CHECK CONTENT `](#tailwind-installation-and-setup)                                      |
+| <div align="ceneter"> **Beginner Level** </div>                                                                                                                                                                |
 | 2.  **Installing and Importing required Modules for the Application**                                          | >> [` CHECK CONTENT `](#installing-and-importing-required-modules)                            |
 | 3.  **Custom-Tkinter Window Themes**                                                                           | >> [` CHECK CONTENT `](#custom_tkinter-window-themes)                                         |
 | 4.  **Custom-Tkinter Window Geometry(Width x Height)**                                                         | >> [` CHECK CONTENT `](#adjusting-custom_tkinter_window-dimensions)                           |
@@ -179,3 +180,4 @@ This **Repository** documents my my `Notes`, `Learnings`, and `UI_Project` as I 
    
 ---
 <br>
+
