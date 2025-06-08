@@ -79,12 +79,12 @@ This **Repository** documents my my `Notes`, `Learnings`, and `UI_Project` as I 
   - **Compile** your Tailwind CSS from Source to a **usable CSS_File** (typically `output.css`).
   - **Without needing a Build_Tool** (Ex: Vite).
 - Go to [`Tailwind_CLI Docs`](https://tailwindcss.com/docs/installation/tailwind-cli).
-- **Copy** and **Run** the `npm Command` from the Page, in your `Terminal`, to install `Tailwind CLI`:
+- **Copy** and **Run** the `npm Command` from the Page, in your `Terminal`, to install `Tailwind_CSS` and `Tailwind_CLI`:
   ```
   npm install tailwindcss @tailwindcss/cli
   ```
 - Next, **Import** `Tailwind_CSS` in you **Main CSS_File** (`style.css`).<br>
-  For Ex: Suppose `style.css`:
+  `For Ex:` Suppose **style.css**:
   ```
   @import "tailwindcss";
   ```
@@ -109,22 +109,59 @@ This **Repository** documents my my `Notes`, `Learnings`, and `UI_Project` as I 
   ```
   ![Tailwind_CLI](https://github.com/user-attachments/assets/1d4d70f4-f4f5-48c5-90a3-4c59a6da7e11)<br>
 - Now you are all set to use `Tailwind's Utility_Classes` in your Project efficiently!
-<br>
 
-### 3. Using Vite [For React_Projects]:
-- 
-<br>
 
-### 4. Deactivate the Virtual Environment:
-- **For ` Windows ` Systems:** <br>
-     After use, `Deactivate` the `Virtual Environment` in Python by running the following **prompt**:
-     ```
-     deactivate
-     ```
-- **For ` Linux / MacOS ` Systems:** <br>
-     After use, `Deactivate` the `Virtual Environment` in Python by running the following **prompt**:
-     ```
-     deactivate
-     ```
-     
+### 3. Using Vite:
+- `Vite` is a **Modern Build_Tool** and **Development_Server** that dramatically improves the `UI_development (Frontend)` experience.
+- Go to [`Tailwind_CLI Docs`](https://tailwindcss.com/docs/installation/tailwind-cli).
+- **Copy** and **Run** the `npm Command` from the Page, in your `Terminal`, to install `Tailwind` and `@tailwindcss/vite`:
+  ```
+  npm install tailwindcss @tailwindcss/vite
+  ```
+- Next, Add the `@tailwindcss/vite` **Plugin** to your `Vite_Configuration` (i.e, `vite.config.js` or `vite.config.ts` File):<br>
+  `For Ex:` Suppose **vite.config.js**:
+  ```
+  import path from "path";
+   import { defineConfig } from "vite";
+   import react from "@vitejs/plugin-react";
+
+   // Import @tailwindcss/vite Plugin
+   import tailwindcss from "@tailwindcss/vite";
+
+   // https://vite.dev/config/
+   export default defineConfig({
+     plugins: [react(), tailwindcss()], //Add TailwindCSS to the List_of_Plugins
+     resolve: {
+       alias: {
+         "@": path.resolve("./src"),
+       },
+     },
+   });
+  ```
+- Next, **Import** `Tailwind_CSS` in you **Main CSS_File** (`index.css`).<br>
+  `For Ex:` Suppose **index.css**:
+  ```
+  @import "tailwindcss";
+  ```
+- Make sure the `Compiled CSS_File` (`App.css`) is imported inside your `App.jsx` or `App.tsx` File:<br>
+  `For Ex:` Suppose **App.jsx**:
+  ```
+  import "./App.css";
+   import { Button } from "./components/ui/button";
+
+   function App() {
+     return (
+       <>
+         <Button>hello</Button>
+       </>
+     );
+   }
+
+   export default App;
+  ```
+  ![Tailwind_for_Vite](https://github.com/user-attachments/assets/946af695-d2c9-4856-94b9-2c27bbc1bb2e)<br>
+- Now you are all set to use `Tailwind's Utility_Classes` in your **Vite: React_Project** efficiently!
+<br>
+   
 ---
+<br>
