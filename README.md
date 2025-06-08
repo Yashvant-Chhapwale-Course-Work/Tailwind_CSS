@@ -171,7 +171,10 @@ This **Repository** documents my my `Notes`, `Learnings`, and `UI_Project` as I 
 - Now you are all set to use `Tailwind's Utility_Classes` in your **Vite: React_Project** efficiently!
 <br>
 
-**`Note:` The above steps are aligned with the Latest `Tailwind_CSS Version` at the Time, i.e., `Tailwind_CSS v4.1`.**
+<div align="center">
+   
+   **`Note:` The `Setup_Steps` in the Above Methods are aligned with the Latest `Tailwind_CSS Version` at the Time, i.e., `Tailwind_CSS v4.1`.**
+</div>
 <br>
    
 ---
