@@ -8,23 +8,25 @@ This **Repository** documents my my `Notes`, `Learnings`, and `UI_Project` as I 
 
 <div align="center">
    
-   **📌 Checkout my Post-Bootcamp [`Tailwind_UI Project`](https://github.com/Yashvant-Chhapwale/Scribe_Smart-Notes)**. <br>
+   **📌 Checkout my Post-Bootcamp [`Tailwind_UI Project`](https://github.com/Yashvant-Chhapwale/Scribe_Smart-Notes)** <br>
 </div>
 
 ---
 
-## About Custom-Tkinter
-CustomTkinter is a modern **GUI library for Python** that enhances Tkinter with a sleek, customizable look using themes, rounded corners, and improved widgets. It is built on top of Tkinter but offers a more modern design with dark mode support.
+## About Tailwind_CSS
+`Tailwind CSS` is a **`Utility-First CSS Framework`** for rapidly building **Modern** and **Responsive** User_Interfaces.<br>
+- `Utility:` A **Utility** is a **Single-Purpose CSS_Class** that applies **Styling** for one specific **Style_Attribute**.
+- `Utility-First:` **Tailwind** encourages you to use **Utility_Classes** which are your **First and Main Styling_Method** before using External_CSS or Plugins.
+- `CSS_Framework`: **Tailwind** is a **CSS_Framework** that provides a **predefined set of Styles, Utility_Classes, and Conventions** that help you build UIs quickly.
 
 ### Features:
-- `Theming_Support:` Light, Dark, and System themes.
-- `Custom_Widgets:` Includes modern buttons, sliders, and checkboxes.
-- `Rounded_Corners and Hover_Effects:` Aesthetic improvements over standard Tkinter.
-- `Built-in Colors & Styling:` Easily customizable UI elements.
-- `Scalability:` Responsive UI that adapts to different screen sizes.
-  <br>
+- `Utility-First Approach:` The **Utility_Classes** are your First and Main Styling_Method.
+- `Responsive Design:` Easily build **UI_layouts that Adapt to different Screen_Sizes** with Mobile-First breakpoints.
+- `Component-Friendly:`  Encourages **Reusable UI_Components** without the need to leave HTML.
+- `JIT(Just-In-Time) Engine:`  **Utilizes Just-In-Time Compilation** for fast build times and smaller final CSS output. It generates the CSS you need, only when you need it, instead of generating everything up front.
+<br>
   
-**📌 Visit the [Documentation](https://customtkinter.tomschimansky.com/) to know more about `Custom_Tkinter`.**
+**📌 Visit the [Official_Documentation](https://tailwindcss.com/docs) to know more about `Tailwind_CSS`.**
 
 ---
 
