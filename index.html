@@ -17,8 +17,10 @@
     <link rel="icon" type="image/svg+xml" href="./assets/tailwindCssSvg.svg" />
     <title>Tailwind Bootcamp</title>
   </head>
-  <body class="font-openSans no-scrollbar">
-    <header class="shadow shadow-gray-400 py-1 px-8">
+  <body class="font-openSans no-scrollbar bg-white dark:bg-gray-950 space-y-1">
+    <header
+      class="shadow shadow-gray-400 dark:shadow-none dark:border-b-1 dark:border-gray-700 py-1 px-8"
+    >
       <div class="flex justify-between items-center">
         <div id="logo" class="flex items-center space-x-2">
           <a
@@ -30,32 +32,39 @@
               alt=""
               class="w-[35px] h-[35px] hover:rotate-z-360 hover:scale-130 transition-ease-in-out duration-300"
             />
-            <p class="font-semibold text-xl text-blue-600">tailwindcss</p>
+            <p class="font-semibold text-xl text-blue-600 dark:text-white">
+              tailwindcss
+            </p>
           </a>
         </div>
 
-        <span class="md:hidden"><i class="fa-solid fa-bars"></i></span>
+        <!-- Hamburger -->
+        <span class="md:hidden dark:text-gray-300" id="hamburger-btn"
+          ><i class="fa-solid fa-bars"></i
+        ></span>
+
         <ul
-          class="hidden md:flex justify-center items-center space-x-4 text-gray-600 transition-ease-in-out"
+          class="hidden md:flex justify-center items-center space-x-4 text-gray-600 dark:text-white transition-ease-in-out"
+          id="navMenu"
         >
           <li>
             <a
               href="index.html"
-              class="inline-block text-blue-600 hover:scale-105 hover:text-blue-600 duration-300"
+              class="inline-block text-blue-600 hover:scale-105 hover:text-blue-600 duration-200"
               >Home</a
             >
           </li>
           <li>
             <a
               href="#"
-              class="inline-block hover:scale-105 hover:text-blue-600 duration-300"
+              class="inline-block hover:scale-105 hover:text-blue-600 duration-200"
               >About</a
             >
           </li>
           <li>
             <a
               href="#contact"
-              class="inline-block hover:scale-105 hover:text-blue-600 duration-300"
+              class="inline-block hover:scale-105 hover:text-blue-600 duration-200"
             >
               Contact
             </a>
@@ -63,21 +72,47 @@
           <li>
             <a
               href="#"
-              class="inline-block bg-blue-600 text-white px-4 py-2 rounded hover:scale-105 hover:shadow-md shadow-gray-400 duration-300"
+              class="inline-block bg-blue-600 text-white px-4 py-2 rounded hover:scale-105 hover:shadow-md shadow-gray-400 dark:hover:shadow-none dark:bg-blue-950 dark:hover:bg-blue-600 duration-300"
               >Login</a
             >
           </li>
         </ul>
       </div>
+
+      <!-- Mobile Menu -->
+      <ul
+        id="mobileMenu"
+        class="absolute top-11 left-0 w-full grid grid-cols-4 justify-center text-center space-x-5 bg-white dark:bg-gray-900 px-8 py-5 text-gray-700 dark:text-gray-300 font-medium border-t border-gray-200 dark:border-none shadow-md shadow-gray-600 dark:shadow-none transform transition-ease-in-out duration-500 ease-in-out scale-y-0 origin-top md:hidden"
+      >
+        <li>
+          <a href="index.html" class="hover:text-blue-600">Home</a>
+        </li>
+        <li><a href="#" class="hover:text-blue-600">About</a></li>
+        <li>
+          <a href="#contact" class="hover:text-blue-600">Contact</a>
+        </li>
+        <li>
+          <a
+            href="#"
+            class="bg-blue-600 text-white px-4 py-1 rounded hover:scale-105 hover:shadow-md shadow-gray-400 dark:hover:shadow-none dark:bg-blue-950 dark:hover:bg-blue-600 duration-300"
+            >Login</a
+          >
+        </li>
+      </ul>
     </header>
 
-    <section class="py-10 px-8" id="hero">
+    <section
+      class="py-10 px-8 dark:pb-15 dark:border-b-1 dark:border-gray-800"
+      id="hero"
+    >
       <div class="grid gap-8 grid-cols-1 md:grid-cols-2">
         <div
           id="left"
           class="max-w-[680px] flex flex-col space-y-4 justify-center"
         >
-          <h2 class="text-3xl lg:text-4xl font-extrabold text-gray-700">
+          <h2
+            class="text-3xl lg:text-4xl font-extrabold text-gray-700 dark:text-gray-200"
+          >
             Accelerate Modern UI Development using
             <a
               href="https://tailwindcss.com/"
@@ -85,20 +120,20 @@
               >Tailwind CSS</a
             >
           </h2>
-          <p class="sm:text-sm lg:text-md">
+          <p class="sm:text-sm lg:text-md dark:text-gray-400">
             Tailwind CSS is a utility-first CSS-framework for rapidly building
             custom and responsive User Interfaces.
           </p>
           <button
             href="https://tailwindcss.com/"
-            class="w-[145px] lg:w-[150px] bg-blue-600 text-white font-semibold px-6 py-3 rounded hover:scale-105 hover:shadow-md shadow-blue-400 transition-ease-in-out duration-300"
+            class="w-[145px] lg:w-[150px] bg-blue-600 text-white font-semibold px-6 py-3 rounded hover:scale-105 hover:shadow-md shadow-blue-400 dark:hover:shadow-none dark:bg-blue-950 dark:hover:bg-blue-600 transition-ease-in-out duration-450"
           >
             Get Started
           </button>
         </div>
         <div id="right" class="flex justify-center items-center">
           <img
-            class="w-full sm:h-full lg:h-[90%] shadow-xl shadow-blue-400 rounded-2xl"
+            class="w-full sm:h-full lg:h-[90%] shadow-xl shadow-blue-400 dark:shadow-none dark:border-2 dark:border-blue-900 rounded-2xl"
             src="./assets/heroImage.jpg"
             alt=""
           />
@@ -107,31 +142,37 @@
     </section>
 
     <section
-      class="py-10 mx-auto flex flex-col gap-10 justify-center items-center"
+      class="py-10 dark:pt-0 dark:pb-15 mx-auto flex flex-col gap-10 justify-center items-center dark:border-t-1 dark:border-b-1 dark:border-gray-800"
       id="features"
     >
-      <h2 class="text-3xl text-blue-600 font-bold">Features</h2>
+      <h2
+        class="w-full text-center text-3xl text-blue-600 dark:text-gray-300 font-bold dark:border-b-1 dark:border-gray-800"
+      >
+        Features
+      </h2>
 
       <div
         class="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-5 lg:gap-8 [perspective:200px]"
       >
         <div class="group" id="feature1">
           <div
-            class="relative w-[250px] md:w-[230px] lg:w-[250px] flex flex-col gap-8 justify-center items-center bg-gradient-to-b from-blue-600 to-blue-950 shadow-lg shadow-blue-400 rounded-lg py-4 h-[250px] transition-all [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)] duration-1200"
+            class="relative w-[250px] md:w-[230px] lg:w-[250px] flex flex-col gap-8 justify-center items-center bg-gradient-to-b from-blue-600 dark:from-blue-900 to-blue-950 dark:to-gray-950 shadow-lg shadow-blue-400 dark:shadow-none dark:border-2 dark:border-blue-950 rounded-lg py-4 h-[250px] transition-all [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)] duration-1200"
           >
             <div
               class="absolute inset-0 flex flex-col justify-center items-center space-y-8 [backface-visibility:hidden]"
               id="front"
             >
               <span class="text-6xl py-4">⚡</span>
-              <h3 class="text-2xl text-white font-bold">Blazing Fast</h3>
+              <h3 class="text-2xl text-white dark:text-gray-200 font-bold">
+                Blazing Fast
+              </h3>
             </div>
 
             <div
-              class="absolute inset-0 flex flex-col justify-center items-center px-8 bg-gradient-to-br from-white to-cyan-200 border border-blue-900 rounded-lg [transform:rotateY(180deg)] [backface-visibility:hidden]"
+              class="absolute inset-0 flex flex-col justify-center items-center px-8 bg-gradient-to-br from-white dark:from-blue-900 to-cyan-200 border dark:to-gray-900 border-blue-900 rounded-lg [transform:rotateY(180deg)] [backface-visibility:hidden]"
               id="back"
             >
-              <p class="text-md md:text-xl text-blue-900">
+              <p class="text-md md:text-xl text-blue-900 dark:text-blue-200">
                 Tailwind's Just-in-Time Engine compiles only the styles you use,
                 making development fast.
               </p>
@@ -141,21 +182,23 @@
 
         <div class="group" id="feature2">
           <div
-            class="relative w-[250px] md:w-[230px] lg:w-[250px] flex flex-col gap-8 justify-center items-center bg-gradient-to-b from-blue-600 to-blue-950 shadow-lg shadow-blue-400 rounded-lg py-4 h-[250px] transition-all [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)] duration-1200"
+            class="relative w-[250px] md:w-[230px] lg:w-[250px] flex flex-col gap-8 justify-center items-center bg-gradient-to-b from-blue-600 dark:from-blue-900 to-blue-950 dark:to-gray-950 shadow-lg shadow-blue-400 dark:shadow-none dark:border-2 dark:border-blue-950 rounded-lg py-4 h-[250px] transition-all [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)] duration-1200"
           >
             <div
               class="absolute inset-0 flex flex-col justify-center items-center space-y-8 [backface-visibility:hidden]"
               id="front"
             >
               <span class="text-6xl py-4">🔧</span>
-              <h3 class="text-2xl text-white font-bold">Utility First</h3>
+              <h3 class="text-2xl text-white dark:text-gray-200 font-bold">
+                Utility First
+              </h3>
             </div>
 
             <div
-              class="absolute inset-0 flex flex-col justify-center items-center px-8 bg-gradient-to-br from-white to-cyan-200 border border-blue-900 rounded-lg [transform:rotateY(180deg)] [backface-visibility:hidden]"
+              class="absolute inset-0 flex flex-col justify-center items-center px-8 bg-gradient-to-br from-white dark:from-blue-900 to-cyan-200 border dark:to-gray-900 border-blue-900 rounded-lg [transform:rotateY(180deg)] [backface-visibility:hidden]"
               id="back"
             >
-              <p class="text-md md:text-xl text-blue-900">
+              <p class="text-md md:text-xl text-blue-900 dark:text-blue-200">
                 Build UIs with Low-Level Utility-Classes that are your first and
                 main styling method!
               </p>
@@ -165,23 +208,25 @@
 
         <div class="group" id="feature3">
           <div
-            class="relative w-[250px] md:w-[230px] lg:w-[250px] flex flex-col gap-8 justify-center items-center bg-gradient-to-b from-blue-600 to-blue-950 shadow-lg shadow-blue-400 rounded-lg py-4 h-[250px] transition-all [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)] duration-1200"
+            class="relative w-[250px] md:w-[230px] lg:w-[250px] flex flex-col gap-8 justify-center items-center bg-gradient-to-b from-blue-600 dark:from-blue-900 to-blue-950 dark:to-gray-950 shadow-lg shadow-blue-400 dark:shadow-none dark:border-2 dark:border-blue-950 rounded-lg py-4 h-[250px] transition-all [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)] duration-1200"
           >
             <div
               class="absolute inset-0 flex flex-col justify-center items-center space-y-8 [backface-visibility:hidden]"
               id="front"
             >
               <span class="text-6xl py-4">🌙</span>
-              <h3 class="text-2xl text-white font-bold text-center">
+              <h3
+                class="text-2xl text-white dark:text-gray-200 font-bold text-center"
+              >
                 Supports Dark Mode
               </h3>
             </div>
 
             <div
-              class="absolute inset-0 flex flex-col justify-center items-center px-8 bg-gradient-to-br from-white to-cyan-200 border border-blue-900 rounded-lg [transform:rotateY(180deg)] [backface-visibility:hidden]"
+              class="absolute inset-0 flex flex-col justify-center items-center px-8 bg-gradient-to-br from-white dark:from-blue-900 to-cyan-200 border dark:to-gray-900 border-blue-900 rounded-lg [transform:rotateY(180deg)] [backface-visibility:hidden]"
               id="back"
             >
-              <p class="text-md md:text-xl text-blue-900">
+              <p class="text-md md:text-xl text-blue-900 dark:text-blue-200">
                 Effortlessly create Light and Dark themes using Tailwind's
                 built-in Dark Mode support.
               </p>
@@ -192,72 +237,78 @@
     </section>
 
     <section
-      class="py-15 px-8 flex flex-col gap-10 justify-center items-center"
+      class="py-15 dark:pt-0 dark:pb-15 px-8 dark:px-0 flex flex-col gap-10 justify-center items-center dark:border-t-1 dark:border-b-1 dark:border-gray-800"
       id="applications"
     >
-      <h2 class="text-3xl text-blue-600 font-bold">Applications</h2>
+      <h2
+        class="w-full text-center text-3xl text-blue-600 font-bold dark:border-b-1 dark:border-gray-800 dark:text-gray-300"
+      >
+        Applications
+      </h2>
 
-      <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 transition-ease-in-out">
+      <div
+        class="grid grid-cols-1 lg:grid-cols-3 gap-8 transition-ease-in-out dark:px-8"
+      >
         <div
-          class="flex flex-col justify-center space-y-4 px-6 py-5 bg-gradient-to-b from-blue-300 to-blue-900 shadow-lg hover:shadow-xl shadow-gray-800 rounded-lg hover:scale-105 duration-300"
+          class="flex flex-col justify-center space-y-4 px-6 py-5 bg-gradient-to-b from-blue-300 dark:from-gray-900 to-blue-900 dark:to-blue-950 shadow-lg hover:shadow-xl shadow-gray-800 dark:shadow-gray-900 rounded-lg hover:scale-105 duration-300"
           id="application1"
         >
           <img
-            class="rounded-lg w-full h-[80%]"
+            class="rounded-lg w-full h-[80%] dark:border-5 dark:border-gray-500"
             src="./assets/responsiveWebDesign.jpg"
             alt=""
           />
           <h3 class="text-white text-2xl font-bold">Responsive Web Design</h3>
-          <p class="text-white text-sm">
+          <p class="text-white dark:text-gray-300 text-sm">
             Quickly build mobile-friendly, responsive layouts using utility
             classes and breakpoints.
           </p>
           <button
-            class="w-full h-[30px] bg-blue-400 font-semibold text-white hover:shadow-md shadow-blue-950 rounded hover:scale-101 duration-300"
+            class="w-full py-2 bg-blue-400 dark:bg-gray-950 font-semibold text-white hover:shadow-md shadow-blue-950 dark:shadow-none rounded hover:scale-101 dark:hover:bg-blue-600 duration-300"
           >
             Explore
           </button>
         </div>
 
         <div
-          class="flex flex-col justify-center space-y-4 px-6 py-5 bg-gradient-to-b from-blue-300 to-blue-900 shadow-lg hover:shadow-xl shadow-gray-800 rounded-lg hover:scale-105 duration-300"
+          class="flex flex-col justify-center space-y-4 px-6 py-5 bg-gradient-to-b from-blue-300 dark:from-gray-900 to-blue-900 dark:to-blue-950 shadow-lg hover:shadow-xl shadow-gray-800 dark:shadow-gray-900 rounded-lg hover:scale-105 duration-300"
           id="application2"
         >
           <img
-            class="rounded-lg w-full h-[80%]"
+            class="rounded-lg w-full h-[80%] dark:border-5 dark:border-gray-500"
             src="./assets/componentBasedUI.jpg"
             alt=""
           />
           <h3 class="text-white text-2xl font-bold">
-            Component-Based UI Development
+            Component-Based UI Design
           </h3>
-          <p class="text-white text-sm">
+          <p class="text-white dark:text-gray-300 text-sm">
             Create reusable, consistent UI components without writing custom
             CSS.
           </p>
           <button
-            class="w-full h-[30px] bg-blue-400 font-semibold text-white hover:shadow-md shadow-blue-950 rounded hover:scale-101 duration-300"
+            class="w-full py-2 bg-blue-400 dark:bg-gray-950 font-semibold text-white hover:shadow-md shadow-blue-950 dark:shadow-none rounded hover:scale-101 dark:hover:bg-blue-600 duration-300"
           >
             Explore
           </button>
         </div>
 
         <div
-          class="flex flex-col justify-center space-y-4 px-6 py-5 bg-gradient-to-b from-blue-300 to-blue-900 shadow-lg hover:shadow-xl shadow-gray-800 rounded-lg hover:scale-105 duration-300"
+          class="flex flex-col justify-center space-y-4 px-6 py-5 bg-gradient-to-b from-blue-300 dark:from-gray-900 to-blue-900 dark:to-blue-950 shadow-lg hover:shadow-xl shadow-gray-800 dark:shadow-gray-900 rounded-lg hover:scale-105 duration-300"
           id="application3"
         >
           <img
-            class="rounded-lg w-full h-[80%]"
+            class="rounded-lg w-full h-[80%] dark:border-5 dark:border-gray-500"
             src="./assets/customDesignSystems.jpg"
             alt=""
           />
           <h3 class="text-white text-2xl font-bold">Custom Design Systems</h3>
-          <p class="text-white text-sm">
+          <p class="text-white dark:text-gray-300 text-sm">
             Build and maintain scalable design systems using Tailwind's
             configuration and theming tools.
           </p>
           <button
-            class="w-full h-[30px] bg-blue-400 font-semibold text-white hover:shadow-md shadow-blue-950 rounded hover:scale-101 duration-300"
+            class="w-full py-2 bg-blue-400 dark:bg-gray-950 font-semibold text-white hover:shadow-md shadow-blue-950 dark:shadow-none rounded hover:scale-101 dark:hover:bg-blue-600 duration-300"
           >
             Explore
           </button>
@@ -265,55 +316,60 @@
       </div>
     </section>
 
-    <section class="py-5 px-8" id="contact">
-      <h2 class="text-center text-3xl text-blue-600 font-bold py-8">
+    <section
+      class="py-5 px-8 dark:pt-0 dark:px-0 dark:border-t-1 dark:border-b-1 dark:border-gray-800"
+      id="contact"
+    >
+      <h2
+        class="w-full text-center py-8 dark:p-0 text-3xl text-blue-600 dark:text-gray-300 font-bold dark:border-b-1 dark:border-gray-800"
+      >
         Connect with Us!
       </h2>
 
       <form
-        class="max-w-md mx-auto bg-gradient-to-br from-blue-200 to-blue-500 rounded-lg py-10 px-8 space-y-8 shadow-lg shadow-gray-700 transition-all"
+        class="max-w-md mx-auto dark:mt-10 bg-gradient-to-br dark:bg-gradient-to-b from-blue-200 dark:from-blue-950 to-blue-500 dark:to-gray-950 dark:border-2 dark:border-gray-800 rounded-lg py-10 px-8 space-y-6 shadow-lg shadow-gray-700 dark:[box-shadow:6px_6px_12px_rgba(0,0,0,0.5)] transition-all"
         action=""
       >
         <div id="nameInput" class="relative">
           <input
-            class="peer w-full pl-2 placeholder-transparent border-b-2 border-blue-950 focus:outline-none hover:scale-103 duration-300"
+            class="peer w-full pl-2 placeholder-transparent border-b-2 border-blue-950 dark:border-white dark:text-white focus:outline-none hover:scale-103 duration-300"
             id="name"
             type="text"
             placeholder="Name"
           />
           <label
             for="name"
-            class="bottom-5 peer-placeholder-shown:bottom-0 peer-placeholder-shown:text-xl absolute left-0 text-sm px-1 text-blue-950 duration-200"
+            class="bottom-5 peer-placeholder-shown:bottom-0 peer-placeholder-shown:text-xl absolute left-0 text-sm px-1 text-blue-950 dark:text-gray-300 duration-200"
             >Name</label
           >
         </div>
         <div id="emailInput" class="relative">
           <input
-            class="peer w-full pl-2 placeholder-transparent border-b-2 border-blue-950 focus:outline-none hover:scale-103 duration-300"
+            class="peer w-full pl-2 placeholder-transparent border-b-2 border-blue-950 dark:border-white dark:text-white focus:outline-none hover:scale-103 duration-300"
             id="email"
             type="email"
             placeholder="Email"
           />
           <label
             for="email"
-            class="bottom-5 peer-placeholder-shown:bottom-0 peer-placeholder-shown:text-xl absolute left-0 text-sm px-1 text-blue-950 duration-200"
+            class="bottom-5 peer-placeholder-shown:bottom-0 peer-placeholder-shown:text-xl absolute left-0 text-sm px-1 text-blue-950 dark:text-gray-300 duration-200"
             >Email</label
           >
         </div>
         <div id="messageInput">
           <label
             for="message"
-            class="left-0 text-xl px-1 text-blue-950 duration-200"
+            class="left-0 text-xl px-1 text-blue-950 dark:text-gray-300 duration-200"
             >Message</label
           >
           <textarea
-            class="w-full px-2 bg-white rounded-lg focus:outline-none focus:shadow-md hover:shadow-md hover:scale-103 shadow-blue-700 duration-600"
+            class="w-full px-2 my-3 bg-white dark:bg-gray-400 dark:text-white rounded-lg focus:outline-none focus:shadow-md hover:shadow-md dark:hover:shadow-lg hover:scale-103 shadow-blue-700 dark:shadow-gray-950 duration-600"
             id="message"
-            rows="3"
+            rows="5"
           ></textarea>
         </div>
         <button
-          class="w-[130px] h-[35px] md:w-[150px] md:h-[35px] bg-blue-950 text-white text-md rounded-md hover:scale-102 hover:shadow-md shadow-blue-700 hover:bg-white hover:text-blue-950 duration-450"
+          class="w-full h-[35px] md:w-full md:h-[35px] bg-blue-950 text-white text-md rounded-md hover:scale-102 hover:shadow-md dark:hover:shadow-lg shadow-blue-700 dark:shadow-gray-950 hover:bg-white dark:hover:bg-blue-600 hover:text-blue-950 dark:hover:text-white duration-450"
           type="submit"
         >
           Send Message
@@ -321,7 +377,7 @@
       </form>
 
       <hr
-        class="text-center w-60 md:w-80 mx-auto my-6 border-1 border-blue-600"
+        class="text-center w-60 md:w-80 mx-auto my-6 border-1 border-blue-600 dark:border-gray-400"
       />
 
       <div
@@ -348,8 +404,22 @@
       </div>
     </section>
 
-    <footer class="text-center text-blue-800 pt-12 pb-5">
+    <footer
+      class="text-center text-blue-800 dark:text-gray-200 dark:border-t-1 dark:border-gray-800 p-8"
+    >
       &copy; 2025 Tailwind-Bootcamp. All Rights Reserved!
     </footer>
   </body>
+  <script>
+    // Toggle navbar on mobile
+    document.addEventListener("DOMContentLoaded", () => {
+      const toggleBtn = document.getElementById("hamburger-btn");
+      const mobileMenu = document.getElementById("mobileMenu");
+
+      toggleBtn.addEventListener("click", () => {
+        mobileMenu.classList.toggle("scale-y-0");
+        mobileMenu.classList.toggle("scale-y-100");
+      });
+    });
+  </script>
 </html>
