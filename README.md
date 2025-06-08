@@ -49,17 +49,29 @@ This **Repository** documents my my `Notes`, `Learnings`, and `UI_Project` as I 
 ---
 
 ## Tailwind Installation and Setup
-### 1. Using CDN(Content Delivery Network) [QUICKEST METHOD]:
-- **For ` Windows ` Systems:** <br>
-     Ensure Python is installed by running the following **prompt**:
-     ```
-     python --version
-     ```
-- **For ` Linux / MacOS ` Systems:** <br>
-     Ensure Python is installed by running the following **prompt**:
-     ```
-     python3 --version
-     ```
+### 1. Using Play_CDN(Content Delivery Network) [QUICKEST METHOD]:
+- The `Play CDN` lets you load `Tailwind's Core_Utilities` into your project **without any Build Step**.
+- `Without any Build Step:` Normally, with a Full Tailwind_Setup, you’d need `Node_Js`, `npm` (To install Tailwind) and sometimes a Build_Tool like `Vite`. But, with `Play_CDN`, you can skip all of that — **No Configuration**, **No Installation**, **No Compiling**.
+- All the **Utility_Classes** are **preloaded** via the CDN Servers!
+- It is great for **Prototyping** and **Demos** but `Not Applicable in a Production Environment` as it is **Heavy** (Loads all utilities at once, even if you require a few), **No Customization** (You can’t configure Tailwind themes, colors, etc. via `tailwind.config.js` File), **No JIT** (No Just-In-Time Compiler Used), **No Purging Of Unused Classes**, etc.
+- Go to [`Play_CDN Docs`](https://tailwindcss.com/docs/installation/play-cdn).
+- **Copy** the `CDN Script` from the Page:
+  ```
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  ```
+  ![Play_CDN Script](https://github.com/user-attachments/assets/900289e2-7731-437a-b633-f71047743411)<br>
+- Paste it inside the `<head> Tag` of your `HTML`:
+  ```
+  <head>
+     <meta charset="UTF-8" />
+     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     <title>Tailwind-Bootcamp</title>
+
+     <!-- Play_CDN Script -->
+     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  ```
+- Now you are ready to use `Tailwind's Utility_Classes` directly in your `HTML` without any Setup or Build Process.
 <br>
 
 ### 2. Create a Virtual Environment:
