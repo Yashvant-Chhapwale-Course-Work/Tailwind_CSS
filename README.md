@@ -71,20 +71,43 @@ This **Repository** documents my my `Notes`, `Learnings`, and `UI_Project` as I 
      <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
   ```
-- Now you are ready to use `Tailwind's Utility_Classes` directly in your `HTML` without any Setup or Build Process.
+- Now you are ready to use `Tailwind's Utility_Classes` directly in your `HTML` without any Setup or Build Process!
 <br>
 
-### 2. Create a Virtual Environment:
-- **For ` Windows ` Systems:** <br>
-     Create a `Virtual Environment` in Python by running the following **prompt**:
-     ```
-     python -m venv myenv
-     ```
-- **For ` Linux / MacOS ` Systems:** <br>
-     Create a `Virtual Environment` in Python by running the following **prompt**:
-     ```
-     python3 -m venv myenv
-     ```
+### 2. Using Tailwind_CLI:
+- Tailwind CLI is the official Command-Line Interface provided by Tailwind CSS that allows you to:
+  - **Compile** your Tailwind CSS from Source to a **usable CSS_File** (typically `output.css`).
+  - **Without needing a Build_Tool** (Ex: Vite).
+- Go to [`Tailwind_CLI Docs`](https://tailwindcss.com/docs/installation/tailwind-cli).
+- **Copy** and **Run** the `npm Command` from the Page, in your `Terminal`, to install `Tailwind CLI`:
+  ```
+  npm install tailwindcss @tailwindcss/cli
+  ```
+- Next, **Import** `Tailwind_CSS` in you **Main CSS_File** (`style.css`).<br>
+  For Ex: Suppose `style.css`:
+  ```
+  @import "tailwindcss";
+  ```
+- **Run** the `Tailwind_CLI Tool`, to scan your **Project_Files** for **Utility_Classes** and **Build your CSS**, using the following `npx Command`:
+  ```
+  npx @tailwindcss/cli -i ./path/to/main.css -o ./path/to/output.css --watch
+  ```
+  - `-i:` It specifies the path to your **Input CSS_File** (`./path/to/main.css` or `./path/to/style.css`).
+  - `-o:` It specifies the path where you want to define your **Output CSS_File** (`./path/to/output.css`).
+  - `--watch:` Keeps **Watching / Scanning** the Project_Files(`.html`) for changes while you develop.
+- Add the **newly compiled** `CSS_File` (`output.css`) inside the `<head> Tag` of your `HTML`:
+  ```
+  <head>
+     <meta charset="UTF-8" />
+     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     <title>Tailwind-Bootcamp</title>
+
+     <!-- Linking output.css -->
+     <link href="./output.css" rel="stylesheet">
+  </head>
+  ```
+  ![Tailwind_CLI](https://github.com/user-attachments/assets/1d4d70f4-f4f5-48c5-90a3-4c59a6da7e11)
+- Now you are all set to use `Tailwind's Utility_Classes` in your Project efficiently!
 <br>
 
 ### 3. Activate the Virtual Environment:
