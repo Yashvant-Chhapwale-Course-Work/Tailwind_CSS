@@ -218,7 +218,6 @@ The `Padding` adds **Space Inside the Element’s Border**, positioning the Cont
 - **`pb-2`:** Sets **Padding towards Bottom** for an Element.
 - **`pl-2`:** Sets **Padding on the Left SSide** of an Element.
 - **`pr-2`:** Sets **Padding on the Right Side** of an Element.
-<br>
 ![Margin and Padding](https://github.com/user-attachments/assets/f15df0d0-8722-494c-9462-380d3b9006fc)<br>
 <br>
 
