@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/ffe08453-f362-4861-9f16-1a6f2a66b9b1)<div align="center">
+<div align="center">
    <img src="https://github.com/user-attachments/assets/5f875ede-34c9-424f-90a7-c860996c51fb" alt="Tailwind Logo" width="60%" height="20%">
 </div>
 
