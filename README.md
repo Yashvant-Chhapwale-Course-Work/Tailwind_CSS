@@ -207,7 +207,6 @@ The `Margin` adds **Space Outside the Element’s Border**, separating it from N
 - **`mb-2`:** Sets **Margin towards Bottom** for an Element.
 - **`ml-2`:** Sets **Margin on the Left SSide** of an Element.
 - **`mr-2`:** Sets **Margin on the Right Side** of an Element.
-
 <br>
 
 2. **Padding Classes:**
@@ -223,9 +222,15 @@ The `Padding` adds **Space Inside the Element’s Border**, positioning the Cont
 
 ![Margin and Padding](https://github.com/user-attachments/assets/f15df0d0-8722-494c-9462-380d3b9006fc)<br>
 <br>
+
+3. **Child-Elements Spacing Utilities:**
+The `Child-Elements Spacing Utilities` (also known as `Space-Between Utilities`) are used to **Create Consistent Spacing between Direct Children** of a Parent Container, without manually applying **Margin** to each Child Element.<br>
+`Note:` This `Utility_Class` is applied on the `Parent_Element` and not the Children directly.
+- **`space-x-5`:** It is used to **Apply Margin on the Left Side of all Children except the First Child** within the Parent_Element.
+- **`space-y-5`:** It is used to **Apply Margin towards Top of all Children except the First Child** within the Parent_Element.
+<br>
 <br>
 
-3. 
 
 ---
 <br>
