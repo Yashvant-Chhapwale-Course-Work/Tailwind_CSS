@@ -367,7 +367,6 @@ The `Display Classes` control how an **<HTML> element** is rendered in the `Docu
 - **`inline-block`:** **Inline-block Elements** behave like **Inline Elements**, but they also have the **Block-Level characteristics** of being able to configure **Width**, **Height**, and **Margins**.
 - **`hidden`:** It is a `Boolean-Attribute` (On / Off), indicating that the **Browser** should **Not Render** the Contents of the Elements.
 <br>
-<br>
 
 ---
 <br>
