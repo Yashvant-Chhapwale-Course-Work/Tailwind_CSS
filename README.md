@@ -206,8 +206,6 @@ The `Layout Classes` define how elements are **displayed**, how they **take up s
 |9                              |2.25rem             |36px                |
 |10                             |2.5rem              |40px                |
 **and so on . . . **
-<br>
-
 - **`Note:`** You can also **input** `Custom Scale` using `Square_Brackets []` around the `-suffix` Values.<br>
 `For Ex:` **w-[50px]**, this specifes the **Width** of the element to be **50px**.   
 <br>
