@@ -1,4 +1,4 @@
-<div align="center">
+![image](https://github.com/user-attachments/assets/ffe08453-f362-4861-9f16-1a6f2a66b9b1)<div align="center">
    <img src="https://github.com/user-attachments/assets/5f875ede-34c9-424f-90a7-c860996c51fb" alt="Tailwind Logo" width="60%" height="20%">
 </div>
 
@@ -40,7 +40,7 @@ This **Repository** documents my my `Notes`, `Learnings`, and `UI_Project` as I 
 | TITLE                                                                                                          | SECTION_LINK                                                                                  |
 |----------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|
 | 1.  **Tailwind Installation and Setup**                                                                        | >> [` CHECK CONTENT `](#tailwind-installation-and-setup)                                      |
-| **BEGINNER**                                                                                                                                                                                                   |
+| **BEGINNER**  
 | 2.  **Basic `Layout` Utility_Classes**                                                                         | >> [` CHECK CONTENT `](#basic-layout-utility_classes)                                         |
 | 3.  **Custom-Tkinter Window Geometry(Width x Height)**                                                         | >> [` CHECK CONTENT `](#adjusting-custom_tkinter_window-dimensions)                           |
 | 4.  **Creating Custom-Tkinter Window Instance (CTk( ))**                                                       | >> [` CHECK CONTENT `](#creating-custom_tkinter_window_instance-CTk)                          |
@@ -182,6 +182,30 @@ This **Repository** documents my my `Notes`, `Learnings`, and `UI_Project` as I 
 
 ## Basic Layout Utility_Classes
 The `Layout Classes` define how elements are **displayed**, how they **take up space**, and how they are **positioned** within the `Document Flow (DOM -- Document Object Model)`.
+<br>
+
+### Tailwind Spacing_Scale:
+- Before diving into the `Layout Utility_Classes`, it's important to First understand the underlying **Measurement Scale** i.e, `Tailwind Spacing_Scale`.
+- The `Tailwind Spacing_Scale` provides a **Consistent Set of Spacing Values** used across various **Layout Utility_Classes**.
+
+|**Tailwind Spacing_Scale**     |**Rem**             |**Pixels**          |
+|-------------------------------|--------------------|--------------------|
+|0                              |0                   |0                   |
+|0.5                            |0.125rem            |2px                 |
+|1                              |0.25rem             |4px                 |
+|1.5                            |0.375rem            |6px                 |
+|2                              |0.5rem              |8px                 |
+|2.5                            |0.625rem            |10px                |
+|3                              |0.75rem             |12px                |
+|4                              |1rem                |16px                |
+|5                              |1.25rem             |20px                |
+|6                              |1.5rem              |24px                |
+|7                              |1.75rem             |28px                |
+|8                              |2rem                |32px                |
+|9                              |2.25rem             |36px                |
+|10                             |2.5rem              |40px                |
+**and so on . . . **
+<br>
 <br>
 
 ### Element Display_Type:
