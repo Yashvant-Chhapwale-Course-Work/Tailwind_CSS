@@ -200,29 +200,32 @@ The `Element_Spacing Classes` are used to **Add Space Around or Inside elements*
 
 1. **Margin Classes:**
 The `Margin` adds **Space Outside the Element’s Border**, separating it from Neighboring Elements.
-- **`m`:** a**Inline Elements** sit within the **Same Line** as surrounding content and only take up the necessary space required by the content. Hence, they do not permit **Width** and **Height** Configuration in design.
-- **`mx`:** **Block Elements** start on a **New Line** and take up the **Full Width** available, effectively pushing Subsequent Content to the Next Line.
-- **`my`:** **Inline-block Elements** behave like **Inline Elements**, but they also have the **Block-Level characteristics** of being able to configure **Width**, **Height**, and **Margins**.
-- **`mt`:** It is a `Boolean-Attribute` (On / Off), indicating that the **Browser** should **Not Render** the Contents of the Elements.
-- **`mb`:** It is a `Boolean-Attribute` (On / Off), indicating that the **Browser** should **Not Render** the Contents of the Elements.
-- **`ml`:** It is a `Boolean-Attribute` (On / Off), indicating that the **Browser** should **Not Render** the Contents of the Elements.
-- **`mr`:** It is a `Boolean-Attribute` (On / Off), indicating that the **Browser** should **Not Render** the Contents of the Elements.
+- **`m-2`:** Sets **Margin on all Sides** for an Element.
+- **`mx-2`:** Sets **Margin along X-axis (i.e, Left and Right)** for an Element.
+- **`my-2`:** Sets **Margin along Y-axis (i.e, Top and Bottom)** for an Element.
+- **`mt-2`:** Sets **Margin towards Top** for an Element.
+- **`mb-2`:** Sets **Margin towards Bottom** for an Element.
+- **`ml-2`:** Sets **Margin on the Left SSide** of an Element.
+- **`mr-2`:** Sets **Margin on the Right Side** of an Element.
 
 <br>
 
 2. **Padding Classes:**
 The `Padding` adds **Space Inside the Element’s Border**, positioning the Content within an Element.
-- **`p`:** a**Inline Elements** sit within the **Same Line** as surrounding content and only take up the necessary space required by the content. Hence, they do not permit **Width** and **Height** Configuration in design.
-- **`px`:** **Block Elements** start on a **New Line** and take up the **Full Width** available, effectively pushing Subsequent Content to the Next Line.
-- **`py`:** **Inline-block Elements** behave like **Inline Elements**, but they also have the **Block-Level characteristics** of being able to configure **Width**, **Height**, and **Margins**.
-- **`pt`:** It is a `Boolean-Attribute` (On / Off), indicating that the **Browser** should **Not Render** the Contents of the Elements.
-- **`pb`:** It is a `Boolean-Attribute` (On / Off), indicating that the **Browser** should **Not Render** the Contents of the Elements.
-- **`pl`:** It is a `Boolean-Attribute` (On / Off), indicating that the **Browser** should **Not Render** the Contents of the Elements.
-- **`pr`:** It is a `Boolean-Attribute` (On / Off), indicating that the **Browser** should **Not Render** the Contents of the Elements.
+- **`p-2`:** Sets **Padding on all Sides** for an Element.
+- **`px-2`:** Sets **Padding along X-axis (i.e, Left and Right)** for an Element.
+- **`py-2`:** Sets **Padding along Y-axis (i.e, Top and Bottom)** for an Element.
+- **`pt-2`:** Sets **Padding towards Top** for an Element.
+- **`pb-2`:** Sets **Padding towards Bottom** for an Element.
+- **`pl-2`:** Sets **Padding on the Left SSide** of an Element.
+- **`pr-2`:** Sets **Padding on the Right Side** of an Element.
 <br>
 
 ![Margin and Padding](https://github.com/user-attachments/assets/f15df0d0-8722-494c-9462-380d3b9006fc)<br>
 <br>
+<br>
+
+3. 
 
 ---
 <br>
