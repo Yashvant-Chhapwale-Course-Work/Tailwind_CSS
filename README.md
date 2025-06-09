@@ -304,13 +304,13 @@ It helps to Set a Limit on how **Short** or **Tall** an Element is allowed to ge
 <br>
 
 ### Element Border:
-The `Border Classes` control an **Element's Border_Attributes** including `width (thickness)`, `color`, `style`, and `radius`.
+The `Border Classes` control an **Element's Border_Attributes** including `width (thickness)`, `style`, and `radius`.
 <br>
 
 1. **Border Width:**
 It control how `Thick` the **Border** can be.
 - **`border`:** Adds a **Default(1px) Border** to the Element.
-- **`border-0`:** **Removes Border** from the Element. 
+- **`border-0` or `border-none`:** **Removes Border** from the Element. 
 - **`border-2`:** Sets a **Custom Border-Width**, using the **Tailwind Spacing_Scale**, for an Element. [**Border=8px**]
 - **`border-x-2`:** Sets **Border along X-axis (i.e, Left and Right)** for an Element.
 - **`border-y-2`:** Sets **Border along Y-axis (i.e, Top and Bottom)** for an Element.
@@ -320,37 +320,24 @@ It control how `Thick` the **Border** can be.
 - **`border-r-2`:** Sets **Border on the Right Side** of an Element.
 <br>
 
-2. **Min/Max-Width Classes:**
-It helps to Set a Limit on how **Small** or **Wide** an Element is allowed to get.<br>
-`Note:` These Classes only help to **Set a Limit** but **do not Resize the Element** (beyond the set boundaries) when the Screen_Size Changes. 
-- **`min-w-0`:** **Minimum-Width=0px** or **Minimum-Width=0%**.
-- **`min-w-full`:** **Minimum-Width=100%**.
-- **`min-w-50`:** Sets a **Custom Minimum-Width**, using the **Tailwind Spacing_Scale**, for an Element. [**Minimum-Width=200px**]
-- **`max-w-0`:** **Maximum-Width=0px** or **Maximum-Width=0%**.
-- **`max-w-full`:** **Maximum-Width=100%**.
-- **`max-w-50`:** Sets a **Custom Maximum-Width**, using the **Tailwind Spacing_Scale**, for an Element. [**Maximum-Width=200px**]
+2. **Border Style:**
+It helps to Set a `Pattern`/`Design` for the **Border**.
+- **`border-solid`:** Default Solid Line. (────────────────)
+- **`border-dashed`:** Dashed Line. (— — — — — — — —)
+- **`border-dotted`:** Dotted Line. (· · · · · · · ·)
+- **`border-double`:** Double Line. (═══════════════)
 <br>
 
-3. **Height Classes:**
-It is used to set the `Height` of an Element.
-- **`h-0`:** **Height=0px** or **Width=0%**.
-- **`h-1/2`:** **Height=50%**
-- **`h-full`:** **Height=100%**
-- **`h-10`:** Sets **Custom Height**, using the **Tailwind Spacing_Scale**, for an Element. [**Height=40px**]
-- **`h-screen`:** Sets the Element to **Cover the Full_Available_Height** on a Screen. [**Height=100vh** i.e (100 Vertical-Height)]
-- **`h-auto`:** Sets the **Height to Automatically Shrink or Grow** based on its Content Size.
-<br>
-
-4. **Min/Max-Height Classes:**
-It helps to Set a Limit on how **Short** or **Tall** an Element is allowed to get.<br>
-`Note:` These Classes only help to **Set a Limit** but **do not Resize the Element** (beyond the set boundaries) when the Screen_Size Changes. 
-- **`min-h-0`:** **Minimum-Height=0px** or **Minimum-Height=0%**.
-- **`min-h-full`:** **Minimum-Height=100%**.
-- **`min-h-50`:** Sets a **Custom Minimum-Height**, using the **Tailwind Spacing_Scale**, for an Element. [**Minimum-Height=200px**]
-- **`max-h-0`:** **Maximum-Height=0px** or **Maximum-Height=0%**.
-- **`max-h-full`:** **Maximum-Height=100%**.
-- **`max-h-50`:** Sets a **Custom Maximum-Height**, using the **Tailwind Spacing_Scale**, for an Element. [**Maximum-Height=200px**]
-
+3. **Border Radius:**
+It is used to make an **Element's_Corners** `Rounded`.
+- **`rounded`:** Set the **Default Roundedness (i.e, 0.25rem)** for an Element's Corners.
+- **`rounded-sm`:** Set the Border_Radius to **Small_Radius (i.e, 0.125rem or 2px)**.
+- **`rounded-md`:** Set the Border_Radius to **Medium_Radius (i.e, 0.375rem or 6px)**.
+- **`rounded-lg`:** Set the Border_Radius to **Large_Radius (i.e, 0.5rem or 8px)**.
+- **`rounded-xl`:** Set the Border_Radius to **Extra-Large_Radius (i.e, 0.75rem or 12px)**.
+- **`rounded-2xl`:** **Border-Radius=1rem or 16px**.
+- **`rounded-2xl`:** **Border-Radius=1.5rem or 24px**.<br> 
+**and so on. . .**
 <br>
 <br>
 
