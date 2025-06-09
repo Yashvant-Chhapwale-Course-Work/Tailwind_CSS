@@ -232,7 +232,7 @@ The `Margin` adds **Space Outside the Element’s Border**, separating it from N
 - **`my-2`:** Sets **Margin along Y-axis (i.e, Top and Bottom)** for an Element.
 - **`mt-2`:** Sets **Margin towards Top** for an Element.
 - **`mb-2`:** Sets **Margin towards Bottom** for an Element.
-- **`ml-2`:** Sets **Margin on the Left SSide** of an Element.
+- **`ml-2`:** Sets **Margin on the Left Side** of an Element.
 - **`mr-2`:** Sets **Margin on the Right Side** of an Element.
 <br>
 
@@ -243,7 +243,7 @@ The `Padding` adds **Space Inside the Element’s Border**, positioning the Cont
 - **`py-2`:** Sets **Padding along Y-axis (i.e, Top and Bottom)** for an Element.
 - **`pt-2`:** Sets **Padding towards Top** for an Element.
 - **`pb-2`:** Sets **Padding towards Bottom** for an Element.
-- **`pl-2`:** Sets **Padding on the Left SSide** of an Element.
+- **`pl-2`:** Sets **Padding on the Left Side** of an Element.
 - **`pr-2`:** Sets **Padding on the Right Side** of an Element.<br>
 ![Margin and Padding](https://github.com/user-attachments/assets/f15df0d0-8722-494c-9462-380d3b9006fc)<br>
 <br>
@@ -308,13 +308,16 @@ The `Border Classes` control an **Element's Border_Attributes** including `width
 <br>
 
 1. **Border Width:**
-It is used to set the `Width` of an Element.
-- **`w-0`:** **Width=0px** or **Width=0%**.
-- **`w-1/2`:** **Width=50%**
-- **`w-full`:** **Width=100%**
-- **`w-10`:** Sets **Custom Width**, using the **Tailwind Spacing_Scale**, for an Element. [**Width=40px**]
-- **`w-screen`:** Sets the Element to **Cover the Full_Available_Width** on a Screen. [**Width=100vw** i.e (100 Vertical-Width)]
-- **`w-auto`:** Sets the **Width to Automatically Shrink or Grow** based on its Content Size.
+It control how `Thick` the **Border** can be.
+- **`border`:** Adds a **Default(1px) Border** to the Element.
+- **`border-0`:** **Removes Border** from the Element. 
+- **`border-2`:** Sets a **Custom Border-Width**, using the **Tailwind Spacing_Scale**, for an Element. [**Border=8px**]
+- **`border-x-2`:** Sets **Border along X-axis (i.e, Left and Right)** for an Element.
+- **`border-y-2`:** Sets **Border along Y-axis (i.e, Top and Bottom)** for an Element.
+- **`border-t-2`:** Sets **Border towards Top** for an Element.
+- **`border-b-2`:** Sets **Border towards Bottom** for an Element.
+- **`border-l-2`:** Sets **Border on the Left Side** of an Element.
+- **`border-r-2`:** Sets **Border on the Right Side** of an Element.
 <br>
 
 2. **Min/Max-Width Classes:**
