@@ -187,7 +187,7 @@ The `Layout Classes` define how elements are **displayed**, how they **take up s
 ### Tailwind Spacing_Scale:
 - Before diving into the `Layout Utility_Classes`, it's important to First understand the underlying **Measurement Scale** i.e, `Tailwind Spacing_Scale`.
 - The `Tailwind Spacing_Scale` provides a **Consistent Set of Spacing Values** used across various **Layout Utility_Classes**.
-
+- These values are added as `-suffix` to the `Layout Utility_Classes` for defining the **Volume** to be applied.
 |**Tailwind Spacing_Scale**     |**Rem**             |**Pixels**          |
 |-------------------------------|--------------------|--------------------|
 |0                              |0                   |0                   |
@@ -205,6 +205,8 @@ The `Layout Classes` define how elements are **displayed**, how they **take up s
 |9                              |2.25rem             |36px                |
 |10                             |2.5rem              |40px                |
 **and so on . . . **
+- **`Note:`** You can also **input** `Custom Scale` using `Square_Brackets []` around the `-suffix` Values.<br>
+`For Ex:` **w-[50px]**, this specifes the **Width** of the element to be **50px**.   
 <br>
 <br>
 
@@ -253,6 +255,44 @@ The `Child-Elements Spacing Utilities` (also known as `Space-Between Utilities`)
 <br>
 <br>
 
+### Element Sizing:
+The `Sizing Classes` control an Element's `width`, `height`, `min/max dimensions`, and how it behaves inside its Container. 
+<br>
+
+1. **Width Classes:**
+It is used to set the `Width` of an Element.
+- **`w-0`:** **Width=0px** or **Width=0%**.
+- **`w-1/2`:** **Width=50%**
+- **`w-full`:** **Width=100%**
+- **`w-10`:** Sets **Custom Width**, using the **Tailwind Spacing_Scale**, for an Element. [**Width=40px**]
+- **`w-screen`:** Sets the Element to **Cover the Full_Available_Width** on a Screen. [**Width=100vw** i.e (100 Vertical-Width)]
+- **`w-auto`:** Sets the **Width to Automatically Shrink or Grow** based on its Content Size.
+<br>
+
+2. **Min/Max-Width Classes:**
+It helps to Set a Limit on how **Small** or **Wide** an Element is allowed to get.
+- **`min-w-0`:** **Minimum Width=0px** or **Minimum Width=0%**.
+- **`min-w-full`:** **Minimum Width=100%**.
+- **`min-w-50`:** **Minimum Width=0%**.
+- **`max-w-0`:** **Width=50%**
+- **`w-full`:** **Width=100%**
+- **`w-10`:** Sets **Custom Width**, using the **Tailwind Spacing_Scale**, for an Element. [**Width=40px**]
+- **`w-screen`:** Sets the Element to **Cover the Full_Available_Width** on a Screen. [**Width=100vw** i.e (100 Vertical-Width)]
+- **`w-auto`:** Sets the **Width to Automatically Shrink or Grow** based on its Content Size.
+<br>
+
+3. **Height Classes:**
+It is used to set the `Height` of an Element.
+- **`h-0`:** **Height=0px** or **Width=0%**.
+- **`h-1/2`:** **Height=50%**
+- **`h-full`:** **Height=100%**
+- **`h-10`:** Sets **Custom Height**, using the **Tailwind Spacing_Scale**, for an Element. [**Height=40px**]
+- **`h-screen`:** Sets the Element to **Cover the Full_Available_Height** on a Screen. [**Height=100vh** i.e (100 Vertical-Height)]
+- **`h-auto`:** Sets the **Height to Automatically Shrink or Grow** based on its Content Size.
+<br>
+
+<br>
+<br>
 
 ---
 <br>
