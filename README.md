@@ -301,6 +301,11 @@ It helps to Set a Limit on how **Short** or **Tall** an Element is allowed to ge
 - **`max-h-full`:** **Maximum-Height=100%**.
 - **`max-h-50`:** Sets a **Custom Maximum-Height**, using the **Tailwind Spacing_Scale**, for an Element. [**Maximum-Height=200px**]
 <br>
+
+5. **Shorthand Class (Size):**
+Starting from `Tailwind v3.2+`, you can use the `size` **Shorthand_Class**, to simultaneously set `Width` and `Height` for an Element.
+- **`size-10`:** Simultaneously sets the **Width** and **Height** of an Element. (**Width=40px** and **Height=40px**)
+<br>
 <br>
 
 ### Element Border:
@@ -331,6 +336,7 @@ It helps to Set a `Pattern`/`Design` for the **Border**.
 3. **Border Radius:**
 It is used to make an **Element's_Corners** `Rounded`.
 - **`rounded`:** Set the **Default Roundedness (i.e, 0.25rem)** for an Element's Corners.
+- **`rounded-full`:** Makes the Element's Border **Fully Rounded**.
 - **`rounded-sm`:** Set the Border_Radius to **Small_Radius (i.e, 0.125rem or 2px)**.
 - **`rounded-md`:** Set the Border_Radius to **Medium_Radius (i.e, 0.375rem or 6px)**.
 - **`rounded-lg`:** Set the Border_Radius to **Large_Radius (i.e, 0.5rem or 8px)**.
@@ -338,6 +344,19 @@ It is used to make an **Element's_Corners** `Rounded`.
 - **`rounded-2xl`:** **Border-Radius=1rem or 16px**.
 - **`rounded-2xl`:** **Border-Radius=1.5rem or 24px**.<br> 
 **and so on. . .**
+<br>
+<br>
+
+### Element Box_Sizing:
+The `Box_Sizing Classes` define how the **Total Width and Height of an Element are calculated**, specifically, whether `Padding and Borders` are `Included Inside` or `Added Outside` the `Width`/`Height`.
+- **`box-border`:** It tells the **Browser** to **Include the Element's Borders and Padding** when you give it a `Height` or `Width`.<br>
+`For Ex:` Suppose an Element has class="box-border size-32 border-4 p-4" i.e, Size(Width and Height)=128px, Border=16px, Padding=16px<br>
+![box-border](https://github.com/user-attachments/assets/4c31aa79-f1bd-44b7-98fd-1f961fbfb93e)<br>
+Then, you can observe that the **Size** i.e **Width & Height** also accounts for fitting the **Border & Padding Dimensions** for an Element.
+- **`box-content`:** It tells the **Browser** to **Add Borders and Padding on Top of an Element's specified Width or Height**.<br>
+`For Ex:` Suppose an Element has class="box-content size-32 border-4 p-4" i.e, Size(Width and Height)=128px, Border=16px, Padding=16px<br>
+![box-content](https://github.com/user-attachments/assets/52faaaaa-9f17-4689-b053-6efe8fdbe7c1)<br>
+Then, you can observe that the **Size** i.e **Width & Height** only accounts for the **Content** of the Element excluding the **Border & Padding Dimensions**.
 <br>
 <br>
 
