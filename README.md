@@ -271,15 +271,14 @@ It is used to set the `Width` of an Element.
 <br>
 
 2. **Min/Max-Width Classes:**
-It helps to Set a Limit on how **Small** or **Wide** an Element is allowed to get.
-- **`min-w-0`:** **Minimum Width=0px** or **Minimum Width=0%**.
-- **`min-w-full`:** **Minimum Width=100%**.
-- **`min-w-50`:** **Minimum Width=0%**.
-- **`max-w-0`:** **Width=50%**
-- **`w-full`:** **Width=100%**
-- **`w-10`:** Sets **Custom Width**, using the **Tailwind Spacing_Scale**, for an Element. [**Width=40px**]
-- **`w-screen`:** Sets the Element to **Cover the Full_Available_Width** on a Screen. [**Width=100vw** i.e (100 Vertical-Width)]
-- **`w-auto`:** Sets the **Width to Automatically Shrink or Grow** based on its Content Size.
+It helps to Set a Limit on how **Small** or **Wide** an Element is allowed to get.<br>
+`Note:` These Classes only help to **Set a Limit** but **do not Resize the Element** (beyond the set boundaries) when the Screen_Size Changes. 
+- **`min-w-0`:** **Minimum-Width=0px** or **Minimum-Width=0%**.
+- **`min-w-full`:** **Minimum-Width=100%**.
+- **`min-w-50`:** Sets a **Custom Minimum-Width**, using the **Tailwind Spacing_Scale**, for an Element. [**Minimum-Width=200px**]
+- **`max-w-0`:** **Maximum-Width=0px** or **Maximum-Width=0%**.
+- **`max-w-full`:** **Maximum-Width=100%**.
+- **`max-w-50`:** Sets a **Custom Maximum-Width**, using the **Tailwind Spacing_Scale**, for an Element. [**Maximum-Width=200px**]
 <br>
 
 3. **Height Classes:**
@@ -292,6 +291,24 @@ It is used to set the `Height` of an Element.
 - **`h-auto`:** Sets the **Height to Automatically Shrink or Grow** based on its Content Size.
 <br>
 
+4. **Min/Max-Height Classes:**
+It helps to Set a Limit on how **Short** or **Tall** an Element is allowed to get.<br>
+`Note:` These Classes only help to **Set a Limit** but **do not Resize the Element** (beyond the set boundaries) when the Screen_Size Changes. 
+- **`min-h-0`:** **Minimum-Height=0px** or **Minimum-Height=0%**.
+- **`min-h-full`:** **Minimum-Height=100%**.
+- **`min-h-50`:** Sets a **Custom Minimum-Height**, using the **Tailwind Spacing_Scale**, for an Element. [**Minimum-Height=200px**]
+- **`max-h-0`:** **Maximum-Height=0px** or **Maximum-Height=0%**.
+- **`max-h-full`:** **Maximum-Height=100%**.
+- **`max-h-50`:** Sets a **Custom Maximum-Height**, using the **Tailwind Spacing_Scale**, for an Element. [**Maximum-Height=200px**]
+<br>
+<br>
+
+### Element :
+The `Display Classes` control how an **<HTML> element** is rendered in the `Document Flow (DOM -- Document Object Model)`.
+- **`inline`:** **Inline Elements** sit within the **Same Line** as surrounding content and only take up the necessary space required by the content. Hence, they do not permit **Width** and **Height** Configuration in design.
+- **`block`:** **Block Elements** start on a **New Line** and take up the **Full Width** available, effectively pushing Subsequent Content to the Next Line.
+- **`inline-block`:** **Inline-block Elements** behave like **Inline Elements**, but they also have the **Block-Level characteristics** of being able to configure **Width**, **Height**, and **Margins**.
+- **`hidden`:** It is a `Boolean-Attribute` (On / Off), indicating that the **Browser** should **Not Render** the Contents of the Elements.
 <br>
 <br>
 
