@@ -180,8 +180,33 @@ This **Repository** documents my my `Notes`, `Learnings`, and `UI_Project` as I 
 ---
 <br>
 
-## Basic Structural Utility_Classes
-### Layout-Classes:
+## Basic Layout Utility_Classes
+The `Layout Classes` define how elements are **displayed**, how they **take up space**, and how they are **positioned** within the `Document Flow (DOM -- Document Object Model)`.
+<br>
+
+### Element Display_Type:
+The `Display Classes` control how an **<HTML> element** is rendered in the `Document Flow (DOM -- Document Object Model)`.
+- **`inline`:** **Inline Elements** sit within the **Same Line** as surrounding content and only take up the necessary space required by the content. Hence, they do not permit **Width** and **Height** Configuration in design.
+- **`block`:** **Block Elements** start on a **New Line** and take up the **Full Width** available, effectively pushing Subsequent Content to the Next Line.
+- **`inline-block`:** **Inline-block Elements** behave like **Inline Elements**, but they also have the **Block-Level characteristics** of being able to configure **Width**, **Height**, and **Margins**.
+- **`hidden`:** It is a `Boolean-Attribute` (On / Off), indicating that the **Browser** should **Not Render** the Contents of the Elements.
+<br>
+<br>
+
+### Element Spacing [Margins and Padding]:
+The `Element_Spacing Classes` are used to **Add Space Around or Inside elements**. These are crucial for creating **Readable** and **Visually Balanced** Layouts.<br>
+`Tailwind_CSS` provides **Granular_Control** over spacing using `Margin` and `Padding` Classes.
+<br>
+
+1. **Margin Classes:**
+- **`inline`:** **Inline Elements** sit within the **Same Line** as surrounding content and only take up the necessary space required by the content. Hence, they do not permit **Width** and **Height** Configuration in design.
+- **`block`:** **Block Elements** start on a **New Line** and take up the **Full Width** available, effectively pushing Subsequent Content to the Next Line.
+- **`inline-block`:** **Inline-block Elements** behave like **Inline Elements**, but they also have the **Block-Level characteristics** of being able to configure **Width**, **Height**, and **Margins**.
+- **`hidden`:** It is a `Boolean-Attribute` (On / Off), indicating that the **Browser** should **Not Render** the Contents of the Elements.
+<br>
+
+2. **Padding Classes:**
+<br>
 <br>
 
 ---
