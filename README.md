@@ -471,26 +471,15 @@ The `Position Classes` in control **how an Element is Positioned** within the `D
   As you can Observe, the `absolute` Element i.e, **Green Box** positions itself at `top-10` and `left-10` Insets **Relative** to the `relative` Parent i.e, **Outer_Div with Gray_border**.
   <br>
   
-- **`fixed`:** It is the **Default Position_Style** for Elements. Ths `Static_Elements` follows the `Normal Document_Flow`. We cannot apply `Inset_Classes` to Elements with `Static_Positioning`, however `Padding` & `Margins` work as expected.<br>
+- **`fixed`:** The Element is **Positioned Relative to the Viewport (Browser_Window)**. It stays **Fixed** in the **Same Place** even when **Scrolling**.<br>
   `For Ex:`
   ```
-  <div>
-     <h2>Static Positioning</h2>
-     <div class="flex flex-row justify-center items-center p-10 border-2 border-gray-600">
-        <div class="bg-red-500 text-white p-20 m-2 rounded-lg font-bold">
-           Red Box
-        </div>
-        <div class="static top-10 left-10 bg-green-500 text-white p-20 m-2 rounded-lg font-bold">
-           Green Box
-        </div>
-        <div class="bg-blue-500 text-white p-20 m-2 rounded-lg font-bold">
-           Blue Box
-        </div>
-      </div>
+  <div class="fixed bottom-10 right-10 bg-green-500 text-white p-16 m-2 rounded-lg font-bold"> 
+     This is Fixed Box
   </div>
   ```
   ![`fixed`](https://github.com/user-attachments/assets/8ef395f4-cd42-4c79-847c-fc23f2c6c64d)<br>
-  As you can Observe, the `top-10` and `left-10` **Classes** are not working and the `Green Box` follows the `Normal Document_Flow`.
+  As you can Observe, the **Green Box** remains `fixed` at `bottom-10` and `right-10`, on the **Visible Screen (Viewport)**, even when **Scrolling**.
   <br>
   
 - **`sticky`:** It is the **Default Position_Style** for Elements. Ths `Static_Elements` follows the `Normal Document_Flow`. We cannot apply `Inset_Classes` to Elements with `Static_Positioning`, however `Padding` & `Margins` work as expected.<br>
