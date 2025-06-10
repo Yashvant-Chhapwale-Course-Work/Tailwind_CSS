@@ -504,7 +504,7 @@ The `Position Classes` in control **how an Element is Positioned** within the `D
   ![`sticky` >> Initial Position](https://github.com/user-attachments/assets/c881e7d9-e246-43d7-9f72-1941d50dd9a6)<br>
   `After Scrolling Down:`<br>
   ![`sticky` >> After Scrolling-Down](https://github.com/user-attachments/assets/33b09a2b-5815-4d16-b303-4241a1e20eb4)<br>
-  As you can Observe, **initially** the **Green Box** follows the `Normal Document_Flow`, but on **scrolling down** as soon as the **Green Box** is at a distance of `20px`(5 -- Tailwind Spacing_Scale) from the **Top_Side** i.e, `top-5` it becomes `fixed`. even **overlaps** the **Blue Box**.
+  As you can Observe, **initially** the **Green Box** follows the `Normal Document_Flow`, but on **scrolling down** as soon as the **Green Box** is at a distance of `20px`(5 -- Tailwind Spacing_Scale) from the **Top_Side** i.e, `top-5` it becomes `fixed`, even **overlaps** the **Blue Box**.
 <br>
 
 4. **Min/Max-Height Classes:**
