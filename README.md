@@ -482,11 +482,11 @@ The `Position Classes` in control **how an Element is Positioned** within the `D
   As you can Observe, the **Green Box** remains `fixed` at `bottom-10` and `right-10`, on the **Visible Screen (Viewport)**, even when **Scrolling**.
   <br>
   
-- **`sticky`:** It is the **Default Position_Style** for Elements. Ths `Static_Elements` follows the `Normal Document_Flow`. We cannot apply `Inset_Classes` to Elements with `Static_Positioning`, however `Padding` & `Margins` work as expected.<br>
+- **`sticky`:** The Element is treated as `relative` until it reaches a **Defined Scroll_Position** (Threshold -- `top`.`bottom`,`left`,`right`), after which it behaves like a `fixed` Element. Basically, it **Scrolls** until it `sticks` to a **Defined Position** and then stays `fixed` on that position.<br>
   `For Ex:`
   ```
   <div>
-     <h2>Static Positioning</h2>
+     <h2>Sticky Positioning</h2>
      <div class="flex flex-row justify-center items-center p-10 border-2 border-gray-600">
         <div class="bg-red-500 text-white p-20 m-2 rounded-lg font-bold">
            Red Box
