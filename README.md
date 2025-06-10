@@ -405,11 +405,126 @@ The `Inset Classes` control **how far a Positioned Element is Moved from its Ref
 
 3. **Position Classes:**
 The `Position Classes` in control **how an Element is Positioned** within the `Document_Flow` or `Relative to its Parent`.
-- **`static`:** **Height=0px** or **Width=0%**.
-- **`relative`:** **Height=50%**
-- **`absolute`:** **Height=100%**
-- **`fixed`:** Sets **Custom Height**, using the **Tailwind Spacing_Scale**, for an Element. [**Height=40px**]
-- **`sticky`:** Sets the Element to **Cover the Full_Available_Height** on a Screen. [**Height=100vh** i.e (100 Vertical-Height)]
+- **`static`:** It is the **Default Position_Style** for Elements. Ths `Static_Elements` follows the `Normal Document_Flow`. We cannot apply `Inset_Classes` to Elements with `Static_Positioning`, however `Padding` & `Margins` work as expected.<br>
+  `For Ex:`
+  ```
+  <div>
+        <h2>Static Positioning</h2>
+        <div
+          class="flex flex-row justify-center items-center p-10 border-2 border-gray-600"
+        >
+          <div class="bg-red-500 text-white p-20 m-2 rounded-lg font-bold">
+            Red Box
+          </div>
+          <div
+            class="static top-10 left-10 bg-green-500 text-white p-20 m-2 rounded-lg font-bold"
+          >
+            Green Box
+          </div>
+          <div class="bg-blue-500 text-white p-20 m-2 rounded-lg font-bold">
+            Blue Box
+          </div>
+        </div>
+      </div>
+  ```
+  ![`static`](https://github.com/user-attachments/assets/746a092f-806e-438f-9e42-13cd0eab91f4)<br>
+  As you can Observe, the `top-10` and `left-10` **Classes** are not working and the `Green Box` follows the `Normal Document_Flow`.
+- **`relative`:** It is the **Default Position_Style** for Elements. Ths `Static_Elements` follows the `Normal Document_Flow`. We cannot apply `Inset_Classes` to Elements with `Static_Positioning`, however `Padding` & `Margins` work as expected.<br>
+  `For Ex:`
+  ```
+  <div>
+        <h2>Static Positioning</h2>
+        <div
+          class="flex flex-row justify-center items-center p-10 border-2 border-gray-600"
+        >
+          <div class="bg-red-500 text-white p-20 m-2 rounded-lg font-bold">
+            Red Box
+          </div>
+          <div
+            class="static top-10 left-10 bg-green-500 text-white p-20 m-2 rounded-lg font-bold"
+          >
+            Green Box
+          </div>
+          <div class="bg-blue-500 text-white p-20 m-2 rounded-lg font-bold">
+            Blue Box
+          </div>
+        </div>
+      </div>
+  ```
+  ![`static`](https://github.com/user-attachments/assets/746a092f-806e-438f-9e42-13cd0eab91f4)<br>
+  As you can Observe, the `top-10` and `left-10` **Classes** are not working and the `Green Box` follows the `Normal Document_Flow`.
+- **`absolute`:** It is the **Default Position_Style** for Elements. Ths `Static_Elements` follows the `Normal Document_Flow`. We cannot apply `Inset_Classes` to Elements with `Static_Positioning`, however `Padding` & `Margins` work as expected.<br>
+  `For Ex:`
+  ```
+  <div>
+        <h2>Static Positioning</h2>
+        <div
+          class="flex flex-row justify-center items-center p-10 border-2 border-gray-600"
+        >
+          <div class="bg-red-500 text-white p-20 m-2 rounded-lg font-bold">
+            Red Box
+          </div>
+          <div
+            class="static top-10 left-10 bg-green-500 text-white p-20 m-2 rounded-lg font-bold"
+          >
+            Green Box
+          </div>
+          <div class="bg-blue-500 text-white p-20 m-2 rounded-lg font-bold">
+            Blue Box
+          </div>
+        </div>
+      </div>
+  ```
+  ![`static`](https://github.com/user-attachments/assets/746a092f-806e-438f-9e42-13cd0eab91f4)<br>
+  As you can Observe, the `top-10` and `left-10` **Classes** are not working and the `Green Box` follows the `Normal Document_Flow`.
+- **`fixed`:** It is the **Default Position_Style** for Elements. Ths `Static_Elements` follows the `Normal Document_Flow`. We cannot apply `Inset_Classes` to Elements with `Static_Positioning`, however `Padding` & `Margins` work as expected.<br>
+  `For Ex:`
+  ```
+  <div>
+        <h2>Static Positioning</h2>
+        <div
+          class="flex flex-row justify-center items-center p-10 border-2 border-gray-600"
+        >
+          <div class="bg-red-500 text-white p-20 m-2 rounded-lg font-bold">
+            Red Box
+          </div>
+          <div
+            class="static top-10 left-10 bg-green-500 text-white p-20 m-2 rounded-lg font-bold"
+          >
+            Green Box
+          </div>
+          <div class="bg-blue-500 text-white p-20 m-2 rounded-lg font-bold">
+            Blue Box
+          </div>
+        </div>
+      </div>
+  ```
+  ![`static`](https://github.com/user-attachments/assets/746a092f-806e-438f-9e42-13cd0eab91f4)<br>
+  As you can Observe, the `top-10` and `left-10` **Classes** are not working and the `Green Box` follows the `Normal Document_Flow`.
+- **`sticky`:** It is the **Default Position_Style** for Elements. Ths `Static_Elements` follows the `Normal Document_Flow`. We cannot apply `Inset_Classes` to Elements with `Static_Positioning`, however `Padding` & `Margins` work as expected.<br>
+  `For Ex:`
+  ```
+  <div>
+        <h2>Static Positioning</h2>
+        <div
+          class="flex flex-row justify-center items-center p-10 border-2 border-gray-600"
+        >
+          <div class="bg-red-500 text-white p-20 m-2 rounded-lg font-bold">
+            Red Box
+          </div>
+          <div
+            class="static top-10 left-10 bg-green-500 text-white p-20 m-2 rounded-lg font-bold"
+          >
+            Green Box
+          </div>
+          <div class="bg-blue-500 text-white p-20 m-2 rounded-lg font-bold">
+            Blue Box
+          </div>
+        </div>
+      </div>
+  ```
+  ![`static`](https://github.com/user-attachments/assets/746a092f-806e-438f-9e42-13cd0eab91f4)<br>
+  As you can Observe, the `top-10` and `left-10` **Classes** are not working and the `Green Box` follows the `Normal Document_Flow`.
 <br>
 
 4. **Min/Max-Height Classes:**
