@@ -451,7 +451,7 @@ The `Position Classes` in control **how an Element is Positioned** within the `D
         </div>
       </div>
   ```
-  ![`static`](https://github.com/user-attachments/assets/746a092f-806e-438f-9e42-13cd0eab91f4)<br>
+  ![`relative`](https://github.com/user-attachments/assets/3bb3dda8-292f-4b23-a47c-50a402dd4966)<br>
   As you can Observe, the `top-10` and `left-10` **Classes** are not working and the `Green Box` follows the `Normal Document_Flow`.
 - **`absolute`:** It is the **Default Position_Style** for Elements. Ths `Static_Elements` follows the `Normal Document_Flow`. We cannot apply `Inset_Classes` to Elements with `Static_Positioning`, however `Padding` & `Margins` work as expected.<br>
   `For Ex:`
@@ -475,7 +475,7 @@ The `Position Classes` in control **how an Element is Positioned** within the `D
         </div>
       </div>
   ```
-  ![`static`](https://github.com/user-attachments/assets/746a092f-806e-438f-9e42-13cd0eab91f4)<br>
+  ![`absolute`](https://github.com/user-attachments/assets/9cd00fbc-d95a-4103-ad2c-f5db268dc943)<br>
   As you can Observe, the `top-10` and `left-10` **Classes** are not working and the `Green Box` follows the `Normal Document_Flow`.
 - **`fixed`:** It is the **Default Position_Style** for Elements. Ths `Static_Elements` follows the `Normal Document_Flow`. We cannot apply `Inset_Classes` to Elements with `Static_Positioning`, however `Padding` & `Margins` work as expected.<br>
   `For Ex:`
@@ -499,7 +499,7 @@ The `Position Classes` in control **how an Element is Positioned** within the `D
         </div>
       </div>
   ```
-  ![`static`](https://github.com/user-attachments/assets/746a092f-806e-438f-9e42-13cd0eab91f4)<br>
+  ![`fixed`](https://github.com/user-attachments/assets/8ef395f4-cd42-4c79-847c-fc23f2c6c64d)<br>
   As you can Observe, the `top-10` and `left-10` **Classes** are not working and the `Green Box` follows the `Normal Document_Flow`.
 - **`sticky`:** It is the **Default Position_Style** for Elements. Ths `Static_Elements` follows the `Normal Document_Flow`. We cannot apply `Inset_Classes` to Elements with `Static_Positioning`, however `Padding` & `Margins` work as expected.<br>
   `For Ex:`
