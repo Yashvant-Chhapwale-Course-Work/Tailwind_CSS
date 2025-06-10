@@ -367,24 +367,40 @@ These `Utility_Classes` are essential for **Building Layouts**, **ToolTips**, **
 <br>
 
 1. **Container Class:**
-It is used to set the `Width` of an Element.
-- **`w-0`:** **Width=0px** or **Width=0%**.
-- **`w-1/2`:** **Width=50%**
-- **`w-full`:** **Width=100%**
-- **`w-10`:** Sets **Custom Width**, using the **Tailwind Spacing_Scale**, for an Element. [**Width=40px**]
-- **`w-screen`:** Sets the Element to **Cover the Full_Available_Width** on a Screen. [**Width=100vw** i.e (100 Vertical-Width)]
-- **`w-auto`:** Sets the **Width to Automatically Shrink or Grow** based on its Content Size.
+- The `Container Class` i.e, `container` is used t0 **Set a Responsive, Centered, and Padded Wrapper** for your content.<br>
+- `Note:` It does not **Center** the content itself, it only manages the **Positioning** for the **Outer_Division/Wrapper**.
+- It automatically adjusts its `Max-Width` at each `Breakpoint` as follows:
+  - `sm`: Small_Screen Breakpoint (`640px`).
+  - `md`: Medium_Screen Breakpoint (`768px`).
+  - `lg`: Large_Screen Breakpoint (`1024px`).
+  - `xl`: Extra-Large_Screen Breakpoint (`1280px`).
+- This helps in creating a `Responsive Interface`.
+- **`For Ex:`**
+  ```
+  <div class="container mx-auto py-15">
+      <p class="text-3xl text-blue-600 font-bold">
+        I am a Container!
+      </p>
+  </div>
+  ```
 <br>
 
-2. **Min/Max-Width Classes:**
-It helps to Set a Limit on how **Small** or **Wide** an Element is allowed to get.<br>
-`Note:` These Classes only help to **Set a Limit** but **do not Resize the Element** (beyond the set boundaries) when the Screen_Size Changes. 
-- **`min-w-0`:** **Minimum-Width=0px** or **Minimum-Width=0%**.
-- **`min-w-full`:** **Minimum-Width=100%**.
-- **`min-w-50`:** Sets a **Custom Minimum-Width**, using the **Tailwind Spacing_Scale**, for an Element. [**Minimum-Width=200px**]
-- **`max-w-0`:** **Maximum-Width=0px** or **Maximum-Width=0%**.
-- **`max-w-full`:** **Maximum-Width=100%**.
-- **`max-w-50`:** Sets a **Custom Maximum-Width**, using the **Tailwind Spacing_Scale**, for an Element. [**Maximum-Width=200px**]
+2. **Inset Classes:**
+`Inset` (also knowsn as `Offset`) refers to the **Distance Between an Element and the Edges of its Containing Block**.<br>
+The `Inset Classes` control **how far a Positioned Element is Moved from its Reference Edges**, viz. `Top`, `Right`, `Bottom`, and `Left`.<br>
+`Note:` These **Classes** only only apply when the Element is using a `relative`, `absolute`, `fixed`, or `sticky` Position. 
+- **`top-2`:** **Moves the Element Down** from the `Top_Edge`.
+- **`bottom-2`:** **Moves the Element Up** from the `Bottom_Edge`.
+- **`left-2`:** **Moves the Element Right** from the `Left_Edge`.
+- **`right-2`:** **Moves the Element Left** from the `Right_Edge`.
+- **`inset-2`:** **Offsets the Element** by a Uniform Distance (**8px**) **from all Four Sides**.
+- **`inset-x-2`:** **Offsets the Element from the `Left` and `Right` Edges simultaneously.**
+- **`inset-y-2`:** **Offsets the Element from the `Top` and `Bottom` Edges simultaneously.**<br>
+`Negative_Inset Classes ` (`Negative_Offsets`) allow you to **Pull an Element in the Opposite Direction** from where it's **Normally Positioned**.
+- **`-top-2`:** **Pulls the Element Up** from its normal positioning.
+- **`-bottom-2`:** **Pulls the Element Down** from its normal positioning.
+- **`-left-2`:** **Pulls the Element Towards Left** from its normal positioning.
+- **`-right-2`:** **Pulls the Element Towards Right** from its normal positioning.
 <br>
 
 3. **Height Classes:**
