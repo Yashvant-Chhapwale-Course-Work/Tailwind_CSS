@@ -360,12 +360,13 @@ Then, you can observe that the **Size** i.e **Width & Height** only accounts for
 <br>
 <br>
 
-### Element Positioning:
-The `Positioning Classes` control how elements are **Positioned** on a page.<br>
+### Element Flow_Control:
+The `Flow_Control Classes` control how Elements **Flow Inside their Containers and Relate to Other Elements** within the `DOM (Document Object Model)`.<br>
+They are **responsible** for controlling the **Positioning** of the Elements.
 These `Utility_Classes` are essential for **Building Layouts**, **ToolTips**, **Modals**, **Floating Elements**, and more.
 <br>
 
-1. **Width Classes:**
+1. **Container Class:**
 It is used to set the `Width` of an Element.
 - **`w-0`:** **Width=0px** or **Width=0%**.
 - **`w-1/2`:** **Width=50%**
