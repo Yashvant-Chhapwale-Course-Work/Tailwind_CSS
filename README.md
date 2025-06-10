@@ -487,11 +487,11 @@ The `Position Classes` in control **how an Element is Positioned** within the `D
   ```
   <div>
      <h2>Sticky Positioning</h2>
-     <div class="flex flex-row justify-center items-center p-10 border-2 border-gray-600">
+     <div class="flex flex-col justify-center items-center p-10 border-2 border-gray-600">
         <div class="bg-red-500 text-white p-20 m-2 rounded-lg font-bold">
            Red Box
         </div>
-        <div class="static top-10 left-10 bg-green-500 text-white p-20 m-2 rounded-lg font-bold">
+        <div class="sticky top-5 bg-green-500 text-white p-20 m-2 rounded-lg font-bold">
            Green Box
         </div>
         <div class="bg-blue-500 text-white p-20 m-2 rounded-lg font-bold">
