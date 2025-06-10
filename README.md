@@ -403,14 +403,13 @@ The `Inset Classes` control **how far a Positioned Element is Moved from its Ref
 - **`-right-2`:** **Pulls the Element Towards Right** from its normal positioning.
 <br>
 
-3. **Height Classes:**
-It is used to set the `Height` of an Element.
-- **`h-0`:** **Height=0px** or **Width=0%**.
-- **`h-1/2`:** **Height=50%**
-- **`h-full`:** **Height=100%**
-- **`h-10`:** Sets **Custom Height**, using the **Tailwind Spacing_Scale**, for an Element. [**Height=40px**]
-- **`h-screen`:** Sets the Element to **Cover the Full_Available_Height** on a Screen. [**Height=100vh** i.e (100 Vertical-Height)]
-- **`h-auto`:** Sets the **Height to Automatically Shrink or Grow** based on its Content Size.
+3. **Position Classes:**
+The `Position Classes` in control **how an Element is Positioned** within the `Document_Flow` or `Relative to its Parent`.
+- **`static`:** **Height=0px** or **Width=0%**.
+- **`relative`:** **Height=50%**
+- **`absolute`:** **Height=100%**
+- **`fixed`:** Sets **Custom Height**, using the **Tailwind Spacing_Scale**, for an Element. [**Height=40px**]
+- **`sticky`:** Sets the Element to **Cover the Full_Available_Height** on a Screen. [**Height=100vh** i.e (100 Vertical-Height)]
 <br>
 
 4. **Min/Max-Height Classes:**
