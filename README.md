@@ -302,7 +302,7 @@ It helps to Set a Limit on how **Short** or **Tall** an Element is allowed to ge
 - **`max-h-50`:** Sets a **Custom Maximum-Height**, using the **Tailwind Spacing_Scale**, for an Element. [**Maximum-Height=200px**]
 <br>
 
-5. **Shorthand Class (Size):**
+5. **Shorthand Class (`size`):**
 Starting from `Tailwind v3.2+`, you can use the `size` **Shorthand_Class**, to simultaneously set `Width` and `Height` for an Element.
 - **`size-10`:** Simultaneously sets the **Width** and **Height** of an Element. (**Width=40px** and **Height=40px**)
 <br>
@@ -507,18 +507,14 @@ The `Position Classes` in control **how an Element is Positioned** within the `D
   As you can Observe, **initially** the **Green Box** follows the `Normal Document_Flow`, but on **scrolling down** as soon as the **Green Box** is at a distance of `20px`(5 -- Tailwind Spacing_Scale) from the **Top_Side** i.e, `top-5` it becomes `fixed`, even **overlaps** the **Blue Box**.
 <br>
 
-4. **Min/Max-Height Classes:**
-It helps to Set a Limit on how **Short** or **Tall** an Element is allowed to get.<br>
-`Note:` These Classes only help to **Set a Limit** but **do not Resize the Element** (beyond the set boundaries) when the Screen_Size Changes. 
-- **`min-h-0`:** **Minimum-Height=0px** or **Minimum-Height=0%**.
-- **`min-h-full`:** **Minimum-Height=100%**.
-- **`min-h-50`:** Sets a **Custom Minimum-Height**, using the **Tailwind Spacing_Scale**, for an Element. [**Minimum-Height=200px**]
-- **`max-h-0`:** **Maximum-Height=0px** or **Maximum-Height=0%**.
-- **`max-h-full`:** **Maximum-Height=100%**.
-- **`max-h-50`:** Sets a **Custom Maximum-Height**, using the **Tailwind Spacing_Scale**, for an Element. [**Maximum-Height=200px**]
+4. **z-index Classes:**
+The `z-index` controls the **Stacking order of Elements** on the **Z-axis** (`front`-to-`back`). Basically, it controls which Element appears on **Top** when **Overlapping**.<br>
+- **`z-0`:** **Default Stacking_Level**, i.e, every Element on the Same Plane.
+- **`z-10`, `z-20`, `z-30` and so on . . .:** **Higher Stacking_Levels** i.e, Greater the `-suffix` Value higher the Stacking_Level. `For Ex:` Element with `z-30` overlaps Element with `z-10`. 
+- **`z-auto`:** Uses the **Browser’s Default Stacking Configuration**.
 <br>
 
-5. **Shorthand Class (Size):**
+5. **Float Classes:**
 Starting from `Tailwind v3.2+`, you can use the `size` **Shorthand_Class**, to simultaneously set `Width` and `Height` for an Element.
 - **`size-10`:** Simultaneously sets the **Width** and **Height** of an Element. (**Width=40px** and **Height=40px**)
 <br>
