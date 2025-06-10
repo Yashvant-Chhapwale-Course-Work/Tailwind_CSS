@@ -516,10 +516,82 @@ The `z-index` controls the **Stacking order of Elements** on the **Z-axis** (`fr
 <br>
 
 5. **Float Classes:**
-Starting from `Tailwind v3.2+`, you can use the `size` **Shorthand_Class**, to simultaneously set `Width` and `Height` for an Element.
-- **`size-10`:** Simultaneously sets the **Width** and **Height** of an Element. (**Width=40px** and **Height=40px**)
+The `float` **Classes** are used to **`float` Elements to the Left or Right**, inside a container, making **Other Content Wrap around them**.
+- **`float-left`:** **Floats** the Element to the `Left_Side` within a **Container** or **<div>**, allowing other content to **Flow** or **Wrap** around it.<br>
+  `For Ex:`
+  ```
+  <div class="p-10 mx-100 border-2 border-gray-600">
+     <div class="float-left w-[200px] h-[150px] p-15 m-2 bg-blue-400 text-white text-center">
+        Float-Left
+     </div>
+     <p class="margin-x-10 text-lg">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis
+        dolor odio maxime quis fugiat, laboriosam iusto voluptatibus
+        incidunt corrupti modi reiciendis impedit cum dolore temporibus
+        harum. Vel voluptas numquam nostrum enim commodi quisquam! Labore
+        sit numquam et porro provident corporis, hic ullam ex quo voluptas!
+        Delectus exercitationem, deleniti reprehenderit explicabo beatae
+        dicta repellat ipsam aspernatur praesentium dignissimos deserunt
+        dolorum eligendi. Minima laborum maiores quos mollitia numquam sequi
+        cupiditate quasi provident, iste quaerat veniam quis harum porro
+        eveniet ipsam, cumque voluptatum animi neque aperiam temporibus
+        sint. Sapiente eius porro alias, dolore tenetur eum. Voluptates
+        sequi neque dolores quo ab, repellendus, voluptate magni reiciendis
+        fugiat dicta iure, provident blanditiis aperiam sapiente deserunt
+        voluptas ut est? Dolores necessitatibus laudantium ea veniam odit.
+        Ad optio animi vel provident. Corrupti ad at, facere asperiores
+        obcaecati porro, laboriosam molestias ipsam architecto incidunt
+        sequi exercitationem voluptatem rerum.
+     </p>
+  </div>
+  ```
+  ![`float-left`](https://github.com/user-attachments/assets/c93777db-03e6-402b-82d5-5b6dae12558f)<br>
+  As Observed, the `Float-Left` Element is aligned towards `Left_Side` within the Outer (Parent) Container, while the `<p> (Paragraph` Element Wraps around it from the `Right_Side`.
+  <br>
+
+- **`float-right`:** **Floats** the Element to the `Right_Side` within a **Container** or **<div>**, allowing other content to **Flow** or **Wrap** around it.<br>
+  `For Ex:`
+  ```
+  <div class="p-10 mx-100 border-2 border-gray-600">
+     <div class="float-right w-[200px] h-[150px] p-15 m-2 bg-blue-400 text-white text-center">
+        Float-Right
+     </div>
+     <p class="margin-x-10 text-lg">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis
+        dolor odio maxime quis fugiat, laboriosam iusto voluptatibus
+        incidunt corrupti modi reiciendis impedit cum dolore temporibus
+        harum. Vel voluptas numquam nostrum enim commodi quisquam! Labore
+        sit numquam et porro provident corporis, hic ullam ex quo voluptas!
+        Delectus exercitationem, deleniti reprehenderit explicabo beatae
+        dicta repellat ipsam aspernatur praesentium dignissimos deserunt
+        dolorum eligendi. Minima laborum maiores quos mollitia numquam sequi
+        cupiditate quasi provident, iste quaerat veniam quis harum porro
+        eveniet ipsam, cumque voluptatum animi neque aperiam temporibus
+        sint. Sapiente eius porro alias, dolore tenetur eum. Voluptates
+        sequi neque dolores quo ab, repellendus, voluptate magni reiciendis
+        fugiat dicta iure, provident blanditiis aperiam sapiente deserunt
+        voluptas ut est? Dolores necessitatibus laudantium ea veniam odit.
+        Ad optio animi vel provident. Corrupti ad at, facere asperiores
+        obcaecati porro, laboriosam molestias ipsam architecto incidunt
+        sequi exercitationem voluptatem rerum.
+     </p>
+  </div>
+  ```
+  ![`float-right`](https://github.com/user-attachments/assets/2578495b-8a38-441e-8f0f-11a23baccf1f)<br>
+  As Observed, the `Float-Right` Element is aligned towards `Right_Side` within the Outer (Parent) Container, while the `<p> (Paragraph` Element Wraps around it from the `Left_Side`.
+  <br>
+  
+- **`float-none`:** **Removes Float Property** from an Element.<br>
 <br>
 
+6. **Clear Classes:**
+The `clear` **Classes** are used to **Prevent an element from Wrapping around the `Floating_Elements`**. They are used in **Conjunction ** with the `float` **Classes**.
+- **`clear-left`:**
+- **`clear-right`:**
+- **`clear-both`:**
+- **`clear-none`:**
+<br>
+  
 ---
 <br>
 
