@@ -405,99 +405,84 @@ The `Inset Classes` control **how far a Positioned Element is Moved from its Ref
 
 3. **Position Classes:**
 The `Position Classes` in control **how an Element is Positioned** within the `Document_Flow` or `Relative to its Parent`.
-- **`static`:** It is the **Default Position_Style** for Elements. Ths `Static_Elements` follows the `Normal Document_Flow`. We cannot apply `Inset_Classes` to Elements with `Static_Positioning`, however `Padding` & `Margins` work as expected.<br>
+- **`static`:** It is the **Default Position_Style** for Elements. The `Static_Elements` follows the `Normal Document_Flow`. We cannot apply `Inset_Classes` to Elements with `Static_Positioning`, however `Padding` & `Margins` work as expected.<br>
   `For Ex:`
   ```
   <div>
-        <h2>Static Positioning</h2>
-        <div
-          class="flex flex-row justify-center items-center p-10 border-2 border-gray-600"
-        >
-          <div class="bg-red-500 text-white p-20 m-2 rounded-lg font-bold">
-            Red Box
-          </div>
-          <div
-            class="static top-10 left-10 bg-green-500 text-white p-20 m-2 rounded-lg font-bold"
-          >
-            Green Box
-          </div>
-          <div class="bg-blue-500 text-white p-20 m-2 rounded-lg font-bold">
-            Blue Box
-          </div>
+     <h2>Static Positioning</h2>
+     <div class="flex flex-row justify-center items-center p-10 border-2 border-gray-600">
+        <div class="bg-red-500 text-white p-20 m-2 rounded-lg font-bold">
+           Red Box
+        </div>
+        <div class="static top-10 left-10 bg-green-500 text-white p-20 m-2 rounded-lg font-bold">
+           Green Box
+        </div>
+        <div class="bg-blue-500 text-white p-20 m-2 rounded-lg font-bold">
+           Blue Box
         </div>
       </div>
+  </div>
   ```
   ![`static`](https://github.com/user-attachments/assets/746a092f-806e-438f-9e42-13cd0eab91f4)<br>
   As you can Observe, the `top-10` and `left-10` **Classes** are not working and the `Green Box` follows the `Normal Document_Flow`.
-- **`relative`:** It is the **Default Position_Style** for Elements. Ths `Static_Elements` follows the `Normal Document_Flow`. We cannot apply `Inset_Classes` to Elements with `Static_Positioning`, however `Padding` & `Margins` work as expected.<br>
+- **`relative`:** The **Element** is **Positioned Relative to its Normal Position**. The **Element** follows the `Normal Document_Flow`, but you can use the `Inset Classes` to further **nudge it around**.
+<br>
   `For Ex:`
   ```
   <div>
-        <h2>Static Positioning</h2>
-        <div
-          class="flex flex-row justify-center items-center p-10 border-2 border-gray-600"
-        >
-          <div class="bg-red-500 text-white p-20 m-2 rounded-lg font-bold">
-            Red Box
-          </div>
-          <div
-            class="static top-10 left-10 bg-green-500 text-white p-20 m-2 rounded-lg font-bold"
-          >
-            Green Box
-          </div>
-          <div class="bg-blue-500 text-white p-20 m-2 rounded-lg font-bold">
-            Blue Box
-          </div>
+     <h2>Relative Positioning</h2>
+     <div class="flex flex-row justify-center items-center p-10 border-2 border-gray-600">
+        <div class="bg-red-500 text-white p-20 m-2 rounded-lg font-bold">
+           Red Box
+        </div>
+        <div class="relative top-10 left-10 bg-green-500 text-white p-20 m-2 rounded-lg font-bold">
+           Green Box
+        </div>
+        <div class="bg-blue-500 text-white p-20 m-2 rounded-lg font-bold">
+           Blue Box
         </div>
       </div>
+  </div>
   ```
   ![`relative`](https://github.com/user-attachments/assets/3bb3dda8-292f-4b23-a47c-50a402dd4966)<br>
-  As you can Observe, the `top-10` and `left-10` **Classes** are not working and the `Green Box` follows the `Normal Document_Flow`.
-- **`absolute`:** It is the **Default Position_Style** for Elements. Ths `Static_Elements` follows the `Normal Document_Flow`. We cannot apply `Inset_Classes` to Elements with `Static_Positioning`, however `Padding` & `Margins` work as expected.<br>
+  As you can Observe, the **Element** follows the `Normal Document_Flow` (Red Box >> Green Box >> Blue Box), but it also utilizes the `top-10` and `left-10` classes to further position itself unlike the `Static Element`.
+- **`absolute`:** The **Element** is **Positioned Relative to the nearest Positioned Ancestor(Parent)** (Ancestors are basically Parent_Elements utilizing Position_Classes such as `relative`,`absolute`,`fixed`,etc not including `static`).If there are **No** `Positioned_Ancestors` then the Element positions itself `Relative` to the `<HTML> Element`.<br>
   `For Ex:`
   ```
   <div>
-        <h2>Static Positioning</h2>
-        <div
-          class="flex flex-row justify-center items-center p-10 border-2 border-gray-600"
-        >
-          <div class="bg-red-500 text-white p-20 m-2 rounded-lg font-bold">
-            Red Box
-          </div>
-          <div
-            class="static top-10 left-10 bg-green-500 text-white p-20 m-2 rounded-lg font-bold"
-          >
-            Green Box
-          </div>
-          <div class="bg-blue-500 text-white p-20 m-2 rounded-lg font-bold">
-            Blue Box
-          </div>
+     <h2>Absolute Positioning</h2>
+     <div class="relative flex flex-row justify-center items-center p-10 border-2 border-gray-600"> 
+        <div class="bg-red-500 text-white p-20 m-2 rounded-lg font-bold">
+           Red Box
+        </div>
+        <div class="absolute top-10 left-10 bg-green-500 text-white p-20 m-2 rounded-lg font-bold">
+           Green Box
+        </div>
+        <div class="bg-blue-500 text-white p-20 m-2 rounded-lg font-bold">
+           Blue Box
         </div>
       </div>
+  </div>
   ```
   ![`absolute`](https://github.com/user-attachments/assets/9cd00fbc-d95a-4103-ad2c-f5db268dc943)<br>
-  As you can Observe, the `top-10` and `left-10` **Classes** are not working and the `Green Box` follows the `Normal Document_Flow`.
+  As you can Observe, the `absolute` Element i.e, **Green Box** positions itself at `top-10` and `left-10` Insets **Relative** to the `relative` Parent i.e, **Outer_Div with Gray_border**.
 - **`fixed`:** It is the **Default Position_Style** for Elements. Ths `Static_Elements` follows the `Normal Document_Flow`. We cannot apply `Inset_Classes` to Elements with `Static_Positioning`, however `Padding` & `Margins` work as expected.<br>
   `For Ex:`
   ```
   <div>
-        <h2>Static Positioning</h2>
-        <div
-          class="flex flex-row justify-center items-center p-10 border-2 border-gray-600"
-        >
-          <div class="bg-red-500 text-white p-20 m-2 rounded-lg font-bold">
-            Red Box
-          </div>
-          <div
-            class="static top-10 left-10 bg-green-500 text-white p-20 m-2 rounded-lg font-bold"
-          >
-            Green Box
-          </div>
-          <div class="bg-blue-500 text-white p-20 m-2 rounded-lg font-bold">
-            Blue Box
-          </div>
+     <h2>Static Positioning</h2>
+     <div class="flex flex-row justify-center items-center p-10 border-2 border-gray-600">
+        <div class="bg-red-500 text-white p-20 m-2 rounded-lg font-bold">
+           Red Box
+        </div>
+        <div class="static top-10 left-10 bg-green-500 text-white p-20 m-2 rounded-lg font-bold">
+           Green Box
+        </div>
+        <div class="bg-blue-500 text-white p-20 m-2 rounded-lg font-bold">
+           Blue Box
         </div>
       </div>
+  </div>
   ```
   ![`fixed`](https://github.com/user-attachments/assets/8ef395f4-cd42-4c79-847c-fc23f2c6c64d)<br>
   As you can Observe, the `top-10` and `left-10` **Classes** are not working and the `Green Box` follows the `Normal Document_Flow`.
@@ -505,23 +490,19 @@ The `Position Classes` in control **how an Element is Positioned** within the `D
   `For Ex:`
   ```
   <div>
-        <h2>Static Positioning</h2>
-        <div
-          class="flex flex-row justify-center items-center p-10 border-2 border-gray-600"
-        >
-          <div class="bg-red-500 text-white p-20 m-2 rounded-lg font-bold">
-            Red Box
-          </div>
-          <div
-            class="static top-10 left-10 bg-green-500 text-white p-20 m-2 rounded-lg font-bold"
-          >
-            Green Box
-          </div>
-          <div class="bg-blue-500 text-white p-20 m-2 rounded-lg font-bold">
-            Blue Box
-          </div>
+     <h2>Static Positioning</h2>
+     <div class="flex flex-row justify-center items-center p-10 border-2 border-gray-600">
+        <div class="bg-red-500 text-white p-20 m-2 rounded-lg font-bold">
+           Red Box
+        </div>
+        <div class="static top-10 left-10 bg-green-500 text-white p-20 m-2 rounded-lg font-bold">
+           Green Box
+        </div>
+        <div class="bg-blue-500 text-white p-20 m-2 rounded-lg font-bold">
+           Blue Box
         </div>
       </div>
+  </div>
   ```
   ![`static`](https://github.com/user-attachments/assets/746a092f-806e-438f-9e42-13cd0eab91f4)<br>
   As you can Observe, the `top-10` and `left-10` **Classes** are not working and the `Green Box` follows the `Normal Document_Flow`.
