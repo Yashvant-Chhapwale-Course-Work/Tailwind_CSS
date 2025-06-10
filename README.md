@@ -510,7 +510,8 @@ The `Position Classes` in control **how an Element is Positioned** within the `D
 4. **z-index Classes:**
 The `z-index` controls the **Stacking order of Elements** on the **Z-axis** (`front`-to-`back`). Basically, it controls which Element appears on **Top** when **Overlapping**.<br>
 - **`z-0`:** **Default Stacking_Level**, i.e, every Element on the Same Plane.
-- **`z-10`, `z-20`, `z-30` and so on . . .:** **Higher Stacking_Levels** i.e, Greater the `-suffix` Value higher the Stacking_Level. `For Ex:` Element with `z-30` overlaps Element with `z-10`. 
+- **`z-10`, `z-20`, `z-30` and so on:** **Higher Stacking_Levels** i.e, Greater the `-suffix` Value higher the Stacking_Level.<br>
+  `For Ex:` Element with `z-30` overlaps Element with `z-10`. 
 - **`z-auto`:** Uses the **Browser’s Default Stacking Configuration**.
 <br>
 
