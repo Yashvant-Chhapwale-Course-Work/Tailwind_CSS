@@ -500,9 +500,9 @@ The `Position Classes` in control **how an Element is Positioned** within the `D
       </div>
   </div>
   ```
-  `Initial Position:`
+  `Initial Position:`<br>
   ![`sticky` >> Initial Position](https://github.com/user-attachments/assets/c881e7d9-e246-43d7-9f72-1941d50dd9a6)<br>
-  `After Scrolling Down:`
+  `After Scrolling Down:`<br>
   ![`sticky` >> After Scrolling-Down](https://github.com/user-attachments/assets/33b09a2b-5815-4d16-b303-4241a1e20eb4)<br>
   As you can Observe, the `top-10` and `left-10` **Classes** are not working and the `Green Box` follows the `Normal Document_Flow`.
 <br>
