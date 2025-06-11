@@ -587,57 +587,61 @@ The `float` **Classes** are used to **`float` Elements to the Left or Right**, i
 6. **Clear Classes:**
 The `clear` **Classes** are used to **Prevent an element from Wrapping around the `Floating_Elements`**. They are used in **Conjunction** with the `float` **Classes**.
 - **`clear-left`:** **Prevents** the Elements from being **Positioned next to Elements Floating on the Left_Side**.<br>
-`For Ex:`
-```
-<div class="p-10 mx-100 border-2 border-gray-600">
-   <div class="float-left w-[200px] h-[150px] p-15 m-2 bg-blue-400 text-white text-center">
-      Float-Left
+  `For Ex:`
+  ```
+   <div class="p-10 mx-100 border-2 border-gray-600">
+      <div class="float-left w-[200px] h-[150px] p-15 m-2 bg-blue-400 text-white text-center">
+         Float-Left
+      </div>
+      <p class="clear-left margin-x-10 text-lg">
+         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis
+         dolor odio maxime quis fugiat, laboriosam iusto voluptatibus
+         incidunt corrupti modi reiciendis impedit cum dolore temporibus
+         harum. Vel voluptas numquam nostrum enim commodi quisquam! Labore
+         sit numquam et porro provident corporis, hic ullam ex quo voluptas!
+         Delectus exercitationem, deleniti reprehenderit explicabo beatae
+         dicta repellat ipsam aspernatur praesentium dignissimos deserunt
+         dolorum eligendi. Minima laborum maiores quos mollitia numquam sequi
+         cupiditate quasi provident, iste quaerat veniam quis harum porro
+         eveniet ipsam, cumque voluptatum animi neque aperiam temporibus
+         sint. Sapiente eius porro alias, dolore tenetur eum. Voluptates
+         sequi neque dolores quo ab, repellendus, voluptate magni reiciendis
+         fugiat dicta iure, provident.
+      </p>
    </div>
-   <p class="clear-left margin-x-10 text-lg">
-      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis
-      dolor odio maxime quis fugiat, laboriosam iusto voluptatibus
-      incidunt corrupti modi reiciendis impedit cum dolore temporibus
-      harum. Vel voluptas numquam nostrum enim commodi quisquam! Labore
-      sit numquam et porro provident corporis, hic ullam ex quo voluptas!
-      Delectus exercitationem, deleniti reprehenderit explicabo beatae
-      dicta repellat ipsam aspernatur praesentium dignissimos deserunt
-      dolorum eligendi. Minima laborum maiores quos mollitia numquam sequi
-      cupiditate quasi provident, iste quaerat veniam quis harum porro
-      eveniet ipsam, cumque voluptatum animi neque aperiam temporibus
-      sint. Sapiente eius porro alias, dolore tenetur eum. Voluptates
-      sequi neque dolores quo ab, repellendus, voluptate magni reiciendis
-      fugiat dicta iure, provident.
-   </p>
-</div>
-```
-![`clear-left`](https://github.com/user-attachments/assets/24adbf11-1607-46a0-96a7-56df93360271)<br>
-As Observed, the `<p> Paragraph` Element which initially wrapped around the `Float-Left` Element, now starts on the **Next_Line** after the `Float-Left` Element.
+   ```
+   ![`clear-left`](https://github.com/user-attachments/assets/24adbf11-1607-46a0-96a7-56df93360271)<br>
+   As Observed, the `<p> Paragraph` Element which initially wrapped around the `Float-Left` Element, now starts on the **Next_Line** after the `Float-Left` Element.
+  <br>
+  
 - **`clear-right`:** **Prevents** the Elements from being **Positioned next to Elements Floating on the Right_Side**.<br>
-`For Ex:`
-```
-<div class="p-10 mx-100 border-2 border-gray-600">
-   <div class="float-right w-[200px] h-[150px] p-15 m-2 bg-blue-400 text-white text-center">
-      Float-Right
+  `For Ex:`
+   ```
+   <div class="p-10 mx-100 border-2 border-gray-600">
+      <div class="float-right w-[200px] h-[150px] p-15 m-2 bg-blue-400 text-white text-center">
+         Float-Right
+      </div>
+      <p class="clear-right margin-x-10 text-lg">
+         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis
+         dolor odio maxime quis fugiat, laboriosam iusto voluptatibus
+         incidunt corrupti modi reiciendis impedit cum dolore temporibus
+         harum. Vel voluptas numquam nostrum enim commodi quisquam! Labore
+         sit numquam et porro provident corporis, hic ullam ex quo voluptas!
+         Delectus exercitationem, deleniti reprehenderit explicabo beatae
+         dicta repellat ipsam aspernatur praesentium dignissimos deserunt
+         dolorum eligendi. Minima laborum maiores quos mollitia numquam sequi
+         cupiditate quasi provident, iste quaerat veniam quis harum porro
+         eveniet ipsam, cumque voluptatum animi neque aperiam temporibus
+         sint. Sapiente eius porro alias, dolore tenetur eum. Voluptates
+         sequi neque dolores quo ab, repellendus, voluptate magni reiciendis
+         fugiat dicta iure, provident.
+      </p>
    </div>
-   <p class="clear-right margin-x-10 text-lg">
-      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis
-      dolor odio maxime quis fugiat, laboriosam iusto voluptatibus
-      incidunt corrupti modi reiciendis impedit cum dolore temporibus
-      harum. Vel voluptas numquam nostrum enim commodi quisquam! Labore
-      sit numquam et porro provident corporis, hic ullam ex quo voluptas!
-      Delectus exercitationem, deleniti reprehenderit explicabo beatae
-      dicta repellat ipsam aspernatur praesentium dignissimos deserunt
-      dolorum eligendi. Minima laborum maiores quos mollitia numquam sequi
-      cupiditate quasi provident, iste quaerat veniam quis harum porro
-      eveniet ipsam, cumque voluptatum animi neque aperiam temporibus
-      sint. Sapiente eius porro alias, dolore tenetur eum. Voluptates
-      sequi neque dolores quo ab, repellendus, voluptate magni reiciendis
-      fugiat dicta iure, provident.
-   </p>
-</div>
-```
-![`clear-right`](https://github.com/user-attachments/assets/99c56326-c8d7-4a81-b235-0a5e2f0807e7)<br>
-As Observed, the `<p> Paragraph` Element which initially wrapped around the `Float-Right` Element, now starts on the **Next_Line** after the `Float-Right` Element.
+   ```
+   ![`clear-right`](https://github.com/user-attachments/assets/99c56326-c8d7-4a81-b235-0a5e2f0807e7)<br>
+   As Observed, the `<p> Paragraph` Element which initially wrapped around the `Float-Right` Element, now starts on the **Next_Line** after the `Float-Right` Element.
+  <br>
+  
 - **`clear-both`:** **Prevents** the Element from being **Positioned next to Elements Floating on Either_Side**, effectively forcing it below all `Floating_Elements`.
 - **`clear-none`:** **Removes Clear Property** from an Element**.
 <br>
