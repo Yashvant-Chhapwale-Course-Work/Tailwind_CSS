@@ -610,7 +610,7 @@ The `clear` **Classes** are used to **Prevent an element from Wrapping around th
       </p>
    </div>
    ```
-   ![`clear-left`](https://github.com/user-attachments/assets/24adbf11-1607-46a0-96a7-56df93360271)<br>
+   ![`clear-left`](https://github.com/user-attachments/assets/65fadd20-03e8-4faa-815c-9a0803e93817)<br>
    As Observed, the `<p> Paragraph` Element which initially wrapped around the `Float-Left` Element, now starts on the **Next_Line** after the `Float-Left` Element.
   <br>
   
@@ -638,7 +638,7 @@ The `clear` **Classes** are used to **Prevent an element from Wrapping around th
       </p>
    </div>
    ```
-   ![`clear-right`](https://github.com/user-attachments/assets/99c56326-c8d7-4a81-b235-0a5e2f0807e7)<br>
+   ![`clear-right`](https://github.com/user-attachments/assets/e15c10f1-48c1-442c-b4ca-0927076e5b23)<br>
    As Observed, the `<p> Paragraph` Element which initially wrapped around the `Float-Right` Element, now starts on the **Next_Line** after the `Float-Right` Element.
   <br>
   
