@@ -677,16 +677,16 @@ The `Text-Alignment Classes` control **how `Inline_Content (like text, <a>, <p>,
 <br>
 
 ### Font Weight:
-The `Text-Alignment Classes` control **how `Inline_Content (like text, <a>, <p>, etc)` are aligned** within its **Parent Container/Element**.
-- **`font-thin`:** **Aligns Text to the `Left_Side`** within the Parent Container/Element.
-- **`font-extralight`:** **Aligns Text to the `Right_Side`** within the Parent Container/Element.
-- **`font-light`:** **Aligns Text to the `Right_Side`** within the Parent Container/Element.
-- **`font-normal`:** **Aligns Text to the `Center`** of the Parent Container/Element.
-- **`font-medium`:** **Aligns Text to the `Start` of the `Writing_Direction`**, Left in Left-To-Right & Right in Right-To-Left.
-- **`font-semibold`:** **Aligns Text to the `Right_Side`** within the Parent Container/Element.
-- **`font-bold`:** **Aligns Text to the `End` of the `Writing_Direction`**, Right in Left-To-Right & Left in Right-To-Left.
-- **`font-extrabold`:** **Aligns Text to the `Right_Side`** within the Parent Container/Element.
-- **`font-black`:** **Text is aligned with both the `Left and Right Edges`** of the Container/Element, creating a Clean `Block_of_Text`.
+The `Font-Wigth Classes` control how `Bold` or `Light` your Text appears.
+- **`font-thin`(100px):** **Aligns Text to the `Left_Side`** within the Parent Container/Element.
+- **`font-extralight`(200px):** **Aligns Text to the `Right_Side`** within the Parent Container/Element.
+- **`font-light`(300px):** **Aligns Text to the `Right_Side`** within the Parent Container/Element.
+- **`font-normal`(400px):** **Aligns Text to the `Center`** of the Parent Container/Element.
+- **`font-medium`(500px):** **Aligns Text to the `Start` of the `Writing_Direction`**, Left in Left-To-Right & Right in Right-To-Left.
+- **`font-semibold`(600px):** **Aligns Text to the `Right_Side`** within the Parent Container/Element.
+- **`font-bold`(700px):** **Aligns Text to the `End` of the `Writing_Direction`**, Right in Left-To-Right & Left in Right-To-Left.
+- **`font-extrabold`(800px):** **Aligns Text to the `Right_Side`** within the Parent Container/Element.
+- **`font-black`(900px):** **Text is aligned with both the `Left and Right Edges`** of the Container/Element, creating a Clean `Block_of_Text`.
 <br>
 <br>
 
