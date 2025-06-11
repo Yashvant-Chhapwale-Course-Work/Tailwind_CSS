@@ -666,14 +666,13 @@ The `Text-size Classes` control how **Large** or **Small** the Text appears.
 <br>
 
 ### Text Alignment:
-The `Text-Alignment Classes` control **how `Inline_Content (like text, <a>, <p>, etc)` are aligned** within its Parent Container/Element.
-- **`text-xs`:** **Extra-Small Text_Size**. Used for `Extra-Small Labels`.
-- **`text-sm`:** **Small Text_Size**. Used for `Captions`, `Secondary Text`, etc.
-- **`text-base`:** **Default Normal Text_Size**. Used as `Default Body_Text`.
-- **`text-lg`:** **Large Text_Size**. Used as `Slightly Larger Body_Text`.
-- **`text-xl`:** **Extra-Large Text_Size**. Used for `Headings or Sub-Headings`.
-- **`text-2xl`:** **Double Extra-Large Text_Size**. Used for `Headings or Sub-Headings`.
-**and so on . . .**
+The `Text-Alignment Classes` control **how `Inline_Content (like text, <a>, <p>, etc)` are aligned** within its **Parent Container/Element**.
+- **`text-left`:** **Extra-Small Text_Size**. Used for `Extra-Small Labels`.
+- **`text-right`:** **Small Text_Size**. Used for `Captions`, `Secondary Text`, etc.
+- **`text-center`:** **Default Normal Text_Size**. Used as `Default Body_Text`.
+- **`text-start`:** **Large Text_Size**. Used as `Slightly Larger Body_Text`.
+- **`text-end`:** **Extra-Large Text_Size**. Used for `Headings or Sub-Headings`.
+- **`text-justify`:** **Double Extra-Large Text_Size**. Used for `Headings or Sub-Headings`.
 <br>
 <br>
 
