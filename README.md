@@ -667,14 +667,29 @@ The `Text-size Classes` control how **Large** or **Small** the Text appears.
 
 ### Text Alignment:
 The `Text-Alignment Classes` control **how `Inline_Content (like text, <a>, <p>, etc)` are aligned** within its **Parent Container/Element**.
-- **`text-left`:** **Extra-Small Text_Size**. Used for `Extra-Small Labels`.
-- **`text-right`:** **Small Text_Size**. Used for `Captions`, `Secondary Text`, etc.
-- **`text-center`:** **Default Normal Text_Size**. Used as `Default Body_Text`.
-- **`text-start`:** **Large Text_Size**. Used as `Slightly Larger Body_Text`.
-- **`text-end`:** **Extra-Large Text_Size**. Used for `Headings or Sub-Headings`.
-- **`text-justify`:** **Double Extra-Large Text_Size**. Used for `Headings or Sub-Headings`.
+- **`text-left`:** **Aligns Text to the `Left_Side`** within the Parent Container/Element.
+- **`text-right`:** **Aligns Text to the `Right_Side`** within the Parent Container/Element.
+- **`text-center`:** **Aligns Text to the `Center`** of the Parent Container/Element.
+- **`text-start`:** **Aligns Text to the `Start` of the `Writing_Direction`**, Left in Left-To-Right & Right in Right-To-Left.
+- **`text-end`:** **Aligns Text to the `End` of the `Writing_Direction`**, Right in Left-To-Right & Left in Right-To-Left.
+- **`text-justify`:** **Text is aligned with both the `Left and Right Edges`** of the Container/Element, creating a Clean `Block_of_Text`.
 <br>
 <br>
+
+### Font Weight:
+The `Text-Alignment Classes` control **how `Inline_Content (like text, <a>, <p>, etc)` are aligned** within its **Parent Container/Element**.
+- **`font-thin`:** **Aligns Text to the `Left_Side`** within the Parent Container/Element.
+- **`font-extralight`:** **Aligns Text to the `Right_Side`** within the Parent Container/Element.
+- **`font-light`:** **Aligns Text to the `Right_Side`** within the Parent Container/Element.
+- **`font-normal`:** **Aligns Text to the `Center`** of the Parent Container/Element.
+- **`font-medium`:** **Aligns Text to the `Start` of the `Writing_Direction`**, Left in Left-To-Right & Right in Right-To-Left.
+- **`font-semibold`:** **Aligns Text to the `Right_Side`** within the Parent Container/Element.
+- **`font-bold`:** **Aligns Text to the `End` of the `Writing_Direction`**, Right in Left-To-Right & Left in Right-To-Left.
+- **`font-extrabold`:** **Aligns Text to the `Right_Side`** within the Parent Container/Element.
+- **`font-black`:** **Text is aligned with both the `Left and Right Edges`** of the Container/Element, creating a Clean `Block_of_Text`.
+<br>
+<br>
+
 
 ---
 <br>
