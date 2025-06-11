@@ -666,7 +666,7 @@ The `Text-size Classes` control how **Large** or **Small** the Text appears.
 <br>
 
 ### Text Alignment:
-The `Text-alignment Classes` control how **Large** or **Small** the Text appears.
+The `Text-Alignment Classes` control **how `Inline_Content (like text, <a>, <p>, etc)` are aligned** within its Parent Container/Element.
 - **`text-xs`:** **Extra-Small Text_Size**. Used for `Extra-Small Labels`.
 - **`text-sm`:** **Small Text_Size**. Used for `Captions`, `Secondary Text`, etc.
 - **`text-base`:** **Default Normal Text_Size**. Used as `Default Body_Text`.
