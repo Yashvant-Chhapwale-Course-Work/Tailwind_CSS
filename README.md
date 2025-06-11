@@ -42,7 +42,7 @@ This **Repository** documents my my `Notes`, `Learnings`, and `UI_Project` as I 
 | 1.  **Tailwind Installation and Setup**                                                                        | >> [` CHECK CONTENT `](#tailwind-installation-and-setup)                                      |
 | **BEGINNER**  
 | 2.  **Basic `Layout` Utility_Classes**                                                                         | >> [` CHECK CONTENT `](#basic-layout-utility_classes)                                         |
-| 3.  **Custom-Tkinter Window Geometry(Width x Height)**                                                         | >> [` CHECK CONTENT `](#adjusting-custom_tkinter_window-dimensions)                           |
+| 3.  **`Typography` Utility_Classes**                                                                           | >> [` CHECK CONTENT `](#typography-utility_classes)                                           |
 | 4.  **Creating Custom-Tkinter Window Instance (CTk( ))**                                                       | >> [` CHECK CONTENT `](#creating-custom_tkinter_window_instance-CTk)                          |
 </div>
 
@@ -649,3 +649,8 @@ The `clear` **Classes** are used to **Prevent an element from Wrapping around th
 ---
 <br>
 
+## Typography Utility_Classes
+<br>
+
+---
+<br>
