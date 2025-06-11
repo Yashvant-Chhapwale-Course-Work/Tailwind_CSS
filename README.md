@@ -643,7 +643,7 @@ The `clear` **Classes** are used to **Prevent an element from Wrapping around th
   <br>
   
 - **`clear-both`:** **Prevents** the Element from being **Positioned next to Elements Floating on Either_Side**, effectively forcing it below all `Floating_Elements`.
-- **`clear-none`:** **Removes Clear Property** from an Element**.
+- **`clear-none`:** **Removes Clear Property** from an Element.
 <br>
   
 ---
