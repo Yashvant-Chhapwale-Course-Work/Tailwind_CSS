@@ -677,19 +677,52 @@ The `Text-Alignment Classes` control **how `Inline_Content (like text, <a>, <p>,
 <br>
 
 ### Font Weight:
-The `Font-Wigth Classes` control how `Bold` or `Light` your Text appears.
-- **`font-thin`(100px):** **Aligns Text to the `Left_Side`** within the Parent Container/Element.
-- **`font-extralight`(200px):** **Aligns Text to the `Right_Side`** within the Parent Container/Element.
-- **`font-light`(300px):** **Aligns Text to the `Right_Side`** within the Parent Container/Element.
-- **`font-normal`(400px):** **Aligns Text to the `Center`** of the Parent Container/Element.
-- **`font-medium`(500px):** **Aligns Text to the `Start` of the `Writing_Direction`**, Left in Left-To-Right & Right in Right-To-Left.
-- **`font-semibold`(600px):** **Aligns Text to the `Right_Side`** within the Parent Container/Element.
-- **`font-bold`(700px):** **Aligns Text to the `End` of the `Writing_Direction`**, Right in Left-To-Right & Left in Right-To-Left.
-- **`font-extrabold`(800px):** **Aligns Text to the `Right_Side`** within the Parent Container/Element.
-- **`font-black`(900px):** **Text is aligned with both the `Left and Right Edges`** of the Container/Element, creating a Clean `Block_of_Text`.
+The `Font-Weigth Classes` control how `Bold` or `Light` your Text appears.
+- **`font-thin`(100px):** **Extremely Light** (hairline/lightest).
+- **`font-extralight`(200px):** **Extra Light**.
+- **`font-light`(300px):** **Light**.
+- **`font-normal`(400px):** **Regular (Default)**.
+- **`font-medium`(500px):** **Slightly Bold**.
+- **`font-semibold`(600px):** **Semi_Bold**.
+- **`font-bold`(700px):** **Bold**.
+- **`font-extrabold`(800px):** **Extra Bold**.
+- **`font-black`(900px):** **Ultra Bold** (heaviest).
 <br>
 <br>
 
+### Italic Style:
+The `Italic-Style Classes` are used to **Toggle** `Italic_Styling` on Text.
+- **`italic`:** Renders the text in `italic` style.
+- **`non-italic`:** Removes `italic` styling from the text.
+<br>
+<br>
+
+### Text Transform:
+The `Text-Transform Classes` applies `Case_Transformation Styles` and controls `Capitalization` of the **Text_Elements**.
+- **`uppercase`:** Transforms all Letters to `Uppercase`.
+- **`lowercase`:** Transforms all Letters to `Lowercase`.
+- **`capitalize`:** It is used to `Capitalize` the **First_Letter** of each word.
+- **`normal-case`:** It **Removes** any `Text-Transform` Styling.
+<br>
+<br>
+
+### Text Decoration:
+The `Text-Decoration Classes` are used to **Add** or **Remove** Visual_Styles like `underlines`, `strike-through`, etc. for the **Text_Elements**.
+- **`underline`:** Adds an `underline` **below** the Text.
+- **`line-through`:** Adds a `Line` through the **Middle** of Text.
+- **`overline`:** Adds a `Line` **Above** the Text.
+- **`no-underline`:** It **Removes** all `Text_decoration`.
+<br>
+<br>
+
+### Letter Spacing:
+The `Letter-Spacing Classes` are used to **Add** or **Remove** Visual_Styles like `underlines`, `strike-through`, etc. for the **Text_Elements**.
+- **`underline`:** Adds an `underline` **below** the Text.
+- **`line-through`:** Adds a `Line` through the **Middle** of Text.
+- **`overline`:** Adds a `Line` **Above** the Text.
+- **`no-underline`:** It **Removes** all `Text_decoration`.
+<br>
+<br>
 
 ---
 <br>
