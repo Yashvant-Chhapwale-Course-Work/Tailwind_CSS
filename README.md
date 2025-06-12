@@ -740,90 +740,17 @@ The `Line-Height Classes` control the `Vertical_Spacing` between **Lines** in a 
 <br>
 
 ## Element Shadows Utility_Classes
-The `Typography Classes` control the **appearance**, **alignment**, **spacing**, and **styling** of `Text` within your `UI`.
+The `Shadow Classes` are used to **apply `Box_Shadows` to Elements**, giving them **Depth** and **Elevating them Visually**.
 <br>
 
-### Text Size:
-The `Text-size Classes` control how **Large** or **Small** the Text appears.
-- **`text-xs`:** **Extra-Small Text_Size**. Used for `Extra-Small Labels`.
-- **`text-sm`:** **Small Text_Size**. Used for `Captions`, `Secondary Text`, etc.
-- **`text-base`:** **Default Normal Text_Size**. Used as `Default Body_Text`.
-- **`text-lg`:** **Large Text_Size**. Used as `Slightly Larger Body_Text`.
-- **`text-xl`:** **Extra-Large Text_Size**. Used for `Headings or Sub-Headings`.
-- **`text-2xl`:** **Double Extra-Large Text_Size**. Used for `Headings or Sub-Headings`.
-**and so on . . .**
-<br>
-<br>
-
-### Text Alignment:
-The `Text-Alignment Classes` control **how `Inline_Content (like text, <a>, <p>, etc)` are aligned** within its **Parent Container/Element**.
-- **`text-left`:** **Aligns Text to the `Left_Side`** within the Parent Container/Element.
-- **`text-right`:** **Aligns Text to the `Right_Side`** within the Parent Container/Element.
-- **`text-center`:** **Aligns Text to the `Center`** of the Parent Container/Element.
-- **`text-start`:** **Aligns Text to the `Start` of the `Writing_Direction`**, Left in Left-To-Right & Right in Right-To-Left.
-- **`text-end`:** **Aligns Text to the `End` of the `Writing_Direction`**, Right in Left-To-Right & Left in Right-To-Left.
-- **`text-justify`:** **Text is aligned with both the `Left and Right Edges`** of the Container/Element, creating a Clean `Block_of_Text`.
-<br>
-<br>
-
-### Font Weight:
-The `Font-Weigth Classes` control how `Bold` or `Light` your Text appears.
-- **`font-thin`(100px):** **Extremely Light** (hairline/lightest).
-- **`font-extralight`(200px):** **Extra Light**.
-- **`font-light`(300px):** **Light**.
-- **`font-normal`(400px):** **Regular (Default)**.
-- **`font-medium`(500px):** **Slightly Bold**.
-- **`font-semibold`(600px):** **Semi_Bold**.
-- **`font-bold`(700px):** **Bold**.
-- **`font-extrabold`(800px):** **Extra Bold**.
-- **`font-black`(900px):** **Ultra Bold** (heaviest).
-<br>
-<br>
-
-### Italic Style:
-The `Italic-Style Classes` are used to **Toggle** `Italic_Styling` on Text.
-- **`italic`:** Renders the text in `italic` style.
-- **`non-italic`:** Removes `italic` styling from the text.
-<br>
-<br>
-
-### Text Transform:
-The `Text-Transform Classes` applies `Case_Transformation Styles` and controls `Capitalization` of the **Text_Elements**.
-- **`uppercase`:** Transforms all Letters to `Uppercase`.
-- **`lowercase`:** Transforms all Letters to `Lowercase`.
-- **`capitalize`:** It is used to `Capitalize` the **First_Letter** of each word.
-- **`normal-case`:** It **Removes** any `Text-Transform` Styling.
-<br>
-<br>
-
-### Text Decoration:
-The `Text-Decoration Classes` are used to **Add** or **Remove** Visual_Styles like `underlines`, `strike-through`, etc. for the **Text_Elements**.
-- **`underline`:** Adds an `underline` **below** the Text.
-- **`line-through`:** Adds a `Line` through the **Middle** of Text.
-- **`overline`:** Adds a `Line` **Above** the Text.
-- **`no-underline`:** It **Removes** all `Text_decoration`.
-<br>
-<br>
-
-### Letter Spacing:
-The `Letter-Spacing Classes` control the **`Horizontal Space` between Characters** in a **Text_Element**. 
-- **`tracking-tighter`(-0.05em):** **Extremely Reduced** Letter_Spacing.
-- **`tracking-tight`(-0.025em):** **Slightly Reduced** Letter_Spacing.
-- **`tracking-normal`(0em):** Browser's **Default Normal** Letter_Spacing.
-- **`tracking-wide`(0.025em):** **Slightly More** Letter_Spacing.
-- **`tracking-wider`(0.05em):** Increased **Noticeable** Letter_Spacing.
-- **`tracking-widest`(0.1em):** Applies **Maximum Space** between Characters.
-<br>
-<br>
-
-### Line Height:
-The `Line-Height Classes` control the `Vertical_Spacing` between **Lines** in a **Text_Element**.
-- **`leading-none`(1):** **No Extra_Spacing** between the Lines. (**Tightest**)
-- **`leading-tight`(1.25):** **Slightly Tighter_Spacing** between the Lines.
-- **`leading-snug`(1.375):** **Slightly Looser_Spacing** between the Lines. 
-- **`leading-normal`(1.5):** Browser's **Normal** Line_Height with **Comfortable** distance. (**Default**)
-- **`leading-relaxed`(1.625):** **Very Loose_Spacing** between the Lines.
-- **`leading-loose`(2):** **Extremely Loose_Spacing** between the Lines. (**Maximum Line_Height**)
+- **`shadow`:** Applies **Default/ Base_Elevation Shadows** to the Elements.
+- **`shadow-sm`:** Applies **Small Subtle Shadows** to the Elements.
+- **`shadow-md`:** Applies **Default/ Base_Elevation Shadows** to the Elements.
+- **`shadow-lg`:** Applies **Default/ Base_Elevation Shadows** to the Elements.
+- **`shadow-xl`:** Applies **Default/ Base_Elevation Shadows** to the Elements.
+- **`shadow-2xl`:** Applies **Default/ Base_Elevation Shadows** to the Elements.
+**and so on . . .** Applies **Default/ Base_Elevation Shadows** to the Elements.
+- **`shadow-inner`:** Applies **Default/ Base_Elevation Shadows** to the Elements.
 <br>
 
 ---
