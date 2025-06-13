@@ -799,17 +799,17 @@ Each `Color_Family` consists of `Shades` ranging from `50 (Lightest)` to `950 (D
    class = "bg-{color}-{shade}"
   ```
 - Some `<HTML>` **Elements** which can utilize this property are as follows:
-  - **<div>**
-  - **<section>**
-  - **<header>**
-  - **<main>**
-  - **<footer>**
-  - **<article>**
-  - **<span>**
-  - **<p>**
-  - **<label>**
-  - **<input>**
-  - **<buttom>**, **and so on . . .**
+  - **`<div>`**
+  - **`<section>`**
+  - **`<header>`**
+  - **`<main>`**
+  - **`<footer>`**
+  - **`<article>`**
+  - **`<span>`**
+  - **`<p>`**
+  - **`<label>`**
+  - **`<input>`**
+  - **`<buttom>`**, **and so on . . .**
 - **`For Ex:`**
   ```
   <div class="bg-blue-400 p-5 rounded">
