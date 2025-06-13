@@ -769,7 +769,7 @@ The `Shadow Classes` are used to **apply `Box_Shadows` to Elements**, giving the
    ```
    <div align="center">
    
-      **OR**
+   **OR**
    </div>
 
    ```
