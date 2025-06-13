@@ -647,6 +647,14 @@ The `clear` **Classes** are used to **Prevent an element from Wrapping around th
 - **`clear-both`:** **Prevents** the Element from being **Positioned next to Elements Floating on Either_Side**, effectively forcing it below all `Floating_Elements`.
 - **`clear-none`:** **Removes Clear Property** from an Element.
 <br>
+
+6. **Divider Class:**
+The `Divider Class` is used to **Add `Borders / Dividers` between Adjacent Child_Elements inside a Container**. It is useful when you want `Internal_Dividers` **without adding borders manually** to Each Child.
+- **`divide-x-5`:** Adds `Vertical Dividers`**(Here, Weight=20px)** between `Continuous_Elements (Along X-axis)`.
+- **`divide-y-5`:** Adds `Horizontal Dividers`**(Here, Weight=20px)** between `Stacked_Elements (Along Y-axis)`.
+- **`divide-x-reverse`:** It reverses the `Side` on which `Vertical Dividers` appear when using `divide-x`. Normally, `divide-x` adds a `Left_Border` to all Elements except the First. With `divide-x-reverse`, it instead adds the `Right_Border` to all except the Last Element.
+- **`divide-y-reverse`:** It reverses the `Side` on which `Horizontal Dividers` appear when using `divide-y`. Normally, `divide-y` adds a `Top_Border` to all Elements except the First. With `divide-y-reverse`, it instead adds the `Bottom_Border` to all except the Last Element.
+<br>
   
 ---
 <br>
