@@ -780,6 +780,7 @@ The `Shadow Classes` are used to **apply `Box_Shadows` to Elements**, giving the
 
 ### Core Color_Families (Suffix):
 `Tailwind` includes **17** `Core Color_Families`
+- **Black & White:** `white`, `black`. These colors dont have any `Shade_Suffix`.
 - **Neutral & Grays:** `slate`, `gray`, `zinc`, `neutral`, `stone`.
 - **Warm Tones:** `red`, `orange`, `amber`, `yellow`, `lime`.
 - **Warm Tones:** `green`, `emerald`, `teal`, `cyan`, `sky`, `blue`, `indigo`, `violet`, `purple`, `fuchsia`, `pink`, `rose`.
@@ -789,6 +790,18 @@ The `Shadow Classes` are used to **apply `Box_Shadows` to Elements**, giving the
 ### Shades (Suffix):
 Each `Color_Family` consists of `Shades` ranging from `50 (Lightest)` to `950 (Darkest)`.
 - Shade_Suffixes: `50`, `100`, `200`,`300`, `400`, `500`, `600`, `700`, `800`, `900`, `950`.
+<br>
+<br>
+
+### Basic Utility_Class Prefixes for applying Colors:
+Following is a `Collective_List` of some **Basic** `Utility_classes`, which can be used as `Prefixes`, to apply Colors to the same `Utility_Classes`.
+- **`text-{color}-{shade}`:** Used to apply `Color_Shades` to `Text-Content`.
+- **`bg-{color}-{shade}`:** Used to apply `Background Color` to various `<HTML>` Elements.
+- **`border-{color}-{shade}`:** Used to apply `Color_Shades` to `Element-Borders`.
+- **`shadow-{color}-{shade}`:** Used to apply `Color_Shades` for `Element-Shadows`.
+- **`decoration-{color}-{shade}`:** Used to apply `Color_Shades` to `Text-Decorations` (`underline`, `line-through`, etc.)
+- **`placeholder-{color}-{shade}`:** Used to apply `Color_Shades` to `Input_Placeholders`.
+- **`divide-{color}-{shade}`:** Used to apply `Color_Shades` to `Dividing_Borders` between Childrens.
 <br>
 <br>
 
@@ -843,6 +856,17 @@ Each `Color_Family` consists of `Shades` ranging from `50 (Lightest)` to `950 (D
      <img src="https://picsum.photos/200/300" alt="" />
   </div>
   ```
+<br>
+<br>
+
+### Accent Colors:
+Following is a `Collective_List` of some **Basic** `Utility_classes`, which can be used as `Prefixes`, to apply Colors to the same `Utility_Classes`.
+- **`text-{color}-{shade}`:** Used to apply `Color_Shades` to `Text-Content`.
+- **`bg-{color}-{shade}`:** Used to apply `Background Color` to various `<HTML>` Elements.
+- **`border-{color}-{shade}`:** Used to apply `Color_Shades` to `Element-Borders`.
+- **`shadow-{color}-{shade}`:** Used to apply `Color_Shades` for `Element-Shadows`.
+- **`decoration-{color}-{shade}`:** Used to apply `Color_Shades` to `Text-Decorations` (`underline`, `line-through`, etc.)
+- **`placeholder-{color}-{shade}`:** Used to apply `Color_Shades` to `Input_Placeholders`.
 <br>
 <br>
 
