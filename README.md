@@ -775,16 +775,75 @@ The `Shadow Classes` are used to **apply `Box_Shadows` to Elements**, giving the
    ```
    {attribute_name}-{color}-{shade}
    ```
+- `Tailwind` includes `17 Core Color_Families`, each with `Shades` ranging from **50 (Lightest)** to **950 (Darkest)**.    
 <br>
 
-- **`shadow`:** Applies **Default/Base_Elevation Shadows** to the Elements.
-- **`shadow-sm`:** Applies **Small Subtle Shadows** to the Elements.
-- **`shadow-md`:** Applies **Medium Shadows** to the Elements.
-- **`shadow-lg`:** Applies **Large/Deeper Shadows** to the Elements.
-- **`shadow-xl`:** Applies **Extra-Large Shadows** to the Elements.
-- **`shadow-2xl`:** Applies **Prominent/Double Extra-Large Shadows** to the Elements.
-**and so on . . .**
-- **`shadow-inner`:** Applies **Inset_Shadows** to the Elements. The `Inset_Shadows` create the **Illusion** of a **Shadow appearing within an Element**, rather than Extending Outwards.
+### Core Color_Families (Suffix):
+`Tailwind` includes **17** `Core Color_Families`
+- **Neutral & Grays:** `slate`, `gray`, `zinc`, `neutral`, `stone`.
+- **Warm Tones:** `red`, `orange`, `amber`, `yellow`, `lime`.
+- **Warm Tones:** `green`, `emerald`, `teal`, `cyan`, `sky`, `blue`, `indigo`, `violet`, `purple`, `fuchsia`, `pink`, `rose`.
+<br>
+<br>
+
+### Shades (Suffix):
+Each `Color_Family` consists of `Shades` ranging from `50 (Lightest)` to `950 (Darkest)`.
+- Shade_Suffixes: `50`, `100`, `200`,`300`, `400`, `500`, `600`, `700`, `800`, `900`, `950`.
+<br>
+<br>
+
+### Backgorund Colors:
+`Tailwind` uses the prefix `bg-` to apply **Background_Color** to any `<HTML>` Element.
+- It uses the format:
+  ```
+   class = "bg-{color}-{shade}"
+  ```
+- Some `<HTML>` **Elements** which can utilize this property are as follows:
+  - **<div>**
+  - **<section>**
+  - **<header>**
+  - **<main>**
+  - **<footer>**
+  - **<article>**
+  - **<span>**
+  - **<p>**
+  - **<label>**
+  - **<input>**
+  - **<buttom>**, **and so on . . .**
+- **`For Ex:`**
+  ```
+  <div class="bg-blue-400 p-5 rounded">
+     <img src="https://picsum.photos/200/300" alt="" />
+  </div>
+  ```
+<br>
+<br>
+
+### Backgorund Gradient:
+`Tailwind` provides **Special** `Utility Classes` to apply `Background_Gradients` easily without writing **Custom CSS**.
+- It uses the format:
+  ```
+   class = "bg-gradient-to-DIRECTION from-{color}-{shade} to-{color}-{shade}"
+  ```
+- **`bg-gradient-to-DIRECTION`:** Enables the Background_Gradient and sets the `Direction` of the Gradient.<br>
+  The `Directions` are as follows:
+  - `bg-gradient-to-t`: Sets `direction` of **Gradient** from `Bottom → Top`.
+  - `bg-gradient-to-b`: Sets `direction` of **Gradient** from `Top → Bottom`.
+  - `bg-gradient-to-r`: Sets `direction` of **Gradient** from `Left → Right`.
+  - `bg-gradient-to-l`: Sets `direction` of **Gradient** from `Right → Left`.
+  - `bg-gradient-to-tr`: Sets `direction` of **Gradient** from `Bottom-Left → Top-Right`.
+  - `bg-gradient-to-tl`: Sets `direction` of **Gradient** from `Bottom-Right → Top-Left`.
+  - `bg-gradient-to-br`: Sets `direction` of **Gradient** from `Top-Left → Bottom-Right`.
+  - `bg-gradient-to-bl`: Sets `direction` of **Gradient** from `Top-Right → Bottom-Left`.
+- **`from-{color}-{shade}`:** Specifies the `Starting Color_Shade` for the **Gradient**.
+- **`to-{color}-{shade}`:** Specifies the `Ending Color_Shade` for the **Gradient**.
+- **`For Ex:`**
+  ```
+  <div class="bg-gradient-to-b from-blue-400 to-blue-900 p-5 rounded">
+     <img src="https://picsum.photos/200/300" alt="" />
+  </div>
+  ```
+<br>
 <br>
 
 ---
