@@ -760,7 +760,21 @@ The `Shadow Classes` are used to **apply `Box_Shadows` to Elements**, giving the
 <br>
 
 ## Tailwind Backgrounds and Colors
-The `Shadow Classes` are used to **apply `Box_Shadows` to Elements**, giving them **Depth** and **Elevating them Visually**.
+- `Tailwind_CSS` provides a powerful **Set of Utility_Classes** to handle `Text-Colors`, `Background-Colors`, `Border-Colors` and more.<br>
+- It uses a `Systematic Naming_Convention` for applying `Colors` to **Text**, **Backgrounds**, **Borders** and other elements. This convention follows the format of:
+  ```   
+  <element class=" {attribute_name}-{color}-{shade} "
+      [CONTENT]
+   </element>
+   ```
+   <div align="center">
+   
+      **OR**
+   </div>
+
+   ```
+   {attribute_name}-{color}-{shade}
+   ```
 <br>
 
 - **`shadow`:** Applies **Default/Base_Elevation Shadows** to the Elements.
