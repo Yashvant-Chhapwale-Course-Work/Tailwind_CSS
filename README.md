@@ -358,6 +358,37 @@ It is used to make an **Element's_Corners** `Rounded`.
 <br>
 <br>
 
+### Element Outline:
+The `Outline Classes` control the **Style** of an `Element's Outline` which appears when an **Element** is `Focused`.
+<br>
+
+1. **Outline Width:**
+It control how `Thick` the **Outline** can be.
+- **`outline`:** Adds a **Default(1px) Solid Outline** to the Element.
+- **`outline-none` or `border-none`:** **Removes Outline** from the Element. 
+- **`outline-1`:** Sets a **Custom Outline-Width**, using the **Tailwind Spacing_Scale**, for an Element. [**Outline=4px**]
+- **`outline-2`:** Sets a **Custom Outline-Width**, using the **Tailwind Spacing_Scale**, for an Element. [**Outline=8px**]<br>
+**and so on . . .**
+<br>
+
+2. **Outline Style:**
+It helps to Set a `Pattern`/`Design` for the **Outline**.
+- **`outline-solid`:** Default Solid Line. (────────────────)
+- **`outline-dashed`:** Dashed Line. (— — — — — — — —)
+- **`outline-dotted`:** Dotted Line. (· · · · · · · ·)
+- **`outline-double`:** Double Line. (═══════════════)
+<br>
+
+3. **Outline Offset:**
+It is used to `Add Space` between an **Element's Outline** and its **Border_Edges**.
+- **`outline-offset-0`:** **Default/No_Spacing** between the **Outline** and the **Border_Edges**.
+- **`outline-offset-1`:** Sets a **Custom Spacing** between the **Outline** and the **Border_Edges**. [**Outline-Offset=4px**]
+- **`outline-offset-2`:** Sets a **Custom Spacing** between the **Outline** and the **Border_Edges**. [**Outline-Offset=8px**]
+**and so on. . .**<br>
+![`outline-offset`](https://github.com/user-attachments/assets/803ff6e5-8753-453e-8fd8-33c42853f48e)<br>
+<br>
+<br>
+
 ### Element Box_Sizing:
 The `Box_Sizing Classes` define how the **Total Width and Height of an Element are calculated**, specifically, whether `Padding and Borders` are `Included Inside` or `Added Outside` the `Width`/`Height`.
 - **`box-border`:** It tells the **Browser** to **Include the Element's Borders and Padding** when you give it a `Height` or `Width`.<br>
