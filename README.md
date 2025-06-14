@@ -45,7 +45,7 @@ This **Repository** documents my my `Notes`, `Learnings`, and `UI_Project` as I 
 | 3.  **`Typography` Utility_Classes**                                                                           | >> [` CHECK CONTENT `](#typography-utility_classes)                                           |
 | 4.  **Element `Shadows` Utility_Classes**                                                                      | >> [` CHECK CONTENT `](#element-shadows-utility_classes)                                      |
 | 5.  **Tailwind `Backgrounds` and `Colors`**                                                                    | >> [` CHECK CONTENT `](#tailwind-backgrounds-and-colors)                                      |
-| 6.  **Advanced `Layout` Utility_Classes: [`flex`](#), [`grid`]()**                                             | >> [` CHECK CONTENT `](#advanced-layout-utility_classes)                                      |
+| 6.  **Advanced `Layout` Utility_Classes: [`flex`](#flexbox), [`grid`](#grid)**                                 | >> [` CHECK CONTENT `](#advanced-layout-utility_classes)                                      |
 
 </div   
 
