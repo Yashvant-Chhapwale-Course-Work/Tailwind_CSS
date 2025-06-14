@@ -903,7 +903,7 @@ class = "caret-{color}-{shade}"
 ```
 <div>
    <img src="https://github.com/user-attachments/assets/7bd5de12-8fb5-4d50-a345-a97051598e9e" alt="Empty Input" width="200px" height="65px">
-   <img src="https://github.com/user-attachments/assets/e288653f-ebd0-455f-b14f-628d3e8475da" alt="Blinking_Cursor Input" width="200px" height="60px">
+   <img src="https://github.com/user-attachments/assets/e288653f-ebd0-455f-b14f-628d3e8475da" alt="Blinking_Cursor Input" width="200px" height="65px">
 </div>
 <br>
 <br>
