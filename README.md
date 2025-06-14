@@ -881,7 +881,7 @@ class = "accent-{color}-{shade}"
   Tick It
 </label>
 ```
-![`unchecked` Checkbox](https://github.com/user-attachments/assets/df6bc845-88ea-4cdd-a3e7-429661d7f1db)
+![`unchecked` Checkbox](https://github.com/user-attachments/assets/a7742cce-0a35-4142-a45f-13e27a74b247)
 ![`checked` Checkbox](https://github.com/user-attachments/assets/e97e1a30-cdda-46f8-b551-0a9dfcfdbfe2)<br>
 <br>
 <br>
