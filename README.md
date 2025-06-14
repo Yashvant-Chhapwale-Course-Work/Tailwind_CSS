@@ -898,7 +898,10 @@ class = "caret-{color}-{shade}"
 - **`For Ex:`**
 ```
 <div class="text-center">
-   <textarea class="caret-pink-500"></textarea>
+   <textarea
+   class="caret-pink-500 placeholder-pink-500 w-full h-full"
+   placeholder="Enter Your Text Here"
+   ></textarea>
 </div>
 ```
 <div>
@@ -906,6 +909,24 @@ class = "caret-{color}-{shade}"
    <img src="https://github.com/user-attachments/assets/e288653f-ebd0-455f-b14f-628d3e8475da" alt="Blinking_Cursor Input" width="200px" height="65px">
 </div>
 <br>
+<br>
+
+### Outline Color:
+The `outline-color` property defines the **Color** of the `Outline` drawn around an **Element** (Ex: `<input/>`, `textarea>`, etc) when it is `Focused`.
+- It uses the format:
+```
+class = "outline-{color}-{shade}"
+```
+- **`For Ex:`**
+```
+<div class="text-center">
+   <textarea
+   class="outline-pink-500 caret-pink-500 placeholder-pink-500 w-full h-full"
+   placeholder="Enter Your Text Here"
+   ></textarea>
+</div>
+```
+![`outline-color`](https://github.com/user-attachments/assets/1824d1fe-0543-4a41-8603-6209acafb9e8)<br>
 <br>
 
 ---
