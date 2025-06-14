@@ -45,6 +45,7 @@ This **Repository** documents my my `Notes`, `Learnings`, and `UI_Project` as I 
 | 3.  **`Typography` Utility_Classes**                                                                           | >> [` CHECK CONTENT `](#typography-utility_classes)                                           |
 | 4.  **Element `Shadows` Utility_Classes**                                                                      | >> [` CHECK CONTENT `](#element-shadows-utility_classes)                                      |
 | 5.  **Tailwind `Backgrounds` and `Colors`**                                                                    | >> [` CHECK CONTENT `](#tailwind-backgrounds-and-colors)                                      |
+| 6.  **Advanced `Layout` Utility_Classes**                                                                      | >> [` CHECK CONTENT `](#advanced-layout-utility_classes)                                      |
 
 </div   
 
@@ -958,6 +959,20 @@ class = "outline-{color}-{shade}"
 </div>
 ```
 ![`outline-color`](https://github.com/user-attachments/assets/1824d1fe-0543-4a41-8603-6209acafb9e8)<br>
+<br>
+
+---
+<br>
+
+## Advanced Layout Utility_Classes
+The `Layout Classes` define how elements are **displayed**, how they **take up space**, and how they are **positioned** within the `Document Flow (DOM -- Document Object Model)`.
+<br>
+
+### Tailwind Spacing_Scale:
+- Before diving into the `Layout Utility_Classes`, it's important to First understand the underlying **Measurement Scale** i.e, `Tailwind Spacing_Scale`.
+- The `Tailwind Spacing_Scale` provides a **Consistent Set of Spacing Values** used across various **Layout Utility_Classes**.
+- These values are added as `-suffix` to the `Layout Utility_Classes` for defining the **Volume** to be applied.
+<br>
 <br>
 
 ---
