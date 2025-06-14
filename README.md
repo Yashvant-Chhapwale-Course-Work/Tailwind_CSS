@@ -787,7 +787,7 @@ The `Shadow Classes` are used to **apply `Box_Shadows` to Elements**, giving the
 - `Tailwind` includes `17 Core Color_Families`, each with `Shades` ranging from **50 (Lightest)** to **950 (Darkest)**.    
 <br>
 
-### Core Color_Families (Suffix):
+### Core Color_Families ({color} Suffix):
 `Tailwind` includes **17** `Core Color_Families`
 - **Black & White:** `white`, `black`. These colors dont have any `Shade_Suffix`.
 - **Neutral & Grays:** `slate`, `gray`, `zinc`, `neutral`, `stone`.
@@ -796,13 +796,13 @@ The `Shadow Classes` are used to **apply `Box_Shadows` to Elements**, giving the
 <br>
 <br>
 
-### Shades (Suffix):
+### Shades ({shade} Suffix):
 Each `Color_Family` consists of `Shades` ranging from `50 (Lightest)` to `950 (Darkest)`.
 - Shade_Suffixes: `50`, `100`, `200`,`300`, `400`, `500`, `600`, `700`, `800`, `900`, `950`.
 <br>
 <br>
 
-### Basic Utility_Class Prefixes for applying Colors:
+### Basic Utility_Class Prefixes {Attributes} for applying Colors:
 Following is a `Collective_List` of some **Basic** `Utility_classes`, which can be used as `Prefixes`, to apply Colors to the same `Utility_Classes`.
 - **`text-{color}-{shade}`:** Used to apply `Color_Shades` to `Text-Content`.
 - **`bg-{color}-{shade}`:** Used to apply `Background Color` to various `<HTML>` Elements.
@@ -884,6 +884,26 @@ class = "accent-{color}-{shade}"
 <div>
    <img src="https://github.com/user-attachments/assets/5fd26542-5dd2-45ac-9c67-565793b467e1" alt="Unchecked Checkbox" width="150px" height="50px">
    <img src="https://github.com/user-attachments/assets/e97e1a30-cdda-46f8-b551-0a9dfcfdbfe2" alt="Checked Checkbox" width="150px" height="50px">
+</div>
+<br>
+<br>
+
+### Caret Color:
+The `Caret` is the `Blinking_Cursor`/`Input_Cursor` that appears inside Editable Fields (like `<input`, `<textarea>`, etc).<br>
+`Tailwind` allows you to **Customize** the **Color** of this `Blinking_Cursor` by utilizing the `caret` Class.
+- It uses the format:
+```
+class = "caret-{color}-{shade}"
+```
+- **`For Ex:`**
+```
+<div class="text-center">
+   <textarea class="caret-pink-500"></textarea>
+</div>
+```
+<div>
+   <img src="https://github.com/user-attachments/assets/7bd5de12-8fb5-4d50-a345-a97051598e9e" alt="Empty Input" width="200px" height="65px">
+   <img src="https://github.com/user-attachments/assets/e288653f-ebd0-455f-b14f-628d3e8475da" alt="Blinking_Cursor Input" width="200px" height="60px">
 </div>
 <br>
 <br>
