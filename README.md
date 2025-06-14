@@ -869,13 +869,20 @@ Following is a `Collective_List` of some **Basic** `Utility_classes`, which can 
 <br>
 
 ### Accent Colors:
-Following is a `Collective_List` of some **Basic** `Utility_classes`, which can be used as `Prefixes`, to apply Colors to the same `Utility_Classes`.
-- **`text-{color}-{shade}`:** Used to apply `Color_Shades` to `Text-Content`.
-- **`bg-{color}-{shade}`:** Used to apply `Background Color` to various `<HTML>` Elements.
-- **`border-{color}-{shade}`:** Used to apply `Color_Shades` to `Element-Borders`.
-- **`shadow-{color}-{shade}`:** Used to apply `Color_Shades` for `Element-Shadows`.
-- **`decoration-{color}-{shade}`:** Used to apply `Color_Shades` to `Text-Decorations` (`underline`, `line-through`, etc.)
-- **`placeholder-{color}-{shade}`:** Used to apply `Color_Shades` to `Input_Placeholders`.
+The `Accent Color` **Utility** is used to style the **Color** of `Form_Elements` like: `Checkboxes` (`<input type="checkbox"/>`), `Radio` Buttons (`<input type="radio"/>`), `Range` Inputs (`<input type="range"/>`), `Progress` Bar (`<progress>`), etc.
+- It follows the format:
+```
+class = "accent-{color}-{shade}"
+```
+- `For Ex:`
+```
+<label class="text-pink-500 font-semibold text-center">
+  <input class="accent-pink-500" type="checkbox" checked />
+  Tick It
+</label>
+```
+![`unchecked` Checkbox](https://github.com/user-attachments/assets/df6bc845-88ea-4cdd-a3e7-429661d7f1db)
+![`checked` Checkbox](https://github.com/user-attachments/assets/e97e1a30-cdda-46f8-b551-0a9dfcfdbfe2)<br>
 <br>
 <br>
 
