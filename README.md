@@ -882,8 +882,8 @@ class = "accent-{color}-{shade}"
 </label>
 ```
 <div>
-   <img src="https://github.com/user-attachments/assets/5fd26542-5dd2-45ac-9c67-565793b467e1" alt="Unchecked Checkbox" width="250px" height="200px">
-   <img src="https://github.com/user-attachments/assets/e97e1a30-cdda-46f8-b551-0a9dfcfdbfe2" alt="Checked Checkbox" width="250px" height="200px">
+   <img src="https://github.com/user-attachments/assets/5fd26542-5dd2-45ac-9c67-565793b467e1" alt="Unchecked Checkbox" width="100px" height="35px">
+   <img src="https://github.com/user-attachments/assets/e97e1a30-cdda-46f8-b551-0a9dfcfdbfe2" alt="Checked Checkbox" width="100px" height="35px">
 </div>
 <br>
 <br>
