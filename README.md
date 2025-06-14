@@ -965,13 +965,13 @@ class = "outline-{color}-{shade}"
 <br>
 
 ## Advanced Layout Utility_Classes
-The `Layout Classes` define how elements are **displayed**, how they **take up space**, and how they are **positioned** within the `Document Flow (DOM -- Document Object Model)`.
+`Tailwind_CSS` offers a **Powerful Set of `Advanced Layout_Classes`** that help you to Build `Responsive`, `Flexible`, and `Dynamic` **UI_Structures**.<br>
+These **Classes** extend the **Core Layout_System** using Utilities for `flexbox`, `grid`, etc, enabling you to design **Complex_Layouts** with **Minimal Effort**.
 <br>
 
-### Tailwind Spacing_Scale:
-- Before diving into the `Layout Utility_Classes`, it's important to First understand the underlying **Measurement Scale** i.e, `Tailwind Spacing_Scale`.
-- The `Tailwind Spacing_Scale` provides a **Consistent Set of Spacing Values** used across various **Layout Utility_Classes**.
-- These values are added as `-suffix` to the `Layout Utility_Classes` for defining the **Volume** to be applied.
+### Flexbox:
+ `Flexbox` is a **Powerful `1-dimensional` Layout_System** that allows you to create **Complex** and **Responsive** Layouts either `row-wise (Horizontal)` or `column-wise (Vertical)`. 
+- 
 <br>
 <br>
 
