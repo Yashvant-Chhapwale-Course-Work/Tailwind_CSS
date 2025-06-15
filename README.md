@@ -1123,8 +1123,6 @@ It lets you **Control** how many `columns` or `rows` a **Grid_Item** should cove
   </div>
   ```
   ![`row-span-<number>`](https://github.com/user-attachments/assets/c4e6bd3f-0997-4a68-b491-7036114adb8d)<br>  
-<br>
-
 - **`col-span-<number-of-rows>`:** Specifies how many `columns` a **Grid_Item** should **Span** across.<br>
   **`For Ex:`**
   ```
@@ -1138,7 +1136,6 @@ It lets you **Control** how many `columns` or `rows` a **Grid_Item** should cove
   </div>
   ```
   ![`col-span-number`](https://github.com/user-attachments/assets/761a62de-6fc6-4287-982b-bd59abc532e2)<br>  
-<br>
 <br>
 <br>
 
