@@ -1078,15 +1078,39 @@ The `flex-basis` property sets the `Initial_Size` of **Flex_Items** before the r
 
 1. **Grid Direction:**
 It **defines** the `Direction` in which **Flex_Items** are placed inside a `Flex_Container`.
-- **`flex-row` (Default):** Items are placed `Horizontally` from `Left-To-Right (LTR)`. It is the `Default_Direction` followed by **Flex_Items**.
-- **`flex-row-reverse`:** It **reverses** the `Order` of Items placed `Horizontally` i.e, makes it `Right-To-Left (RTL)`.
-- **`flex-col`:** Items are stacked `Vertically` from `Top-To-Bottom (TTB)`.
-- **`flex-col-reverse`:**  It **reverses** the `Order` of Items stacked `Vertically` i.e, makes it `Bottom-To-Top (BTT)`.
+- **`grid-flow-row` (Default):** By `Default`, it **places** items `Row-by-Row`.
+- **`grid-flow-row-dense`:** **Packs** Items Tightly in `Row` direction.<br>
+  **`For Ex:`**
+  ```
+  <div class="grid grid-rows-3 grid-flow-row grid-cols-3 gap-5 mx-5 py-10 justify-center text-center">
+     <div class="bg-purple-500 text-white p-10">01</div>
+     <div class="bg-blue-400 text-white p-10">02</div>
+     <div class="bg-purple-500 text-white p-10">03</div>
+     <div class="bg-blue-400 text-white p-10">04</div>
+     <div class="bg-purple-500 text-white p-10">05</div>
+     <div class="bg-blue-400 text-white p-10">06</div>
+  </div>
+  ```
+  ![`grid-flow-row`](https://github.com/user-attachments/assets/efcb09a9-f7b9-4caf-8872-d3c81682d62d)<br>  
+- **`grid-flow-col`:** It **places** items `Column-by-Column`.
+- **`grid-flow-col-dense`:**  **Packs** Items Tightly in `Column` direction.<br>
+  **`For Ex:`**
+  ```
+  <div class="grid grid-rows-3 grid-flow-col grid-cols-3 gap-5 mx-5 py-10 justify-center text-center">
+     <div class="bg-purple-500 text-white p-10">01</div>
+     <div class="bg-blue-400 text-white p-10">02</div>
+     <div class="bg-purple-500 text-white p-10">03</div>
+     <div class="bg-blue-400 text-white p-10">04</div>
+     <div class="bg-purple-500 text-white p-10">05</div>
+     <div class="bg-blue-400 text-white p-10">06</div>
+  </div>
+  ```
+  ![`grid-flow-col`](https://github.com/user-attachments/assets/7172bc99-f6ec-457d-bbbc-1e01dd5e992d)<br>  
 <br>
 
 2. **Flex Wrap:**
 It **Controls** whether **Flex_Items** should Stay in a **`Single_Line` or `Wrap` onto `Multiple_Lines`** when there isn't enough space in the `Flex_Container`.
-- **`flex-nowrap` (Default):** By `Default`, the Items `Stay on One_Line` and may **Shrink**.
+- **`flex-nowrap` (Default):** 
 - **`flex-wrap`:** Items `Wrap` to the **Next_Line** if needed.
 - **`flex-wrap-reverse`:** It **Reverses** the `Order` in which **Flex_Items** `Wrap` to the **Next_Line**, i.e from `Bottom-To-Top` or `Right-To-Left`.
 <br>
