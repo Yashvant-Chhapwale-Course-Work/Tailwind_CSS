@@ -1006,7 +1006,38 @@ It **Controls** how a **Flex_Item** behaves when there is **Extra or Insufficien
 ![`grow`>>Laptop](https://github.com/user-attachments/assets/69742b0e-79a9-42f8-bc9b-4d74b1f8d775)<br>
 ![`grow`>>Mobile(L)](https://github.com/user-attachments/assets/85ca03b9-db44-4d37-b2b9-a048ef5cac3d)<br>
 As Observed, the **Flex_Items** `grow` and occupy **Space** proportional to their `Growth_Factor`.
-- s
+- **`shrink`:** Allows the Item to `shrink` if required.
+- **`shrink-0`:** It Prevents the Item from `shrinking`.
+- **`shrink-<number>`:** It helps **Flex_Items** to `shrink` **Proportionally** based on their `Shrink_Factor`.<br>
+**`For Ex:`**
+ ```
+ <div class="flex gap-5 mx-5 py-10 justify-center text-center">
+    <div class="w-50 h-20 shrink-0 bg-purple-500 text-white">01</div>
+    <div class="w-50 h-20 shrink-7 bg-blue-400 text-white">02</div>
+    <div class="w-50 h-20 shrink-0 bg-purple-500 text-white">03</div>
+ </div>
+```
+![`shrink`>>Laptop](https://github.com/user-attachments/assets/d85547a4-87d0-4fa3-856e-4ebd49c350a1)<br>
+![`shrink`>>Mobile(L)](https://github.com/user-attachments/assets/11c2ddb7-14a2-4b0c-8944-93b760c25671)<br>
+As Observed, the **Flex_Items** `shrink` and occupy **Space** proportional to their `Shrink_Factor`. Also, `Note` that the **Flex_Items** with property `shrink-0` do not `shrink` at all.
+<br>
+
+4. **Flex Grow/Shrink (`Flex_Item Property`):**
+It **Controls** how a **Flex_Item** behaves when there is **Extra or Insufficient Space** in a `Flex_Container`. It allows the **Flex_Items** to `grow` or `shrink` to **Fill** or **Adjust** in the available **Space**.
+- **`grow`:** Allows the Item to `grow` to fill the **Space**.
+- **`grow-0`:** It Prevents the Item from `growing`.
+- **`grow-<number>`:** It helps **Flex_Items** to `grow` **Proportionally** based on their `Growth_Factor`.<br>
+**`For Ex:`**
+ ```
+ <div class="flex gap-5 mx-5 py-10 text-center">
+    <div class="size-14 grow-3 bg-purple-500 text-white">01</div>
+    <div class="size-14 grow-7 bg-blue-400 text-white">02</div>
+    <div class="size-14 grow-3 bg-purple-500 text-white">03</div>
+ </div>
+```
+![`grow`>>Laptop](https://github.com/user-attachments/assets/69742b0e-79a9-42f8-bc9b-4d74b1f8d775)<br>
+![`grow`>>Mobile(L)](https://github.com/user-attachments/assets/85ca03b9-db44-4d37-b2b9-a048ef5cac3d)<br>
+As Observed, the **Flex_Items** `grow` and occupy **Space** proportional to their `Growth_Factor`.
 <br>
 
 ---
