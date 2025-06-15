@@ -1165,6 +1165,8 @@ It lets you **Control** how many `columns` or `rows` a **Grid_Item** should cove
 It **defines** the `Direction` in which **Flex_Items** are placed inside a `Flex_Container`.
 - **`grid-flow-row`:** It **places** items `Row-by-Row`.
 - **`grid-flow-row-dense`:** **Packs** Items Tightly in `Row` direction.<br>
+<br>
+<br>
 
 ---
 <br>
