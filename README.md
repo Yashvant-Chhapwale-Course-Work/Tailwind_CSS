@@ -1006,7 +1006,7 @@ It **Controls** how a **Flex_Item** behaves when there is **Extra or Insufficien
 ![`grow`>>Laptop](https://github.com/user-attachments/assets/69742b0e-79a9-42f8-bc9b-4d74b1f8d775)<br>
 ![`grow`>>Mobile(L)](https://github.com/user-attachments/assets/85ca03b9-db44-4d37-b2b9-a048ef5cac3d)<br>
 As Observed, the **Flex_Items** `grow` and occupy **Space** proportional to their `Growth_Factor`.
--
+- s
 <br>
 
 ---
