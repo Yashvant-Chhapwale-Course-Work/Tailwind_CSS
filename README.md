@@ -1139,5 +1139,32 @@ It lets you **Control** how many `columns` or `rows` a **Grid_Item** should cove
 <br>
 <br>
 
+### Flex-&-Grid_Items Common Utilities:
+`Grid` is a **Powerful `2-dimensional` Layout_System** that allows you to create **Complex** and **Responsive** Layouts  using `Rows` and `Columns`. 
+- **`grid`:** Enables `Grid` **Layout** for an Element.
+- **`inline-grid`:** It makes the `Grid_Container` **behave** like an `Inline_Element`.
+- **`grid-rows-<number>`:** Defines a given `<number>` of `Explicit Rows` within a `Grid_Container`.
+- **`grid-cols-<number>`:** Defines a given `<number>` of `Equal-Width Columns`.<br>
+  **`For Ex:`**
+  ```
+  <div class="grid grid-rows-2 grid-cols-3 gap-5 mx-5 py-10 justify-center text-center">
+     <div class="bg-purple-500 text-white p-10">01</div>
+     <div class="bg-blue-400 text-white p-10">02</div>
+     <div class="bg-purple-500 text-white p-10">03</div>
+     <div class="bg-blue-400 text-white p-10">04</div>
+     <div class="bg-purple-500 text-white p-10">05</div>
+     <div class="bg-blue-400 text-white p-10">06</div>
+  </div>
+  ```
+  ![`grid` Layout](https://github.com/user-attachments/assets/a9675254-b4c6-4e02-b049-9c7f31fb8e17)<br>
+  The above `Snippet` clearly demonstrates how `Grid_Layout` works.<br>
+  `Note` that the **Grid_Items** automatically `Stretch to Fill the Entire Grid_Cell`, resulting in a **Clean** and **Uniform** Layout without the need for **Specifying** `Width` and `Height`, unlike `Flexbox`.<br>
+<br>
+
+1. **Grid Direction:**
+It **defines** the `Direction` in which **Flex_Items** are placed inside a `Flex_Container`.
+- **`grid-flow-row`:** It **places** items `Row-by-Row`.
+- **`grid-flow-row-dense`:** **Packs** Items Tightly in `Row` direction.<br>
+
 ---
 <br>
