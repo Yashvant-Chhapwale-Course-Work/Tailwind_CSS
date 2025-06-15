@@ -903,9 +903,9 @@ Following is a `Collective_List` of some **Basic** `Utility_classes`, which can 
 ### Accent Colors:
 The `Accent Color` **Utility** is used to style the **Color** of `Form_Elements` like: `Checkboxes` (`<input type="checkbox"/>`), `Radio` Buttons (`<input type="radio"/>`), `Range` Inputs (`<input type="range"/>`), `Progress` Bar (`<progress>`), etc.
 - It follows the format:
-```
-class = "accent-{color}-{shade}"
-```
+  ```
+  class = "accent-{color}-{shade}"
+  ```
 - `For Ex:`
    ```
    <label class="text-pink-500 font-semibold text-center">
@@ -924,9 +924,9 @@ class = "accent-{color}-{shade}"
 The `Caret` is the `Blinking_Cursor`/`Input_Cursor` that appears inside Editable Fields (like `<input`, `<textarea>`, etc).<br>
 `Tailwind` allows you to **Customize** the **Color** of this `Blinking_Cursor` by utilizing the `caret` Class.
 - It uses the format:
-```
-class = "caret-{color}-{shade}"
-```
+  ```
+  class = "caret-{color}-{shade}"
+  ```
 - **`For Ex:`**
    ```
    <div class="text-center">
