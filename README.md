@@ -1023,10 +1023,14 @@ It **Controls** how a **Flex_Item** behaves when there is **Extra or Insufficien
 <br>
 
 4. **Flex Basis (`Flex_Item Property`):**
-It **Controls** how a **Flex_Item** behaves when there is **Extra or Insufficient Space** in a `Flex_Container`. It allows the **Flex_Items** to `grow` or `shrink` to **Fill** or **Adjust** in the available **Space**.
-- **`grow`:** Allows the Item to `grow` to fill the **Space**.
-- **`grow-0`:** It Prevents the Item from `growing`.
-- **`grow-<number>`:** It helps **Flex_Items** to `grow` **Proportionally** based on their `Growth_Factor`.<br>
+The `flex-basis` property sets the `Initial_Size` of **Flex_Items** before the remaining **Space** is distributed. 
+- **`basis-<number>`:** Allows the Item to `grow` to fill the **Space**.
+- **`basis-xs`:** It Prevents the Item from `growing`.
+- **`basis-sm`:**
+- **`basis-md`:**
+- **`basis-lg`:**
+- **`basis-xl`:
+- **`basis-2xl` and so on:**<br>
   **`For Ex:`**
   ```
   <div class="flex gap-5 mx-5 py-10 text-center">
