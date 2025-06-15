@@ -972,7 +972,7 @@ These **Classes** extend the **Core Layout_System** using Utilities for `flexbox
 
 ### Flexbox:
 `Flexbox` is a **Powerful `1-dimensional` Layout_System** that allows you to create **Complex** and **Responsive** Layouts either `row-wise (Horizontal)` or `column-wise (Vertical)`. 
-- **`flex`:** Enables `Flexbox` on an Element.
+- **`flex`:** Enables `Flexbox` **Layout** for an Element.
 - **`inline-flex`:** Makes the **Element** `Flex` as well as `Inline`.
 <br>
 
@@ -1055,9 +1055,10 @@ The `flex-basis` property sets the `Initial_Size` of **Flex_Items** before the r
 <br>
 
 ### Grid:
-`Grid` is a **Powerful `2-dimensional` Layout_System** that allows you to create **Complex** and **Responsive** Layouts either `row-wise (Horizontal)` or `column-wise (Vertical)`. 
-- **`flex`:** Enables `Flexbox` on an Element.
-- **`inline-flex`:** Makes the **Element** `Flex` as well as `Inline`.
+`Grid` is a **Powerful `2-dimensional` Layout_System** that allows you to create **Complex** and **Responsive** Layouts  using `Rows` and `Columns`. 
+- **`grid`:** Enables `Grid` **Layout** for an Element.
+- **`inline-grid`:** It makes the `Grid_Container` **behave** like an `Inline_Element`.
+- **`grid-rows-3`:** 
 <br>
 
 1. **Grid Direction:**
