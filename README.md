@@ -1078,7 +1078,7 @@ The `flex-basis` property sets the `Initial_Size` of **Flex_Items** before the r
 
 1. **Grid Direction:**
 It **defines** the `Direction` in which **Flex_Items** are placed inside a `Flex_Container`.
-- **`grid-flow-row` (Default):** By `Default`, it **places** items `Row-by-Row`.
+- **`grid-flow-row`:** It **places** items `Row-by-Row`.
 - **`grid-flow-row-dense`:** **Packs** Items Tightly in `Row` direction.<br>
   **`For Ex:`**
   ```
