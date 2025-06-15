@@ -45,7 +45,7 @@ This **Repository** documents my my `Notes`, `Learnings`, and `UI_Project` as I 
 | 3.  **`Typography` Utility_Classes**                                                                           | >> [` CHECK CONTENT `](#typography-utility_classes)                                           |
 | 4.  **Element `Shadows` Utility_Classes**                                                                      | >> [` CHECK CONTENT `](#element-shadows-utility_classes)                                      |
 | 5.  **Tailwind `Backgrounds` and `Colors`**                                                                    | >> [` CHECK CONTENT `](#tailwind-backgrounds-and-colors)                                      |
-| 6.  **Advanced `Layout` Utility_Classes: [`flex`](#flexbox), [`grid`](#grid)**                                 | >> [` CHECK CONTENT `](#advanced-layout-utility_classes)                                      |
+| 6.  **Advanced `Layout` Utility_Classes: [`flex`](#flexbox-layout), [`grid`](#grid-layout)**                   | >> [` CHECK CONTENT `](#advanced-layout-utility_classes)                                      |
 
 </div   
 
@@ -970,7 +970,7 @@ These **Classes** extend the **Core Layout_System** using Utilities for `flexbox
 <br>
 <br>
 
-### Flexbox:
+### Flexbox Layout:
 `Flexbox` is a **Powerful `1-dimensional` Layout_System** that allows you to create **Complex** and **Responsive** Layouts either `row-wise (Horizontal)` or `column-wise (Vertical)`. 
 - **`flex`:** Enables `Flexbox` **Layout** for an Element.
 - **`inline-flex`:** Makes the **Element** `Flex` as well as `Inline`.
@@ -1054,7 +1054,7 @@ The `flex-basis` property sets the `Initial_Size` of **Flex_Items** before the r
 <br>
 <br>
 
-### Grid:
+### Grid Layout:
 `Grid` is a **Powerful `2-dimensional` Layout_System** that allows you to create **Complex** and **Responsive** Layouts  using `Rows` and `Columns`. 
 - **`grid`:** Enables `Grid` **Layout** for an Element.
 - **`inline-grid`:** It makes the `Grid_Container` **behave** like an `Inline_Element`.
