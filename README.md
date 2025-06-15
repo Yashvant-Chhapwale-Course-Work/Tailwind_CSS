@@ -1024,7 +1024,7 @@ It **Controls** how a **Flex_Item** behaves when there is **Extra or Insufficien
 
 4. **Flex Basis (`Flex_Item Property`):**
 The `flex-basis` property sets the `Initial_Size` of **Flex_Items** before the remaining **Space** is distributed. 
-- **`basis-<number>`:** It **Sets the `Initial Size` of Flex_Items** based on the `Tailwind Spacing_Scale`.
+- **`basis-<number>`:** It **Sets the `Initial Size` of Flex_Items** based on the `Tailwind Spacing_Scale`.<br>
   **`For Ex:`**
   ```
   <div class="flex gap-5 mx-5 py-10 text-center">
