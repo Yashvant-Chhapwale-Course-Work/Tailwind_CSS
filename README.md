@@ -1108,11 +1108,36 @@ It **defines** the `Direction` in which **Flex_Items** are placed inside a `Flex
   ![`grid-flow-col`](https://github.com/user-attachments/assets/7172bc99-f6ec-457d-bbbc-1e01dd5e992d)<br>  
 <br>
 
-2. **Flex Wrap:**
-It **Controls** whether **Flex_Items** should Stay in a **`Single_Line` or `Wrap` onto `Multiple_Lines`** when there isn't enough space in the `Flex_Container`.
-- **`flex-nowrap` (Default):** 
-- **`flex-wrap`:** Items `Wrap` to the **Next_Line** if needed.
-- **`flex-wrap-reverse`:** It **Reverses** the `Order` in which **Flex_Items** `Wrap` to the **Next_Line**, i.e from `Bottom-To-Top` or `Right-To-Left`.
+2. **Grid_Item Span (`Grid_Item Property`):**
+It lets you **Control** how many `columns` or `rows` a **Grid_Item** should cover, giving you `precise control` over the **Layout**.
+- **`row-span-<number-of-rows>`:** Specifies how many `rows` a **Grid_Item** should **Span** across.<br>
+  **`For Ex:`**
+  ```
+  <div class="grid grid-rows-3 grid-flow-col grid-cols-3 gap-5 mx-5 py-10 justify-center text-center">
+     <div class="row-span-2 bg-purple-500 text-white p-10">01</div>
+      <div class="bg-blue-400 text-white p-10">02</div>
+      <div class="bg-purple-500 text-white p-10">03</div>
+      <div class="row-span-2 bg-blue-400 text-white p-10">04</div>
+      <div class="row-span-2 bg-purple-500 text-white p-10">05</div>
+      <div class="bg-blue-400 text-white p-10">06</div>
+  </div>
+  ```
+  ![`row-span-<number>`](https://github.com/user-attachments/assets/c4e6bd3f-0997-4a68-b491-7036114adb8d)<br>  
+<br>
+- **`col-span-<number-of-rows>`:** Specifies how many `columns` a **Grid_Item** should **Span** across.<br>
+  **`For Ex:`**
+  ```
+  <div class="grid grid-rows-3 grid-flow-row grid-cols-3 gap-5 mx-5 py-10 justify-center text-center">
+     <div class="col-span-2 bg-purple-500 text-white p-10">01</div>
+      <div class="bg-blue-400 text-white p-10">02</div>
+      <div class="bg-purple-500 text-white p-10">03</div>
+      <div class="col-span-2 bg-blue-400 text-white p-10">04</div>
+      <div class="col-span-2 bg-purple-500 text-white p-10">05</div>
+      <div class="bg-blue-400 text-white p-10">06</div>
+  </div>
+  ```
+  ![`col-span-number`](https://github.com/user-attachments/assets/761a62de-6fc6-4287-982b-bd59abc532e2)<br>  
+<br>
 <br>
 <br>
 
