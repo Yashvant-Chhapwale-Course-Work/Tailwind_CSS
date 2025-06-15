@@ -976,8 +976,37 @@ These **Classes** extend the **Core Layout_System** using Utilities for `flexbox
 <br>
 
 1. **Flex Direction:**
-
+It **defines** the `Direction` in which **Flex_Items** are placed inside a `Flex_Container`.
+- **`flex-row` (Default):** Items are placed `Horizontally` from `Left-To-Right (LTR)`. It is the `Default_Direction` followed by **Flex_Items**.
+- **`flex-row-reverse`:** It **reverses** the `Order` of Items placed `Horizontally` i.e, makes it `Right-To-Left (RTL)`.
+- **`flex-col`:** Items are stacked `Vertically` from `Top-To-Bottom (TTB)`.
+- **`flex-col-reverse`:**  It **reverses** the `Order` of Items stacked `Vertically` i.e, makes it `Bottom-To-Top (BTT)`.
 <br>
+
+2. **Flex Wrap:**
+It **Controls** whether **Flex_Items** should Stay in a **`Single_Line` or `Wrap` onto `Multiple_Lines`** when there isn't enough space in the `Flex_Container`.
+- **`flex-nowrap` (Default):** By `Default`, the Items `Stay on One_Line` and may **Shrink**.
+- **`flex-wrap`:** Items `Wrap` to the **Next_Line** if needed.
+- **`flex-wrap-reverse`:** It **Reverses** the `Order` in which **Flex_Items** `Wrap` to the **Next_Line**, i.e from `Bottom-To-Top` or `Right-To-Left`.
+<br>
+
+3. **Flex Grow/Shrink (`Flex_Item Property`):**
+It **Controls** how a **Flex_Item** behaves when there is **Extra or Insufficient Space** in a `Flex_Container`. It allows the **Flex_Items** to `grow` or `shrink` to **Fill** or **Adjust** in the available **Space**.
+- **`grow`:** Allows the Item to `grow` to fill the **Space**.
+- **`grow-0`:** It Prevents the Item from `growing`.
+- **`grow-<number>`:** It helps **Flex_Items** to `grow` **Proportionally** based on their `Growth_Factor`.<br>
+**`For Ex:`**
+ ```
+ <div class="flex gap-5 mx-5 py-10 text-center">
+    <div class="size-14 grow-3 bg-purple-500 text-white">01</div>
+    <div class="size-14 grow-7 bg-blue-400 text-white">02</div>
+    <div class="size-14 grow-3 bg-purple-500 text-white">03</div>
+ </div>
+```
+![`grow`>>Laptop](https://github.com/user-attachments/assets/69742b0e-79a9-42f8-bc9b-4d74b1f8d775)<br>
+![`grow`>>Mobile(L)](https://github.com/user-attachments/assets/85ca03b9-db44-4d37-b2b9-a048ef5cac3d)<br>
+As Observed, the **Flex_Items** `grow` and occupy **Space** proportional to their `Growth_Factor`.
+-
 <br>
 
 ---
