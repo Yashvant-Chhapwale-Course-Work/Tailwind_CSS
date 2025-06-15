@@ -1024,24 +1024,55 @@ It **Controls** how a **Flex_Item** behaves when there is **Extra or Insufficien
 
 4. **Flex Basis (`Flex_Item Property`):**
 The `flex-basis` property sets the `Initial_Size` of **Flex_Items** before the remaining **Space** is distributed. 
-- **`basis-<number>`:** Allows the Item to `grow` to fill the **Space**.
-- **`basis-xs`:** It Prevents the Item from `growing`.
-- **`basis-sm`:**
-- **`basis-md`:**
-- **`basis-lg`:**
-- **`basis-xl`:
-- **`basis-2xl` and so on:**<br>
+- **`basis-<number>`:** It **Sets the `Initial Size` of Flex_Items** based on the `Tailwind Spacing_Scale`.
   **`For Ex:`**
   ```
   <div class="flex gap-5 mx-5 py-10 text-center">
-     <div class="size-14 grow-3 bg-purple-500 text-white">01</div>
-     <div class="size-14 grow-7 bg-blue-400 text-white">02</div>
-     <div class="size-14 grow-3 bg-purple-500 text-white">03</div>
+     <div class="size-14 basis-64 bg-purple-500 text-white">01</div>
+     <div class="size-14 basis-64 bg-blue-400 text-white">02</div>
+     <div class="size-14 basis-128 bg-purple-500 text-white">03</div>
   </div>
   ```   
-  ![`grow`>>Laptop](https://github.com/user-attachments/assets/69742b0e-79a9-42f8-bc9b-4d74b1f8d775)<br>
-  ![`grow`>>Mobile(L)](https://github.com/user-attachments/assets/85ca03b9-db44-4d37-b2b9-a048ef5cac3d)<br>
-  As Observed, the **Flex_Items** `grow` and occupy **Space** proportional to their `Growth_Factor`.
+  ![`basis-<number>`](https://github.com/user-attachments/assets/ac48c790-78b6-4b9d-b859-bcdafcc37ecd)<br>
+- **`basis-xs`:** **Extra-Small** Sizing.
+- **`basis-sm`:** **Small** Sizing.
+- **`basis-md`:** **Medium** Sizing.
+- **`basis-lg`:** **Large** Sizing.
+- **`basis-xl`: **Extra-Large** Sizing.
+- **`basis-2xl` and so on:** **Double Extra-Large** Sizing.<br>
+  **`For Ex:`**
+  ```
+  <div class="flex gap-5 mx-5 py-10 text-center">
+     <div class="size-14 basis-xs bg-purple-500 text-white">01</div>
+     <div class="size-14 basis-sm bg-blue-400 text-white">02</div>
+     <div class="size-14 basis-md bg-purple-500 text-white">03</div>
+     <div class="size-14 basis-lg bg-purple-500 text-white">04</div>
+  </div>
+  ```
+  ![`basis-<number>`](https://github.com/user-attachments/assets/1c766f06-8c5f-4aee-be88-0a2541c9a7f0)<br>
+<br>
+<br>
+
+### Grid:
+`Grid` is a **Powerful `2-dimensional` Layout_System** that allows you to create **Complex** and **Responsive** Layouts either `row-wise (Horizontal)` or `column-wise (Vertical)`. 
+- **`flex`:** Enables `Flexbox` on an Element.
+- **`inline-flex`:** Makes the **Element** `Flex` as well as `Inline`.
+<br>
+
+1. **Grid Direction:**
+It **defines** the `Direction` in which **Flex_Items** are placed inside a `Flex_Container`.
+- **`flex-row` (Default):** Items are placed `Horizontally` from `Left-To-Right (LTR)`. It is the `Default_Direction` followed by **Flex_Items**.
+- **`flex-row-reverse`:** It **reverses** the `Order` of Items placed `Horizontally` i.e, makes it `Right-To-Left (RTL)`.
+- **`flex-col`:** Items are stacked `Vertically` from `Top-To-Bottom (TTB)`.
+- **`flex-col-reverse`:**  It **reverses** the `Order` of Items stacked `Vertically` i.e, makes it `Bottom-To-Top (BTT)`.
+<br>
+
+2. **Flex Wrap:**
+It **Controls** whether **Flex_Items** should Stay in a **`Single_Line` or `Wrap` onto `Multiple_Lines`** when there isn't enough space in the `Flex_Container`.
+- **`flex-nowrap` (Default):** By `Default`, the Items `Stay on One_Line` and may **Shrink**.
+- **`flex-wrap`:** Items `Wrap` to the **Next_Line** if needed.
+- **`flex-wrap-reverse`:** It **Reverses** the `Order` in which **Flex_Items** `Wrap` to the **Next_Line**, i.e from `Bottom-To-Top` or `Right-To-Left`.
+<br>
 <br>
 
 ---
