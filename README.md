@@ -1166,20 +1166,22 @@ It can be used for **Overriding** the `Global justify-items` **Setting** for Spe
 <br>
 
 4. **Align Content (`Grid_Item Property`):**
-It **aligns** items `Horizontally` (along the `Row_Axis`) inside their own `Grid_Cells`.
-- **`justify-items-start`:** Aligns Items to the `Left_Side` within a `Grid_Cell`.
-- **`justify-items-center`:** Aligns Items to the `Center` of a `Grid_Cell`.
-- **`justify-items-end`:** Aligns Items to the `Right_Side` within a `Grid_Cell`.
-- **`justify-items-stretch`:** `Stretches` the Items to **Fill** the `Grid_Cell`.<br>
+It **aligns** the entire `Grid` (all `rows` or `columns`) `Vertically` inside the `Grid_Container` when there is **Extra_Space**.
+- **`content-start`:** Aligns Items to the `Left_Side` within a `Grid_Cell`.
+- **`content-center`:** Aligns Items to the `Center` of a `Grid_Cell`.
+- **`content-end`:** Aligns Items to the `Right_Side` within a `Grid_Cell`.
+- **`content-between`:** `Stretches` the Items to **Fill** the `Grid_Cell`.
+- **`content-around`:** `Stretches` the Items to **Fill** the `Grid_Cell`.
+- **`content-evenly`:** `Stretches` the Items to **Fill** the `Grid_Cell`.<br>
   **`For Ex:`**
   ```
-  <div class="grid grid-rows-3 grid-flow-row grid-cols-3 gap-5 mx-5 py-10 justify-center text-center">
-     <div class="col-span-2 bg-purple-500 text-white p-10">01</div>
-      <div class="bg-blue-400 text-white p-10">02</div>
-      <div class="bg-purple-500 text-white p-10">03</div>
-      <div class="col-span-2 bg-blue-400 text-white p-10">04</div>
-      <div class="col-span-2 bg-purple-500 text-white p-10">05</div>
-      <div class="bg-blue-400 text-white p-10">06</div>
+  <div class="w-200 h-80 grid grid-cols-3 gap-5 justify-self-end content-between mx-5 py-10 text-center">
+     <div class="bg-purple-500 text-white p-4">01</div>
+     <div class="bg-blue-400 text-white p-4">02</div>
+     <div class="bg-purple-500 text-white p-4">03</div>
+     <div class="bg-blue-400 text-white p-4">04</div>
+     <div class="bg-purple-500 text-white p-4">05</div>
+     <div class="bg-blue-400 text-white p-4">06</div>
   </div>
   ```
   ![`col-span-number`](https://github.com/user-attachments/assets/761a62de-6fc6-4287-982b-bd59abc532e2)<br>
