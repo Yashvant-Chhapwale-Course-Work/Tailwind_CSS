@@ -1139,15 +1139,50 @@ It lets you **Control** how many `columns` or `rows` a **Grid_Item** should cove
 <br>
 
 3. **Justify Items (`Grid_Item Property`):**
-It **defines** the `Direction` in which **Flex_Items** are placed inside a `Flex_Container`.
-- **`grid-flow-row`:** It **places** items `Row-by-Row`.
-- **`grid-flow-row-dense`:** **Packs** Items Tightly in `Row` direction.<br>
+It **aligns** items `Horizontally` (along the `Row_Axis`) inside their own `Grid_Cells`.
+- **`justify-items-start`:** Align Items to the `Left_Side` within a `Grid_Cell`.
+- **`justify-items-center`:** Align Items to the `Center` of a `Grid_Cell`.
+- **`justify-items-end`:** Align Items to the `Right_Side` within a `Grid_Cell`.
+- **`justify-items-stretch`(Default):** `Stretch` the Items to **Fill** the `Grid_Cell`. It is the `Default` **Item_Alignment** followed in a `Grid_Layout`.<br>
+The `justify-self-<alignment>` property is used to **Align** an **individual** `Grid_Item` or the **whole** `Grid_Container` in `Horizontal` Alignment.<br>
+It can be used for **Overriding** the `Global justify-items` **Setting** for that Item.
+- **`justify-self-auto`:** **Inherits** `Alignment` from the Container.
+- **`justify-self-start`:** Align Items/Container to the `Left_Side`.
+- **`justify-self-center`:** Align Items/Container to the `Center`.
+- **`justify-self-end`:** Align Items/Container to the `Left_Side`.
+- **`justify-self-stretch`:** `Stretch` the Items/Container to **Fill** the available **Space**.<br>
+  **`For Ex:`**
+  ```
+  <div class="grid grid-cols-3 gap-5 mx-5 py-10 text-center">
+     <div class="bg-purple-500 text-white p-4">01</div>
+     <div class="justify-self-center bg-blue-400 text-white p-4">02</div>
+     <div class="bg-purple-500 text-white p-4">03</div>
+     <div class="bg-blue-400 text-white p-4">04</div>
+     <div class="bg-purple-500 text-white p-4">05</div>
+     <div class="bg-blue-400 text-white p-4">06</div>
+  </div>
+  ```
+  ![Image](https://github.com/user-attachments/assets/2a944fd9-99ac-49ef-8fee-36daaae2ff9f)<br>
 <br>
 
 4. **Align Content (`Grid_Item Property`):**
-It **defines** the `Direction` in which **Flex_Items** are placed inside a `Flex_Container`.
-- **`grid-flow-row`:** It **places** items `Row-by-Row`.
-- **`grid-flow-row-dense`:** **Packs** Items Tightly in `Row` direction.<br>
+It **aligns** items `Horizontally` (along the `Row_Axis`) inside their own `Grid_Cells`.
+- **`justify-items-start`:** Aligns Items to the `Left_Side` within a `Grid_Cell`.
+- **`justify-items-center`:** Aligns Items to the `Center` of a `Grid_Cell`.
+- **`justify-items-end`:** Aligns Items to the `Right_Side` within a `Grid_Cell`.
+- **`justify-items-stretch`:** `Stretches` the Items to **Fill** the `Grid_Cell`.<br>
+  **`For Ex:`**
+  ```
+  <div class="grid grid-rows-3 grid-flow-row grid-cols-3 gap-5 mx-5 py-10 justify-center text-center">
+     <div class="col-span-2 bg-purple-500 text-white p-10">01</div>
+      <div class="bg-blue-400 text-white p-10">02</div>
+      <div class="bg-purple-500 text-white p-10">03</div>
+      <div class="col-span-2 bg-blue-400 text-white p-10">04</div>
+      <div class="col-span-2 bg-purple-500 text-white p-10">05</div>
+      <div class="bg-blue-400 text-white p-10">06</div>
+  </div>
+  ```
+  ![`col-span-number`](https://github.com/user-attachments/assets/761a62de-6fc6-4287-982b-bd59abc532e2)<br>
 <br>
 <br>
 
