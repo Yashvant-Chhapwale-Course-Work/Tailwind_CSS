@@ -1145,7 +1145,7 @@ It **aligns** items `Horizontally` (along the `Row_Axis`) inside their own `Grid
 - **`justify-items-end`:** Align Items to the `Right_Side` within a `Grid_Cell`.
 - **`justify-items-stretch`(Default):** `Stretch` the Items to **Fill** the `Grid_Cell`. It is the `Default` **Item_Alignment** followed in a `Grid_Layout`.<br>
 The `justify-self-<alignment>` property is used to **Align** an **individual** `Grid_Item` or the **whole** `Grid_Container` in `Horizontal` Alignment.<br>
-It can be used for **Overriding** the `Global justify-items` **Setting** for that Item.
+It can be used for **Overriding** the `Global justify-items` **Setting** for Specific Items.
 - **`justify-self-auto`:** **Inherits** `Alignment` from the Container.
 - **`justify-self-start`:** Align Items/Container to the `Left_Side`.
 - **`justify-self-center`:** Align Items/Container to the `Center`.
@@ -1162,7 +1162,7 @@ It can be used for **Overriding** the `Global justify-items` **Setting** for tha
      <div class="bg-blue-400 text-white p-4">06</div>
   </div>
   ```
-  ![Image](https://github.com/user-attachments/assets/2a944fd9-99ac-49ef-8fee-36daaae2ff9f)<br>
+  ![`justify-items-<alignment>`](https://github.com/user-attachments/assets/2a944fd9-99ac-49ef-8fee-36daaae2ff9f)<br>
 <br>
 
 4. **Align Content (`Grid_Item Property`):**
