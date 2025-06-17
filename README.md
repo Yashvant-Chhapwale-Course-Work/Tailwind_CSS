@@ -1289,8 +1289,12 @@ The `Responsive Breakpoints` / `Screen-Width Breakpoints` define the **Screen-Wi
   **`For Ex:`** <br>
   For `lg:` i.e, **Screen-Width Equal to 1024px or Greater**:<br>
   ![`lg:`](https://github.com/user-attachments/assets/06f72a75-a33d-4034-9689-d775e389a3f1)<br>
+  <br>
+  
   For `md:` i.e, **Screen-Width Equal to 768px or Greater** & **Screen-Width Falls Below 1024px**: <br>
   ![`md:`](https://github.com/user-attachments/assets/d5d7cc4a-c58e-4d68-81f9-2e5c52866664)<br>
+  <br>
+  
   For `Default (Mobile-First Orientation)` i.e, **Screen-Width Falls Below 768px**: <br>
   ![`screen-width < 768px`](https://github.com/user-attachments/assets/aeb26124-d159-4f0f-bf78-76a8dabca2fb)<br>
 <br>
