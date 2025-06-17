@@ -756,6 +756,24 @@ The `Text-Decoration Classes` are used to **Add** or **Remove** Visual_Styles li
 - **`overline`:** Adds a `Line` **Above** the Text.
 - **`no-underline`:** It **Removes** all `Text_decoration`.
 <br>
+
+1. **Text-Decoration Style:**
+It helps to Set a `Pattern`/`Design` for the **Text-Decoration**.
+- **`decoration-solid`:** Default Solid Line. (────────────────)
+- **`decoration-dashed`:** Dashed Line. (— — — — — — — —)
+- **`decoration-dotted`:** Dotted Line. (· · · · · · · ·)
+- **`decoration-double`:** Double Line. (═══════════════)
+- **`decoration-wavy`:** Wavy Line, resembles pattern of the Waves. (~~~~~~~~~~~~~)
+<br>
+
+2. **Text-Decoration Thickness:**
+It helps to Control the `Thickness ` of the **Text-Decoration**.
+- **`decoration-0`:** **Removes** the Decoration completely.
+- **`decoration-1`:** Decoration-Width = 4px (`Thin`).
+- **`decoration-2`:** Decoration-Width = 8px (`Default` / `Medium`). 
+- **`decoration-4`:** Decoration-Width = 16px (`Thick`).
+**and so on . . .**
+<br>
 <br>
 
 ### Letter Spacing:
