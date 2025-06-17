@@ -970,7 +970,6 @@ These **Classes** extend the **Core Layout_System** using Utilities for `flexbox
 <br>
 <br>
 
-
 ### Flexbox Layout:
 `Flexbox` is a **Powerful `1-dimensional` Layout_System** that allows you to create **Complex** and **Responsive** Layouts either `row-wise (Horizontal)` or `column-wise (Vertical)`. 
 - **`flex`:** Enables `Flexbox` **Layout** for an Element.
