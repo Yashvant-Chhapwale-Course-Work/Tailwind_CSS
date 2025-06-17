@@ -1273,24 +1273,36 @@ The `order` **Utilities** let you **Rearrange** the `Visual_Order` of **Items** 
 <br>
 
 ## Responsive Layout_Build
-`Tailwind_CSS` offers a **Powerful Set of `Advanced Layout_Classes`** that help you to Build `Responsive`, `Flexible`, and `Dynamic` **UI_Structures**.<br>
-These **Classes** extend the **Core Layout_System** using Utilities for `flexbox`, `grid`, etc, enabling you to design **Complex_Layouts** with **Minimal Effort**.
-<br>
-<br>
-
-### Flexbox Layout:
-`Flexbox` is a **Powerful `1-dimensional` Layout_System** that allows you to create **Complex** and **Responsive** Layouts either `row-wise (Horizontal)` or `column-wise (Vertical)`. 
-- **`flex`:** Enables `Flexbox` **Layout** for an Element.
-- **`inline-flex`:** Makes the **Element** `Flex` as well as `Inline`.
+`Tailwind_CSS` supports `Responsive Designs` that automatically **adapt** to **different** `Screen_Sizes`, from **Mobile Phones** to **Large Desktops**.<br>
+It follows a `Mobile-First Approach`, where **Styles** apply to the `Smallest Screen (Mobiles)` **First** by default, and are **Overridden** on `Larger Screens (Desktops)` using various `Breakpoint-Prefixes`.<br>
 <br>
 
-1. **Flex Direction:** <br>
-It **defines** the `Direction` in which **Flex_Items** are placed inside a `Flex_Container`.
-- **`flex-row` (Default):** Items are placed `Horizontally` from `Left-To-Right (LTR)`. It is the `Default_Direction` followed by **Flex_Items**.
-- **`flex-row-reverse`:** It **reverses** the `Order` of Items placed `Horizontally` i.e, makes it `Right-To-Left (RTL)`.
-- **`flex-col`:** Items are stacked `Vertically` from `Top-To-Bottom (TTB)`.
-- **`flex-col-reverse`:**  It **reverses** the `Order` of Items stacked `Vertically` i.e, makes it `Bottom-To-Top (BTT)`.
+### Responsive Breakpoints: 
+The `Responsive Breakpoints` / `Screen-Width Breakpoints` define the **Screen-Widths** at which your `Layout` or `Styles` **should change** to accommodate different device sizes.  
+- **`sm:`:** It represents `Small_Screens` (i.e, `Mobiles`). [ **`Min-Screen_Width = 640px`** i.e, for Screens with **Width Equal to 640px or Greater** ]
+- **`md:`:** It represents `Medium_Screens` (i.e, `Tablets`). [ **`Min-Screen_Width = 768px`** i.e, for Screens with **Width Equal to 768px or Greater** ]
+- **`lg:`:** It represents `Large_Screens` (i.e, `Laptops`). [ **`Min-Screen_Width = 1024px`** i.e, for Screens with **Width Equal to 1024px or Greater** ]
+- **`xl:`:** It represents `Extra-Large_Screens` (i.e, `Desktops`). [ **`Min-Screen_Width = 1280px`** i.e, for Screens with **Width Equal to 1280px or Greater** ]
+- **`2xl:`:** It represents `Doubly Extra-Large_Screens` (i.e, `Smart_TVs`). [ **`Min-Screen_Width = 1536px`** i.e, for Screens with **Width Equal to 1536px or Greater** ]
+**and so on . . .**
 <br>
+
+---
+<br>
+
+## Responsive Layout_Build
+`Tailwind_CSS` supports `Responsive Designs` that automatically **adapt** to **different** `Screen_Sizes`, from **Mobile Phones** to **Large Desktops**.<br>
+It follows a `Mobile-First Approach`, where **Styles** apply to the `Smallest Screen (Mobiles)` **First** by default, and are **Overridden** on `Larger Screens (Desktops)` using various `Breakpoint-Prefixes`.<br>
+<br>
+
+### Responsive Breakpoints: 
+The `Responsive Breakpoints` / `Screen-Width Breakpoints` define the **Screen-Widths** at which your `Layout` or `Styles` **should change** to accommodate different device sizes.  
+- **`sm:`:** It represents `Small_Screens` (i.e, `Mobiles`). [ **`Min-Screen_Width = 640px`** i.e, for Screens with **Width Equal to 640px or Greater** ]
+- **`md:`:** It represents `Medium_Screens` (i.e, `Tablets`). [ **`Min-Screen_Width = 768px`** i.e, for Screens with **Width Equal to 768px or Greater** ]
+- **`lg:`:** It represents `Large_Screens` (i.e, `Laptops`). [ **`Min-Screen_Width = 1024px`** i.e, for Screens with **Width Equal to 1024px or Greater** ]
+- **`xl:`:** It represents `Extra-Large_Screens` (i.e, `Desktops`). [ **`Min-Screen_Width = 1280px`** i.e, for Screens with **Width Equal to 1280px or Greater** ]
+- **`2xl:`:** It represents `Doubly Extra-Large_Screens` (i.e, `Smart_TVs`). [ **`Min-Screen_Width = 1536px`** i.e, for Screens with **Width Equal to 1536px or Greater** ]
+**and so on . . .**
 <br>
 
 ---
