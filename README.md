@@ -1284,7 +1284,14 @@ The `Responsive Breakpoints` / `Screen-Width Breakpoints` define the **Screen-Wi
 - **`lg:`:** It represents `Large_Screens` (i.e, `Laptops`). [ **`Min-Screen_Width = 1024px`** i.e, for Screens with **Width Equal to 1024px or Greater** ]
 - **`xl:`:** It represents `Extra-Large_Screens` (i.e, `Desktops`). [ **`Min-Screen_Width = 1280px`** i.e, for Screens with **Width Equal to 1280px or Greater** ]
 - **`2xl:`:** It represents `Doubly Extra-Large_Screens` (i.e, `Smart_TVs`). [ **`Min-Screen_Width = 1536px`** i.e, for Screens with **Width Equal to 1536px or Greater** ]
-**and so on . . .**
+**and so on . . .** <br>
+  **`For Ex:`** <br>
+  For `lg:` i.e, **Screen-Width Equal to 1024px or Greater**:<br>
+  ![`lg:`](https://github.com/user-attachments/assets/06f72a75-a33d-4034-9689-d775e389a3f1)<br>
+  For `md:` i.e, **Screen-Width Equal to 768px or Greater** & **Screen-Width Falls Below 1024px**: <br>
+  ![`md:`](https://github.com/user-attachments/assets/d5d7cc4a-c58e-4d68-81f9-2e5c52866664)<br>
+  For `Default (Mobile-First Orientation)` i.e, **Screen-Width Falls Below 768px**: <br>
+  ![`screen-width < 768px`](https://github.com/user-attachments/assets/aeb26124-d159-4f0f-bf78-76a8dabca2fb)
 <br>
 
 ---
