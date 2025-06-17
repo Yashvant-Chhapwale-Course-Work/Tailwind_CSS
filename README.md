@@ -1220,6 +1220,25 @@ It **aligns** the entire `Grid` (all `rows` or `columns`) `Vertically` inside th
   As Observed, the `justify-self-end` property shifts the `Grid_Container (Width=200)` towards the `Right_Side`, and the `content-between` property distributes the `rows` towards `Top` and `Bottom` with `Space_Between`.<br> 
 <br>
 <br>
+<br>
+
+### Gap Classes:
+The `gap` **Utilities** are used to **Control Spacing** between **Items** in `Flexbox` and `Grid` **Layouts**.
+- **`gap-0`:** **No Space** between Items.
+- **`gap-2`, `gap-4`, `gap-8` and so on:** Inserts **Spacing** between Items based on `Tailwind Spacing_Scale`.
+- **`gap-x-5`:** Controls `Horizontal-Spacing` or `Gap between Columns`.
+- **`gap-y-5`:** Controls `Vertical-Spacing` or `Gap between Rows`.
+<br>
+<br>
+
+### Gap Classes:
+The `gap` **Utilities** are used to **Control Spacing** between **Items** in `Flexbox` and `Grid` **Layouts**.
+- **`gap-0`:** **No Space** between Items.
+- **`gap-2`, `gap-4`, `gap-8` and so on:** Inserts **Spacing** between Items based on `Tailwind Spacing_Scale`.
+- **`gap-x-5`:** Controls `Horizontal-Spacing` or `Gap between Columns`.
+- **`gap-y-5`:** Controls `Vertical-Spacing` or `Gap between Rows`.
+<br>
+<br>
 
 ---
 <br>
