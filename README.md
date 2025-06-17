@@ -1247,7 +1247,7 @@ The `order` **Utilities** let you **Rearrange** the `Visual_Order` of **Items** 
   </div>
   ```
   ![`order`](https://github.com/user-attachments/assets/29de4d5e-b21b-4f76-9faf-dc3f9afe757a)<br>
-  As Observed, the `Block-D` and `Block-A` are ranked `last (i.e, 4th)` and `first (i.e, 1st)` respectively, meanwhile the `Block-C` and `Block-B` are ranked as `2 (i.e, 3rd)` and `1 (i.e, 2nd)` respectively after `Block-D` ehich has the Highest_Order Priority/Ranking.
+  As Observed, the `Block-D` and `Block-A` are ranked `last (i.e, 4th)` and `first (i.e, 1st)` respectively, meanwhile the `Block-C` and `Block-B` are ranked as `1 (i.e, 2nd)` and `2 (i.e, 3rd)` respectively after `Block-D` ehich has the Highest_Order Priority/Ranking.
 <br>
 <br>
 
