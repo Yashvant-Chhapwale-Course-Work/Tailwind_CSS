@@ -46,6 +46,7 @@ This **Repository** documents my my `Notes`, `Learnings`, and `UI_Project` as I 
 | 4.  **Element `Shadows` Utility_Classes**                                                                      | >> [` CHECK CONTENT `](#element-shadows-utility_classes)                                      |
 | 5.  **Tailwind `Backgrounds` and `Colors`**                                                                    | >> [` CHECK CONTENT `](#tailwind-backgrounds-and-colors)                                      |
 | 6.  **Advanced `Layout` Utility_Classes: [`flex`](#flexbox-layout), [`grid`](#grid-layout)**                   | >> [` CHECK CONTENT `](#advanced-layout-utility_classes)                                      |
+| 7.  **`Responsive` Layout_Build**                                                                              | >> [` CHECK CONTENT `](#responsive-layout_build)                                              |
 
 </div   
 
@@ -1271,7 +1272,7 @@ The `order` **Utilities** let you **Rearrange** the `Visual_Order` of **Items** 
 ---
 <br>
 
-## Responsive Layout
+## Responsive Layout_Build
 `Tailwind_CSS` offers a **Powerful Set of `Advanced Layout_Classes`** that help you to Build `Responsive`, `Flexible`, and `Dynamic` **UI_Structures**.<br>
 These **Classes** extend the **Core Layout_System** using Utilities for `flexbox`, `grid`, etc, enabling you to design **Complex_Layouts** with **Minimal Effort**.
 <br>
