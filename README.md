@@ -48,7 +48,7 @@ This **Repository** documents my my `Notes`, `Learnings`, and `UI_Project` as I 
 | 6.  **Advanced `Layout` Utility_Classes: [`flex`](#flexbox-layout), [`grid`](#grid-layout)**                   | >> [` CHECK CONTENT `](#advanced-layout-utility_classes)                                      |
 | 7.  **`Responsive` Layout_Build**                                                                              | >> [` CHECK CONTENT `](#responsive-layout_build)                                              |
 
-</div   
+</div>   
 
 ---
 
