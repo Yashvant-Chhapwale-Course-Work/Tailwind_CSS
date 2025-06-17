@@ -1231,12 +1231,23 @@ The `gap` **Utilities** are used to **Control Spacing** between **Items** in `Fl
 <br>
 <br>
 
-### Gap Classes:
-The `gap` **Utilities** are used to **Control Spacing** between **Items** in `Flexbox` and `Grid` **Layouts**.
-- **`gap-0`:** **No Space** between Items.
-- **`gap-2`, `gap-4`, `gap-8` and so on:** Inserts **Spacing** between Items based on `Tailwind Spacing_Scale`.
-- **`gap-x-5`:** Controls `Horizontal-Spacing` or `Gap between Columns`.
-- **`gap-y-5`:** Controls `Vertical-Spacing` or `Gap between Rows`.
+### Item Order:
+The `order` **Utilities** let you **Rearrange** the `Visual_Order` of **Items** inside a `flex` or `grid` **Container**, **without changing** the Actual `<HTML>` Structure.
+- **`order-none`:** All items strictly follow the `Default Order` or the `DOM_Structure`.
+- **`order-first`:** The Item is always ranked as `First` and **Placed Before All Other Elements**.
+- **`order-last`:** The Item is always ranked as `Last` and **Placed After All Other Elements**.
+- **`order-<number>`:** Sets a `Custom Order_Value` for the **Items**. The Higher the `<number>` Value, the more **priority** an **Item** gets while `Ordering`.<br>
+  **`For Ex:`**
+  ```
+  <div class="grid grid-cols-4 gap-5 mx-5 py-10 text-center">
+     <div class="order-last bg-purple-500 text-white p-4">Block-A</div>
+     <div class="order-2 bg-blue-400 text-white p-4">Block-B</div>
+     <div class="order-1 bg-blue-400 text-white p-4">Block-C</div>
+     <div class="order-first bg-purple-500 text-white p-4">Block-D</div>
+  </div>
+  ```
+  ![`order`](https://github.com/user-attachments/assets/29de4d5e-b21b-4f76-9faf-dc3f9afe757a)<br>
+  As Observed, the `Block-D` and `Block-A` are ranked `last (i.e, 4th)` and `first (i.e, 1st)` respectively, meanwhile the `Block-C` and `Block-B` are ranked as `2 (i.e, 3rd)` and `1 (i.e, 2nd)` respectively after `Block-D` ehich has the Highest_Order Priority/Ranking.
 <br>
 <br>
 
