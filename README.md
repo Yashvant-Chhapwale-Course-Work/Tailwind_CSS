@@ -228,7 +228,7 @@ The `Element_Spacing Classes` are used to **Add Space Around or Inside elements*
 `Tailwind_CSS` provides **Granular_Control** over spacing using `Margin` and `Padding` Classes.
 <br>
 
-1. **Margin Classes:**
+1. **Margin Classes:** <br>
 The `Margin` adds **Space Outside the Element’s Border**, separating it from Neighboring Elements.
 - **`m-2`:** Sets **Margin on all Sides** for an Element.
 - **`mx-2`:** Sets **Margin along X-axis (i.e, Left and Right)** for an Element.
@@ -239,7 +239,7 @@ The `Margin` adds **Space Outside the Element’s Border**, separating it from N
 - **`mr-2`:** Sets **Margin on the Right Side** of an Element.
 <br>
 
-2. **Padding Classes:**
+2. **Padding Classes:** <br>
 The `Padding` adds **Space Inside the Element’s Border**, positioning the Content within an Element.
 - **`p-2`:** Sets **Padding on all Sides** for an Element.
 - **`px-2`:** Sets **Padding along X-axis (i.e, Left and Right)** for an Element.
@@ -251,7 +251,7 @@ The `Padding` adds **Space Inside the Element’s Border**, positioning the Cont
 ![Margin and Padding](https://github.com/user-attachments/assets/f15df0d0-8722-494c-9462-380d3b9006fc)<br>
 <br>
 
-3. **Child-Elements Spacing Utilities:**
+3. **Child-Elements Spacing Utilities:** <br>
 The `Child-Elements Spacing Utilities` (also known as `Space-Between Utilities`) are used to **Create Consistent Spacing between Direct Children** of a Parent Container, without manually applying **Margin** to each Child Element.<br>
 `Note:` This `Utility_Class` is applied on the `Parent_Element` and not the Children directly.
 - **`space-x-5`:** It is used to **Apply Margin on the Left Side of all Children except the First Child** within the Parent_Element.
@@ -272,7 +272,7 @@ The `Divider Class` is used to **Add `Borders / Dividers` between Adjacent Child
 The `Sizing Classes` control an Element's `width`, `height`, `min/max dimensions`, and how it behaves inside its Container. 
 <br>
 
-1. **Width Classes:**
+1. **Width Classes:** <br>
 It is used to set the `Width` of an Element.
 - **`w-0`:** **Width=0px** or **Width=0%**.
 - **`w-1/2`:** **Width=50%**
@@ -282,7 +282,7 @@ It is used to set the `Width` of an Element.
 - **`w-auto`:** Sets the **Width to Automatically Shrink or Grow** based on its Content Size.
 <br>
 
-2. **Min/Max-Width Classes:**
+2. **Min/Max-Width Classes:** <br>
 It helps to Set a Limit on how **Small** or **Wide** an Element is allowed to get.<br>
 `Note:` These Classes only help to **Set a Limit** but **do not Resize the Element** (beyond the set boundaries) when the Screen_Size Changes. 
 - **`min-w-0`:** **Minimum-Width=0px** or **Minimum-Width=0%**.
@@ -293,7 +293,7 @@ It helps to Set a Limit on how **Small** or **Wide** an Element is allowed to ge
 - **`max-w-50`:** Sets a **Custom Maximum-Width**, using the **Tailwind Spacing_Scale**, for an Element. [**Maximum-Width=200px**]
 <br>
 
-3. **Height Classes:**
+3. **Height Classes:** <br>
 It is used to set the `Height` of an Element.
 - **`h-0`:** **Height=0px** or **Width=0%**.
 - **`h-1/2`:** **Height=50%**
@@ -303,7 +303,7 @@ It is used to set the `Height` of an Element.
 - **`h-auto`:** Sets the **Height to Automatically Shrink or Grow** based on its Content Size.
 <br>
 
-4. **Min/Max-Height Classes:**
+4. **Min/Max-Height Classes:** <br>
 It helps to Set a Limit on how **Short** or **Tall** an Element is allowed to get.<br>
 `Note:` These Classes only help to **Set a Limit** but **do not Resize the Element** (beyond the set boundaries) when the Screen_Size Changes. 
 - **`min-h-0`:** **Minimum-Height=0px** or **Minimum-Height=0%**.
@@ -314,7 +314,7 @@ It helps to Set a Limit on how **Short** or **Tall** an Element is allowed to ge
 - **`max-h-50`:** Sets a **Custom Maximum-Height**, using the **Tailwind Spacing_Scale**, for an Element. [**Maximum-Height=200px**]
 <br>
 
-5. **Shorthand Class (`size`):**
+5. **Shorthand Class (`size`):** <br>
 Starting from `Tailwind v3.2+`, you can use the `size` **Shorthand_Class**, to simultaneously set `Width` and `Height` for an Element.
 - **`size-10`:** Simultaneously sets the **Width** and **Height** of an Element. (**Width=40px** and **Height=40px**)
 <br>
@@ -324,7 +324,7 @@ Starting from `Tailwind v3.2+`, you can use the `size` **Shorthand_Class**, to s
 The `Border Classes` control an **Element's Border_Attributes** including `width (thickness)`, `style`, and `radius`.
 <br>
 
-1. **Border Width:**
+1. **Border Width:** <br>
 It control how `Thick` the **Border** can be.
 - **`border`:** Adds a **Default(1px) Border** to the Element.
 - **`border-0` or `border-none`:** **Removes Border** from the Element. 
@@ -337,7 +337,7 @@ It control how `Thick` the **Border** can be.
 - **`border-r-2`:** Sets **Border on the Right Side** of an Element.
 <br>
 
-2. **Border Style:**
+2. **Border Style:** <br>
 It helps to Set a `Pattern`/`Design` for the **Border**.
 - **`border-solid`:** Default Solid Line. (────────────────)
 - **`border-dashed`:** Dashed Line. (— — — — — — — —)
@@ -345,7 +345,7 @@ It helps to Set a `Pattern`/`Design` for the **Border**.
 - **`border-double`:** Double Line. (═══════════════)
 <br>
 
-3. **Border Radius:**
+3. **Border Radius:** <br>
 It is used to make an **Element's_Corners** `Rounded`.
 - **`rounded`:** Set the **Default Roundedness (i.e, 0.25rem)** for an Element's Corners.
 - **`rounded-full`:** Makes the Element's Border **Fully Rounded**.
@@ -363,7 +363,7 @@ It is used to make an **Element's_Corners** `Rounded`.
 The `Outline Classes` control the **Style** of an `Element's Outline` which appears when an **Element** is `Focused`.
 <br>
 
-1. **Outline Width:**
+1. **Outline Width:** <br>
 It control how `Thick` the **Outline** can be.
 - **`outline`:** Adds a **Default(1px) Solid Outline** to the Element.
 - **`outline-none` or `border-none`:** **Removes Outline** from the Element. 
@@ -372,7 +372,7 @@ It control how `Thick` the **Outline** can be.
 **and so on . . .**
 <br>
 
-2. **Outline Style:**
+2. **Outline Style:** <br>
 It helps to Set a `Pattern`/`Design` for the **Outline**.
 - **`outline-solid`:** Default Solid Line. (────────────────)
 - **`outline-dashed`:** Dashed Line. (— — — — — — — —)
@@ -380,7 +380,7 @@ It helps to Set a `Pattern`/`Design` for the **Outline**.
 - **`outline-double`:** Double Line. (═══════════════)
 <br>
 
-3. **Outline Offset:**
+3. **Outline Offset:** <br>
 It is used to `Add Space` between an **Element's Outline** and its **Border_Edges**.
 - **`outline-offset-0`:** **Default/No_Spacing** between the **Outline** and the **Border_Edges**.
 - **`outline-offset-1`:** Sets a **Custom Spacing** between the **Outline** and the **Border_Edges**. [**Outline-Offset=4px**]
@@ -409,7 +409,7 @@ They are **responsible** for controlling the **Positioning** of the Elements.
 These `Utility_Classes` are essential for **Building Layouts**, **ToolTips**, **Modals**, **Floating Elements**, and more.
 <br>
 
-1. **Container Class:**
+1. **Container Class:** <br>
 - The `Container Class` i.e, `container` is used t0 **Set a Responsive, Centered, and Padded Wrapper** for your content.<br>
 - `Note:` It does not **Center** the content itself, it only manages the **Positioning** for the **Outer_Division/Wrapper**.
 - It automatically adjusts its `Max-Width` at each `Breakpoint` as follows:
@@ -428,7 +428,7 @@ These `Utility_Classes` are essential for **Building Layouts**, **ToolTips**, **
   ```
 <br>
 
-2. **Inset Classes:**
+2. **Inset Classes:** <br>
 `Inset` (also knowsn as `Offset`) refers to the **Distance Between an Element and the Edges of its Containing Block**.<br>
 The `Inset Classes` control **how far a Positioned Element is Moved from its Reference Edges**, viz. `Top`, `Right`, `Bottom`, and `Left`.<br>
 `Note:` These **Classes** only only apply when the Element is using a `relative`, `absolute`, `fixed`, or `sticky` Position. 
@@ -446,7 +446,7 @@ The `Inset Classes` control **how far a Positioned Element is Moved from its Ref
 - **`-right-2`:** **Pulls the Element Towards Right** from its normal positioning.
 <br>
 
-3. **Position Classes:**
+3. **Position Classes:** <br>
 The `Position Classes` in control **how an Element is Positioned** within the `Document_Flow` or `Relative to its Parent`.
 - **`static`:** It is the **Default Position_Style** for Elements. The `Static_Elements` follows the `Normal Document_Flow`. We cannot apply `Inset_Classes` to Elements with `Static_Positioning`, however `Padding` & `Margins` work as expected.<br>
   `For Ex:`
@@ -550,7 +550,7 @@ The `Position Classes` in control **how an Element is Positioned** within the `D
   As you can Observe, **initially** the **Green Box** follows the `Normal Document_Flow`, but on **scrolling down** as soon as the **Green Box** is at a distance of `20px`(5 -- Tailwind Spacing_Scale) from the **Top_Side** i.e, `top-5` it becomes `fixed`, even **overlaps** the **Blue Box**.
 <br>
 
-4. **z-index Classes:**
+4. **z-index Classes:** <br>
 The `z-index` controls the **Stacking order of Elements** on the **Z-axis** (`front`-to-`back`). Basically, it controls which Element appears on **Top** when **Overlapping**.<br>
 - **`z-0`:** **Default Stacking_Level**, i.e, every Element on the Same Plane.
 - **`z-10`, `z-20`, `z-30` and so on:** **Higher Stacking_Levels** i.e, Greater the `-suffix` Value higher the Stacking_Level.<br>
@@ -558,7 +558,7 @@ The `z-index` controls the **Stacking order of Elements** on the **Z-axis** (`fr
 - **`z-auto`:** Uses the **Browser’s Default Stacking Configuration**.
 <br>
 
-5. **Float Classes:**
+5. **Float Classes:** <br>
 The `float` **Classes** are used to **`float` Elements to the Left or Right**, inside a container, making **Other Content Wrap around them**.
 - **`float-left`:** **Floats** the Element to the `Left_Side` within a **Container** or **<div>**, allowing other content to **Flow** or **Wrap** around it.<br>
   `For Ex:`
@@ -627,7 +627,7 @@ The `float` **Classes** are used to **`float` Elements to the Left or Right**, i
 - **`float-none`:** **Removes Float Property** from an Element.
 <br>
 
-6. **Clear Classes:**
+6. **Clear Classes:** <br>
 The `clear` **Classes** are used to **Prevent an element from Wrapping around the `Floating_Elements`**. They are used in **Conjunction** with the `float` **Classes**.
 - **`clear-left`:** **Prevents** the Elements from being **Positioned next to Elements Floating on the Left_Side**.<br>
   `For Ex:`
@@ -757,7 +757,7 @@ The `Text-Decoration Classes` are used to **Add** or **Remove** Visual_Styles li
 - **`no-underline`:** It **Removes** all `Text_decoration`.
 <br>
 
-1. **Text-Decoration Style:**
+1. **Text-Decoration Style:** <br>
 It helps to Set a `Pattern`/`Design` for the **Text-Decoration**.
 - **`decoration-solid`:** Default Solid Line. (────────────────)
 - **`decoration-dashed`:** Dashed Line. (— — — — — — — —)
@@ -766,7 +766,7 @@ It helps to Set a `Pattern`/`Design` for the **Text-Decoration**.
 - **`decoration-wavy`:** Wavy Line, resembles pattern of the Waves. (~~~~~~~~~~~~~)
 <br>
 
-2. **Text-Decoration Thickness:**
+2. **Text-Decoration Thickness:** <br>
 It helps to Control the `Thickness ` of the **Text-Decoration**.
 - **`decoration-0`:** **Removes** the Decoration completely.
 - **`decoration-1`:** Decoration-Width = 4px (`Thin`).
@@ -994,7 +994,7 @@ These **Classes** extend the **Core Layout_System** using Utilities for `flexbox
 - **`inline-flex`:** Makes the **Element** `Flex` as well as `Inline`.
 <br>
 
-1. **Flex Direction:**
+1. **Flex Direction:** <br>
 It **defines** the `Direction` in which **Flex_Items** are placed inside a `Flex_Container`.
 - **`flex-row` (Default):** Items are placed `Horizontally` from `Left-To-Right (LTR)`. It is the `Default_Direction` followed by **Flex_Items**.
 - **`flex-row-reverse`:** It **reverses** the `Order` of Items placed `Horizontally` i.e, makes it `Right-To-Left (RTL)`.
@@ -1002,14 +1002,14 @@ It **defines** the `Direction` in which **Flex_Items** are placed inside a `Flex
 - **`flex-col-reverse`:**  It **reverses** the `Order` of Items stacked `Vertically` i.e, makes it `Bottom-To-Top (BTT)`.
 <br>
 
-2. **Flex Wrap:**
+2. **Flex Wrap:** <br>
 It **Controls** whether **Flex_Items** should Stay in a **`Single_Line` or `Wrap` onto `Multiple_Lines`** when there isn't enough space in the `Flex_Container`.
 - **`flex-nowrap` (Default):** By `Default`, the Items `Stay on One_Line` and may **Shrink**.
 - **`flex-wrap`:** Items `Wrap` to the **Next_Line** if needed.
 - **`flex-wrap-reverse`:** It **Reverses** the `Order` in which **Flex_Items** `Wrap` to the **Next_Line**, i.e from `Bottom-To-Top` or `Right-To-Left`.
 <br>
 
-3. **Flex Grow/Shrink (`Flex_Item Property`):**
+3. **Flex Grow/Shrink (`Flex_Item Property`):** <br>
 It **Controls** how a **Flex_Item** behaves when there is **Extra or Insufficient Space** in a `Flex_Container`. It allows the **Flex_Items** to `grow` or `shrink` to **Fill** or **Adjust** in the available **Space**.
 - **`grow`:** Allows the Item to `grow` to fill the **Space**.
 - **`grow-0`:** It Prevents the Item from `growing`.
@@ -1041,7 +1041,7 @@ It **Controls** how a **Flex_Item** behaves when there is **Extra or Insufficien
   As Observed, the **Flex_Items** `shrink` and occupy **Space** proportional to their `Shrink_Factor`. Also, `Note` that the **Flex_Items** with property `shrink-0` do not `shrink` at all.<br>
 <br>
 
-4. **Flex Basis (`Flex_Item Property`):**
+4. **Flex Basis (`Flex_Item Property`):** <br>
 The `flex-basis` property sets the `Initial_Size` of **Flex_Items** before the remaining **Space** is distributed. 
 - **`basis-<number>`:** It **Sets the `Initial Size` of Flex_Items** based on the `Tailwind Spacing_Scale`.<br>
   **`For Ex:`**
@@ -1071,7 +1071,7 @@ The `flex-basis` property sets the `Initial_Size` of **Flex_Items** before the r
   ![`basis-<number>`](https://github.com/user-attachments/assets/1c766f06-8c5f-4aee-be88-0a2541c9a7f0)<br>
 <br>
 
-5. **Justify Content (`Flex_Item Property`)[Horizontal Alignment]:**
+5. **Justify Content (`Flex_Item Property`)[Horizontal Alignment]:** <br>
 It defines how **Flex_Items** are `Aligned/Spaced Horizontally` inside the `Flex_Container`.
 - **`justify-start`:** Align **Items** to the `Left_Side`.
 - **`justify-center`:** Align **Items** to the `Center`.
@@ -1080,7 +1080,7 @@ It defines how **Flex_Items** are `Aligned/Spaced Horizontally` inside the `Flex
 - **`justify-around`:** `Space_Around` the **Items**.<br>
 - **`justify-evenly`:** `Equal_Spacing` **between** & **around** the **Items**.<br>
 
-6. **Align Items (`Flex_Item Property`)[Vertical Alignment]:**
+6. **Align Items (`Flex_Item Property`)[Vertical Alignment]:** <br>
 It **aligns** the entire `Grid` (all `rows` or `columns`) `Vertically` inside the `Grid_Container` when there is **Extra_Space**.
 - **`items-start`:** Packs **Items** towards the `Top`.
 - **`items-center`:** Align **Items** to the `Center`.
@@ -1126,7 +1126,7 @@ It **aligns** the entire `Grid` (all `rows` or `columns`) `Vertically` inside th
   `Note` that the **Grid_Items** automatically `Stretch to Fill the Entire Grid_Cell`, resulting in a **Clean** and **Uniform** Layout without the need for **Specifying** `Width` and `Height`, unlike `Flexbox`.<br>
 <br>
 
-1. **Grid Direction:**
+1. **Grid Direction:** <br>
 It **defines** the `Direction` in which **Flex_Items** are placed inside a `Flex_Container`.
 - **`grid-flow-row`:** It **places** items `Row-by-Row`.
 - **`grid-flow-row-dense`:** **Packs** Items Tightly in `Row` direction.<br>
@@ -1158,7 +1158,7 @@ It **defines** the `Direction` in which **Flex_Items** are placed inside a `Flex
   ![`grid-flow-col`](https://github.com/user-attachments/assets/7172bc99-f6ec-457d-bbbc-1e01dd5e992d)<br>  
 <br>
 
-2. **Grid_Item Span (`Grid_Item Property`):**
+2. **Grid_Item Span (`Grid_Item Property`):** <br>
 It lets you **Control** how many `columns` or `rows` a **Grid_Item** should cover, giving you `precise control` over the **Layout**.
 - **`row-span-<number-of-rows>`:** Specifies how many `rows` a **Grid_Item** should **Span** across.<br>
   **`For Ex:`**
@@ -1188,7 +1188,7 @@ It lets you **Control** how many `columns` or `rows` a **Grid_Item** should cove
   ![`col-span-number`](https://github.com/user-attachments/assets/761a62de-6fc6-4287-982b-bd59abc532e2)<br>
 <br>
 
-3. **Justify Items (`Grid_Item Property`)[Horizontal Alignment]:**
+3. **Justify Items (`Grid_Item Property`)[Horizontal Alignment]:** <br>
 It **aligns** items `Horizontally` (along the `Row_Axis`) inside their own `Grid_Cells`.
 - **`justify-items-start`:** Align Items to the `Left_Side` within a `Grid_Cell`.
 - **`justify-items-center`:** Align Items to the `Center` of a `Grid_Cell`.
@@ -1215,7 +1215,7 @@ It can be used for **Overriding** the `Global justify-items` **Setting** for Spe
   ![`justify-items-<alignment>`](https://github.com/user-attachments/assets/2a944fd9-99ac-49ef-8fee-36daaae2ff9f)<br>
 <br>
 
-4. **Align Content (`Grid_Item Property`)[Vertical Alignment]:**
+4. **Align Content (`Grid_Item Property`)[Vertical Alignment]:** <br>
 It **aligns** the entire `Grid` (all `rows` or `columns`) `Vertically` inside the `Grid_Container` when there is **Extra_Space**.
 - **`content-start`:** 	Packs `rows` towards the `Top`.
 - **`content-center`:** Aligns `rows` to the `Center` of the `Grid_Container`.
@@ -1266,6 +1266,29 @@ The `order` **Utilities** let you **Rearrange** the `Visual_Order` of **Items** 
   ```
   ![`order`](https://github.com/user-attachments/assets/29de4d5e-b21b-4f76-9faf-dc3f9afe757a)<br>
   As Observed, the `Block-D` and `Block-A` are ranked `last (i.e, 4th)` and `first (i.e, 1st)` respectively, meanwhile the `Block-C` and `Block-B` are ranked as `1 (i.e, 2nd)` and `2 (i.e, 3rd)` respectively after `Block-D` ehich has the Highest_Order Priority/Ranking.
+<br>
+
+---
+<br>
+
+## Responsive Layout
+`Tailwind_CSS` offers a **Powerful Set of `Advanced Layout_Classes`** that help you to Build `Responsive`, `Flexible`, and `Dynamic` **UI_Structures**.<br>
+These **Classes** extend the **Core Layout_System** using Utilities for `flexbox`, `grid`, etc, enabling you to design **Complex_Layouts** with **Minimal Effort**.
+<br>
+<br>
+
+### Flexbox Layout:
+`Flexbox` is a **Powerful `1-dimensional` Layout_System** that allows you to create **Complex** and **Responsive** Layouts either `row-wise (Horizontal)` or `column-wise (Vertical)`. 
+- **`flex`:** Enables `Flexbox` **Layout** for an Element.
+- **`inline-flex`:** Makes the **Element** `Flex` as well as `Inline`.
+<br>
+
+1. **Flex Direction:** <br>
+It **defines** the `Direction` in which **Flex_Items** are placed inside a `Flex_Container`.
+- **`flex-row` (Default):** Items are placed `Horizontally` from `Left-To-Right (LTR)`. It is the `Default_Direction` followed by **Flex_Items**.
+- **`flex-row-reverse`:** It **reverses** the `Order` of Items placed `Horizontally` i.e, makes it `Right-To-Left (RTL)`.
+- **`flex-col`:** Items are stacked `Vertically` from `Top-To-Bottom (TTB)`.
+- **`flex-col-reverse`:**  It **reverses** the `Order` of Items stacked `Vertically` i.e, makes it `Bottom-To-Top (BTT)`.
 <br>
 <br>
 
