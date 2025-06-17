@@ -1053,44 +1053,25 @@ The `flex-basis` property sets the `Initial_Size` of **Flex_Items** before the r
   ![`basis-<number>`](https://github.com/user-attachments/assets/1c766f06-8c5f-4aee-be88-0a2541c9a7f0)<br>
 <br>
 
-5. **Justify Content (`Flex_Item Property`):**
-It **aligns** items `Horizontally` (along the `Row_Axis`) inside their own `Grid_Cells`.
-- **`justify-items-start`:** Align Items to the `Left_Side` within a `Grid_Cell`.
-- **`justify-items-center`:** Align Items to the `Center` of a `Grid_Cell`.
-- **`justify-items-end`:** Align Items to the `Right_Side` within a `Grid_Cell`.
-- **`justify-items-stretch`(Default):** `Stretch` the Items to **Fill** the `Grid_Cell`. It is the `Default` **Item_Alignment** followed in a `Grid_Layout`.<br>
-The `justify-self-<alignment>` property is used to **Align** an **individual** `Grid_Item` or the **whole** `Grid_Container` in `Horizontal` Alignment.<br>
-It can be used for **Overriding** the `Global justify-items` **Setting** for Specific Items.
-- **`justify-self-auto`:** **Inherits** `Alignment` from the Container.
-- **`justify-self-start`:** Align Items/Container to the `Left_Side`.
-- **`justify-self-center`:** Align Items/Container to the `Center`.
-- **`justify-self-end`:** Align Items/Container to the `Left_Side`.
-- **`justify-self-stretch`:** `Stretch` the Items/Container to **Fill** the available **Space**.<br>
-  **`For Ex:`**
-  ```
-  <div class="grid grid-cols-3 justify-itemms-stretch gap-5 mx-5 py-10 text-center">
-     <div class="bg-purple-500 text-white p-4">01</div>
-     <div class="justify-self-center bg-blue-400 text-white p-4">02</div>
-     <div class="bg-purple-500 text-white p-4">03</div>
-     <div class="bg-blue-400 text-white p-4">04</div>
-     <div class="bg-purple-500 text-white p-4">05</div>
-     <div class="bg-blue-400 text-white p-4">06</div>
-  </div>
-  ```
-  ![`justify-items-<alignment>`](https://github.com/user-attachments/assets/2a944fd9-99ac-49ef-8fee-36daaae2ff9f)<br>
-<br>
+5. **Justify Content (`Flex_Item Property`)[Horizontal Alignment]:**
+It defines how **Flex_Items** are `Aligned/Spaced Horizontally` inside the `Flex_Container`.
+- **`justify-start`:** Align **Items** to the `Left_Side`.
+- **`justify-center`:** Align **Items** to the `Center`.
+- **`justify-end`:** Align **Items** to the `Right_Side`.
+- **`justify-between`:** `Space_Between` the **Items**.<br>
+- **`justify-around`:** `Space_Around` the **Items**.<br>
+- **`justify-evenly`:** `Equal_Spacing` **between** & **around** the **Items**.<br>
 
-6. **Align Items (`Flex_Item Property`):**
+6. **Align Items (`Flex_Item Property`)[Vertical Alignment]:**
 It **aligns** the entire `Grid` (all `rows` or `columns`) `Vertically` inside the `Grid_Container` when there is **Extra_Space**.
-- **`content-start`:** 	Packs `rows` towards the `Top`.
-- **`content-center`:** Aligns `rows` to the `Center` of the `Grid_Container`.
-- **`content-end`:** Packs `rows` towards the `Bottom`..
-- **`content-between`:** Distribute the `rows` (towards `Top` as well as `Bottom`) with `Space_Between`.
-- **`content-around`:** Ensures `Even_Spacing` around each `row`.
-- **`content-evenly`:** `Equal_Spacing` **between** & **around** the `rows`.<br>
+- **`items-start`:** Packs **Items** towards the `Top`.
+- **`items-center`:** Align **Items** to the `Center`.
+- **`items-end`:** Packs **Items** towards the `Bottom`.
+- **`items-stretch`:** Stretches the **Items** to **Fill the Space** `Vertically`.
+- **`items-baseline`:** Aligns **Flex_Items** along their `Text_Baselines`, typically useful when **Items** have different `Font-sizes` or `Vertical_Padding`.<br>
   **`For Ex:`**
   ```
-  <div class="w-200 h-80 grid grid-cols-3 gap-5 justify-self-end content-between mx-5 py-10 text-center">
+  <div class="h-[200px] flex gap-5 mx-5 justify-evenly items-end py-10 text-center">
      <div class="bg-purple-500 text-white p-4">01</div>
      <div class="bg-blue-400 text-white p-4">02</div>
      <div class="bg-purple-500 text-white p-4">03</div>
@@ -1099,8 +1080,9 @@ It **aligns** the entire `Grid` (all `rows` or `columns`) `Vertically` inside th
      <div class="bg-blue-400 text-white p-4">06</div>
   </div>
   ```
-  ![`content-between`](https://github.com/user-attachments/assets/6d69292d-0e6b-498e-80ed-38ff10b4d4f8)<br>
-  As Observed, the `justify-self-end` property shifts the `Grid_Container (Width=200)` towards the `Right_Side`, and the `content-between` property distributes the `rows` towards `Top` and `Bottom` with `Space_Between`.<br> 
+  ![`justify-evenly` & `items-end`](https://github.com/user-attachments/assets/cee2370d-54b2-4f78-927e-f62d3b19168b)<br>
+  As Observed, the `justify-evenly` property distributes the `Flex-Items` proportionally ensuring `Equal_Spacing` **around & between** them, meanwhile the `items-end` property aligns the `Flex-Items` towards the `Bottom` of the `Flex_Container`.<br> 
+<br>
 <br>
 <br>
 
@@ -1219,7 +1201,7 @@ It can be used for **Overriding** the `Global justify-items` **Setting** for Spe
 It **aligns** the entire `Grid` (all `rows` or `columns`) `Vertically` inside the `Grid_Container` when there is **Extra_Space**.
 - **`content-start`:** 	Packs `rows` towards the `Top`.
 - **`content-center`:** Aligns `rows` to the `Center` of the `Grid_Container`.
-- **`content-end`:** Packs `rows` towards the `Bottom`..
+- **`content-end`:** Packs `rows` towards the `Bottom`.
 - **`content-between`:** Distribute the `rows` (towards `Top` as well as `Bottom`) with `Space_Between`.
 - **`content-around`:** Ensures `Even_Spacing` around each `row`.
 - **`content-evenly`:** `Equal_Spacing` **between** & **around** the `rows`.<br>
