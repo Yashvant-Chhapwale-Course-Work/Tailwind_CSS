@@ -1285,7 +1285,6 @@ The `Responsive Breakpoints` / `Screen-Width Breakpoints` define the **Screen-Wi
 - **`xl:`:** It represents `Extra-Large_Screens` (i.e, `Desktops`). [ **`Min-Screen_Width = 1280px`** i.e, for Screens with **Width Equal to 1280px or Greater** ]
 - **`2xl:`:** It represents `Doubly Extra-Large_Screens` (i.e, `Smart_TVs`). [ **`Min-Screen_Width = 1536px`** i.e, for Screens with **Width Equal to 1536px or Greater** ] <br>
 **and so on . . .** <br>
-<br>
 
   **`For Ex:`** <br>
   For `lg:` i.e, **Screen-Width Equal to 1024px or Greater**:<br>
