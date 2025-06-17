@@ -1153,7 +1153,7 @@ It can be used for **Overriding** the `Global justify-items` **Setting** for Spe
 - **`justify-self-stretch`:** `Stretch` the Items/Container to **Fill** the available **Space**.<br>
   **`For Ex:`**
   ```
-  <div class="grid grid-cols-3 gap-5 mx-5 py-10 text-center">
+  <div class="grid grid-cols-3 justify-itemms-stretch gap-5 mx-5 py-10 text-center">
      <div class="bg-purple-500 text-white p-4">01</div>
      <div class="justify-self-center bg-blue-400 text-white p-4">02</div>
      <div class="bg-purple-500 text-white p-4">03</div>
@@ -1167,12 +1167,12 @@ It can be used for **Overriding** the `Global justify-items` **Setting** for Spe
 
 4. **Align Content (`Grid_Item Property`):**
 It **aligns** the entire `Grid` (all `rows` or `columns`) `Vertically` inside the `Grid_Container` when there is **Extra_Space**.
-- **`content-start`:** Aligns Items to the `Left_Side` within a `Grid_Cell`.
-- **`content-center`:** Aligns Items to the `Center` of a `Grid_Cell`.
-- **`content-end`:** Aligns Items to the `Right_Side` within a `Grid_Cell`.
-- **`content-between`:** `Stretches` the Items to **Fill** the `Grid_Cell`.
-- **`content-around`:** `Stretches` the Items to **Fill** the `Grid_Cell`.
-- **`content-evenly`:** `Stretches` the Items to **Fill** the `Grid_Cell`.<br>
+- **`content-start`:** 	Packs `rows` towards the `Top`.
+- **`content-center`:** Aligns `rows` to the `Center` of the `Grid_Container`.
+- **`content-end`:** Packs `rows` towards the `Bottom`..
+- **`content-between`:** Distribute the `rows` (towards `Top` as well as `Bottom`) with `Space_Between`.
+- **`content-around`:** Ensures `Even_Spacing` around each `row`.
+- **`content-evenly`:** `Equal_Spacing` **between** & **around** the `rows`.<br>
   **`For Ex:`**
   ```
   <div class="w-200 h-80 grid grid-cols-3 gap-5 justify-self-end content-between mx-5 py-10 text-center">
@@ -1184,7 +1184,8 @@ It **aligns** the entire `Grid` (all `rows` or `columns`) `Vertically` inside th
      <div class="bg-blue-400 text-white p-4">06</div>
   </div>
   ```
-  ![`col-span-number`](https://github.com/user-attachments/assets/761a62de-6fc6-4287-982b-bd59abc532e2)<br>
+  ![`content-between`](https://github.com/user-attachments/assets/6d69292d-0e6b-498e-80ed-38ff10b4d4f8)<br>
+  As Observed, the `justify-self-end` property shifts the `Grid_Container (Width=200)` towards the `Right_Side`, and the `content-between` property distributes the `rows` towards `Top` and `Bottom` with `Space_Between`.<br> 
 <br>
 <br>
 
