@@ -1447,9 +1447,75 @@ You can tailor it to fit your **System_Design** by **Configuring** your own `col
 - It supports:
   - **Extensions:**  `.html`, `.js`, `.ts`, `.jsx`, `.tsx`, `.vue`, etc.
   - **Glob Patterns:**  `Glob_Patterns` are like **Smart Symbols within File_Paths**  that help **Match** the `File_Names` or `File_Paths`.<br>
-    (**Ex:** `'./**/*.{html, js}'` which means Scan all `.html` and `.js` **Files**(`/*{html, js}`) in the Current_Folder(`./`) & Sub-Folders(`/**`) of the Project.)<br>
+    (**Ex:** `'./**/*.{html, js}'` which means Scan all `.html` and `.js` **Files**(`/*{html, js}`) in the Current_Folder(where `tailwind.config.js` File is Stored)(`./`) & Sub-Folders(`/**`) of the Project.)<br>
 - **`For Ex:`** <br>
-  `Suppose 
+  Suppose a File Structure:
+  ```
+  src/
+   ├── index.html
+   ├── contact.html
+   ├── pages/
+   │   └── about.html
+  ```
+  <br>
+  
+  Then `Content_Block` can be **Configured** as:
+  ```
+  // Using Absolute Paths:
+  content: [
+    './src/index.html',
+    './src/contact.html',
+    './src/pages/about.html',
+  ],
+  ```
+  <div align="center">
+
+     **OR**
+  </div>
+
+  ```
+  // Using Glob Patterns:
+  content=['./src/**/*.html'],
+  ```
+  This Pattern will Scan all `.html` Files in the `src` Folder and its Sub-Folders for `Tailwind's Utility_Classes`.<br>
+<br>
+<br>
+
+### Theme Block:
+- It is an `Array` which **Lists the Files** where `Tailwind` must look for `Class_Names`.
+- It helps to **Purge** `Unused Styles (Classes))` in **Production** by scanning only Specified_Files.
+- It supports:
+  - **Extensions:**  `.html`, `.js`, `.ts`, `.jsx`, `.tsx`, `.vue`, etc.
+  - **Glob Patterns:**  `Glob_Patterns` are like **Smart Symbols within File_Paths**  that help **Match** the `File_Names` or `File_Paths`.<br>
+    (**Ex:** `'./**/*.{html, js}'` which means Scan all `.html` and `.js` **Files**(`/*{html, js}`) in the Current_Folder(where `tailwind.config.js` File is Stored)(`./`) & Sub-Folders(`/**`) of the Project.)<br>
+- **`For Ex:`** <br>
+  Suppose a File Structure:
+  ```
+  src/
+   ├── index.html
+   ├── contact.html
+   ├── pages/
+   │   └── about.html
+  ```
+  Then `Content_Block` can be **Configured** as:
+  ```
+  // Using Absolute Paths:
+  content: [
+    './src/index.html',
+    './src/contact.html',
+    './src/pages/about.html',
+  ],
+  ```
+  <div align="center">
+
+     **OR**
+  </div>
+
+  ```
+  // Using Glob Patterns:
+  content=['./src/**/*.html'].
+  ```
+  This Pattern will Scan all `.html` Files in the `src` Folder and its Sub-Folders for `Tailwind's Utility_Classes`.<br>
 <br>
 <br>
 
