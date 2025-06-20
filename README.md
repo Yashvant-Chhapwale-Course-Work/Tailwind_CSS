@@ -1442,21 +1442,13 @@ You can tailor it to fit your **System_Design** by **Configuring** your own `col
 <br>
 
 ### Content Block:
-- `Basic Structure` of `tailwind.config.js` **File** can be given as follows:<br>
-  ```
-  // tailwind.config.js
-  module.exports = {
-     content: [],       // 1. Content_Files (i.e, where Utility_Classes have been implemented) to be Scanned (Ex: ./index.html)
-     theme: {
-        extend: {},      // 2. Theme Customizations Here (colors, fonts, etc.)
-     },
-     plugins: [],       // 3. Additional Plugin_Support 
-  }
-  ```
-- Its `Core_Sections` are as follows:
-  - `content`
-  - `extend`
-  - `plugins`
+- It is an `Array` which **Lists the Files** where `Tailwind` must look for `Class_Names`.
+- It helps to **Purge** `Unused Styles (Classes))` in **Production** by scanning only Specified_Files.
+- It supports:
+  - **Extensions:**  `.html`, `.js`, `.ts`, `.jsx`, `.tsx`, `.vue`, etc.
+  - **Glob Patterns:**  `Glob_Patterns` are like **Smart Symbols within File_Paths**  that help **Match** the `File_Names` or `File_Paths`. (**Ex:** `'./**/*.{html, js}'` which means **Scan all `.html` and `.js` Files(/*{html, js}) in the Current_Folder(./) & Sub-Folders(/**) of the Project**.)<br>
+- **`For Ex:`** <br>
+  `Suppose 
 <br>
 <br>
 
