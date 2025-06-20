@@ -1446,7 +1446,7 @@ You can tailor it to fit your **System_Design** by **Configuring** your own `col
 - It helps to **Purge** `Unused Styles (Classes))` in **Production** by scanning only Specified_Files.
 - It supports:
   - **Extensions:**  `.html`, `.js`, `.ts`, `.jsx`, `.tsx`, `.vue`, etc.
-  - **Glob Patterns:**  `Glob_Patterns` are like **Smart Symbols within File_Paths**  that help **Match** the `File_Names` or `File_Paths`. (**Ex:** `'./**/*.{html, js}'` which means **Scan all `.html` and `.js` Files(/*{html, js}) in the Current_Folder(./) & Sub-Folders(/**) of the Project**.)<br>
+  - **Glob Patterns:**  `Glob_Patterns` are like **Smart Symbols within File_Paths**  that help **Match** the `File_Names` or `File_Paths`. (Ex:** `'./**/*.{html, js}'` which means **Scan all `.html` and `.js` **Files**(`/*{html, js}`) in the Current_Folder(`./`) & Sub-Folders(`/**`) of the Project.)<br>
 - **`For Ex:`** <br>
   `Suppose 
 <br>
