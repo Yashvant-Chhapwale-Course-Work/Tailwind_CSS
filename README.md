@@ -1414,7 +1414,6 @@ The `Responsive Breakpoints` / `Screen-Width Breakpoints` define the **Screen-Wi
   <br>
 
 ---
-
 <br>
 
 ## Customizing Tailwind with "tailwind.config.js"
@@ -1424,16 +1423,42 @@ You can tailor it to fit your **System_Design** by **Configuring** your own `col
 <br>
 
 ### tailwind.config.js Structure (Syntax):
-- Tailwind
+- `Basic Structure` of `tailwind.config.js` **File** can be given as follows:<br>
+  ```
+  // tailwind.config.js
+  module.exports = {
+     content: [],       // 1. Content_Files (i.e, where Utility_Classes have been implemented) to be Scanned (Ex: './index.html')
+     theme: {
+        extend: {},      // 2. Theme Customizations Here (colors, fonts, etc.)
+     },
+     plugins: [],       // 3. Additional Plugin_Support 
+  }
+  ```
+- Its `Core_Sections` are as follows:
+  - `content`
+  - `extend`
+  - `plugins`
+<br>
+<br>
 
-- **`sm:`:** It represents `Small_Screens` (i.e, `Mobiles`). [ **`Min-Screen_Width = 640px`** i.e, for Screens with **Width Equal to 640px or Greater** ]
-- **`md:`:** It represents `Medium_Screens` (i.e, `Tablets`). [ **`Min-Screen_Width = 768px`** i.e, for Screens with **Width Equal to 768px or Greater** ]
-- **`lg:`:** It represents `Large_Screens` (i.e, `Laptops`). [ **`Min-Screen_Width = 1024px`** i.e, for Screens with **Width Equal to 1024px or Greater** ]
-- **`xl:`:** It represents `Extra-Large_Screens` (i.e, `Desktops`). [ **`Min-Screen_Width = 1280px`** i.e, for Screens with **Width Equal to 1280px or Greater** ]
-- **`2xl:`:** It represents `Doubly Extra-Large_Screens` (i.e, `Smart_TVs`). [ **`Min-Screen_Width = 1536px`** i.e, for Screens with **Width Equal to 1536px or Greater** ]
-  **and so on . . .**
-  <br>
+### Content Block:
+- `Basic Structure` of `tailwind.config.js` **File** can be given as follows:<br>
+  ```
+  // tailwind.config.js
+  module.exports = {
+     content: [],       // 1. Content_Files (i.e, where Utility_Classes have been implemented) to be Scanned (Ex: ./index.html)
+     theme: {
+        extend: {},      // 2. Theme Customizations Here (colors, fonts, etc.)
+     },
+     plugins: [],       // 3. Additional Plugin_Support 
+  }
+  ```
+- Its `Core_Sections` are as follows:
+  - `content`
+  - `extend`
+  - `plugins`
+<br>
+<br>
 
 ---
-
 <br>
