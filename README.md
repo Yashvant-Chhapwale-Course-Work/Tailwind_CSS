@@ -1502,8 +1502,8 @@ You can tailor it to fit your **System_Design** by **Configuring** your own `col
   theme: {
      extend:{
         colors: {
-           primary: '#',
-           secondary: '#',
+           primary: '#1e40af',
+           secondary: '#f59e0b',
         },
         spacing: {
            fullWidth: '100vw',
