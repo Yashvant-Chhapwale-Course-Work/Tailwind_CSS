@@ -1482,40 +1482,59 @@ You can tailor it to fit your **System_Design** by **Configuring** your own `col
 <br>
 
 ### Theme Block:
-- It is an `Array` which **Lists the Files** where `Tailwind` must look for `Class_Names`.
+- The `Theme Block` is the **Heart of Customization** in `Tailwind_CSS`.
 - It helps to **Purge** `Unused Styles (Classes))` in **Production** by scanning only Specified_Files.
-- It supports:
-  - **Extensions:**  `.html`, `.js`, `.ts`, `.jsx`, `.tsx`, `.vue`, etc.
-  - **Glob Patterns:**  `Glob_Patterns` are like **Smart Symbols within File_Paths**  that help **Match** the `File_Names` or `File_Paths`.<br>
-    (**Ex:** `'./**/*.{html, js}'` which means Scan all `.html` and `.js` **Files**(`/*{html, js}`) in the Current_Folder(where `tailwind.config.js` File is Stored)(`./`) & Sub-Folders(`/**`) of the Project.)<br>
+- It lets you **define** the `System_Design` used throughout your Project — including `colors`, `fonts`, `spacing`, `breakpoints` and more.
+- Some Common Customizations are as follows:
+  - `colors`: Lets you **define** the **Custom** `text`, `background`, or `border` **Colors**.
+  - `spacing`: Add **Custom** `padding`, `margin`, `gap`, etc. (Spacing_Scale usually follows `rem`)
+  - `fontFamily`: Define **Custom** `Font Family`.
+  - `breakpoints`: **Customize** the `Responsive Breakpoints`.
+  - `borderRadius`: Set **Custom** `Border Roundedness` Sizes.
+  - `boxShadow`: Add **Custom** `Shadow Styles`.
 - **`For Ex:`** <br>
-  Suppose a File Structure:
+  Suppose the following **Sample**:
   ```
-  src/
-   ├── index.html
-   ├── contact.html
-   ├── pages/
-   │   └── about.html
+  // Theme Block
+  theme: {
+     extend:{
+        colors: {
+           primary: '#',
+           secondary: '#',
+        },
+        spacing: {
+           fullWidth: '100vw',
+           fullHeight: '100vh',
+        },
+        fontFamily: {
+           heading: ['Poppins', 'sans-serif'],
+           subheading: ['Roboto', 'sans-serif'],
+        },
+        colors: {
+           primary: '#',
+           secondary: '#',
+        },
+        screens: {
+           sm: '480px',
+           md: '768px',
+           lg: '1024px',
+           xl: '1280px', 
+        },
+        borderRadius: {
+           xl: '1rem',
+           huge: '2rem',
+         },
+         boxShadow: {
+           strong: '0 10px 15px rgba(0, 0, 0, 0.3)',
+         },
+  },
+  },
   ```
-  Then `Content_Block` can be **Configured** as:
-  ```
-  // Using Absolute Paths:
-  content: [
-    './src/index.html',
-    './src/contact.html',
-    './src/pages/about.html',
-  ],
-  ```
-  <div align="center">
+  <br>
 
-     **OR**
-  </div>
-
+  `<HTML> Implementation` of these **Customizations:**
   ```
-  // Using Glob Patterns:
-  content: ['./src/**/*.html'].
   ```
-  This Pattern will Scan all `.html` Files in the `src` Folder and its Sub-Folders for `Tailwind's Utility_Classes`.<br>
 <br>
 <br>
 
