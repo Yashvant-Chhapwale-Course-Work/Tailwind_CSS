@@ -50,8 +50,7 @@ This **Repository** documents my my `Notes`, `Learnings`, and `UI_Project` as I 
 | 5.  **Tailwind `Backgrounds` and `Colors`**                                                                    | >> [` CHECK CONTENT `](#tailwind-backgrounds-and-colors)                                      |
 | 6.  **Advanced `Layout` Utility_Classes: [`flex`](#flexbox-layout), [`grid`](#grid-layout)**                   | >> [` CHECK CONTENT `](#advanced-layout-utility_classes)                                      |
 | 7.  **`Responsive` Layout_Build**                                                                              | >> [` CHECK CONTENT `](#responsive-layout_build)                                              |
-| 8.  **Customizing Tailwind_Utilities with `tailwind.config.js`**                                               | >> [` CHECK CONTENT `](#customizing-tailwind-with-tailwindconfigjs)                           |
-
+| 8.  **Customizing Tailwind_Utilities with `tailwind.config.js`** [`Update: (CSS-First Approach`]()             | >> [` CHECK CONTENT `](#customizing-tailwind-with-tailwindconfigjs)                           |
 
 </div>
 
@@ -1420,13 +1419,12 @@ The `Responsive Breakpoints` / `Screen-Width Breakpoints` define the **Screen-Wi
 
 ## Customizing Tailwind with "tailwind.config.js"
 
-`Tailwind_CSS` supports `Responsive Designs` that automatically **adapt** to **different** `Screen_Sizes`, from **Mobile Phones** to **Large Desktops**.<br>
-It follows a `Mobile-First Approach`, where **Styles** apply to the `Smallest Screen (Mobiles)` **First** by default, and are **Overridden** on `Larger Screens (Desktops)` using various `Breakpoint-Prefixes`.<br>
+`Tailwind_CSS` is **Highly Customizable**.<br>
+You can tailor it to fit your **System_Design** by **Configuring** your own `colors`, `spacing`, `fonts`, `screens (breakpoints)`, `utilities`, and so on . . ., using the `tailwind.config.js` File.<br>
 <br>
 
-### Responsive Breakpoints:
-
-The `Responsive Breakpoints` / `Screen-Width Breakpoints` define the **Screen-Widths** at which your `Layout` or `Styles` **should change** to accommodate different device sizes.
+### tailwind.config.js Structure (Syntax):
+- Tailwind
 
 - **`sm:`:** It represents `Small_Screens` (i.e, `Mobiles`). [ **`Min-Screen_Width = 640px`** i.e, for Screens with **Width Equal to 640px or Greater** ]
 - **`md:`:** It represents `Medium_Screens` (i.e, `Tablets`). [ **`Min-Screen_Width = 768px`** i.e, for Screens with **Width Equal to 768px or Greater** ]
