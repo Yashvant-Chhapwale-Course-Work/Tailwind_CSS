@@ -1475,7 +1475,7 @@ You can tailor it to fit your **System_Design** by **Configuring** your own `col
 
   ```
   // Using Glob Patterns:
-  content=['./src/**/*.html'],
+  content: ['./src/**/*.html'],
   ```
   This Pattern will Scan all `.html` Files in the `src` Folder and its Sub-Folders for `Tailwind's Utility_Classes`.<br>
 <br>
@@ -1513,7 +1513,7 @@ You can tailor it to fit your **System_Design** by **Configuring** your own `col
 
   ```
   // Using Glob Patterns:
-  content=['./src/**/*.html'].
+  content: ['./src/**/*.html'].
   ```
   This Pattern will Scan all `.html` Files in the `src` Folder and its Sub-Folders for `Tailwind's Utility_Classes`.<br>
 <br>
