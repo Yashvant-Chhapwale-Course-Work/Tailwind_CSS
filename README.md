@@ -1492,6 +1492,9 @@ You can tailor it to fit your **System_Design** by **Configuring** your own `col
   - `breakpoints`: **Customize** the `Responsive Breakpoints`.
   - `borderRadius`: Set **Custom** `Border Roundedness` Sizes.
   - `boxShadow`: Add **Custom** `Shadow Styles`.
+  - `fontSize`: Add **Custom** `Font Sizes`.
+  - `zIndex`: **Customize** the Element's `Stacking Order`.
+  - `maxWidth`: Add **Custom** `Maximum Element_Widths`.
 - **`For Ex:`** <br>
   Suppose the following **Sample**:
   ```
