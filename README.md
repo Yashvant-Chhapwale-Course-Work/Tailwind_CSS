@@ -1497,6 +1497,68 @@ You can tailor it to fit your **System_Design** by **Configuring** your own `col
   - `zIndex`: **Customize** the Element's `Stacking Order`.
   - `maxWidth`: Add **Custom** `Maximum Element_Widths`.
 - **`For Ex:`** <br>
+  Consider the following **Sample**:
+  ```
+  // Theme Block
+  theme: {
+     extend:{
+        colors: {
+           primary: '#1e40af',
+           secondary: '#f59e0b',
+        },
+        spacing: {
+           fullWidth: '100vw',
+           fullHeight: '100vh',
+        },
+        fontFamily: {
+           heading: ['Poppins', 'sans-serif'],
+           subheading: ['Roboto', 'sans-serif'],
+        },
+        colors: {
+           primary: '#',
+           secondary: '#',
+        },
+        screens: {
+           sm: '480px',
+           md: '768px',
+           lg: '1024px',
+           xl: '1280px', 
+        },
+        borderRadius: {
+           xl: '1rem',
+           huge: '2rem',
+         },
+         boxShadow: {
+           strong: '0 10px 15px rgba(0, 0, 0, 0.3)',
+         },
+  },
+  },
+  ```
+  <br>
+
+  `<HTML> Implementation` of these **Customizations:**
+  ```
+  <section class="w-fullWidth h-fullHeight flex items-center justify-center bg-secondary">
+     <div class="text-center p-8 rounded-huge bg-white text-black">
+        <h1 class="text-secondary text-4xl font-heading mb-4">Custom Theme</h1>
+
+        <p class="text-lg font-subheading mb-6">
+           This section showcases how to configure and customize Tailwind CSS
+           using <span class="font-semibold text-primary">tailwind.config.js</span>
+        </p>
+
+        <button
+           class="px-6 py-2 bg-primary text-white rounded-curve hover:shadow-strong transition-ease-in-out duration-300"
+        >Get Started</button>
+     </div>
+  </section>
+  ```
+<br>
+<br>
+
+### Plugins Block:
+- The `Plugins Block` is used to **Extend** `Tailwind's Functionality` by adding **Custom Utilities**, **Components** or **Importing Third-party Tailwind_Plugins**.
+- It helps to **Purge** `Unused Styles (Classes))` in **Production** by scanning only Specified_Files.- **`For Ex:`** <br>
   Suppose the following **Sample**:
   ```
   // Theme Block
@@ -1556,22 +1618,6 @@ You can tailor it to fit your **System_Design** by **Configuring** your own `col
 <br>
 <br>
 
-### Theme Block:
-- The `Theme Block` is the **Heart of Customization** in `Tailwind_CSS`.
-- It helps to **Purge** `Unused Styles (Classes))` in **Production** by scanning only Specified_Files.
-- It lets you **define** the `System_Design` used throughout your Project — including `colors`, `fonts`, `spacing`, `breakpoints` and more.
-- Some Common Customizations are as follows:
-  - `colors`: Lets you **define** the **Custom** `text`, `background`, or `border` **Colors**.
-  - `spacing`: Add **Custom** `padding`, `margin`, `gap`, etc. (Spacing_Scale usually follows `rem`)
-  - `fontFamily`: Define **Custom** `Font Family`.
-  - `breakpoints`: **Customize** the `Responsive Breakpoints`.
-  - `borderRadius`: Set **Custom** `Border Roundedness` Sizes.
-  - `boxShadow`: Add **Custom** `Shadow Styles`.
-  - `fontSize`: Add **Custom** `Font Sizes`.
-  - `zIndex`: **Customize** the Element's `Stacking Order`.
-  - `maxWidth`: Add **Custom** `Maximum Element_Widths`.
-<br>
-<br>
 
 ---
 <br>
