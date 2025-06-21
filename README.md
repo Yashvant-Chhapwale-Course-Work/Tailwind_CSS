@@ -1612,39 +1612,16 @@ As of `Tailwind_v4+`, this method is considered **deprecated** in favor of a [`C
   - `addVariant()`: It **Registers** `Custom_Variants`, allowing you to **Create New State-Based Styles**.
   - `theme()`: **Accesses** values from the `Theme_Configuration` i.e, `Theme_Block`.
   - `config()`: **Accesses** values from the `Tailwind_Configuration` i.e, `tailwind.config.js`. 
-- **`For Ex:`** <br>
-  Suppose the following **Sample**:
+- `addUtilities()`: <br>
+  This Functiom **Registers New Utility_Styles**, which are typically `Single-Purpose Classes`.<br>
+  It is used to define **Individual Utility_Classes** with `Single-Purpose CSS_Styles`.<br>
+  **`For Ex:`**
+  Adding a `text-shadow` Utility_Class,
   ```
-  // Theme Block
-  theme: {
-     extend: {
-        colors: {
-           primary: "#1e40af",
-           secondary: "#f59e0b",
-        },
-        spacing: {
-           fullWidth: "100vw",
-           fullHeight: "100vh",
-        },
-        fontFamily: {
-           heading: ["Nunito", "sans-serif"],
-           subheading: ["Ubuntu", "sans-serif"],
-        },
-        screens: {
-           sm: "480px",
-           md: "768px",
-           lg: "1024px",
-           xl: "1280px",
-        },
-        borderRadius: {
-           huge: "1rem",
-           curve: "2rem",
-        },
-        boxShadow: {
-           strong: "0 10px 15px rgba(0, 0, 0, 0.3)",
-        },
-     },
-  },
+  // Plugin Block
+  plugin: [
+     
+  ],
   ```
   <br>
 
