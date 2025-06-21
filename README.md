@@ -40,17 +40,17 @@ This **Repository** documents my my `Notes`, `Learnings`, and `UI_Project` as I 
 
 <div align="center">
  
-| TITLE                                                                                                          | SECTION_LINK                                                                                  |
-|----------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|
-| 1.  **Tailwind Installation and Setup**                                                                        | >> [` CHECK CONTENT `](#tailwind-installation-and-setup)                                      |
-| **BEGINNER**  
-| 2.  **Basic `Layout` Utility_Classes**                                                                         | >> [` CHECK CONTENT `](#basic-layout-utility_classes)                                         |
-| 3.  **`Typography` Utility_Classes**                                                                           | >> [` CHECK CONTENT `](#typography-utility_classes)                                           |
-| 4.  **Element `Shadows` Utility_Classes**                                                                      | >> [` CHECK CONTENT `](#element-shadows-utility_classes)                                      |
-| 5.  **Tailwind `Backgrounds` and `Colors`**                                                                    | >> [` CHECK CONTENT `](#tailwind-backgrounds-and-colors)                                      |
-| 6.  **Advanced `Layout` Utility_Classes: [`flex`](#flexbox-layout), [`grid`](#grid-layout)**                   | >> [` CHECK CONTENT `](#advanced-layout-utility_classes)                                      |
-| 7.  **`Responsive` Layout_Build**                                                                              | >> [` CHECK CONTENT `](#responsive-layout_build)                                              |
-| 8.  **Customizing Tailwind_Utilities with `tailwind.config.js`** [`Update: (CSS-First Configuration)`]()       | >> [` CHECK CONTENT `](#customizing-tailwind-with-tailwindconfigjs)                           |
+| TITLE                                                                                                                                           | SECTION_LINK                                                                                  |
+|-------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|
+| 1.  **Tailwind Installation and Setup**                                                                                                         | >> [` CHECK CONTENT `](#tailwind-installation-and-setup)                                      |
+| **BEGINNER**                                                                                                                                                                                                                                    |
+| 2.  **Basic `Layout` Utility_Classes**                                                                                                          | >> [` CHECK CONTENT `](#basic-layout-utility_classes)                                         |
+| 3.  **`Typography` Utility_Classes**                                                                                                            | >> [` CHECK CONTENT `](#typography-utility_classes)                                           |
+| 4.  **Element `Shadows` Utility_Classes**                                                                                                       | >> [` CHECK CONTENT `](#element-shadows-utility_classes)                                      |
+| 5.  **Tailwind `Backgrounds` and `Colors`**                                                                                                     | >> [` CHECK CONTENT `](#tailwind-backgrounds-and-colors)                                      |
+| 6.  **Advanced `Layout` Utility_Classes: [`flex`](#flexbox-layout), [`grid`](#grid-layout)**                                                    | >> [` CHECK CONTENT `](#advanced-layout-utility_classes)                                      |
+| 7.  **`Responsive` Layout_Build**                                                                                                               | >> [` CHECK CONTENT `](#responsive-layout_build)                                              |
+| 8.  **Customizing Tailwind_Utilities with `tailwind.config.js`** [`Update v4: (CSS-First Configuration)`](#tailwind_v4-css-first-configuration) | >> [` CHECK CONTENT `](#customizing-tailwind-with-tailwindconfigjs)                           |
 
 </div>
 
