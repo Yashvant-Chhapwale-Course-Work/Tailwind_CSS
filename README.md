@@ -1605,6 +1605,13 @@ As of `Tailwind_v4+`, this method is considered **deprecated** in favor of a [`C
 
 ### Plugins Block:
 - The `Plugins Block` is used to **Extend** `Tailwind's Functionality` by adding **Custom Utilities**, **Components** or **Importing Third-party / Community Tailwind_Plugins**.
+- Some Common `Plugin_Functions` are as follows:
+  - `addUtilities()`: It **Registers New Utility_Styles**, which are typically `Single-Purpose Classes`. 
+  - `addComponents()`: It **Registers New Component_Styles**, which are often a `Collections of Utilities/Styles`.
+  - `addBase()`: **Add** `Base_Element Styles` i.e, defines Styles for Base_Elements (Ex: `<h1>`, `<button>`, etc.)
+  - `addVariant()`: It **Registers** `Custom_Variants`, allowing you to **Create New State-Based Styles**.
+  - `theme()`: **Accesses** values from the `Theme_Configuration` i.e, `Theme_Block`.
+  - `config()`: **Accesses** values from the `Tailwind_Configuration` i.e, `tailwind.config.js`. 
 - **`For Ex:`** <br>
   Suppose the following **Sample**:
   ```
