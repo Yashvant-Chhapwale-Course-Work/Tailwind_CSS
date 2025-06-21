@@ -1552,7 +1552,9 @@ As of `Tailwind_v4+`, this method is considered **deprecated** in favor of a [`C
            curve: "2rem",
         },
         boxShadow: {
-           strong: "0 10px 15px rgba(0, 0, 0, 0.3)",
+           soft: "0 4px 6px rgba(0, 0, 0, 0.1)",
+           strong: "0 8px 10px rgba(0, 0, 0, 0.3)",
+           deep: "0 10px 15px rgba(0, 0, 0, 0.4)",
         },
      },
   },
@@ -1571,7 +1573,7 @@ As of `Tailwind_v4+`, this method is considered **deprecated** in favor of a [`C
         </p>
 
         <button
-          class="px-6 py-2 bg-primary text-white font-subheading rounded-curve hover:shadow-strong transition-ease-in-out duration-300">
+          class="px-6 py-2 bg-primary text-white font-subheading rounded-curve hover:shadow-deep transition-ease-in-out duration-300">
           Get Started
         </button>
      </div>
@@ -1620,7 +1622,7 @@ As of `Tailwind_v4+`, this method is considered **deprecated** in favor of a [`C
   ```
   // Plugin Block
   plugins: [
-     function ({ addUtilities }) { // It is Shorthand for extracting only the needed "addUtilities" helper from "Tailwind's Plugin_Context Object i.e, helper" passed to your Plugin_Function.
+     function ({ addUtilities }) { // It is Shorthand for destructuring extracting only the needed "addUtilities" helper from "Tailwind's Plugin_Context Object i.e, helper" passed to your Plugin_Function.
         const newUtilities = {     // Defines the Custom New "text-shadow" Utilities.
            '.text-shadow': {
               textShadow: '2px 2px 4px rgba(0, 0, 0, 0.3)',
@@ -1646,20 +1648,21 @@ As of `Tailwind_v4+`, this method is considered **deprecated** in favor of a [`C
   ```
   // Plugin Block
   plugins: [
-     function ({ addComponents }) { // It is Shorthand for extracting only the needed "addComponents" from "Tailwind's Plugin_Context Object i.e, helper" passed to your Plugin_Function.
+     function ({ addComponents, theme }) { // It is Shorthand for destructuring and extracting only the needed "addComponents", "theme" helpers from "Tailwind's Plugin_Context Object i.e, helper" passed to your Plugin_Function. 
         const buttons = {      // Defines the Custom New "btn-glass" Component.
-           '.btn-glass': {
-              padding: '0.5rem 1rem',
-              borderRadius: '0.75rem',
-              backgroundColor: 'rgba(255, 255, 255, 0.1)',
-              color: '#fff',
-              backdropFilter: 'blur(10px)',
-              border: '1px solid rgba(255, 255, 255, 0.3)',
-              boxShadow: '0 4px 12px rgba(0, 0, 0, 0.2)',
-              transition: 'all 0.3s ease',
-              },
-           '.btn-glass:hover': {
-              textShadow: 'none',
+           ".btn-primary": {
+              padding: "0.5rem 1rem",
+              borderRadius: theme("borderRadius.curve"),
+              backgroundColor: theme("colors.primary"),
+              color: "#ffffff",
+              backdropFilter: "blur(10px)",
+              boxShadow: theme("boxShadow.soft"),
+              transition: "all 0.3s ease-in-out",
+              transform: "scale(1)",
+           },
+           ".btn-primary:hover": {
+              boxShadow: theme("boxShadow.strong"),
+              transform: "scale(1.05)",
            },
         };
   
@@ -1667,7 +1670,38 @@ As of `Tailwind_v4+`, this method is considered **deprecated** in favor of a [`C
      },
   ],
   ```
-  <br>
+- `addBase()`: <br>
+  This Function **Registers New Component_Styles**, which are often a `Collections of Utilities/Styles`.<br>
+  Unlike `addUtilities()` Function, it used to define **Reusable `.class` Based Components** that `Group Multiple CSS_Styles` together.<br>
+  **`For Ex:`**
+  Adding a Custom `btn-glass` Component,
+  ```
+  // Plugin Block
+  plugins: [
+     function ({ addComponents, theme }) { // It is Shorthand for destructuring and extracting only the needed "addComponents", "theme" helpers from "Tailwind's Plugin_Context Object i.e, helper" passed to your Plugin_Function. 
+        const buttons = {      // Defines the Custom New "btn-glass" Component.
+           ".btn-primary": {
+              padding: "0.5rem 1rem",
+              borderRadius: theme("borderRadius.curve"),
+              backgroundColor: theme("colors.primary"),
+              color: "#ffffff",
+              backdropFilter: "blur(10px)",
+              boxShadow: theme("boxShadow.soft"),
+              transition: "all 0.3s ease-in-out",
+              transform: "scale(1)",
+           },
+           ".btn-primary:hover": {
+              boxShadow: theme("boxShadow.strong"),
+              transform: "scale(1.05)",
+           },
+        };
+  
+        addComponents(buttons); // This Registers the New Components within the "buttons" Variable with Tailwind.      
+     },
+  ],
+  ```
+  
+
   
   `<HTML> Implementation`:
   ```
