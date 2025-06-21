@@ -1072,7 +1072,7 @@ The `outline-color` property defines the **Color** of the `Outline` drawn around
   </div>
   ```
   ![`outline-color`](https://github.com/user-attachments/assets/1824d1fe-0543-4a41-8603-6209acafb9e8)<br>
-  <br>
+<br>
 
 ---
 
