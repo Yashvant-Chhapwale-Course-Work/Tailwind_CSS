@@ -1430,6 +1430,8 @@ You can tailor it to fit your **System_Design** by **Configuring** your own `col
 - `Basic Structure` of `tailwind.config.js` **File** can be given as follows:<br>
   ```
   // tailwind.config.js
+
+  /** @type {import('tailwindcss').Config} */
   module.exports = {
      content: [],       // 1. Content_Files (i.e, where Utility_Classes have been implemented) to be Scanned (Ex: './index.html')
      theme: {
