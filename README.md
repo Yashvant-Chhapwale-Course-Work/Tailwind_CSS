@@ -50,7 +50,7 @@ This **Repository** documents my my `Notes`, `Learnings`, and `UI_Project` as I 
 | 5.  **Tailwind `Backgrounds` and `Colors`**                                                                    | >> [` CHECK CONTENT `](#tailwind-backgrounds-and-colors)                                      |
 | 6.  **Advanced `Layout` Utility_Classes: [`flex`](#flexbox-layout), [`grid`](#grid-layout)**                   | >> [` CHECK CONTENT `](#advanced-layout-utility_classes)                                      |
 | 7.  **`Responsive` Layout_Build**                                                                              | >> [` CHECK CONTENT `](#responsive-layout_build)                                              |
-| 8.  **Customizing Tailwind_Utilities with `tailwind.config.js`** [`Update: (CSS-First Approach`]()             | >> [` CHECK CONTENT `](#customizing-tailwind-with-tailwindconfigjs)                           |
+| 8.  **Customizing Tailwind_Utilities with `tailwind.config.js`** [`Update: (CSS-First Configuration)`]()       | >> [` CHECK CONTENT `](#customizing-tailwind-with-tailwindconfigjs)                           |
 
 </div>
 
