@@ -1564,37 +1564,33 @@ You can tailor it to fit your **System_Design** by **Configuring** your own `col
   ```
   // Theme Block
   theme: {
-     extend:{
+     extend: {
         colors: {
-           primary: '#1e40af',
-           secondary: '#f59e0b',
+           primary: "#1e40af",
+           secondary: "#f59e0b",
         },
         spacing: {
-           fullWidth: '100vw',
-           fullHeight: '100vh',
+           fullWidth: "100vw",
+           fullHeight: "100vh",
         },
         fontFamily: {
-           heading: ['Poppins', 'sans-serif'],
-           subheading: ['Roboto', 'sans-serif'],
-        },
-        colors: {
-           primary: '#1e40af',
-           secondary: '#',
+           heading: ["Nunito", "sans-serif"],
+           subheading: ["Ubuntu", "sans-serif"],
         },
         screens: {
-           sm: '480px',
-           md: '768px',
-           lg: '1024px',
-           xl: '1280px', 
+           sm: "480px",
+           md: "768px",
+           lg: "1024px",
+           xl: "1280px",
         },
         borderRadius: {
-           huge: '1rem',
-           curve: '2rem',
-         },
-         boxShadow: {
-           strong: '0 10px 15px rgba(0, 0, 0, 0.3)',
-         },
-  },
+           huge: "1rem",
+           curve: "2rem",
+        },
+        boxShadow: {
+           strong: "0 10px 15px rgba(0, 0, 0, 0.3)",
+        },
+     },
   },
   ```
   <br>
