@@ -99,7 +99,7 @@ This **Repository** documents my my `Notes`, `Learnings`, and `UI_Project` as I 
 - Go to [`Tailwind_CLI Docs`](https://tailwindcss.com/docs/installation/tailwind-cli).
 - **Copy** and **Run** the `npm Command` from the Page, in your `Terminal`, to install `Tailwind_CSS` and `Tailwind_CLI`:
   ```
-  npm install tailwindcss @tailwindcss/cli
+  npm install tailwindcss@latest @tailwindcss/cli@latest
   ```
 - Next, **Import** `Tailwind_CSS` in you **Main CSS_File** (`style.css`).<br>
   `For Ex:` Suppose **style.css**:
@@ -145,7 +145,7 @@ This **Repository** documents my my `Notes`, `Learnings`, and `UI_Project` as I 
 - Go to [`Tailwind_CLI Docs`](https://tailwindcss.com/docs/installation/tailwind-cli).
 - **Copy** and **Run** the `npm Command` from the Page, in your `Terminal`, to install `Tailwind` and `@tailwindcss/vite`:
   ```
-  npm install tailwindcss @tailwindcss/vite
+  npm install tailwindcss@latest @tailwindcss/vite@latest
   ```
 - Next, Add the `@tailwindcss/vite` **Plugin** to your `Vite_Configuration` (i.e, `vite.config.js` or `vite.config.ts` File):<br>
   `For Ex:` Suppose **vite.config.js**:
