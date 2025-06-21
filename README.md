@@ -1517,10 +1517,6 @@ You can tailor it to fit your **System_Design** by **Configuring** your own `col
            heading: ['Poppins', 'sans-serif'],
            subheading: ['Roboto', 'sans-serif'],
         },
-        colors: {
-           primary: '#',
-           secondary: '#',
-        },
         screens: {
            sm: '480px',
            md: '768px',
@@ -1528,13 +1524,13 @@ You can tailor it to fit your **System_Design** by **Configuring** your own `col
            xl: '1280px', 
         },
         borderRadius: {
-           xl: '1rem',
-           huge: '2rem',
+           huge: '1rem',
+           curve: '2rem',
          },
          boxShadow: {
-           strong: '0 10px 15px rgba(0, 0, 0, 0.3)',
+           strong: ' 0 10px 15px rgba(0, 0, 0, 0.3)',
          },
-  },
+     },
   },
   ```
   <br>
@@ -1580,7 +1576,7 @@ You can tailor it to fit your **System_Design** by **Configuring** your own `col
            subheading: ['Roboto', 'sans-serif'],
         },
         colors: {
-           primary: '#',
+           primary: '#1e40af',
            secondary: '#',
         },
         screens: {
@@ -1590,8 +1586,8 @@ You can tailor it to fit your **System_Design** by **Configuring** your own `col
            xl: '1280px', 
         },
         borderRadius: {
-           xl: '1rem',
-           huge: '2rem',
+           huge: '1rem',
+           curve: '2rem',
          },
          boxShadow: {
            strong: '0 10px 15px rgba(0, 0, 0, 0.3)',
