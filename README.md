@@ -876,9 +876,10 @@ The `Line-Height Classes` control the `Vertical_Spacing` between **Lines** in a 
 
 ## Element Shadows Utility_Classes
 
-The `Shadow Classes` are used to **apply `Box_Shadows` to Elements**, giving them **Depth** and **Elevating them Visually**.
+The `Shadow Classes` are used to **apply `Shadows` to Elements and Contents**, giving them **Depth** and **Elevating them Visually**.
 <br>
 
+### Box_Shadows:
 - **`shadow`:** Applies **Default/Base_Elevation Shadows** to the Elements.
 - **`shadow-sm`:** Applies **Small Subtle Shadows** to the Elements.
 - **`shadow-md`:** Applies **Medium Shadows** to the Elements.
@@ -887,7 +888,26 @@ The `Shadow Classes` are used to **apply `Box_Shadows` to Elements**, giving the
 - **`shadow-2xl`:** Applies **Prominent/Double Extra-Large Shadows** to the Elements.
   **and so on . . .**
 - **`shadow-inner`:** Applies **Inset_Shadows** to the Elements. The `Inset_Shadows` create the **Illusion** of a **Shadow appearing within an Element**, rather than Extending Outwards.
-  <br>
+<br>
+<br>
+
+### Text_Shadows [Introduced with Tailwind_v4.1]: 
+- **`text-shadow-2xs`:** Applies **Doubly Extra-Subtle Shadows** to the Elements.
+- **`text-shadow-xs`:** Applies **Extra-Subtle Shadows** to the Elements.
+- **`text-shadow`:** Applies **Default/Base_Elevation Shadows** to the Elements.
+- **`text-shadow-sm`:** Applies **Small Subtle Shadows** to the Text Content.
+- **`text-shadow-md`:** Applies **Medium Shadows** to the Text Content.
+- **`text-shadow-lg`:** Applies **Large/Deeper Shadows** to the Text Content.<br>
+  **`For Ex:`**<br>
+  ```
+  <h1
+     class="text-shadow-lg text-shadow-gray-300 text-center text-fuchsia-500 text-4xl"
+  >
+     Hello
+  </h1>
+  ```
+  ![`text-shadow`](https://github.com/user-attachments/assets/b4b24d30-29dd-4c52-acdd-8bdddd534ff8)<br>
+<br>
 
 ---
 
