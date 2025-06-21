@@ -1604,8 +1604,8 @@ As of `Tailwind_v4+`, this method is considered **deprecated** in favor of a [`C
 <br>
 
 ### Plugins Block:
-- The `Plugins Block` is used to **Extend** `Tailwind's Functionality` by adding **Custom Utilities**, **Components** or **Importing Third-party Tailwind_Plugins**.
-- It helps to **Purge** `Unused Styles (Classes))` in **Production** by scanning only Specified_Files.- **`For Ex:`** <br>
+- The `Plugins Block` is used to **Extend** `Tailwind's Functionality` by adding **Custom Utilities**, **Components** or **Importing Third-party / Community Tailwind_Plugins**.
+- **`For Ex:`** <br>
   Suppose the following **Sample**:
   ```
   // Theme Block
