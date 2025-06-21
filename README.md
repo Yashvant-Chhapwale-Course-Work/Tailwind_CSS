@@ -1619,13 +1619,25 @@ As of `Tailwind_v4+`, this method is considered **deprecated** in favor of a [`C
   Adding a `text-shadow` Utility_Class,
   ```
   // Plugin Block
-  plugin: [
-     
+  plugins: [
+     function ({ addUtilities }) {
+        const newUtilities = {
+           '.text-shadow': {
+              textShadow: '2px 2px 4px rgba(0, 0, 0, 0.3)',
+           },
+           '.text-shadow-none': {
+              textShadow: 'none',
+           },
+        };
+
+        // addUtilities() Function
+        addUtilities(newUtilities, ['responsive', 'hover']);
+     },
   ],
   ```
   <br>
-
-  `<HTML> Implementation` of these **Customizations:**
+  
+  `<HTML> Implementation`:
   ```
   <section class="w-fullWidth h-fullHeight flex items-center justify-center bg-secondary">
      <div class="text-center p-8 rounded-huge bg-white">
@@ -1642,10 +1654,7 @@ As of `Tailwind_v4+`, this method is considered **deprecated** in favor of a [`C
         </button>
      </div>
   </section>
-  ```
-  <br>
-
- 
+  ``` 
 <br>
 <br>
 
