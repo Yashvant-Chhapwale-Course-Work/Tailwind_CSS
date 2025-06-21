@@ -1424,6 +1424,9 @@ The `Responsive Breakpoints` / `Screen-Width Breakpoints` define the **Screen-Wi
 
 `Tailwind_CSS` is **Highly Customizable**.<br>
 You can tailor it to fit your **System_Design** by **Configuring** your own `colors`, `spacing`, `fonts`, `screens (breakpoints)`, `utilities`, and so on . . ., using the `tailwind.config.js` File.<br>
+
+**`Note:`** You need `Tailwind_v3.4.17` or **earlier** to use `tailwind.config.js` for Customizations.<br>
+As of `Tailwind_v4+`, this method is considered **deprecated** in favor of a [`CSS-first Configuration`](#) approach.
 <br>
 
 ### tailwind.config.js Structure (Syntax):
