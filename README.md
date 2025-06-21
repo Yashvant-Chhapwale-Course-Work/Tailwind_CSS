@@ -1602,19 +1602,42 @@ You can tailor it to fit your **System_Design** by **Configuring** your own `col
   `<HTML> Implementation` of these **Customizations:**
   ```
   <section class="w-fullWidth h-fullHeight flex items-center justify-center bg-secondary">
-     <div class="text-center p-8 rounded-huge bg-white text-black">
+     <div class="text-center p-8 rounded-huge bg-white">
         <h1 class="text-secondary text-4xl font-heading mb-4">Custom Theme</h1>
 
         <p class="text-lg font-subheading mb-6">
-           This section showcases how to configure and customize Tailwind CSS
-           using <span class="font-semibold text-primary">tailwind.config.js</span>
+          This section showcases how to configure and customize Tailwind CSS
+          using <span class="font-semibold text-primary">tailwind.config.js</span>
         </p>
 
         <button
-           class="px-6 py-2 bg-primary text-white rounded-curve hover:shadow-strong transition-ease-in-out duration-300"
-        >Get Started</button>
+          class="px-6 py-2 bg-primary text-white font-subheading rounded-curve hover:shadow-strong transition-ease-in-out duration-300">
+          Get Started
+        </button>
      </div>
   </section>
+  ```
+  <br>
+
+  Dont Forget to **Add Links for the Font-Families within the `<HEAD>` Tag** or the `Font-Family Customizations` won't work:
+  ```
+  <head>
+     <meta charset="UTF-8" />
+     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     <link href="./output.css" rel="stylesheet" />
+
+     <!-- Google_Fonts Links-->
+     <link rel="preconnect" href="https://fonts.googleapis.com" />
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+     <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Ubuntu&display=swap"
+        rel="stylesheet"
+     />
+     <link
+        href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap"
+        rel="stylesheet"
+     />
+  </head>
   ```
 <br>
 <br>
