@@ -1492,7 +1492,6 @@ As of `Tailwind_v4+`, this method is considered **deprecated** in favor of a [`C
 
 ### Theme Block:
 - The `Theme Block` is the **Heart of Customization** in `Tailwind_CSS`.
-- It helps to **Purge** `Unused Styles (Classes))` in **Production** by scanning only Specified_Files.
 - It lets you **define** the `System_Design` used throughout your Project — including `colors`, `fonts`, `spacing`, `breakpoints` and more.
 - Some Common Customizations are as follows:
   - `colors`: Lets you **define** the **Custom** `text`, `background`, or `border` **Colors**.
