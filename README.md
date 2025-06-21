@@ -1620,8 +1620,8 @@ As of `Tailwind_v4+`, this method is considered **deprecated** in favor of a [`C
   ```
   // Plugin Block
   plugins: [
-     function ({ addUtilities }) {
-        const newUtilities = {
+     function ({ addUtilities }) { // It is Shorthand for extracting only the needed "addUtilities" helper from "Tailwind's Plugin_Context Object i.e, helper" passed to your Plugin_Function.
+        const newUtilities = {     // Defines the Custom New "text-shadow" Utilities.
            '.text-shadow': {
               textShadow: '2px 2px 4px rgba(0, 0, 0, 0.3)',
            },
@@ -1629,9 +1629,41 @@ As of `Tailwind_v4+`, this method is considered **deprecated** in favor of a [`C
               textShadow: 'none',
            },
         };
-
-        // addUtilities() Function
+  
         addUtilities(newUtilities, ['responsive', 'hover']);
+        // This Registers the New Utility_Classes within the "newUtilities" Variable with Tailwind.
+        // The Second Argument ['responsive', 'hover'] tells Tailwind to generate "responsive" and "hover" Variants,
+        // Hover Variant >> `hover:text-shadow`
+        // Responsive Variant >> `md:text-shadow`
+     },
+  ],
+  ```
+- `addComponents()`: <br>
+  This Function **Registers New Component_Styles**, which are often a `Collections of Utilities/Styles`.<br>
+  Unlike `addUtilities()` Function, it used to define **Reusable `.class` Based Components** that `Group Multiple CSS_Styles` together.<br>
+  **`For Ex:`**
+  Adding a Custom `btn-glass` Component,
+  ```
+  // Plugin Block
+  plugins: [
+     function ({ addComponents }) { // It is Shorthand for extracting only the needed "addComponents" from "Tailwind's Plugin_Context Object i.e, helper" passed to your Plugin_Function.
+        const buttons = {      // Defines the Custom New "btn-glass" Component.
+           '.btn-glass': {
+              padding: '0.5rem 1rem',
+              borderRadius: '0.75rem',
+              backgroundColor: 'rgba(255, 255, 255, 0.1)',
+              color: '#fff',
+              backdropFilter: 'blur(10px)',
+              border: '1px solid rgba(255, 255, 255, 0.3)',
+              boxShadow: '0 4px 12px rgba(0, 0, 0, 0.2)',
+              transition: 'all 0.3s ease',
+              },
+           '.btn-glass:hover': {
+              textShadow: 'none',
+           },
+        };
+  
+        addComponents(buttons); // This Registers the New Components within the "buttons" Variable with Tailwind.      
      },
   ],
   ```
