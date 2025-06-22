@@ -75,7 +75,6 @@ This **Repository** documents my my `Notes`, `Learnings`, and `UI_Project` as I 
   ```
   ![Play_CDN Script](https://github.com/user-attachments/assets/900289e2-7731-437a-b633-f71047743411)<br>
 - Paste it inside the `<head> Tag` of your `HTML`:
-
   ```
   <head>
      <meta charset="UTF-8" />
