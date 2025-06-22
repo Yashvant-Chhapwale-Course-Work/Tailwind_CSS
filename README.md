@@ -1625,7 +1625,7 @@ As of `Tailwind_v4+`, this method is considered **deprecated** in favor of a [`C
      function ({ addUtilities }) { // It is Shorthand for destructuring extracting only the needed "addUtilities" helper from "Tailwind's Plugin_Context Object i.e, helper" passed to your Plugin_Function.
         const newUtilities = {     // Defines the Custom New "text-shadow" Utilities.
            '.text-shadow': {
-              textShadow: '2px 2px 4px rgba(0, 0, 0, 0.3)',
+              textShadow: '2px 2px 4px rgba(255, 0, 0, 0.3)',
            },
            '.text-shadow-none': {
               textShadow: 'none',
@@ -1649,7 +1649,7 @@ As of `Tailwind_v4+`, this method is considered **deprecated** in favor of a [`C
   // Plugin Block
   plugins: [
      function ({ addComponents, theme }) { // It is Shorthand for destructuring and extracting only the needed "addComponents", "theme" helpers from "Tailwind's Plugin_Context Object i.e, helper" passed to your Plugin_Function. 
-        const buttons = {      // Defines the Custom New "btn-glass" Component.
+        const buttons = {      // Defines the Custom New "btn-primary" Component and its "hover" Variant.
            ".btn-primary": {
               padding: "0.5rem 1rem",
               borderRadius: theme("borderRadius.curve"),
@@ -1671,15 +1671,15 @@ As of `Tailwind_v4+`, this method is considered **deprecated** in favor of a [`C
   ],
   ```
 - `addBase()`: <br>
-  This Function **Registers New Component_Styles**, which are often a `Collections of Utilities/Styles`.<br>
-  Unlike `addUtilities()` Function, it used to define **Reusable `.class` Based Components** that `Group Multiple CSS_Styles` together.<br>
+  The `addBase()` is a method used to **Inject `Base(Global) Styles`**.<br>
+  It performs tasks such as **Resetting element's Default_Styles**, **Setting Fonts** or **Modifying `<HTML>` Tags**.<br>
   **`For Ex:`**
-  Adding a Custom `btn-glass` Component,
+  Modifying the `<h1>` and `<p>` Tags for **Heading and Subheading** Effect,
   ```
   // Plugin Block
   plugins: [
      function ({ addComponents, theme }) { // It is Shorthand for destructuring and extracting only the needed "addComponents", "theme" helpers from "Tailwind's Plugin_Context Object i.e, helper" passed to your Plugin_Function. 
-        const buttons = {      // Defines the Custom New "btn-glass" Component.
+        const buttons = {      // Defines the Custom New "btn-primary" Component and its "hover" Variant.
            ".btn-primary": {
               padding: "0.5rem 1rem",
               borderRadius: theme("borderRadius.curve"),
