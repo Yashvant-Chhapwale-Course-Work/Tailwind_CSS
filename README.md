@@ -1700,39 +1700,75 @@ As of `Tailwind_v4+`, this method is considered **deprecated** in favor of a [`C
     },
   ],
   ```
+- `addVariant()`:<br>
+  The `addVariant()` is a method used to **define `Custom Class_Variants`**, like `hover:`, `focus:`, or **Custom_Variants** (Ex: `child:`).
+  **`For Ex:`**
+  Creating a **Custom_Variant** `child-hover` which **tracks and modifies** the **Children** within a **Parent_Element**,
+  ```
+  // Plugin Block
+  plugins: [
+     function ({ addVariant }) {  // It is Shorthand for destructuring and extracting only the needed "addVariant" helper from "Tailwind's Plugin_Context Object i.e, helper" passed to your Plugin_Function. 
+      addVariant("child-hover", "&:hover > *"); //  This Registers the Custom_Variant with Tailwind.
+    },
+  ],
+  ```
+  `Note:` The `addVariant()` Function also utilizes **Glob_Patterns** to identify Elements/Childrens.<br>
+  The `&` indicates the `Parent_Element`, `:hover` instructs Tailwind to generate `Hover_Variants`, `> *` identifies all the `Children` within the **Parent_Element**.<br>
+  Here the **Glob_Pattern** basically means `Generating Hover(:hover) Variants for all Childrens(> *) under Parent_Element(&)`.<br>
 - `theme()`: <br>
   The `theme()` Function is a `helper` provided in **Plugins** (like `addUtilities()`, `addComponents()`, `addBase()`, etc.) to access your `Tailwind_Config Values` declared inside the `Theme_Block`.<br>
   It follows the following `Syntax`:<br>
   ```
-  theme("path.to.value")
+  theme("path.to.theme_variable")
   ```
 - `config()`: <br>
+  The `config()` Function is a `helper` which allows you to **Access** your entire `Tailwind_Config` (unlike `theme()` which only provides access to values under **Theme_Block**).<br>
+  It provides access to `Config_Values` such as:
+     - `theme`
+     - `variant`
+     - `corePlugins`
+     - `darkMode`, etc.<br>
+  It follows the `Syntax`:<br>
+  ```
+  config("path.to.config_variable")
+  ```
+  **`For Ex:`**<br>
+  |**config('path')**                                       |**Result / Value**                              |
+  |---------------------------------------------------------|------------------------------------------------|
+  |`config('theme.colors.primary')`                         |`#1e40af`                                       |
+  |`config('variants.backgroundColor')`                     |`['hover', 'focus']`                            |
+  |`config('corePlugins.float')`                            |`false`                                         |
+  |`config('darkMode')`	                                    |`'class'`                                       |
+  <br>
   
-  
-  
-
-  
-  `<HTML> Implementation`:
+  Integrated (Combined) `<HTML> Implementation` for above **Plugins**:
   ```
   <section class="w-fullWidth h-fullHeight flex items-center justify-center bg-secondary">
      <div class="text-center p-8 rounded-huge bg-white">
-        <h1 class="text-secondary text-4xl font-heading mb-4">Custom Theme</h1>
+        <h1 class="text-shadow mb-4">Custom Theme</h1>
 
-        <p class="text-lg font-subheading mb-6">
+        <p class="mb-6">
           This section showcases how to configure and customize Tailwind CSS
-          using <span class="font-semibold text-primary">tailwind.config.js</span>
+          using <span>tailwind.config.js</span>
         </p>
 
-        <button
-          class="px-6 py-2 bg-primary text-white font-subheading rounded-curve hover:shadow-strong transition-ease-in-out duration-300">
-          Get Started
-        </button>
+        <div
+          class="child-hover:scale-105 child-hover:bg-secondary child-hover:transition-all child-hover:duration-300 flex justify-center items-center space-x-5 my-5"
+        >
+          <div class="p-8 bg-primary rounded-huge"></div>
+          <div class="p-8 bg-primary rounded-huge"></div>
+          <div class="p-8 bg-primary rounded-huge"></div>
+        </div>
+
+        <button class="btn-primary btn-primary:hover">Get Started</button>
      </div>
   </section>
   ``` 
 <br>
 <br>
 
+## Tailwind_v4 CSS-First Configuration:
+<br>
 
 ---
 <br>
