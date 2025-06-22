@@ -1728,6 +1728,8 @@ As of `Tailwind_v4+`, this method is considered **deprecated** in favor of a [`C
      - `variant`
      - `corePlugins`
      - `darkMode`, etc.<br>
+     <br>
+     
   It follows the `Syntax`:<br>
   ```
   config("path.to.config_variable")
