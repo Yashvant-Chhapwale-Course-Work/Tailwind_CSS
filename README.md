@@ -1741,6 +1741,22 @@ As of `Tailwind_v4+`, this method is considered **deprecated** in favor of a [`C
   |`config('variants.backgroundColor')`                     |`['hover', 'focus']`                            |
   |`config('corePlugins.float')`                            |`false`                                         |
   |`config('darkMode')`	                                    |`'class'`                                       |
+- Adding `Third-Party Plugins`: <br>
+  You can easily **Add** `Third-party Plugins` inside your `tailwind.config.js` using the `plugins` **Array**.
+  It mainly involves `Two Steps`:
+     - `Download` the required Tailwind Plugins: <br>
+       **`Command Prompt:`**
+       ```
+       npm install @tailwindcss/forms @tailwindcss/typography
+       ```
+     - **Add** it to the **plugins_Array** using `require()`: <br>
+       **`tailwind.config.js:`**
+       ```
+       plugins: [
+          require('@tailwindcss/forms'),
+          require('@tailwindcss/typography'),
+       ],
+       ```
   <br>
   
 - Integrated (Combined) `<HTML> Implementation` for above **Plugins**:
