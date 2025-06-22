@@ -1743,7 +1743,7 @@ As of `Tailwind_v4+`, this method is considered **deprecated** in favor of a [`C
   |`config('darkMode')`	                                    |`'class'`                                       |
   <br>
   
-  Integrated (Combined) `<HTML> Implementation` for above **Plugins**:
+- Integrated (Combined) `<HTML> Implementation` for above **Plugins**:
   ```
   <section class="w-fullWidth h-fullHeight flex items-center justify-center bg-secondary">
      <div class="text-center p-8 rounded-huge bg-white">
@@ -1765,7 +1765,8 @@ As of `Tailwind_v4+`, this method is considered **deprecated** in favor of a [`C
         <button class="btn-primary btn-primary:hover">Get Started</button>
      </div>
   </section>
-  ``` 
+  ```
+  ![`Plugins_Block`](https://github.com/user-attachments/assets/cd387fec-e98d-4282-997b-daefa5332090)<br>
 <br>
 <br>
 
