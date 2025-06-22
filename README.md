@@ -1464,9 +1464,9 @@ As of `Tailwind_v4+`, this method is considered **deprecated** in favor of a [`C
   }
   ```
 - Its `Core_Sections` are as follows:
-  - `content`
-  - `extend`
-  - `plugins`
+  - [`content`](#content-block)
+  - [`theme`](#theme-block) [`Note:` This is just one of the types of the `Extends-Block` but is **most commonly used**. Other Types include: `variants`, `plugins`, `corePlugins`, `plugins`, `content`, etc.]
+  - [`plugins`](#plugins-block)
 <br>
 <br>
 
