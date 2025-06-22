@@ -1672,34 +1672,43 @@ As of `Tailwind_v4+`, this method is considered **deprecated** in favor of a [`C
   ```
 - `addBase()`: <br>
   The `addBase()` is a method used to **Inject `Base(Global) Styles`**.<br>
-  It performs tasks such as **Resetting element's Default_Styles**, **Setting Fonts** or **Modifying `<HTML>` Tags**.<br>
+  It performs tasks such as **Resetting element's Default_Styles**, **Styling Fonts** or **Modifying `<HTML>` Tags**.<br>
   **`For Ex:`**
-  Modifying the `<h1>` and `<p>` Tags for **Heading and Subheading** Effect,
+  Modifying the `<h1>`, `<p>` and `<span>` Tags for **Heading and Subheading** Effect,
   ```
   // Plugin Block
   plugins: [
-     function ({ addComponents, theme }) { // It is Shorthand for destructuring and extracting only the needed "addComponents", "theme" helpers from "Tailwind's Plugin_Context Object i.e, helper" passed to your Plugin_Function. 
-        const buttons = {      // Defines the Custom New "btn-primary" Component and its "hover" Variant.
-           ".btn-primary": {
-              padding: "0.5rem 1rem",
-              borderRadius: theme("borderRadius.curve"),
-              backgroundColor: theme("colors.primary"),
-              color: "#ffffff",
-              backdropFilter: "blur(10px)",
-              boxShadow: theme("boxShadow.soft"),
-              transition: "all 0.3s ease-in-out",
-              transform: "scale(1)",
-           },
-           ".btn-primary:hover": {
-              boxShadow: theme("boxShadow.strong"),
-              transform: "scale(1.05)",
-           },
-        };
-  
-        addComponents(buttons); // This Registers the New Components within the "buttons" Variable with Tailwind.      
-     },
+     function ({ addBase, theme }) { // It is Shorthand for destructuring and extracting only the needed "addBase", "theme" helpers from "Tailwind's Plugin_Context Object i.e, helper" passed to your Plugin_Function. 
+      const base = { // Modifies the 'h1', 'p' and 'span' Base_Elements.
+        h1: {
+          color: theme("colors.secondary"),
+          fontFamily: theme("fontFamily.heading"),
+          fontSize: "2rem",
+        },
+        p: {
+          color: "#000000",
+          fontFamily: theme("fontFamily.subheading"),
+          fontSize: "1.2rem",
+        },
+        span: {
+          color: theme("colors.primary"),
+          fontWeight: "bold",
+        },
+      };
+
+      addBase(base); // This Registers the Modified_Styles for the Base_Elements within the "base" Variable with Tailwind.
+    },
   ],
   ```
+- `theme()`: <br>
+  The `theme()` Function is a `helper` provided in **Plugins** (like `addUtilities()`, `addComponents()`, `addBase()`, etc.) to access your `Tailwind_Config Values` declared inside the `Theme_Block`.<br>
+  It follows the following `Syntax`:<br>
+  ```
+  theme("path.to.value")
+  ```
+- `config()`: <br>
+  
+  
   
 
   
