@@ -43,6 +43,7 @@ This **Repository** documents my my `Notes`, `Learnings`, and `UI_Project` as I 
 | TITLE                                                                                                                                           | SECTION_LINK                                                                                  |
 |-------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|
 | 1.  **Tailwind Installation and Setup**                                                                                                         | >> [` CHECK CONTENT `](#tailwind-installation-and-setup)                                      |
+| 1.  **Tailwind_Version Verification**                                                                                                           | >> [` CHECK CONTENT `](#tailwind_version-verification)                                        |
 |                                                                                                                                                                                                                                                 |
 | [**BEGINNER**](#beginner---level)                                                                                                                                                                                                                                    |
 | 2.  **Basic `Layout` Utility_Classes**                                                                                                          | >> [` CHECK CONTENT `](#basic-layout-utility_classes)                                         |
@@ -200,6 +201,18 @@ This **Repository** documents my my `Notes`, `Learnings`, and `UI_Project` as I 
    
    **`Note:` The `Setup_Steps` in the Above Methods are aligned with the Latest `Tailwind_CSS Version` at the Time, i.e., `Tailwind_CSS v4.1`.**
 </div>
+<br>
+
+---
+<br>
+
+## Tailwind_Version Verificaton
+- Open your `Terminal` or `Command_Prompt`.
+- Paste the following **CCommand** in your `Terminal` to verify which `Tailwind_Version` you're using:
+  ```
+  npx tailwindcss -v
+  ```
+  ![`npx tailwindcss -v`](https://github.com/user-attachments/assets/ddf45185-ef2a-422b-98b4-df8e7eef43f5)<br>
 <br>
    
 ---
