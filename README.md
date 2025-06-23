@@ -63,8 +63,7 @@ This **Repository** documents my my `Notes`, `Learnings`, and `UI_Project` as I 
 
 ## Tailwind Installation and Setup
 
-### 1. Using Play_CDN(Content Delivery Network) [QUICKEST METHOD]:
-
+### 1.Using Play_CDN(Content Delivery Network) [QUICKEST METHOD]:
 - The `Play CDN` lets you load `Tailwind's Core_Utilities` into your project **without any Build Step**.
 - `Without any Build Step:` Normally, with a Full Tailwind_Setup, you’d need `Node_Js`, `npm` (To install Tailwind) and sometimes a Build_Tool like `Vite`. But, with `Play_CDN`, you can skip all of that — **No Configuration**, **No Installation**, **No Compiling**.
 - All the **Utility_Classes** are **preloaded** via the CDN Servers!
@@ -91,8 +90,7 @@ This **Repository** documents my my `Notes`, `Learnings`, and `UI_Project` as I 
   <br>
   <br>
 
-### 2. Using Tailwind_CLI:
-
+### 2.Using Tailwind_CLI:
 - Tailwind CLI is the official Command-Line Interface provided by Tailwind CSS that allows you to:
   - **Compile** your Tailwind CSS from Source to a **usable CSS_File** (typically `output.css`).
   - **Without needing a Build_Tool** (Ex: Vite).
@@ -134,8 +132,7 @@ This **Repository** documents my my `Notes`, `Learnings`, and `UI_Project` as I 
   <br>
   <br>
 
-### 3. Using Vite:
-
+### 3.Using Vite:
 - `Vite` is a **Modern Build_Tool** and **Development_Server** that dramatically improves the `UI_development (Frontend)` experience.
 - **Prerequisites:**
   - You need to [`Install and Setup Node_Js`](https://nodejs.org/en/download) for this Method.
