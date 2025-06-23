@@ -89,6 +89,7 @@ This **Repository** documents my my `Notes`, `Learnings`, and `UI_Project` as I 
 
 - Now you are ready to use `Tailwind's Utility_Classes` directly in your `HTML` without any Setup or Build Process!
   <br>
+  <br>
 
 ### 2. Using Tailwind_CLI:
 
@@ -130,6 +131,7 @@ This **Repository** documents my my `Notes`, `Learnings`, and `UI_Project` as I 
   ![Tailwind_CLI](https://github.com/user-attachments/assets/1d4d70f4-f4f5-48c5-90a3-4c59a6da7e11)<br>
 
 - Now you are all set to use `Tailwind's Utility_Classes` in your Project efficiently!
+  <br>
   <br>
 
 ### 3. Using Vite:
