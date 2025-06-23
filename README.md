@@ -204,9 +204,9 @@ This **Repository** documents my my `Notes`, `Learnings`, and `UI_Project` as I 
    
 ---
 <br>
-
 <div align="center">
-   BEGINNER - LEVEL
+   
+   ### BEGINNER - LEVEL
 </div>
 
 ---
