@@ -205,6 +205,13 @@ This **Repository** documents my my `Notes`, `Learnings`, and `UI_Project` as I 
 ---
 <br>
 
+<div align="center">
+   BEGINNER - LEVEL
+</div>
+
+---
+<br>
+
 ## Basic Layout Utility_Classes
 
 The `Layout Classes` define how elements are **displayed**, how they **take up space**, and how they are **positioned** within the `Document Flow (DOM -- Document Object Model)`.
@@ -1786,6 +1793,8 @@ As of `Tailwind_v4+`, this method is considered **deprecated** in favor of a [`C
 <br>
 
 ## Tailwind_v4 CSS-First Configuration:
+The `CSS-first Configuration` is the New **Customization Approach** introduced with `Tailwind_CSS v4+`.<br>
+
 <br>
 
 ---
