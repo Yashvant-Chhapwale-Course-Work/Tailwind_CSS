@@ -55,7 +55,7 @@ This **Repository** documents my my `Notes`, `Learnings`, and `UI_Project` as I 
 | 9.  **Customizing Tailwind_Utilities with `tailwind.config.js`** [`Update v4: (CSS-First Configuration)`](#tailwind_v4-css-first-configuration) |  [` 🔗CONTENT `](#customizing-tailwind-with-tailwindconfigjs)                                |
 |                                                                                                                                                                                                                                                 |
 | **INTERMEDIATE**                                                                                                                                                                                                                                |
-| 10. **Basic `Layout` Utility_Classes**                                                                                                          | >> [` 🔗CONTENT `](#basic-layout-utility_classes)                                            |
+| 10. **Basic `Layout` Utility_Classes**                                                                                                          |  [` 🔗CONTENT `](#basic-layout-utility_classes)                                              |
 
 </div>
 
