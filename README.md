@@ -1808,7 +1808,13 @@ As of `Tailwind_v4+`, this method is considered **deprecated** in favor of a [`C
 
 ## Tailwind_v4 CSS-First Configuration:
 The `CSS-first Configuration` is the New **Customization Approach** introduced with `Tailwind_CSS v4+`.<br>
+It allows you to **define** your `System_Design` directly in your `CSS_File`, instead of **Configuring** everything in `tailwind.config.js`.
+<br>
 
+Some `Benefits` are as follows:
+- **`Faster Development:`** You can now set your **Custom_Styles** (like `colors`, `fonts`, `sizes`) directly in a `CSS_File` using `Config_Variables`.<br>
+  Improves **maintainability of `CODE`** as the **Customizations** are now maintained under an individual `CSS_File`.<br>
+- **`Customization using Native CSS Features:`** **Tailwind** now supports **Modern CSS_Features** like `@theme`, `@layer`, etc., directly in your **Stylesheet** for **Customizations**.
 <br>
 
 ---
