@@ -31,6 +31,7 @@ This **Repository** documents my my `Notes`, `Learnings`, and `UI_Project` as I 
   <br>
 
 <div a;ign="center">
+   
    **📌 Visit the [Official_Documentation](https://tailwindcss.com/docs) to know more about `Tailwind_CSS`.**
 </div>
 
