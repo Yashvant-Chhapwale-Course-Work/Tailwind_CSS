@@ -8,7 +8,7 @@ This **Repository** documents my my `Notes`, `Learnings`, and `UI_Project` as I 
 
 <div align="center">
    
-   **📌 Checkout my Post-Bootcamp [`Tailwind_UI Project`](https://github.com/Yashvant-Chhapwale/Scribe_Smart-Notes)** <br>
+   **📌 Checkout my Post-Bootcamp [`Tailwind_UI Project`](https://github.com/Yashvant-Chhapwale/Scribe_Smart-Notes)**
 </div>
 
 ---
