@@ -30,7 +30,9 @@ This **Repository** documents my my `Notes`, `Learnings`, and `UI_Project` as I 
 - `JIT(Just-In-Time) Engine:` **Utilizes Just-In-Time Compilation** for fast build times and smaller final CSS output. It generates the CSS you need, only when you need it, instead of generating everything up front.
   <br>
 
-**📌 Visit the [Official_Documentation](https://tailwindcss.com/docs) to know more about `Tailwind_CSS`.**
+<div a;ign="center">
+   **📌 Visit the [Official_Documentation](https://tailwindcss.com/docs) to know more about `Tailwind_CSS`.**
+</div>
 
 ---
 
