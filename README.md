@@ -64,6 +64,13 @@ This **Repository** documents my my `Notes`, `Learnings`, and `UI_Project` as I 
 
 ---
 
+## Tailwind Version Selection
+- 
+<br>
+
+---
+<br>
+
 ## Tailwind Installation and Setup
 
 ### 1.Using Play_CDN(Content Delivery Network) [QUICKEST METHOD]:
