@@ -1554,7 +1554,7 @@ As of `Tailwind_v4+`, this method is considered **deprecated** in favor of a [`C
 
 ### Theme Block:
 - The `Theme Block` is the **Heart of Customization** in `Tailwind_CSS`.
-- It lets you **define** the `System_Design` used throughout your Project — including `colors`, `fonts`, `spacing`, `breakpoints` and more.
+- It lets you **define** the `System_Design` used throughout your Project, including `colors`, `fonts`, `spacing`, `breakpoints` and more.
 - Some Common Customizations are as follows:
   - `colors`: Lets you **define** the **Custom** `text`, `background`, or `border` **Colors**.
   - `spacing`: Add **Custom** `padding`, `margin`, `gap`, etc. (Spacing_Scale usually follows `rem`)
@@ -1881,9 +1881,9 @@ Some `Benefits` are as follows:
   ```
 - Its `Core_Sections` are as follows:
   - [`:root`](#root-block)
-  - [`@theme`](#theme)
-  - [`@layer`](#layer) 
-  - [`@plugin`](#plugin)
+  - [`@theme`](#theme-block)
+  - [`@layer`](#layer-block) 
+  - [`@plugin`](#plugin-block)
 <br>
 <br>
 
@@ -1898,5 +1898,79 @@ Some `Benefits` are as follows:
      --secondary: #f59e0b;
   }
   ```
+  These `CSS_Variables` cannot be directly used as `Utility_Classes` but can be passed as **Values** [using `val()` Method] to `Custom Utility_Classes` within `@theme` or `@apply` Blocks.
+<br>
+<br>
+
+### @theme Block:
+- The `@theme` lets you **define** the `System_Design` used throughout your Project, including `colors`, `fonts`, `spacing`, `breakpoints` and more..
+- It lets you **manipulate** and **create** `Custom Utilities` for **Tailwind's Utility_Classes**.
+- **`For Ex:`**
+  ```
+  @theme {
+     --color-p: var(--primary);
+     --color-s: var(--secondary);
+     --color-avocado-100: oklch(0.99 0 0);
+     --color-avocado-200: oklch(0.98 0.04 113.22);
+     --color-avocado-300: oklch(0.94 0.11 115.03);
+  
+     --spacing-fullWidth: 100vw;
+     --spacing-fullHeight: 100vh;
+  
+     --radius-curve: 2rem;
+     --radius-huge: 1rem;
+
+     --shadow-soft: 0 4px 6px rgba(0, 0, 0, 0.1);
+     --shadow-strong: 0 8px 10px rgba(0, 0, 0, 0.3);
+     --shadow-deep: 0 10px 15px rgba(0, 0, 0, 0.4);
+  
+     --breakpoint-sm: 100px;
+     --breakpoint-md: 480px;
+     --breakpoint-lg: 750px;
+     --breakpoint-xl: 1000px;
+  
+     --font-heading: "Nunito", sans-serif;
+     --font-subheading: "Ubuntu", sans-serif;-primary: #1e40af;
+  }
+  ```
+  You can also Observe that, the `Custom CSS_Variables` defined in `:root` are being accessed **Utilities** defined in `@theme` using the `var()` method.
+<br>
+<br>
+
+### @apply Block:
+- The `@theme` lets you **define** the `System_Design` used throughout your Project, including `colors`, `fonts`, `spacing`, `breakpoints` and more..
+- It lets you **manipulate** and **create** `Custom Utilities` for **Tailwind's Utility_Classes**.
+- **`For Ex:`**
+  ```
+  @theme {
+     --color-p: var(--primary);
+     --color-s: var(--secondary);
+     --color-avocado-100: oklch(0.99 0 0);
+     --color-avocado-200: oklch(0.98 0.04 113.22);
+     --color-avocado-300: oklch(0.94 0.11 115.03);
+  
+     --spacing-fullWidth: 100vw;
+     --spacing-fullHeight: 100vh;
+  
+     --radius-curve: 2rem;
+     --radius-huge: 1rem;
+
+     --shadow-soft: 0 4px 6px rgba(0, 0, 0, 0.1);
+     --shadow-strong: 0 8px 10px rgba(0, 0, 0, 0.3);
+     --shadow-deep: 0 10px 15px rgba(0, 0, 0, 0.4);
+  
+     --breakpoint-sm: 100px;
+     --breakpoint-md: 480px;
+     --breakpoint-lg: 750px;
+     --breakpoint-xl: 1000px;
+  
+     --font-heading: "Nunito", sans-serif;
+     --font-subheading: "Ubuntu", sans-serif;-primary: #1e40af;
+  }
+  ```
+  You can also Observe that, the `Custom CSS_Variables` defined in `:root` are being accessed **Utilities** defined in `@theme` using the `var()` method.
+<br>
+<br>
+
 ---
 <br>
