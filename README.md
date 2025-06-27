@@ -1860,7 +1860,7 @@ Some `Benefits` are as follows:
   }
   ```
 - Its `Core_Sections` are as follows:
-  - [`:root`](#root)
+  - [`:root`](#root-block)
   - [`@theme`](#theme)
   - [`@layer`](#layer) 
   - [`@plugin`](#plugin)
