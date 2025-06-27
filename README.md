@@ -1867,7 +1867,7 @@ Some `Benefits` are as follows:
 <br>
 <br>
 
-### ":root" Block:
+### :root Block:
 
 ---
 <br>
