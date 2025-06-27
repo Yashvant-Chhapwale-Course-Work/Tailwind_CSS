@@ -1819,7 +1819,47 @@ Some `Benefits` are as follows:
 - **`Customization using Native CSS Features:`** **Tailwind** now supports **Modern CSS_Features** like `@theme`, `@layer`, etc., directly in your **Stylesheet** for **Customizations**.
 <br>
 
-###
+### CSS-first Configuration Structure:
+- `Basic Structure` of the Main `CSS` **File** can be given as follows:<br>
+  ```
+  @import "tailwindcss";
+
+  :root {
+  }
+
+  @theme {
+  }
+  
+  @layer {
+  }
+  ```
+  <div align="center">
+     
+     **OR**
+  </div>
+  
+  ```
+  @import "tailwindcss";
+
+  :root {
+  }
+
+  @theme {
+  }
+  
+  @layer base{
+  }
+
+  @layer components{
+  }
+
+  @layer utilities{
+  }
+  ```
+- Its `Core_Sections` are as follows:
+  - [`content`](#content-block)
+  - [`theme`](#theme-block) [`Note:` This is just one of the types of the `Extends-Block` but is **most commonly used**. Other Types include: `variants`, `plugins`, `corePlugins`, `plugins`, `content`, etc.]
+  - [`plugins`](#plugins-block)
 <br>
 <br>
 
