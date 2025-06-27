@@ -1933,7 +1933,7 @@ Some `Benefits` are as follows:
      --font-subheading: "Ubuntu", sans-serif;-primary: #1e40af;
   }
   ```
-  You can also Observe that, the `Custom CSS_Variables` defined in `:root` are being accessed **Utilities** defined in `@theme` using the `var()` method.
+  You can also Observe that, the `Custom CSS_Variables` defined in `:root` are being accessed by **Utilities** defined in `@theme` using the `var()` method.
 <br>
 <br>
 
