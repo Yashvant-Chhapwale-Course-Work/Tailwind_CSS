@@ -1827,6 +1827,7 @@ As of `Tailwind_v4+`, this method is considered **deprecated** in favor of a [`C
   ![`Plugins_Block`](https://github.com/user-attachments/assets/cd387fec-e98d-4282-997b-daefa5332090)<br>
 <br>
 <br>
+<br>
 
 ## Tailwind_v4 CSS-First Configuration:
 The `CSS-first Configuration` is the New **Customization Approach** introduced with `Tailwind_CSS v4+`.<br>
