@@ -1937,7 +1937,7 @@ Some `Benefits` are as follows:
 <br>
 <br>
 
-### @apply:
+### @layer:
 - The `@theme` lets you **define** the `System_Design` used throughout your Project, including `colors`, `fonts`, `spacing`, `breakpoints` and more..
 - It lets you **manipulate** and **create** `Custom Utilities` for **Tailwind's Utility_Classes**.
 - **`For Ex:`**
