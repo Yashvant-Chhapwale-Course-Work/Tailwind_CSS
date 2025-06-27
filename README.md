@@ -65,7 +65,10 @@ This **Repository** documents my my `Notes`, `Learnings`, and `UI_Project` as I 
 ---
 
 ## Tailwind Version Selection
-- 
+- Visit the **Tailwind_CSS** [**`Docs`**](#https://tailwindcss.com/docs) Page.
+- Select the **Required** `Tailwind_Version` from the **Version_Dropdown**.
+  ![`Version_Dropdown`](https://github.com/user-attachments/assets/32b916da-dbf5-432b-b734-4b8002eef299)<br>
+- The `Docs` will provide appropriate Information and Installation Guide with respect to the selected `Tailwind_Version`.
 <br>
 
 ---
@@ -224,6 +227,14 @@ This **Repository** documents my my `Notes`, `Learnings`, and `UI_Project` as I 
   npx tailwindcss -v
   ```
   ![`npx tailwindcss -v`](https://github.com/user-attachments/assets/ddf45185-ef2a-422b-98b4-df8e7eef43f5)<br>
+<br>
+   
+---
+<br>
+
+## Tailwind_CSS VS_Code Extension
+- You can **Install** the following `Extension` in VS_Code for proper **formatting and ease** in `Tailwind_Code`. 
+![Tailwind_CSS IntelliSense](https://github.com/user-attachments/assets/1b9ca91a-0b94-490c-aaa1-016b945dcfba)<br>
 <br>
    
 ---
@@ -1882,6 +1893,10 @@ Some `Benefits` are as follows:
 - The `:root` selector applies to the **Entire Document** i.e, **Define Once and Use Anywhere** throughout the **CSS_File**. This makes it easier to manage `Custom_Styling` at a `Global_Level`.
 - **`For Ex:`**
   ```
+  :root {
+     --primary: #1e40af;
+     --secondary: #f59e0b;
+  }
   ```
 ---
 <br>
