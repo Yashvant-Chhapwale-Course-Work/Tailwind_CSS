@@ -1817,13 +1817,15 @@ Some `Benefits` are as follows:
 - **`Faster Development:`** You can now set your **Custom_Styles** (like `colors`, `fonts`, `sizes`) directly in a `CSS_File` using `Config_Variables`.<br>
   Improves **maintainability of `CODE`** as the **Customizations** are now maintained under an individual `CSS_File`.<br>
 - **`Customization using Native CSS Features:`** **Tailwind** now supports **Modern CSS_Features** like `@theme`, `@layer`, etc., directly in your **Stylesheet** for **Customizations**.
+- The **`Content_Block is now handled Automatically`**. You no longer need to manually specify the **Files**, which implement the `Utility_Classes`, in a `tailwind.config.js` while using `Tailwind_v4+` (i.e, **CSS-first Configuration**). 
 <br>
 
 ### CSS-first Configuration Structure:
 - `Basic Structure` of the Main `CSS` **File** can be given as follows:<br>
   ```
   @import "tailwindcss";
-
+  @plugin <plugin_name>;
+  
   :root {
   }
 
@@ -1840,6 +1842,7 @@ Some `Benefits` are as follows:
   
   ```
   @import "tailwindcss";
+  @plugin <plugin_name>;
 
   :root {
   }
