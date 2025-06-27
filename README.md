@@ -45,8 +45,10 @@ This **Repository** documents my my `Notes`, `Learnings`, and `UI_Project` as I 
  
 | TITLE                                                                                                                                           | SECTION_LINK                                                                                  |
 |-------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|
-| 1.  **Tailwind Installation and Setup**                                                                                                         |  [` 🔗CONTENT `](#tailwind-installation-and-setup)                                           |
-| 2.  **Tailwind_Version Verification**                                                                                                           |  [` 🔗CONTENT `](#tailwind_version-verification)                                             |
+| 1.  **Tailwind Version Selection**                                                                                                              |  [` 🔗CONTENT `](#tailwind-version-selection)                                                |
+| 2.  **Tailwind Installation and Setup**                                                                                                         |  [` 🔗CONTENT `](#tailwind-installation-and-setup)                                           |
+| 3.  **Tailwind_Version Verification**                                                                                                           |  [` 🔗CONTENT `](#tailwind_version-verification)                                             |
+| 4.  **Tailwind_CSS VS_Code Extension**                                                                                                          |  [` 🔗CONTENT `](#tailwind_css-vs_code-extension)                                            |
 | [**BEGINNER**](#beginner---level)                                                                                                                                                                                                               |
 | 3.  **Basic `Layout` Utility_Classes**                                                                                                          |  [` 🔗CONTENT `](#basic-layout-utility_classes)                                              |
 | 4.  **`Typography` Utility_Classes**                                                                                                            |  [` 🔗CONTENT `](#typography-utility_classes)                                                |
@@ -1868,6 +1870,11 @@ Some `Benefits` are as follows:
 <br>
 
 ### :root Block:
-
+- The `:root` is a **CSS_Selector** that targets the **Highest-Level Element** in the `DOM (Document Object Model)`, essentially the `<HTML>` Element.
+- It is used to define `CSS Custom_Properties (--variables)` that can be accessed anywhere in the **CSS_File** using the `var()` Method.
+- The `:root` selector applies to the **Entire Document** i.e, **Define Once and Use Anywhere** throughout the **CSS_File**. This makes it easier to manage `Custom_Styling` at a `Global_Level`.
+- **`For Ex:`**
+  ```
+  ```
 ---
 <br>
