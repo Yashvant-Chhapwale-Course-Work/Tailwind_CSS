@@ -1881,9 +1881,9 @@ Some `Benefits` are as follows:
   ```
 - Its `Core_Sections` are as follows:
   - [`:root`](#root-block)
-  - [`@theme`](#theme-block)
-  - [`@layer`](#layer-block) 
-  - [`@plugin`](#plugin-block)
+  - [`@theme`](#theme)
+  - [`@layer`](#layer) 
+  - [`@plugin`](#plugin)
 <br>
 <br>
 
@@ -1902,7 +1902,7 @@ Some `Benefits` are as follows:
 <br>
 <br>
 
-### @theme Block:
+### @theme:
 - The `@theme` lets you **define** the `System_Design` used throughout your Project, including `colors`, `fonts`, `spacing`, `breakpoints` and more..
 - It lets you **manipulate** and **create** `Custom Utilities` for **Tailwind's Utility_Classes**.
 - **`For Ex:`**
@@ -1937,7 +1937,7 @@ Some `Benefits` are as follows:
 <br>
 <br>
 
-### @apply Block:
+### @apply:
 - The `@theme` lets you **define** the `System_Design` used throughout your Project, including `colors`, `fonts`, `spacing`, `breakpoints` and more..
 - It lets you **manipulate** and **create** `Custom Utilities` for **Tailwind's Utility_Classes**.
 - **`For Ex:`**
