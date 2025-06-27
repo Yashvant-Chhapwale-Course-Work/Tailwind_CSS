@@ -1857,9 +1857,10 @@ Some `Benefits` are as follows:
   }
   ```
 - Its `Core_Sections` are as follows:
-  - [`content`](#content-block)
-  - [`theme`](#theme-block) [`Note:` This is just one of the types of the `Extends-Block` but is **most commonly used**. Other Types include: `variants`, `plugins`, `corePlugins`, `plugins`, `content`, etc.]
-  - [`plugins`](#plugins-block)
+  - [`:root`](#root)
+  - [`@theme`](#theme)
+  - [`@layer`](#layer) 
+  - [`@plugin`](#plugin)
 <br>
 <br>
 
