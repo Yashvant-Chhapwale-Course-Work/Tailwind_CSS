@@ -1906,6 +1906,7 @@ Some `Benefits` are as follows:
 ### @theme:
 - The `@theme` lets you **define** the `System_Design` used throughout your Project, including `colors`, `fonts`, `spacing`, `breakpoints` and more..
 - It lets you **manipulate** and **create** `Custom Utilities` for **Tailwind's Utility_Classes**.
+- It also lets you access these `Utilities` as `Custom_Variables` using the `var()` **Method**.
 - **`For Ex:`**
   ```
   @theme {
@@ -1939,37 +1940,76 @@ Some `Benefits` are as follows:
 <br>
 
 ### @layer:
-- The `@theme` lets you **define** the `System_Design` used throughout your Project, including `colors`, `fonts`, `spacing`, `breakpoints` and more..
-- It lets you **manipulate** and **create** `Custom Utilities` for **Tailwind's Utility_Classes**.
-- **`For Ex:`**
-  ```
-  @theme {
-     --color-p: var(--primary);
-     --color-s: var(--secondary);
-     --color-avocado-100: oklch(0.99 0 0);
-     --color-avocado-200: oklch(0.98 0.04 113.22);
-     --color-avocado-300: oklch(0.94 0.11 115.03);
-  
-     --spacing-fullWidth: 100vw;
-     --spacing-fullHeight: 100vh;
-  
-     --radius-curve: 2rem;
-     --radius-huge: 1rem;
+- The `@layer` is a **special directive** used to add your own `Custom CSS` into Tailwind's Build.
+- It is used to **Group** `Custom CSS` into one of `Tailwind’s Internal Style_Layers` (`base`, `utilities`, `components`) for proper ordering and purging.
+<br>
 
-     --shadow-soft: 0 4px 6px rgba(0, 0, 0, 0.1);
-     --shadow-strong: 0 8px 10px rgba(0, 0, 0, 0.3);
-     --shadow-deep: 0 10px 15px rgba(0, 0, 0, 0.4);
-  
-     --breakpoint-sm: 100px;
-     --breakpoint-md: 480px;
-     --breakpoint-lg: 750px;
-     --breakpoint-xl: 1000px;
-  
-     --font-heading: "Nunito", sans-serif;
-     --font-subheading: "Ubuntu", sans-serif;-primary: #1e40af;
+- **`@layer base`:**<br>
+  It is used to define **Default Styles** for `<HTML>` Tags.
+  ```
+  @layer base {
+     body {
+       font-family: var(--font-heading);
+     }
+
+     h1 {
+       font-size: 2.25rem;
+       font-weight: 200;
+       color: var(--secondary);
+     }
+
+     p {   
+       font-size: 1.2rem;
+       font-family: var(--font-subheading);
+     }
+
+     span {
+       font-weight: 800;
+       color: var(--primary);
+     }
   }
   ```
-  You can also Observe that, the `Custom CSS_Variables` defined in `:root` are being accessed **Utilities** defined in `@theme` using the `var()` method.
+- **`@layer utilities`:**<br>
+  It is used to define **Custom Utility_Classes** which are basically `Single-Purpose Utilities` i.e, they define a **Set of CSS_Properties** to achieve a Specific **Styling_Effect**.
+  ```
+  @layer utilities {
+     .text-shadow {
+       text-shadow: 0 2px 4px rgba(255, 0, 0, 0.4);
+     }
+
+     /* Set of CSS_Properties to achieve a Specific Hover-Effect for Child_Elements */
+     .child-hover > *:hover {
+       transform: scale(1.05);
+       background-color: var(--secondary);
+       transition: ease-in-out 0.3s;
+     }
+  }
+  ```
+- **`@layer components`:**<br>
+  It is used to define **Default Styles** for `<HTML>` Tags.
+  ```
+  @layer base {
+     body {
+       font-family: var(--font-heading);
+     }
+
+     h1 {
+       font-size: 2.25rem;
+       font-weight: 200;
+       color: var(--secondary);
+     }
+
+     p {   
+       font-size: 1.2rem;
+       font-family: var(--font-subheading);
+     }
+
+     span {
+       font-weight: 800;
+       color: var(--primary);
+     }
+  }
+  ```
 <br>
 <br>
 
