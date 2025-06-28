@@ -1498,9 +1498,9 @@ The `Responsive Breakpoints` / `Screen-Width Breakpoints` define the **Screen-Wi
 - **`Scenario:`** Turning **Light** Background `Darker` and simultaneously modifying `Darker` Text/Content to a **Lighter** format.
 - `<HTML>` Implementation:
   ```
-  <section class="w-[100vw] h-[100vh] flex items-center justify-center">
+  <section class="w-[100vw] h-[100vh] flex items-center justify-center dark:bg-gray-950">
       <div
-        class="px-20 py-10 bg-amber-200 text-gray-700 dark:bg-black dark:text-white rounded-xl"
+        class="px-20 py-10 bg-amber-200 text-gray-700 dark:bg-blue-950 dark:text-white rounded-xl"
       >
         <h1 class="text-5xl text-center">Hello, Dark Mode!</h1>
       </div>
@@ -1512,7 +1512,7 @@ The `Responsive Breakpoints` / `Screen-Width Breakpoints` define the **Screen-Wi
   First, Switch to `Dark_Mode` **Theme** in your Browser:<br>
   ![`Browser Theme_Settings`](https://github.com/user-attachments/assets/f2146cc1-34ba-4d24-96dc-2aa84f439d1b)<br>
   Observe, how Tailwind Supports the above `Scenario` using `dark:` Variants,<br>
-  ![`Dark_Mode`](https://github.com/user-attachments/assets/4b947904-46c8-42a1-bac2-537f3f591eed)<br>
+  ![`Dark_Mode`](https://github.com/user-attachments/assets/4669fc71-61e5-420e-8dd4-656602955b08)<br>
 <br>
 <br>
 
