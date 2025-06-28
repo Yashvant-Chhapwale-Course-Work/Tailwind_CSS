@@ -1512,7 +1512,7 @@ The `Responsive Breakpoints` / `Screen-Width Breakpoints` define the **Screen-Wi
   First, Switch to `Dark_Mode` **Theme** in your Browser:<br>
   ![`Browser Theme_Settings`](https://github.com/user-attachments/assets/f2146cc1-34ba-4d24-96dc-2aa84f439d1b)<br>
   Observe, how Tailwind Supports the above `Scenario` using `dark:` Variants,<br>
-  ![`Dark_Mode`](https://github.com/user-attachments/assets/0228b5e2-8fe6-43e5-a831-019300e8d7e2)<br>
+  ![`Dark_Mode`](https://github.com/user-attachments/assets/4b947904-46c8-42a1-bac2-537f3f591eed)<br>
 <br>
 <br>
 
