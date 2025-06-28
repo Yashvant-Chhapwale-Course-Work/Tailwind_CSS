@@ -1144,7 +1144,8 @@ The `outline-color` property defines the **Color** of the `Outline` drawn around
    
    ### INTERMEDIATE - LEVEL
 </div>
-
+<br>
+ 
 ---
 <br>
 
@@ -1493,7 +1494,8 @@ The `Responsive Breakpoints` / `Screen-Width Breakpoints` define the **Screen-Wi
    
    ### ADVANCED - LEVEL
 </div>
-
+<br>
+ 
 ---
 <br>
 
