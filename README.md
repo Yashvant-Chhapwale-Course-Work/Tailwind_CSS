@@ -2060,6 +2060,3 @@ Some `Benefits` are as follows:
 
 ---
 
-
----
-<br>
