@@ -1487,6 +1487,14 @@ The `Responsive Breakpoints` / `Screen-Width Breakpoints` define the **Screen-Wi
   For `Default (Mobile-First Orientation)` i.e, **Screen-Width Falls Below 768px**: <br>
   ![`screen-width < 768px`](https://github.com/user-attachments/assets/aeb26124-d159-4f0f-bf78-76a8dabca2fb)<br>
   <br>
+  <br>
+
+---
+<br>
+
+### Tailwind's Dark Mode Support:
+<br>
+<br>
 
 ---
 <br>
