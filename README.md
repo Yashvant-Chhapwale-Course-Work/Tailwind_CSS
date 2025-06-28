@@ -1492,7 +1492,7 @@ The `Responsive Breakpoints` / `Screen-Width Breakpoints` define the **Screen-Wi
 ---
 <br>
 
-### Tailwind's Dark Mode Support:
+## Tailwind's Dark Mode Support:
 <br>
 <br>
 
