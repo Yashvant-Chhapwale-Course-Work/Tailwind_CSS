@@ -1527,6 +1527,13 @@ The `Responsive Breakpoints` / `Screen-Width Breakpoints` define the **Screen-Wi
 ---
 <br>
 
+## Transition and Animation Utilities
+<br>
+<br>
+
+---
+<br>
+
 ## Customizing Tailwind with "tailwind.config.js"
 
 `Tailwind_CSS` is **Highly Customizable**.<br>
