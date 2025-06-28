@@ -1507,7 +1507,7 @@ The `Responsive Breakpoints` / `Screen-Width Breakpoints` define the **Screen-Wi
   </section>
   ```
 - **`Light_Mode:`**<br>
-  ![`Light_Mode`](https://github.com/user-attachments/assets/56631e27-360e-4df2-9da0-75b801e2790f)<br>
+  ![`Light_Mode`](https://github.com/user-attachments/assets/2c2e22d6-d6b6-4d21-a4f5-49fed1ff6577)<br>
 - **`Dark_Mode:`**<br>
   First, Switch to `Dark_Mode` **Theme** in your Browser:<br>
   ![`Browser Theme_Settings`](https://github.com/user-attachments/assets/f2146cc1-34ba-4d24-96dc-2aa84f439d1b)<br>
