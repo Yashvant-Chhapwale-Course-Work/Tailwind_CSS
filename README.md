@@ -1970,7 +1970,8 @@ Some `Benefits` are as follows:
   }
   ```
 - **`@layer utilities`:**<br>
-  It is used to define **Custom Utility_Classes** which are basically `Single-Purpose Utilities` i.e, they define a **Set of CSS_Properties** to achieve a Specific **Styling_Effect**.
+  It is used to define **Custom Utility_Classes** which are basically `Single-Purpose Utilities` i.e, they define a **Set of CSS_Properties** to achieve a Specific **Styling_Effect**.<br>
+  `Note:` Use of `Multiple-Properties` for a `Single_Utility` is **Allowed**, it is **Recommended** to keep each `Utility` focused on a `Single Property` for better **clarity**, **consistency**, and **maintainability**.
   ```
   @layer utilities {
      .text-shadow {
@@ -1986,31 +1987,66 @@ Some `Benefits` are as follows:
   }
   ```
 - **`@layer components`:**<br>
-  It is used to define **Default Styles** for `<HTML>` Tags.
+  It is used to define **Reusable UI_Components**. These are **Larger**, **Multi-property** Classes that group together `Utility_Styles` into a single, easy-to-use Class_Name.<br>
+  It also facilitates the use of `@apply`, allowing you to **Combine** multiple **Tailwind's** `Utility_Classes` into a Single `Custom_Class`. 
   ```
-  @layer base {
-     body {
-       font-family: var(--font-heading);
+  @layer components {
+     .btn-primary {
+        @apply px-5 py-2 rounded-curve bg-p text-white shadow-soft duration-300;
      }
 
-     h1 {
-       font-size: 2.25rem;
-       font-weight: 200;
-       color: var(--secondary);
-     }
-
-     p {   
-       font-size: 1.2rem;
-       font-family: var(--font-subheading);
-     }
-
-     span {
-       font-weight: 800;
-       color: var(--primary);
+     .btn-primary:hover {
+        @apply bg-s shadow-strong scale-105;
      }
   }
   ```
 <br>
+<br>
+
+### @plugin:
+- The `@plugin` is used to **Extend** `Tailwind's Functionality` by adding **Custom Utilities**, **Components** or **Importing Third-party / Community Tailwind_Plugins**.
+- It is declared at **Start** of the `CSS_File` after `@import "tailwindcss";` Line.
+- Similar to [`Plugins Block`](#plugins-block) it supports various functions such as `addUtilities()`, `addComponents()`, `addBase()`, etc for this purpose.
+- It also doesn't need the `require()` method to Import Plugins.
+- **`For Ex:`**
+  ```
+  @plugin "new.plugin";
+  ```
+<br>
+
+  Integrated (Combined) `<HTML> Implementation` for above **CSS-First Customiations**:
+  ```
+  <section class="w-fullWidth h-fullHeight flex items-center justify-center bg-s">
+     <div class="text-center p-8 rounded-huge bg-white shadow-md">
+        <h1 class="mb-4 text-shadow">Custom Theme</h1>
+
+        <p class="mb-6">
+          This section showcases how to configure and customize Tailwind CSS
+          using <span>tailwind.config.js</span>
+        </p>
+
+        <div
+          class="child-hover:scale-105 child-hover child-hover child-hover flex justify-center items-center space-x-5 my-5"
+        >
+          <div class="p-8 bg-p rounded-huge duration-300"></div>
+          <div class="p-8 bg-p rounded-huge duration-300"></div>
+          <div class="p-8 bg-p rounded-huge duration-300"></div>
+        </div>
+
+        <button class="btn-primary btn-primary:hover">Get Started</button>
+     </div>
+  </section>
+  ```
+  ![`CSS-First Config`](https://github.com/user-attachments/assets/8af3a37b-2cf8-4132-a5d2-4f8ed80f922b)<br>
+<br>
+<br>
+
+---
+<br>
+<div align="center">
+   
+   ### INTERMEDIATE - LEVEL
+</div>
 <br>
 
 ---
