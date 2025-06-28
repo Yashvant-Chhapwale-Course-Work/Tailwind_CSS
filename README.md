@@ -54,11 +54,13 @@ This **Repository** documents my my `Notes`, `Learnings`, and `UI_Project` as I 
 | 6.  **`Typography` Utility_Classes**                                                                                                            |  [` 🔗CONTENT `](#typography-utility_classes)                                                |
 | 7.  **Element `Shadows` Utility_Classes**                                                                                                       |  [` 🔗CONTENT `](#element-shadows-utility_classes)                                           |
 | 8.  **Tailwind `Backgrounds` and `Colors`**                                                                                                     |  [` 🔗CONTENT `](#tailwind-backgrounds-and-colors)                                           |
+| [**INTERMEDIATE**](#intermediate---level)                                                                                                                                                                                                       |
 | 9.  **Advanced `Layout` Utility_Classes: [`flex`](#flexbox-layout), [`grid`](#grid-layout)**                                                    |  [` 🔗CONTENT `](#advanced-layout-utility_classes)                                           |
 | 10. **`Responsive` Layout_Build**                                                                                                               |  [` 🔗CONTENT `](#responsive-layout_build)                                                   |
-| 11. **Customizing Tailwind_Utilities with `tailwind.config.js`** [`Update v4: (CSS-First Configuration)`](#tailwind_v4-css-first-configuration) |  [` 🔗CONTENT `](#customizing-tailwind-with-tailwindconfigjs)                                |
-| [**INTERMEDIATE**](#intermediate---level)                                                                                                                                                                                                       |
-| 12. **Basic `Layout` Utility_Classes**                                                                                                          |  [` 🔗CONTENT `](#basic-layout-utility_classes)                                              |
+| 11. **Tailwind's `Dark Mode` Support**                                                                                                          |  [` 🔗CONTENT `](#tailwind-s-dark-mode-support)                                              |
+| [**Advanced**](#advanced---level)                                                                                                                                                                                                               |
+| 12. **`Transitions` & `Animations`**                                                                                                            |  [` 🔗CONTENT `](#transition-and-animation-utilities)                                        |
+| 13. **Customizing Tailwind_Utilities with `tailwind.config.js`** [`Update v4: (CSS-First Configuration)`](#tailwind_v4-css-first-configuration) |  [` 🔗CONTENT `](#customizing-tailwind-with-tailwindconfigjs)                                |
 
 </div>
 
