@@ -569,6 +569,7 @@ These `Utility_Classes` are essential for **Building Layouts**, **ToolTips**, **
   ![`static`](https://github.com/user-attachments/assets/746a092f-806e-438f-9e42-13cd0eab91f4)<br>
   As you can Observe, the `top-10` and `left-10` **Classes** are not working and the `Green Box` follows the `Normal Document_Flow`.
   <br>
+  <br>
   
 - **`relative`:** The **Element** is **Positioned Relative to its Normal Position**. The **Element** follows the `Normal Document_Flow`, but you can use the `Inset Classes` to further **nudge it around**.<br>
   `For Ex:`
@@ -590,6 +591,7 @@ These `Utility_Classes` are essential for **Building Layouts**, **ToolTips**, **
   ```
   ![`relative`](https://github.com/user-attachments/assets/3bb3dda8-292f-4b23-a47c-50a402dd4966)<br>
   As you can Observe, the **Element** follows the `Normal Document_Flow` (Red Box >> Green Box >> Blue Box), but it also utilizes the `top-10` and `left-10` classes to further position itself unlike the `Static Element`.
+  <br>
   <br>
   
 - **`absolute`:** The **Element** is **Positioned Relative to the nearest Positioned Ancestor(Parent)** (Ancestors are basically Parent_Elements utilizing Position_Classes such as `relative`,`absolute`,`fixed`,etc not including `static`).If there are **No** `Positioned_Ancestors` then the Element positions itself `Relative` to the `<HTML> Element`.<br>
@@ -623,6 +625,7 @@ These `Utility_Classes` are essential for **Building Layouts**, **ToolTips**, **
   ![`fixed`](https://github.com/user-attachments/assets/8ef395f4-cd42-4c79-847c-fc23f2c6c64d)<br>
   As you can Observe, the **Green Box** remains `fixed` at `bottom-10` and `right-10`, on the **Visible Screen (Viewport)**, even when **Scrolling**.
   <br>
+  <br>
   
 - **`sticky`:** The Element is treated as `relative` until it reaches a **Defined Scroll_Position** (Threshold -- `top`.`bottom`,`left`,`right`), after which it behaves like a `fixed` Element. Basically, it **Scrolls** until it `sticks` to a **Defined Position** and then stays `fixed` on that position.<br>
   `For Ex:`
@@ -648,7 +651,8 @@ These `Utility_Classes` are essential for **Building Layouts**, **ToolTips**, **
   ![`sticky` >> After Scrolling-Down](https://github.com/user-attachments/assets/33b09a2b-5815-4d16-b303-4241a1e20eb4)<br>
   As you can Observe, **initially** the **Green Box** follows the `Normal Document_Flow`, but on **scrolling down** as soon as the **Green Box** is at a distance of `20px`(5 -- Tailwind Spacing_Scale) from the **Top_Side** i.e, `top-5` it becomes `fixed`, even **overlaps** the **Blue Box**.
   <br>
-
+  <br>
+  
 4. **z-index Classes:** <br>
    The `z-index` controls the **Stacking order of Elements** on the **Z-axis** (`front`-to-`back`). Basically, it controls which Element appears on **Top** when **Overlapping**.<br>
 
