@@ -497,6 +497,7 @@ The `Box_Sizing Classes` define how the **Total Width and Height of an Element a
   Then, you can observe that the **Size** i.e **Width & Height** only accounts for the **Content** of the Element excluding the **Border & Padding Dimensions**.
   <br>
   <br>
+  <br>
 
 ### Element Flow_Control:
 
