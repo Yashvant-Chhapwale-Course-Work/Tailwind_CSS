@@ -1546,6 +1546,13 @@ The `Responsive Breakpoints` / `Screen-Width Breakpoints` define the **Screen-Wi
 <br>
 
 ## Transition and Animation Utilities
+`Tailwind_CSS` provides a rich set of `Transition` and `Animation` **Utilities** to help you create **Smooth Visual_Effects** with minimal effort.
+<br>
+
+### transition-{property}:
+The `transition-{property}` utility determines which `CSS Properties` will **animate**  in a **Clean & Consistent Way** when their **Values** Change.
+- **`transition-all`:** Applies **Transitions** to `All Animatable CSS Properties`.
+- **`transition-all`:** Applies **Transitions** to `All Animatable CSS Properties`.
 <br>
 <br>
 
