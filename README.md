@@ -59,8 +59,9 @@ This **Repository** documents my my `Notes`, `Learnings`, and `UI_Project` as I 
 | 10. **`Responsive` Layout_Build**                                                                                                               |  [` 🔗CONTENT `](#responsive-layout_build)                                                   |
 | 11. **Tailwind's `Dark Mode` Support**                                                                                                          |  [` 🔗CONTENT `](#tailwinds-dark-mode-support)                                               |
 | [**ADVANCED**](#advanced---level)                                                                                                                                                                                                               |
-| 12. **`Transitions` & `Animations`**                                                                                                            |  [` 🔗CONTENT `](#transition-and-animation-utilities)                                        |
-| 13. **Customizing Tailwind_Utilities with `tailwind.config.js`** [`Update v4: (CSS-First Configuration)`](#tailwind_v4-css-first-configuration) |  [` 🔗CONTENT `](#customizing-tailwind-with-tailwindconfigjs)                                |
+| 12. **`Transformations`**                                                                                                                       |  [` 🔗CONTENT `](#transformation-utilities)                                                  |
+| 13. **`Transitions` & `Animations`**                                                                                                            |  [` 🔗CONTENT `](#transition-and-animation-utilities)                                        |
+| 14. **Customizing Tailwind_Utilities with `tailwind.config.js`** [`Update v4: (CSS-First Configuration)`](#tailwind_v4-css-first-configuration) |  [` 🔗CONTENT `](#customizing-tailwind-with-tailwindconfigjs)                                |
 
 </div>
 
@@ -1545,14 +1546,31 @@ The `Responsive Breakpoints` / `Screen-Width Breakpoints` define the **Screen-Wi
 ---
 <br>
 
+## Transformation Utilities
+`Tailwind_CSS` provides a rich set of `Transition` and `Animation` **Utilities** to help you create **Smooth Visual_Effects** with minimal effort.
+<br>
+<br>
+
+---
+<br>
+
 ## Transition and Animation Utilities
 `Tailwind_CSS` provides a rich set of `Transition` and `Animation` **Utilities** to help you create **Smooth Visual_Effects** with minimal effort.
 <br>
 <br>
 
 ### transition-{property}:
-The `transition-{property}` utility determines which `CSS Properties` will **animate**  in a **Clean & Consistent Way** when their **Values** Change.
+The `transition-{property}` utility determines which `CSS Properties` will **Animate**  in a **Clean & Consistent Way** when their **Values** Change.
 - **`transition-all`:** Applies **Transitions** to `All Animatable CSS Properties`.
+- **`transition-colors`:** Applies **Transitions** only to `Color-related Properties` like `bg-color`, `border-color`, `text-color`, etc.
+- **`transition-opacity`:** Limits **Transitions** to the `Opacity Property`.
+- **`transition-shadow`:** Applies **Transitions** only to the `Shadow Properties` such as `Box_Shadow (shadow)`, `text-shadow`, etc.
+- **`transition-transform`:** Enables **Transitions** on `Transformation-related Properties` like `scale`, `rotate`, `translate`, `skew`, etc.
+<br>
+<br>
+
+### duration:
+The `duration` utility controls **how long** a `Transition` or `Animation` takes to **Complete**.
 - **`transition-all`:** Applies **Transitions** to `All Animatable CSS Properties`.
 <br>
 <br>
