@@ -59,7 +59,7 @@ This **Repository** documents my my `Notes`, `Learnings`, and `UI_Project` as I 
 | 10. **`Responsive` Layout_Build**                                                                                                               |  [` 🔗CONTENT `](#responsive-layout_build)                                                   |
 | 11. **Tailwind's `Dark Mode` Support**                                                                                                          |  [` 🔗CONTENT `](#tailwinds-dark-mode-support)                                               |
 | [**ADVANCED**](#advanced---level)                                                                                                                                                                                                               |
-| 12. **`Transformations`**                                                                                                                       |  [` 🔗CONTENT `](#transform-utilities)                                                  |
+| 12. **`Transformations`**                                                                                                                       |  [` 🔗CONTENT `](#transform-utilities)                                                       |
 | 13. **`Transitions` & `Animations`**                                                                                                            |  [` 🔗CONTENT `](#transition-and-animation-utilities)                                        |
 | 14. **Customizing Tailwind_Utilities with `tailwind.config.js`** [`Update v4: (CSS-First Configuration)`](#tailwind_v4-css-first-configuration) |  [` 🔗CONTENT `](#customizing-tailwind-with-tailwindconfigjs)                                |
 
@@ -1631,13 +1631,14 @@ The `duration` utility controls **how long** a `Transition` or `Animation` takes
 <br>
 <br>
 
-### duration:
-The `duration` utility controls **how long** a `Transition` or `Animation` takes to **Complete**.
-- **`duration-{time}`:** It Sets the `Time` taken by a transition to Complete, in `milliseconds (ms)`.
-- **`duration-0`:** No Animation delay (**Instant Change**).
-- **`duration-200`:** Ideal Animation Delay for most **UI Hover_Effects**. 
-- **`duration-300`:** Ensures **Smooth, Polished Transitions**.
-- **`duration-1000` (1 sec):** Used for **Dramatic Transitions** or StoryTelling.
+### ease-{type} [Timing-Function]:
+The `ease` utility controls the `Acceleration Curve` of a **Transition** or **Animation**.<br>
+It determines how **fast** or **slow** the **Animation** moves at different **Stages (such as start, end, etc.)**.<br>
+- **`ease-linear`:** It Sets the `Time` taken by a transition to Complete.
+- **`ease-in`:** It Sets the `Time` taken by a transition to Complete.
+- **`ease-out`:** It Sets the `Time` taken by a transition to Complete.
+- **`ease-in-out`:** It Sets the `Time` taken by a transition to Complete.
+- **`ease-initial`:** It Sets the `Time` taken by a transition to Complete.
 <br>
 <br>
 
