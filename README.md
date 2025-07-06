@@ -1650,6 +1650,24 @@ The Above `Timing-Functions` can be Explained uing the following `Cubic-Bezier C
 <br>
 <br>
 
+### delay:
+The `delay` utility defines **how long to Wait** before Initiating a `Transition` or `Animation`.<br>
+- **`delay-{time}`:** It Defines the `Waiting_Time` after which a Transition Begins, in `milliseconds (ms)`.
+- **`delay-75`:** Slight Pause for **Subtle Effects**.
+- **`delay-100`:** Slight Pause commonly used for **Cascading UI**.
+- **`delay-150`:** Noticeable Pause for **Staggered Effects**.
+<br>
+<br>
+
+### Animations:
+The `delay` utility defines **how long to Wait** before Initiating a `Transition` or `Animation`.<br>
+- **`delay-{time}`:** It Defines the `Waiting_Time` after which a Transition Begins, in `milliseconds (ms)`.
+- **`delay-75`:** Slight Pause for **Subtle Effects**.
+- **`delay-100`:** Slight Pause commonly used for **Cascading UI**.
+- **`delay-150`:** Noticeable Pause for **Staggered Effects**.
+<br>
+<br>
+
 ---
 <br>
 
