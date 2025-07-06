@@ -1634,12 +1634,15 @@ The `duration` utility controls **how long** a `Transition` or `Animation` takes
 ### ease-{type} [Timing-Function]:
 The `ease` utility controls the `Acceleration Curve` of a **Transition** or **Animation**.<br>
 It determines how **fast** or **slow** the **Animation** moves at different **Stages (such as start, end, etc.)**.<br>
-- **`ease-linear`:** It Sets the `Time` taken by a transition to Complete.
-- **`ease-in`:** It Sets the `Time` taken by a transition to Complete.
-- **`ease-out`:** It Sets the `Time` taken by a transition to Complete.
-- **`ease-in-out`:** It Sets the `Time` taken by a transition to Complete.
-- **`ease-initial`:** It Sets the `Time` taken by a transition to Complete.
-<br>
+- **`ease-linear`:** Transition is performed at a **Constant Speed** from Start to End.
+- **`ease-in`:** The Transition **Starts Slow**, then **Speeds Up towards the End**.
+- **`ease-out`:** The Transition **Starts Fast**, then **Slows Down towards the End**.
+- **`ease-in-out`:** The Transition **Starts & Ends Slowly**, and only **Transitions Faster in the Period Between**.<br>
+The Above `Timing-Functions` can be Explained uing the following `Cubic-Bezier Curves`:<br>
+![`ease-linear`](https://github.com/user-attachments/assets/641e022f-07e2-4e17-ac66-574566520fe4)
+![`ease-in`](https://github.com/user-attachments/assets/2884e645-39fa-47c1-8221-f597cec4729d)
+![`ease-out`](https://github.com/user-attachments/assets/e6dbc65f-8ae7-4673-9738-4ea17cfef3c4)
+![`ease-in-out`](https://github.com/user-attachments/assets/2697941a-d94d-4b7a-87ca-acc593123ef3)<br>
 <br>
 
 ---
