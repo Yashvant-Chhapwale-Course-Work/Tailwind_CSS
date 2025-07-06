@@ -1623,7 +1623,21 @@ The `transition-{property}` utility determines which `CSS Properties` will **Ani
 
 ### duration:
 The `duration` utility controls **how long** a `Transition` or `Animation` takes to **Complete**.
-- **`transition-all`:** Applies **Transitions** to `All Animatable CSS Properties`.
+- **`duration-{time}`:** It Sets the `Time` taken by a transition to Complete, in `milliseconds (ms)`.
+- **`duration-0`:** No Animation delay (**Instant Change**).
+- **`duration-200`:** Ideal Animation Delay for most **UI Hover_Effects**. 
+- **`duration-300`:** Ensures **Smooth, Polished Transitions**.
+- **`duration-1000` (1 sec):** Used for **Dramatic Transitions** or StoryTelling.
+<br>
+<br>
+
+### duration:
+The `duration` utility controls **how long** a `Transition` or `Animation` takes to **Complete**.
+- **`duration-{time}`:** It Sets the `Time` taken by a transition to Complete, in `milliseconds (ms)`.
+- **`duration-0`:** No Animation delay (**Instant Change**).
+- **`duration-200`:** Ideal Animation Delay for most **UI Hover_Effects**. 
+- **`duration-300`:** Ensures **Smooth, Polished Transitions**.
+- **`duration-1000` (1 sec):** Used for **Dramatic Transitions** or StoryTelling.
 <br>
 <br>
 
