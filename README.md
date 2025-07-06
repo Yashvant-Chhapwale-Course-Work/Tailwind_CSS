@@ -1643,7 +1643,7 @@ It determines how **fast** or **slow** the **Animation** moves at different **St
 The Above `Timing-Functions` can be Explained uing the following `Cubic-Bezier Curves`:<br>
 <div>
    <img src="https://github.com/user-attachments/assets/641e022f-07e2-4e17-ac66-574566520fe4" alt="Tailwind Logo" width="25%">
-   <img src="https://github.com/user-attachments/assets/2884e645-39fa-47c1-8221-f597cec4729d" alt="Tailwind Logo" width="25.3%">
+   <img src="https://github.com/user-attachments/assets/2884e645-39fa-47c1-8221-f597cec4729d" alt="Tailwind Logo" width="25.25%">
    <img src="https://github.com/user-attachments/assets/e6dbc65f-8ae7-4673-9738-4ea17cfef3c4" alt="Tailwind Logo" width="25%">
    <img src="https://github.com/user-attachments/assets/2697941a-d94d-4b7a-87ca-acc593123ef3" alt="Tailwind Logo" width="25%">
 </div>
