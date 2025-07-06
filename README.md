@@ -1546,8 +1546,32 @@ The `Responsive Breakpoints` / `Screen-Width Breakpoints` define the **Screen-Wi
 ---
 <br>
 
-## Transformation Utilities
-`Tailwind_CSS` provides a rich set of `Transition` and `Animation` **Utilities** to help you create **Smooth Visual_Effects** with minimal effort.
+## Transform Utilities
+The `Transform` Utilities are **declarative classes** that let you **Animate** or **Change the Appearance** of Elements without writing Custom CSS.<br>
+They are generally used with `Variants` such as `hover:`, `focus:`, etc for **Adding Subtle Visual_Effects** to the Elements.<br>
+<br>
+<br>
+
+### Scale:
+The `scale` utility **Resizes an Element Visually**, either **Enlarging (Zoom In)** or **Shrinking (Zoom Out)**, without affecting the `Layout` around the Element.<br>
+- **`scale-{amount}`:** Scales both **Width and Height** equally i.e, **Resizes the Element along both Axes** simultaneously.
+- **`scale-x-{amount}`:** Scales only **Width** of an Element i.e, **Resizes the Element along X-Axis**.
+- **`scale-y-{amount}`:** Scales only **Height** of an Element i.e, **Resizes the Element along Y-Axis**.
+![`scale`](https://github.com/user-attachments/assets/157c89f4-a22d-491f-a691-663bba6fd8c8)<br>
+<br>
+<br>
+
+### Rotate:
+The `rotate` utility **Rotates an Element Clockwise or Counter-Clockwise** by a specific degree, without affecting the `Layout` around the Element.<br>
+- **`rotate-{degree}`:** Rotates/Spins an Element in **Clockwise** direction (`Positive Utility`).
+- **`-rotate-{degree}`:** Rotates/Spins an Element in **Anti-Clockwise** direction (`Negative Utility`).
+<br>
+<br>
+
+### Translate:
+The `translate` utility **Shifts (Moves) an Element Horizontally or Vertically** without changing its Position in the `Document_Flow (i.e, DOM)`.<br>
+- **`rotate-{degree}`:** Rotates/Spins an Element in **Clockwise** direction (`Positive Utility`).
+- **`-rotate-{degree}`:** Rotates/Spins an Element in **Anti-Clockwise** direction (`Negative Utility`).
 <br>
 <br>
 
