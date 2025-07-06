@@ -1613,7 +1613,7 @@ This **Utility** determines how `Child_Elements` are **rendered** in `3D_Space` 
 
 ### transition-{property}:
 The `transition-{property}` utility determines which `CSS Properties` will **Animate**  in a **Clean & Consistent Way** when their **Values** Change.
-- **`transition-all`:** Applies **Transitions** to `All Animatable CSS Properties`.
+- **`transition-all` or `transition`:** Applies **Transitions** to `All Animatable CSS Properties`.
 - **`transition-colors`:** Applies **Transitions** only to `Color-related Properties` like `bg-color`, `border-color`, `text-color`, etc.
 - **`transition-opacity`:** Limits **Transitions** to the `Opacity Property`.
 - **`transition-shadow`:** Applies **Transitions** only to the `Shadow Properties` such as `Box_Shadow (shadow)`, `text-shadow`, etc.
