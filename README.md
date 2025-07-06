@@ -1557,7 +1557,6 @@ The `scale` utility **Resizes an Element Visually**, either **Enlarging (Zoom In
 - **`scale-{amount}`:** Scales both **Width and Height** equally i.e, **Resizes the Element along both Axes** simultaneously.
 - **`scale-x-{amount}`:** Scales only **Width** of an Element i.e, **Resizes the Element along X-Axis**.
 - **`scale-y-{amount}`:** Scales only **Height** of an Element i.e, **Resizes the Element along Y-Axis**.
-![`scale`](https://github.com/user-attachments/assets/157c89f4-a22d-491f-a691-663bba6fd8c8)<br>
 <br>
 <br>
 
@@ -1570,9 +1569,38 @@ The `rotate` utility **Rotates an Element Clockwise or Counter-Clockwise** by a 
 
 ### Translate:
 The `translate` utility **Shifts (Moves) an Element Horizontally or Vertically** without changing its Position in the `Document_Flow (i.e, DOM)`.<br>
-- **`rotate-{degree}`:** Rotates/Spins an Element in **Clockwise** direction (`Positive Utility`).
-- **`-rotate-{degree}`:** Rotates/Spins an Element in **Anti-Clockwise** direction (`Negative Utility`).
+- **`translate-{amount}`:** Moves the Element towards **Right-Hand as well as Downward Direction**.
+- **`-translate-{amount}`:** Moves the Element towards **Left-Hand as well as Upward Direction**.
+- **`translate-x-{amount}`:** Moves the Element towards **Right-Hand Direction** (i.e, along `Positive X-Axis`).
+- **`-translate-x-{amount}`:** Moves the Element towards **Left-Hand Direction** (i.e, along `Negative X-Axis`).
+- **`translate-y-{amount}`:** Moves the Element in **Downward Direction** (i.e, along `Negative Y-Axis`).
+- **`-translate-y-{amount}`:** Moves the Element in **Upward Direction** (i.e, along `Positive Y-Axis`).
 <br>
+<br>
+
+### Skew:
+The `skew` utility **applies a Diagonal Slant** to an Element, without affecting the `Layout` around the Element.<br>
+- **`skew-{amount}`:** Slants the Element towards **Right as well as Downward Direction**.
+- **`-skew-{amount}`:** Slants the Element towards **Left as well as Upward Direction**.
+- **`skew-x-{amount}`:** Slants the Element towards **Right** (i.e, along `Positive X-Axis`).
+- **`-skew-x-{amount}`:** Slants the Element towards **Left** (i.e, along `Negative X-Axis`).
+- **`skew-y-{amount}`:** Slants the Element in **Downward Direction** (i.e, along `Negative Y-Axis`).
+- **`-skew-y-{amount}`:** Slants the Element in **Upward Direction** (i.e, along `Positive Y-Axis`).
+<br>
+<br>
+
+### Origin:
+The `origin` utility defines the **Pivot Point** for Transformations like `scale`, `rotate`, `skew`, etc.<br>
+**`Pivot Point:`** The `Pivot` is the `Central-Axis of Motion` for an Object. Think of it as a `Nail` or `Pin` that you place somewhere on an **Object**, which when you `rotate` or `scale`, moves around that `Pin`.<br>
+- **`origin-{position}`:** Relocates the `Axis of Motion` to the **Specified Position**.<br>
+  `Note:` Replce the `{position}` with the desired **Position** such as `center`, `left`, `right`, `top`, `bottom`, `top-left`, `bottom-right` and so on. . .<br>
+<br>
+<br>
+
+### Transform Style:
+This **Utility** determines how `Child_Elements` are **rendered** in `3D_Space` i.e, whether they should maintain their **individual 3D Positions** or be **flattened** into the plane of the parent. <br>
+- **`transform-flat`:** Children **do not preserve** `3D_Space` and **appear** in a `2D_Plane`, as if **Flattened**.<br>
+- **`transform-3d`:** Children **maintain** their `3D Positioning`, allowing for proper **3D Rendering** and **Nested Transforms**.<br>
 <br>
 
 ---
