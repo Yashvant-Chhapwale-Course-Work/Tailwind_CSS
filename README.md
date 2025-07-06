@@ -1624,7 +1624,7 @@ The `transition-{property}` utility determines which `CSS Properties` will **Ani
 ### duration:
 The `duration` utility controls **how long** a `Transition` or `Animation` takes to **Complete**.
 - **`duration-{time}`:** It Sets the `Time` taken by a transition to Complete, in `milliseconds (ms)`.
-- **`duration-0`:** No Animation delay (**Instant Change**).
+- **`duration-0`:** No Animation delay (**No Animations** & **Instant Change**).
 - **`duration-200`:** Ideal Animation Delay for most **UI Hover_Effects**. 
 - **`duration-300`:** Ensures **Smooth, Polished Transitions**.
 - **`duration-1000` (1 sec):** Used for **Dramatic Transitions** or StoryTelling.
@@ -1653,6 +1653,7 @@ The Above `Timing-Functions` can be Explained uing the following `Cubic-Bezier C
 ### delay:
 The `delay` utility defines **how long to Wait** before Initiating a `Transition` or `Animation`.<br>
 - **`delay-{time}`:** It Defines the `Waiting_Time` after which a Transition Begins, in `milliseconds (ms)`.
+- **`delay-0`:** **No Delay** for Transitions i.e, the Transition Animations begin instantaneously.
 - **`delay-75`:** Slight Pause for **Subtle Effects**.
 - **`delay-100`:** Slight Pause commonly used for **Cascading UI**.
 - **`delay-150`:** Noticeable Pause for **Staggered Effects**.
@@ -1660,11 +1661,12 @@ The `delay` utility defines **how long to Wait** before Initiating a `Transition
 <br>
 
 ### Animations:
-The `delay` utility defines **how long to Wait** before Initiating a `Transition` or `Animation`.<br>
-- **`delay-{time}`:** It Defines the `Waiting_Time` after which a Transition Begins, in `milliseconds (ms)`.
-- **`delay-75`:** Slight Pause for **Subtle Effects**.
-- **`delay-100`:** Slight Pause commonly used for **Cascading UI**.
-- **`delay-150`:** Noticeable Pause for **Staggered Effects**.
+The `animate` utility lets you apply `Motion Effects` to `<HTML>` Elements. <br>
+- **`animate-none`:** **No Animations** are applied to an Element. 
+- **`animate-spin`:** **Spins** the Element continuously.
+- **`animate-ping`:** Makes an Element **Scale and Fade-Out** like a `Radar_Ping` or `Ripple_of_Water`.
+- **`animate-pulse`:** Smooth & Gentle **Fade In & Out Animation Loop** on an Element. 
+- **`animate-bounce`:** Makes an Element **Bounce Up and Down** continuously.
 <br>
 <br>
 
