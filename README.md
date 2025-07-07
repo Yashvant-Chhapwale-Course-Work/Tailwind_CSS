@@ -1516,7 +1516,6 @@ The `Responsive Breakpoints` / `Screen-Width Breakpoints` define the **Screen-Wi
 - A `variant:` **Prefix** is added before a `Utility_Class` to apply that **Style** in a **Specific State**, **Screen_Size**, or **Context**.<br>
 - It allows developers to **apply Styles Conditionally**.
 <br>
-<br>
 
 ### State_Based Variants:
 The `State_Based Variants` are **Prefixes** that apply **Styles** when an Element is in a **Specific Interactive or Form-related State**.
