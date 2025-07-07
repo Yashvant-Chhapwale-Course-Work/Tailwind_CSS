@@ -1612,7 +1612,13 @@ The `backface` utility determines **whether the `Back Side` of an Element is Vis
 <br>
 
 ### Perspective [3D-Transform Utility]:
-
+The `perspective` utility defines the **Distance Between the Viewer and the Element** in `3D_Space`.
+- **`perspective-none`:** **Disables all 3D Perspective** (Flat Look). Useful when you want **No 3D Distortion**.
+- **`perspective-dramatic`:** **Very_Close Perspective**, Creates Strong & Exaggerated 3D Rotation.
+- **`perspective-near`:** 	Provides a **Close-Up View**, Noticeable but not too Overwhelming.
+- **`perspective-normal`:** It gives a **Balanced 3D_Effect**, ideal for most UI_Cards or 3D_Hover Interactions.
+- **`perspective-midrange`:** It makes 3D_movement Smoother and more Realistic.
+- **`perspective-distant`:** Gives a **Far-Away Effect**, barely any Distortion, great for Subtle_Depth.
 <br>
 <br>
 
