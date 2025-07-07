@@ -1602,6 +1602,19 @@ This **Utility** determines how `Child_Elements` are **rendered** in `3D_Space` 
 - **`transform-flat`:** Children **do not preserve** `3D_Space` and **appear** in a `2D_Plane`, as if **Flattened**.<br>
 - **`transform-3d`:** Children **maintain** their `3D Positioning`, allowing for proper **3D Rendering** and **Nested Transforms**.<br>
 <br>
+<br>
+
+### Backface_Visibility [3D-Transform Utility]: 
+The `backface` utility determines **whether the `Back Side` of an Element is Visible** when it is **Rotated** in `3D_Space`. <br>
+- **`backface-hidden`:** The **Backside is not Shown**, it remains invisible even when an Element is Flipped.
+- **`backface-visible`:** The **Backside is Visible** even when the Element is Rotated.
+<br>
+<br>
+
+### Perspective [3D-Transform Utility]:
+
+<br>
+<br>
 
 ---
 <br>
