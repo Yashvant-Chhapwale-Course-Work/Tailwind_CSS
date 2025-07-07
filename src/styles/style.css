@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
-:root {
-  --font-openSans: "Open Sans", sans-serif;
+@theme {
+  --font-poppins: "Poppins", sans-serif;
 }
 
 .no-scrollbar::-webkit-scrollbar {

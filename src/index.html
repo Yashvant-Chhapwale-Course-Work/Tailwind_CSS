@@ -7,19 +7,19 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap"
       rel="stylesheet"
     />
     <script
       src="https://kit.fontawesome.com/93ab4da208.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="icon" type="image/svg+xml" href="./assets/tailwindCssSvg.svg" />
+    <link rel="icon" type="image/svg+xml" href="../assets/tailwindCssSvg.svg" />
     <title>Tailwind Bootcamp</title>
   </head>
-  <body class="font-openSans no-scrollbar bg-white dark:bg-gray-950 space-y-1">
+  <body class="font-poppins no-scrollbar bg-white dark:bg-gray-950 space-y-1">
     <header
-      class="sticky top-0 z-50 shadow shadow-gray-400 dark:shadow-none dark:border-b-1 bg-white dark:bg-gray-950 dark:border-gray-700 py-1 px-8"
+      class="sticky top-0 z-50 shadow shadow-gray-400 dark:shadow-none dark:border-b-1 bg-white dark:bg-gray-950 dark:border-gray-700 py-2 px-8"
     >
       <div class="flex justify-between items-center">
         <div id="logo" class="flex items-center space-x-2">
@@ -28,13 +28,11 @@
             class="flex items-center space-x-2 w-[30%]"
           >
             <img
-              src="./assets/tailwindCssLogo.png"
+              src="../assets/tailwindCssLogo.png"
               alt=""
               class="w-[35px] h-[35px] hover:rotate-z-360 hover:scale-130 transition-ease-in-out duration-300"
             />
-            <p class="font-semibold text-xl text-blue-600 dark:text-white">
-              tailwindcss
-            </p>
+            <p class="text-xl text-blue-600 dark:text-white">tailwindcss</p>
           </a>
         </div>
 
@@ -50,21 +48,19 @@
           <li>
             <a
               href="index.html"
-              class="inline-block text-blue-600 hover:scale-105 hover:text-blue-600 duration-200"
+              class="inline-block text-blue-600 hover:text-blue-600 duration-180"
               >Home</a
             >
           </li>
           <li>
-            <a
-              href="#"
-              class="inline-block hover:scale-105 hover:text-blue-600 duration-200"
+            <a href="#" class="inline-block hover:text-blue-600 duration-180"
               >About</a
             >
           </li>
           <li>
             <a
               href="#contact"
-              class="inline-block hover:scale-105 hover:text-blue-600 duration-200"
+              class="inline-block hover:text-blue-600 duration-180"
             >
               Contact
             </a>
@@ -82,12 +78,14 @@
       <!-- Mobile Menu -->
       <ul
         id="mobileMenu"
-        class="absolute top-11 left-0 w-full grid grid-cols-4 justify-center text-center space-x-5 bg-white dark:bg-gray-900 px-8 py-5 text-gray-700 dark:text-gray-300 font-medium border-t border-gray-200 dark:border-none shadow-md shadow-gray-600 dark:shadow-none transform transition-ease-in-out duration-500 ease-in-out scale-y-0 origin-top md:hidden"
+        class="absolute top-13 left-0 w-full md:visible grid grid-cols-4 justify-center text-center space-x-5 bg-white dark:bg-gray-900 px-8 py-5 text-gray-700 dark:text-gray-300 font-medium border-t border-gray-200 dark:border-none shadow-md shadow-gray-600 dark:shadow-none transform transition-ease-in-out duration-500 ease-in-out scale-y-0 origin-top"
       >
         <li>
           <a href="index.html" class="hover:text-blue-600">Home</a>
         </li>
-        <li><a href="#" class="hover:text-blue-600">About</a></li>
+        <li>
+          <a href="#" class="hover:text-blue-600">About</a>
+        </li>
         <li>
           <a href="#contact" class="hover:text-blue-600">Contact</a>
         </li>
@@ -126,7 +124,7 @@
           </p>
           <button
             href="https://tailwindcss.com/"
-            class="w-[145px] lg:w-[150px] bg-blue-600 text-white font-semibold px-6 py-3 rounded hover:scale-105 hover:shadow-md shadow-blue-400 dark:hover:shadow-none dark:bg-blue-950 dark:hover:bg-blue-600 transition-ease-in-out duration-450"
+            class="w-[145px] lg:w-[150px] bg-blue-600 text-white px-6 py-3 rounded hover:scale-105 hover:shadow-md shadow-blue-400 dark:hover:shadow-none dark:bg-blue-950 dark:hover:bg-blue-600 transition-ease-in-out duration-450"
           >
             Get Started
           </button>
@@ -134,7 +132,7 @@
         <div id="right" class="flex justify-center items-center">
           <img
             class="w-full sm:h-full lg:h-[90%] shadow-xl shadow-blue-400 dark:shadow-none dark:border-2 dark:border-blue-900 rounded-2xl"
-            src="./assets/heroImage.jpg"
+            src="../assets/heroImage.jpg"
             alt=""
           />
         </div>
@@ -146,7 +144,7 @@
       id="features"
     >
       <h2
-        class="w-full text-center text-3xl text-blue-600 dark:text-gray-300 font-bold dark:border-b-1 dark:border-gray-800"
+        class="w-full text-center text-3xl text-blue-600 dark:text-gray-300 font-semibold dark:border-b-1 dark:border-gray-800"
       >
         Features
       </h2>
@@ -156,20 +154,20 @@
       >
         <div class="group" id="feature1">
           <div
-            class="relative w-[250px] md:w-[230px] lg:w-[250px] flex flex-col gap-8 justify-center items-center bg-gradient-to-b from-blue-600 dark:from-blue-900 to-blue-950 dark:to-gray-950 shadow-lg shadow-blue-400 dark:shadow-none dark:border-2 dark:border-blue-950 rounded-lg py-4 h-[250px] transition-all [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)] duration-1200"
+            class="relative w-[250px] md:w-[230px] lg:w-[250px] flex flex-col gap-8 justify-center items-center bg-gradient-to-b from-blue-600 dark:from-blue-700 to-blue-950 dark:to-gray-950 shadow-lg shadow-blue-400 dark:shadow-none dark:border-2 dark:border-blue-950 rounded-lg py-4 h-[250px] transition-all transform-3d group-hover:rotate-y-180 duration-1200"
           >
             <div
-              class="absolute inset-0 flex flex-col justify-center items-center space-y-8 [backface-visibility:hidden]"
+              class="absolute inset-0 flex flex-col justify-center items-center space-y-8"
               id="front"
             >
               <span class="text-6xl py-4">⚡</span>
-              <h3 class="text-2xl text-white dark:text-gray-200 font-bold">
+              <h3 class="text-2xl text-white dark:text-gray-200 font-semibold">
                 Blazing Fast
               </h3>
             </div>
 
             <div
-              class="absolute inset-0 flex flex-col justify-center items-center px-8 bg-gradient-to-br from-white dark:from-blue-900 to-cyan-200 border dark:to-gray-900 border-blue-900 rounded-lg [transform:rotateY(180deg)] [backface-visibility:hidden]"
+              class="absolute inset-0 flex flex-col justify-center items-center px-8 bg-gradient-to-br from-white dark:from-blue-900 to-cyan-200 border dark:to-gray-900 border-blue-900 rounded-lg backface-hidden rotate-y-180"
               id="back"
             >
               <p class="text-md md:text-xl text-blue-900 dark:text-blue-200">
@@ -182,20 +180,20 @@
 
         <div class="group" id="feature2">
           <div
-            class="relative w-[250px] md:w-[230px] lg:w-[250px] flex flex-col gap-8 justify-center items-center bg-gradient-to-b from-blue-600 dark:from-blue-900 to-blue-950 dark:to-gray-950 shadow-lg shadow-blue-400 dark:shadow-none dark:border-2 dark:border-blue-950 rounded-lg py-4 h-[250px] transition-all [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)] duration-1200"
+            class="relative w-[250px] md:w-[230px] lg:w-[250px] flex flex-col gap-8 justify-center items-center bg-gradient-to-b from-blue-600 dark:from-blue-700 to-blue-950 dark:to-gray-950 shadow-lg shadow-blue-400 dark:shadow-none dark:border-2 dark:border-blue-950 rounded-lg py-4 h-[250px] transition-all transform-3d group-hover:rotate-y-180 duration-1200"
           >
             <div
-              class="absolute inset-0 flex flex-col justify-center items-center space-y-8 [backface-visibility:hidden]"
+              class="absolute inset-0 flex flex-col justify-center items-center space-y-8"
               id="front"
             >
               <span class="text-6xl py-4">🔧</span>
-              <h3 class="text-2xl text-white dark:text-gray-200 font-bold">
+              <h3 class="text-2xl text-white dark:text-gray-200 font-semibold">
                 Utility First
               </h3>
             </div>
 
             <div
-              class="absolute inset-0 flex flex-col justify-center items-center px-8 bg-gradient-to-br from-white dark:from-blue-900 to-cyan-200 border dark:to-gray-900 border-blue-900 rounded-lg [transform:rotateY(180deg)] [backface-visibility:hidden]"
+              class="absolute inset-0 flex flex-col justify-center items-center px-8 bg-gradient-to-br from-white dark:from-blue-900 to-cyan-200 border dark:to-gray-900 border-blue-900 rounded-lg backface-hidden rotate-y-180"
               id="back"
             >
               <p class="text-md md:text-xl text-blue-900 dark:text-blue-200">
@@ -208,22 +206,23 @@
 
         <div class="group" id="feature3">
           <div
-            class="relative w-[250px] md:w-[230px] lg:w-[250px] flex flex-col gap-8 justify-center items-center bg-gradient-to-b from-blue-600 dark:from-blue-900 to-blue-950 dark:to-gray-950 shadow-lg shadow-blue-400 dark:shadow-none dark:border-2 dark:border-blue-950 rounded-lg py-4 h-[250px] transition-all [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)] duration-1200"
+            class="relative w-[250px] md:w-[230px] lg:w-[250px] flex flex-col gap-8 justify-center items-center bg-gradient-to-b from-blue-600 dark:from-blue-700 to-blue-950 dark:to-gray-950 shadow-lg shadow-blue-400 dark:shadow-none dark:border-2 dark:border-blue-950 rounded-lg py-4 h-[250px] transition-all transform-3d group-hover:rotate-y-180 duration-1200"
           >
             <div
-              class="absolute inset-0 flex flex-col justify-center items-center space-y-8 [backface-visibility:hidden]"
+              class="absolute inset-0 flex flex-col justify-center items-center space-y-8"
               id="front"
             >
-              <span class="text-6xl py-4">🌙</span>
+              <span class="text-6xl pt-9 pb-6">🌙</span>
               <h3
-                class="text-2xl text-white dark:text-gray-200 font-bold text-center"
+                class="text-2xl text-white dark:text-gray-200 font-semibold text-center"
               >
-                Supports Dark Mode
+                Supports Dark <br />
+                Mode
               </h3>
             </div>
 
             <div
-              class="absolute inset-0 flex flex-col justify-center items-center px-8 bg-gradient-to-br from-white dark:from-blue-900 to-cyan-200 border dark:to-gray-900 border-blue-900 rounded-lg [transform:rotateY(180deg)] [backface-visibility:hidden]"
+              class="absolute inset-0 flex flex-col justify-center items-center px-8 bg-gradient-to-br from-white dark:from-blue-900 to-cyan-200 border dark:to-gray-900 border-blue-900 rounded-lg backface-hidden rotate-y-180"
               id="back"
             >
               <p class="text-md md:text-xl text-blue-900 dark:text-blue-200">
@@ -255,7 +254,7 @@
         >
           <img
             class="rounded-lg w-full h-[80%] dark:border-5 dark:border-gray-500"
-            src="./assets/responsiveWebDesign.jpg"
+            src="../assets/responsiveWebDesign.jpg"
             alt=""
           />
           <h3 class="text-white text-2xl font-bold">Responsive Web Design</h3>
@@ -276,7 +275,7 @@
         >
           <img
             class="rounded-lg w-full h-[80%] dark:border-5 dark:border-gray-500"
-            src="./assets/componentBasedUI.jpg"
+            src="../assets/componentBasedUI.jpg"
             alt=""
           />
           <h3 class="text-white text-2xl font-bold">
@@ -299,7 +298,7 @@
         >
           <img
             class="rounded-lg w-full h-[80%] dark:border-5 dark:border-gray-500"
-            src="./assets/customDesignSystems.jpg"
+            src="../assets/customDesignSystems.jpg"
             alt=""
           />
           <h3 class="text-white text-2xl font-bold">Custom Design Systems</h3>
@@ -385,20 +384,20 @@
       >
         <a href="https://www.facebook.com/" id="Facebook"
           ><img
-            class="w-[40px] h-[40px] rounded-lg hover:scale-110 duration-450"
-            src="./assets/facebook.png"
+            class="w-[40px] h-[40px] rounded-lg hover:scale-110 duration-350 hover:animate-pulse"
+            src="../assets/facebook.png"
             alt=""
         /></a>
         <a href="https://www.instagram.com/" id="Instagram"
           ><img
-            class="w-[50px] h-[50px] rounded-lg hover:scale-110 duration-450"
-            src="./assets/instagram.png"
+            class="w-[50px] h-[50px] rounded-lg hover:scale-110 duration-350 hover:animate-pulse"
+            src="../assets/instagram.png"
             alt=""
         /></a>
         <a href="https://x.com/" id="X"
           ><img
-            class="w-[35px] h-[35px] rounded-md hover:scale-110 duration-450"
-            src="./assets/x.png"
+            class="w-[35px] h-[35px] rounded-md hover:scale-110 duration-350 hover:animate-pulse"
+            src="../assets/x.png"
             alt=""
         /></a>
       </div>
@@ -410,6 +409,7 @@
       &copy; 2025 Tailwind-Bootcamp. All Rights Reserved!
     </footer>
   </body>
+
   <script>
     // Toggle navbar on mobile
     document.addEventListener("DOMContentLoaded", () => {
