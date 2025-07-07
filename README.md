@@ -1622,6 +1622,13 @@ The `perspective` utility defines the **Distance Between the Viewer and the Elem
 <br>
 <br>
 
+### Perspective_Origin [3D-Transform Utility]:
+The `perspective-origin` defines the **Point_of_View** from which you see a `3D_Transformed` Element.
+- **`perspective-origin-{position}`:** Relocates the `3D Point_of_View` to the **Specified Position**.<br>
+  `Note:` Replce the `{position}` with the desired **Position** such as `center`, `left`, `right`, `top`, `bottom`, `top-left`, `bottom-right` and so on. . .<br>
+<br>
+<br>
+
 ---
 <br>
 
