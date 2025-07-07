@@ -1562,8 +1562,12 @@ The `scale` utility **Resizes an Element Visually**, either **Enlarging (Zoom In
 
 ### Rotate:
 The `rotate` utility **Rotates an Element Clockwise or Counter-Clockwise** by a specific degree, without affecting the `Layout` around the Element.<br>
-- **`rotate-{degree}`:** Rotates/Spins an Element in **Clockwise** direction (`Positive Utility`).
-- **`-rotate-{degree}`:** Rotates/Spins an Element in **Anti-Clockwise** direction (`Negative Utility`).
+- **`rotate-{degree}`:** Rotates/Spins an Element in **Clockwise direction along Z-Axis**.
+- **`-rotate-{degree}`:** Rotates/Spins an Element in **Anti-Clockwise direction along Z-Axis**.
+- **`rotate-x-{degree}`:** Rotates/Spins an Element in **Clockwise direction along X-Axis**.
+- **`-rotate-x-{degree}`:** Rotates/Spins an Element in **Anti-Clockwise direction along X-Axis**.
+- **`rotate-y-{degree}`:** Rotates/Spins an Element in **Clockwise direction along Y-Axis**.
+- **`-rotate-y-{degree}`:** Rotates/Spins an Element in **Anti-Clockwise direction along Y-Axis**.
 <br>
 <br>
 
