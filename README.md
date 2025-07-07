@@ -58,6 +58,7 @@ This **Repository** documents my my `Notes`, `Learnings`, and `UI_Project` as I 
 | 9.  **Advanced `Layout` Utility_Classes: [`flex`](#flexbox-layout), [`grid`](#grid-layout)**                                                    |  [` 🔗CONTENT `](#advanced-layout-utility_classes)                                           |
 | 10. **`Responsive` Layout_Build**                                                                                                               |  [` 🔗CONTENT `](#responsive-layout_build)                                                   |
 | 11. **Tailwind's `Dark Mode` Support**                                                                                                          |  [` 🔗CONTENT `](#tailwinds-dark-mode-support)                                               |
+| 11. **Tailwind's `Variants` / `State_Modifiers`**                                                                                               |  [` 🔗CONTENT `](#tailwinds-variants--state_modifiers)                                       |
 | [**ADVANCED**](#advanced---level)                                                                                                                                                                                                               |
 | 12. **`Transformations`**                                                                                                                       |  [` 🔗CONTENT `](#transform-utilities)                                                       |
 | 13. **`Transitions` & `Animations`**                                                                                                            |  [` 🔗CONTENT `](#transition-and-animation-utilities)                                        |
@@ -1507,6 +1508,33 @@ The `Responsive Breakpoints` / `Screen-Width Breakpoints` define the **Screen-Wi
   ![`screen-width < 768px`](https://github.com/user-attachments/assets/aeb26124-d159-4f0f-bf78-76a8dabca2fb)<br>
   <br>
   <br>
+
+---
+<br>
+
+## Tailwind's Variants / State_Modifiers:
+
+- The `dark:` prefix is a `Variant` in **Tailwind** that allows you to **apply/modify different styles** when `Dark_Mode` is Active.<br>
+- **`Scenario:`** Turning **Light** Background `Darker` and simultaneously modifying `Darker` Text/Content to a **Lighter** format.
+- `<HTML>` Implementation:
+  ```
+  <section class="w-[100vw] h-[100vh] flex items-center justify-center dark:bg-gray-950">
+      <div
+        class="px-20 py-10 bg-amber-200 text-gray-700 dark:bg-blue-950 dark:text-white rounded-xl"
+      >
+        <h1 class="text-5xl text-center">Hello, Dark Mode!</h1>
+      </div>
+  </section>
+  ```
+- **`Light_Mode:`**<br>
+  ![`Light_Mode`](https://github.com/user-attachments/assets/2c2e22d6-d6b6-4d21-a4f5-49fed1ff6577)<br>
+- **`Dark_Mode:`**<br>
+  First, Switch to `Dark_Mode` **Theme** in your Browser:<br>
+  ![`Browser Theme_Settings`](https://github.com/user-attachments/assets/f2146cc1-34ba-4d24-96dc-2aa84f439d1b)<br>
+  Observe, how Tailwind Supports the above `Scenario` using `dark:` Variants,<br>
+  ![`Dark_Mode`](https://github.com/user-attachments/assets/4669fc71-61e5-420e-8dd4-656602955b08)<br>
+<br>
+<br>
 
 ---
 <br>
