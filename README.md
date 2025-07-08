@@ -1513,7 +1513,7 @@ The `Responsive Breakpoints` / `Screen-Width Breakpoints` define the **Screen-Wi
 <br>
 
 ## Tailwind's Variants:
-- A `variant:` **Prefix** is added before a `Utility_Class` to apply that **Style** in a **Specific State**, **Screen_Size**, or **Context**.<br>
+- A `variant:` **Prefix** is added before a `Utility_Class` to apply that **Style** in a **Specific State**, **Screen_Size** (`sm:`, `md:`, `lg:`, `xl:`) or **Context**.<br>
 - It allows developers to **apply Styles Conditionally**.
 <br>
 
