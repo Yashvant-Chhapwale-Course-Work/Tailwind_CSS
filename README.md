@@ -1,5 +1,5 @@
 <div align="center">
-   <img src="https://github.com/user-attachments/assets/5f875ede-34c9-424f-90a7-c860996c51fb" alt="Tailwind Logo" width="60%" height="20%">
+   <img src="https://github.com/user-attachments/assets/5f875ede-34c9-424f-90a7-c860996c51fb" alt="Tailwind Logo" width="60%" height="250%">
 </div>
 
 # Tailwind CSS
@@ -58,10 +58,11 @@ This **Repository** documents my my `Notes`, `Learnings`, and `UI_Project` as I 
 | 9.  **Advanced `Layout` Utility_Classes: [`flex`](#flexbox-layout), [`grid`](#grid-layout)**                                                    |  [` 🔗CONTENT `](#advanced-layout-utility_classes)                                           |
 | 10. **`Responsive` Layout_Build**                                                                                                               |  [` 🔗CONTENT `](#responsive-layout_build)                                                   |
 | 11. **Tailwind's `Dark Mode` Support**                                                                                                          |  [` 🔗CONTENT `](#tailwinds-dark-mode-support)                                               |
+| 12. **Tailwind's `Variant Prefixes`**                                                                                                           |  [` 🔗CONTENT `](#tailwinds-variants)                                                        |
 | [**ADVANCED**](#advanced---level)                                                                                                                                                                                                               |
-| 12. **`Transformations`**                                                                                                                       |  [` 🔗CONTENT `](#transform-utilities)                                                       |
-| 13. **`Transitions` & `Animations`**                                                                                                            |  [` 🔗CONTENT `](#transition-and-animation-utilities)                                        |
-| 14. **Customizing Tailwind_Utilities with `tailwind.config.js`** [`Update v4: (CSS-First Configuration)`](#tailwind_v4-css-first-configuration) |  [` 🔗CONTENT `](#customizing-tailwind-with-tailwindconfigjs)                                |
+| 13. **`Transformations`**                                                                                                                       |  [` 🔗CONTENT `](#transform-utilities)                                                       |
+| 14. **`Transitions` & `Animations`**                                                                                                            |  [` 🔗CONTENT `](#transition-and-animation-utilities)                                        |
+| 15. **Customizing Tailwind_Utilities with `tailwind.config.js`** [`Update v4: (CSS-First Configuration)`](#tailwind_v4-css-first-configuration) |  [` 🔗CONTENT `](#customizing-tailwind-with-tailwindconfigjs)                                |
 
 </div>
 
@@ -1507,6 +1508,47 @@ The `Responsive Breakpoints` / `Screen-Width Breakpoints` define the **Screen-Wi
   ![`screen-width < 768px`](https://github.com/user-attachments/assets/aeb26124-d159-4f0f-bf78-76a8dabca2fb)<br>
   <br>
   <br>
+
+---
+<br>
+
+## Tailwind's Variants:
+- A `variant:` **Prefix** is added before a `Utility_Class` to apply that **Style** in a **Specific State**, **Screen_Size** (`sm:`, `md:`, `lg:`, `xl:`) or **Context**.<br>
+- It allows developers to **apply Styles Conditionally**.
+<br>
+
+### State_Based Variants:
+The `State_Based Variants` are **Prefixes** that apply **Styles** when an Element is in a **Specific Interactive or Form-related State**.
+- **`hover:`:** Triggers Transformation when the **Element is Hovered** with a Mouse.
+- **`focus:`:** Triggers Transformation when the **Element is Selected (Focused)** with a Mouse.
+- **`active:`:** Triggers Transformation when the **Element is Clicked or Tapped** with a Mouse.
+- **`visited:`:** Triggers Transformation for a **Link which has already been Visisted**.
+- **`disabled:`:** Triggers Transformation for a **Disabled Element** using the `disabled` Utility.
+- **`checked:`:** Triggers Transformation when a **Checkbox or Radio_Button is Clicked / Checked**.
+- **`focus-within:`:** Triggers Transformation When any **Child within the Element is Selected (Focused)**.
+<br>
+<br>
+
+### Group Variants:
+The `group` utility lets you apply **Styles** to **Child_Elements** based on the State (`hover`, `focus`, etc.) of a **Parent_Container**.
+- **`group-hover:`:** Triggers Transformation for **Children** when the **Parent_Element is Hovered** with a Mouse.
+- **`group-focus:`:** Triggers Transformation for **Children** when the **Parent_Element is Selected (Focused)** with a Mouse.
+- **`group-active:`:** Triggers Transformation for **Children** when the **Parent_Element is Clicked or Tapped** with a Mouse.
+- **`group-disabled:`:** Triggers Transformation for the **Children** of a **Disabled Parent_Element**.
+- **`group-aria-expanded:`:** Triggers Transformation for the **Children** when a **Parent_Dropdown is Expanded**.
+<br>
+<br>
+
+### Peer Variants:
+The `peer` utility allows you to **Style** an Element based on the **State of a Sibling Input or Checkbox**.
+- **`peer`:** It allows an Element to act as a **State Reference** for other **Sibling_Elements**.
+- **`peer-hover:`:** Triggers Transformation when the **Peer_Element is Hovered** with a Mouse.
+- **`peer-focus:`:** Triggers Transformation when the **Peer_Element is Selected (Focused)** with a Mouse.
+- **`peer-disabled:`:** Triggers Transformation for the **Sibling** of a **Disabled Peer_Element**.
+- **`peer-checked:`:** Triggers Transformation when a **Peer_Element is Clicked / Checked**.
+- **`peer-placeholder-shown:`:** Triggers Transformation when the **Placeholder for a Peer_Input is Visible**.
+- **`peer-aria-expanded:`:** Triggers Transformation for the Siblings when **Peer_Dropdown is Expanded**.
+<br>
 
 ---
 <br>
