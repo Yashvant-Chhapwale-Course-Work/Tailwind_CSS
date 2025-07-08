@@ -1519,7 +1519,25 @@ The `Responsive Breakpoints` / `Screen-Width Breakpoints` define the **Screen-Wi
 
 ### State_Based Variants:
 The `State_Based Variants` are **Prefixes** that apply **Styles** when an Element is in a **Specific Interactive or Form-related State**.
-- **`Hi`:**
+- **`hover:`:** Triggers Transformation when the **Element is Hovered** with a Mouse.
+- **`focus:`:** Triggers Transformation when the **Element is Selected (Focused)** with a Mouse.
+- **`active:`:** Triggers Transformation when the **Element is Clicked or Tapped** with a Mouse.
+- **`visited:`:** Triggers Transformation for a **Link which has already been Visisted**.
+- **`disabled:`:** Triggers Transformation for a **Disabled Element** using the `disabled` Utility.
+- **`checked:`:** Triggers Transformation when a **Checkbox or Radio_Button is Clicked / Checked**.
+- **`focus-within:`:** Triggers Transformation When any **Child within the Element is Selected (Focused)**.
+<br>
+<br>
+
+### Group Variants:
+The `group` utility lets you apply **Styles** to **Child_Elements** based on the State (`hover`, `focus`, etc.) of a **Parent_Container**.
+- **`group-hover:`:** Triggers Transformation when the **Element is Hovered** with a Mouse.
+- **`focus:`:** Triggers Transformation when the **Element is Selected (Focused)** with a Mouse.
+- **`active:`:** Triggers Transformation when the **Element is Clicked or Tapped** with a Mouse.
+- **`visited:`:** Triggers Transformation for a **Link which has already been Visisted**.
+- **`disabled:`:** Triggers Transformation for a **Disabled Element** using the `disabled` Utility.
+- **`checked:`:** Triggers Transformation when a **Checkbox or Radio_Button is Clicked / Checked**.
+- **`focus-within:`:** Triggers Transformation When any **Child within the Element is Selected (Focused)**.
 <br>
 <br>
 
