@@ -1531,14 +1531,23 @@ The `State_Based Variants` are **Prefixes** that apply **Styles** when an Elemen
 
 ### Group Variants:
 The `group` utility lets you apply **Styles** to **Child_Elements** based on the State (`hover`, `focus`, etc.) of a **Parent_Container**.
-- **`group-hover:`:** Triggers Transformation when the **Element is Hovered** with a Mouse.
-- **`focus:`:** Triggers Transformation when the **Element is Selected (Focused)** with a Mouse.
-- **`active:`:** Triggers Transformation when the **Element is Clicked or Tapped** with a Mouse.
-- **`visited:`:** Triggers Transformation for a **Link which has already been Visisted**.
-- **`disabled:`:** Triggers Transformation for a **Disabled Element** using the `disabled` Utility.
-- **`checked:`:** Triggers Transformation when a **Checkbox or Radio_Button is Clicked / Checked**.
-- **`focus-within:`:** Triggers Transformation When any **Child within the Element is Selected (Focused)**.
+- **`group-hover:`:** Triggers Transformation for **Children** when the **Parent_Element is Hovered** with a Mouse.
+- **`group-focus:`:** Triggers Transformation for **Children** when the **Parent_Element is Selected (Focused)** with a Mouse.
+- **`group-active:`:** Triggers Transformation for **Children** when the **Parent_Element is Clicked or Tapped** with a Mouse.
+- **`group-disabled:`:** Triggers Transformation for the **Children** of a **Disabled Parent_Element**.
+- **`group-aria-expanded:`:** Triggers Transformation for the **Children** when a **Parent_Dropdown is Expanded**.
 <br>
+<br>
+
+### Peer Variants:
+The `peer` utility allows you to **Style** an Element based on the **State of a Sibling Input or Checkbox**.
+- **`peer`:** It allows an Element to act as a **State Reference** for other **Sibling_Elements**.
+- **`peer-hover:`:** Triggers Transformation when the **Peer_Element is Hovered** with a Mouse.
+- **`peer-focus:`:** Triggers Transformation when the **Peer_Element is Selected (Focused)** with a Mouse.
+- **`peer-disabled:`:** Triggers Transformation for the **Sibling** of a **Disabled Peer_Element**.
+- **`peer-checked:`:** Triggers Transformation when a **Peer_Element is Clicked / Checked**.
+- **`peer-placeholder-shown:`:** Triggers Transformation when the **Placeholder for a Peer_Input is Visible**.
+- **`peer-aria-expanded:`:** Triggers Transformation for the Siblings when **Peer_Dropdown is Expanded**.
 <br>
 
 ---
