@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/output.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/93ab4da208.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="icon" type="image/svg+xml" href="/assets/tailwindCssSvg.svg" />
+    <title>Transitions</title>
+  </head>
+  <body
+    class="font-poppins no-scrollbar flex-col justify-center items-center bg-white dark:bg-gray-950 space-y-1 overflow-y-hidden"
+  >
+    <header
+      class="sticky top-0 z-50 shadow shadow-gray-400 dark:shadow-none dark:border-b-1 bg-white dark:bg-gray-950 dark:border-gray-700 py-2 px-8"
+    >
+      <div class="flex justify-between items-center">
+        <div id="logo" class="flex items-center space-x-2">
+          <a
+            href="https://tailwindcss.com/"
+            class="flex items-center space-x-2 w-[30%]"
+          >
+            <img
+              src="/assets/tailwindCssLogo.png"
+              alt=""
+              class="w-[35px] h-[35px] hover:rotate-z-360 hover:scale-130 transition-ease-in-out duration-300"
+            />
+            <p class="text-xl text-blue-600 dark:text-white">tailwindcss</p>
+          </a>
+        </div>
+
+        <!-- Hamburger -->
+        <span class="md:hidden dark:text-gray-300" id="hamburger-btn"
+          ><i class="fa-solid fa-bars"></i
+        ></span>
+
+        <ul
+          class="hidden md:flex justify-center items-center space-x-4 text-gray-600 dark:text-white transition-ease-in-out"
+          id="navMenu"
+        >
+          <li>
+            <a
+              href="index.html"
+              class="inline-block hover:text-blue-600 duration-180"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              href="transitions.html"
+              class="inline-block text-blue-600 hover:text-blue-600 duration-180"
+              >Transitions</a
+            >
+          </li>
+          <li>
+            <a
+              href="./index.html#contact"
+              class="inline-block hover:text-blue-600 duration-180"
+              >Contact</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="inline-block bg-blue-600 text-white px-4 py-2 rounded hover:scale-105 hover:shadow-md shadow-gray-400 dark:hover:shadow-none dark:bg-blue-950 dark:hover:bg-blue-600 duration-300"
+              >Login</a
+            >
+          </li>
+        </ul>
+      </div>
+
+      <!-- Mobile Menu -->
+      <ul
+        id="mobileMenu"
+        class="absolute top-13 left-0 w-full md:visible grid grid-cols-4 justify-center text-center space-x-5 bg-white dark:bg-gray-900 px-8 py-5 text-gray-700 dark:text-gray-300 font-medium border-t border-gray-200 dark:border-none shadow-md shadow-gray-600 dark:shadow-none transform transition-ease-in-out duration-500 ease-in-out scale-y-0 origin-top"
+      >
+        <li>
+          <a href="index.html" class="hover:text-blue-600">Home</a>
+        </li>
+        <li>
+          <a href="transitions.html" class="hover:text-blue-600">Transitions</a>
+        </li>
+        <li>
+          <a href="./index.html#contact" class="hover:text-blue-600">Contact</a>
+        </li>
+        <li>
+          <a
+            href="#"
+            class="bg-blue-600 text-white px-4 py-1 rounded hover:scale-105 hover:shadow-md shadow-gray-400 dark:hover:shadow-none dark:bg-blue-950 dark:hover:bg-blue-600 duration-300"
+            >Login</a
+          >
+        </li>
+      </ul>
+    </header>
+
+    <section
+      class="w-[100vw] h-[100vh] mx-auto flex justify-center items-center bg-gradient-to-b from-gray-950 to-blue-950"
+    >
+      <div
+        class="relative w-[400px] h-[400px] transform-3d animate-spin3D origin-center"
+      >
+        <div class="transform-3d translate-x-20 translate-y-15 -translate-z-5">
+          <div class="relative w-32 h-32 transform-3d rotate-x-50 rotate-y-45">
+            <div class="face translate-z-35 hover:translate-z-38">
+              <a href="#" class="rotate-180">Animations</a>
+            </div>
+            <div
+              class="face -translate-z-35 hover:-translate-z-38 rotate-y-180"
+            >
+              <a href="#">Animations</a>
+            </div>
+            <div class="face translate-x-35 hover:translate-x-38 rotate-y-90">
+              <a href="#">Animations</a>
+            </div>
+            <div
+              class="face -translate-x-35 hover:-translate-x-38 -rotate-y-90"
+            >
+              <a href="#">Animations</a>
+            </div>
+            <div class="face -translate-y-35 hover:-translate-y-38 rotate-x-90">
+              <a href="#">Animations</a>
+            </div>
+            <div class="face translate-y-35 hover:translate-y-38 -rotate-x-90">
+              <a href="#">Animations</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+  <script>
+    // Toggle navbar on mobile
+    document.addEventListener("DOMContentLoaded", () => {
+      const toggleBtn = document.getElementById("hamburger-btn");
+      const mobileMenu = document.getElementById("mobileMenu");
+
+      toggleBtn.addEventListener("click", () => {
+        mobileMenu.classList.toggle("scale-y-0");
+        mobileMenu.classList.toggle("scale-y-100");
+      });
+    });
+  </script>
+</html>
