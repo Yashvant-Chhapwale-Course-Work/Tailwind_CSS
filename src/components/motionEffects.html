@@ -19,7 +19,7 @@
     <title>Motion Effects</title>
   </head>
   <body
-    class="font-poppins no-scrollbar flex-col justify-center items-center bg-white dark:bg-gray-950 space-y-1 lg:overflow-y-hidden"
+    class="font-poppins no-scrollbar flex-col justify-center items-center bg-white dark:bg-gray-950 space-y-1 sm:overflow-y-hidden"
   >
     <header
       class="sticky top-0 z-50 shadow shadow-gray-400 dark:shadow-none dark:border-b-1 bg-white dark:bg-gray-950 dark:border-gray-700 py-2 px-8"
@@ -86,10 +86,10 @@
     </header>
 
     <main
-      class="w-[100vw] h-[80vh] mx-auto grid grid-cols-1 sm:grid-cols-2 items-center gap-8 p-10"
+      class="w-[100vw] h-[90vh] md:h-[100vh] mx-auto grid grid-cols-1 sm:grid-cols-2 items-center gap-8 px-10 py-5 sm:py-0"
     >
       <section id="contentLeft" class="flex flex-col space-y-5">
-        <h2 class="text-4xl dark:text-white font-bold py-5">
+        <h2 class="text-2xl md:text-4xl dark:text-white font-bold">
           <a
             href="https://tailwindcss.com/"
             class="inline-block text-blue-600 hover:scale-95 transition-ease-in-out duration-300"
@@ -97,7 +97,7 @@
           >
           Motion Effects
         </h2>
-        <p class="dark:text-white text-lg">
+        <p class="dark:text-white text-md md:text-lg pt-5">
           Discover the power of Motion in Modern Web Design using Tailwind CSS.
         </p>
         <p class="dark:text-gray-400">
@@ -108,47 +108,47 @@
 
       <section id="cubeRight" class="mx-auto flex justify-center items-center">
         <div
-          class="sm:w-[300px] lg:w-[360px] relative transform-3d animate-spin3D origin-center -translate-y-20"
+          class="sm:w-[300px] lg:w-[360px] h-[240px] relative transform-3d animate-spin3D origin-center sm:-translate-y-20"
         >
           <div
-            class="transform-3d sm:translate-x-15 lg:translate-x-20 translate-y-15 -translate-z-10"
+            class="transform-3d -translate-x-2 sm:translate-x-15 lg:translate-x-20 translate-y-10 sm:translate-y-15 -translate-z-3 sm:-translate-z-8 lg:-translate-z-13"
           >
             <div
               class="relative w-32 h-32 transform-3d rotate-x-50 rotate-y-45"
             >
               <a
                 href="animations.html"
-                class="face translate-z-16 sm:translate-z-27 lg:translate-z-35 rotate-z-180 hover:translate-z-38"
+                class="face translate-z-19 sm:translate-z-27 lg:translate-z-35 rotate-z-180 hover:translate-z-38"
               >
                 <div class="rotate-z-90">Animations</div>
               </a>
               <a
                 href="animations.html"
-                class="face -translate-z-16 sm:-translate-z-27 lg:-translate-z-35 hover:-translate-z-38 rotate-y-180"
+                class="face -translate-z-19 sm:-translate-z-27 lg:-translate-z-35 hover:-translate-z-38 rotate-y-180"
               >
                 <div href="animations.html">Animations</div>
               </a>
               <a
                 href="transitions.html"
-                class="face translate-x-16 sm:translate-x-27 lg:translate-x-35 rotate-z-180 hover:translate-x-38 rotate-y-90"
+                class="face translate-x-19 sm:translate-x-27 lg:translate-x-35 rotate-z-180 hover:translate-x-38 rotate-y-90"
               >
                 <div class="rotate-z-90">Transitions</div>
               </a>
               <a
                 href="transitions.html"
-                class="face -translate-x-16 sm:-translate-x-27 lg:-translate-x-35 hover:-translate-x-38 -rotate-y-90"
+                class="face -translate-x-19 sm:-translate-x-27 lg:-translate-x-35 hover:-translate-x-38 -rotate-y-90"
               >
                 <div>Transitions</div>
               </a>
               <a
                 href="transforms.html"
-                class="face -translate-y-16 sm:-translate-y-27 lg:-translate-y-35 hover:-translate-y-38 rotate-x-90"
+                class="face -translate-y-19 sm:-translate-y-27 lg:-translate-y-35 hover:-translate-y-38 rotate-x-90"
               >
                 <div class="-rotate-z-180">Transforms</div>
               </a>
               <a
                 href="transforms.html"
-                class="face translate-y-16 sm:translate-y-27 lg:translate-y-35 hover:translate-y-38 -rotate-x-90"
+                class="face translate-y-19 sm:translate-y-27 lg:translate-y-35 hover:translate-y-38 -rotate-x-90"
               >
                 <div class="-rotate-z-90">Transforms</div>
               </a>
