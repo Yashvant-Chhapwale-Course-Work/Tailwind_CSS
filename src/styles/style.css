@@ -26,7 +26,7 @@
   }
 
   .face {
-    @apply absolute w-30 h-30 md:w-65 md:h-65 flex items-center justify-center backface-hidden text-lg md:text-3xl dark:text-white font-bold bg-gradient-to-b dark:from-cyan-600/80 dark:to-blue-950/80 border-3 md:border-4 dark:border-blue-950 dark:border-b-cyan-400/50 shadow-inner rounded-lg dark:hover:bg-cyan-600 dark:hover:text-shadow-lg dark:text-shadow-blue-950 duration-400 transition-all ease-in-out;
+    @apply absolute w-30 h-30 sm:w-50 sm:h-50 lg:w-65 lg:h-65 flex items-center justify-center backface-hidden text-[15px] sm:text-xl lg:text-3xl dark:text-white font-bold bg-gradient-to-b dark:from-cyan-600/80 dark:to-blue-950/80 border-2 sm:border-3 md:border-4 dark:border-blue-950 dark:border-b-cyan-400/50 shadow-inner rounded-lg dark:hover:bg-cyan-600 dark:hover:text-shadow-lg dark:text-shadow-blue-950 duration-400 transition-all ease-in-out;
   }
 }
 
