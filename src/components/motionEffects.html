@@ -16,7 +16,7 @@
       crossorigin="anonymous"
     ></script>
     <link rel="icon" type="image/svg+xml" href="/assets/tailwindCssSvg.svg" />
-    <title>Transitions</title>
+    <title>Motion Effects</title>
   </head>
   <body
     class="font-poppins no-scrollbar flex-col justify-center items-center bg-white dark:bg-gray-950 space-y-1 lg:overflow-y-hidden"
@@ -83,7 +83,74 @@
       </ul>
     </header>
 
-    <main></main>
+    <main
+      class="w-[100vw] h-[80vh] mx-auto grid grid-cols-1 sm:grid-cols-2 items-center gap-8 p-10"
+    >
+      <section id="contentLeft" class="flex flex-col space-y-5">
+        <h2 class="text-4xl dark:text-white font-bold py-5">
+          <a
+            href="https://tailwindcss.com/"
+            class="inline-block text-blue-600 hover:scale-95 transition-ease-in-out duration-300"
+            >Tailwind</a
+          >
+          Motion Effects
+        </h2>
+        <p class="dark:text-white text-lg">
+          Discover the power of Motion in Modern Web Design using Tailwind CSS.
+        </p>
+        <p class="dark:text-gray-400">
+          From subtle transitions to eye-catching animations and smooth 3D
+          transforms, explore how motion enhances user experience.
+        </p>
+      </section>
+
+      <section id="cubeRight" class="mx-auto flex justify-center items-center">
+        <div
+          class="w-[360px] relative transform-3d animate-spin3D origin-center -translate-y-20"
+        >
+          <div
+            class="transform-3d translate-x-20 translate-y-15 -translate-z-10"
+          >
+            <div
+              class="relative w-32 h-32 transform-3d rotate-x-50 rotate-y-45"
+            >
+              <div
+                class="face translate-z-16 md:translate-z-35 rotate-z-180 hover:translate-z-38"
+              >
+                <a href="animations.html" class="rotate-z-90">Animations</a>
+              </div>
+              <div
+                class="face -translate-z-16 md:-translate-z-35 hover:-translate-z-38 rotate-y-180"
+              >
+                <a href="animations.html">Animations</a>
+              </div>
+              <div
+                class="face translate-x-16 md:translate-x-35 rotate-z-180 hover:translate-x-38 rotate-y-90"
+              >
+                <a href="transitions.html" class="rotate-z-90">Transitions</a>
+              </div>
+              <div
+                class="face -translate-x-16 md:-translate-x-35 hover:-translate-x-38 -rotate-y-90"
+              >
+                <a href="transitions.html">Transitions</a>
+              </div>
+              <div
+                class="face -translate-y-16 md:-translate-y-35 hover:-translate-y-38 rotate-x-90"
+              >
+                <a href="transforms.html" class="-rotate-z-180">Transforms</a>
+              </div>
+              <div
+                class="face translate-y-16 md:translate-y-35 hover:translate-y-38 -rotate-x-90"
+              >
+                <a href="transforms.html" class="-rotate-z-90 dark:"
+                  >Transforms</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
   <script>
     // Toggle navbar on mobile

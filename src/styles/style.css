@@ -9,8 +9,24 @@
 }
 
 @layer components {
+  .navLinks {
+    @apply inline-block hover:text-blue-600 duration-180;
+  }
+
+  .navButtons {
+    @apply inline-block bg-blue-600 text-white px-4 py-2 rounded hover:scale-105 hover:shadow-md shadow-gray-400 dark:hover:shadow-none dark:bg-blue-950 dark:hover:bg-blue-600 duration-300;
+  }
+
+  .mobileNavLinks {
+    @apply hover:text-blue-600;
+  }
+
+  .mobileNavButtons {
+    @apply bg-blue-600 text-white px-4 py-1 rounded hover:scale-105 hover:shadow-md shadow-gray-400 dark:hover:shadow-none dark:bg-blue-950 dark:hover:bg-blue-600 duration-300;
+  }
+
   .face {
-    @apply absolute w-65 h-65 flex items-center justify-center backface-hidden text-white text-3xl font-bold bg-cyan-500/80 border border-blue-950 rounded-lg hover:scale-105 hover:bg-blue-500 duration-400 transition-all ease-in-out;
+    @apply absolute w-30 h-30 md:w-65 md:h-65 flex items-center justify-center backface-hidden text-lg md:text-3xl dark:text-white font-bold bg-gradient-to-b dark:from-cyan-600/80 dark:to-blue-950/80 border-3 md:border-4 dark:border-blue-950 dark:border-b-cyan-400/50 shadow-inner rounded-lg dark:hover:bg-cyan-600 dark:hover:text-shadow-lg dark:text-shadow-blue-950 duration-400 transition-all ease-in-out;
   }
 }
 

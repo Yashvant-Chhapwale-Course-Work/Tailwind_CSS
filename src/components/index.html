@@ -46,33 +46,16 @@
           id="navMenu"
         >
           <li>
-            <a
-              href="index.html"
-              class="inline-block text-blue-600 hover:text-blue-600 duration-180"
-              >Home</a
-            >
+            <a href="index.html" class="navLinks">Home</a>
           </li>
           <li>
-            <a
-              href="transitions.html"
-              class="inline-block hover:text-blue-600 duration-180"
-              >Transitions</a
-            >
+            <a href="motionEffects.html" class="navLinks">Motion Effects</a>
           </li>
           <li>
-            <a
-              href="#contact"
-              class="inline-block hover:text-blue-600 duration-180"
-            >
-              Contact
-            </a>
+            <a href="./index.html#contact" class="navLinks">Contact</a>
           </li>
           <li>
-            <a
-              href="#"
-              class="inline-block bg-blue-600 text-white px-4 py-2 rounded hover:scale-105 hover:shadow-md shadow-gray-400 dark:hover:shadow-none dark:bg-blue-950 dark:hover:bg-blue-600 duration-300"
-              >Login</a
-            >
+            <a href="#" class="navButtons">Login</a>
           </li>
         </ul>
       </div>
@@ -80,23 +63,19 @@
       <!-- Mobile Menu -->
       <ul
         id="mobileMenu"
-        class="absolute top-13 left-0 w-full md:visible grid grid-cols-4 justify-center text-center space-x-5 bg-white dark:bg-gray-900 px-8 py-5 text-gray-700 dark:text-gray-300 font-medium border-t border-gray-200 dark:border-none shadow-md shadow-gray-600 dark:shadow-none transform transition-ease-in-out duration-500 ease-in-out scale-y-0 origin-top"
+        class="absolute top-13 left-0 w-full md:hidden grid grid-cols-1 sm:grid-cols-4 justify-center space-y-5 sm:space-y-0 text-left sm:text-center bg-white dark:bg-gray-900 px-8 py-5 text-gray-700 dark:text-gray-300 font-medium border-t border-gray-200 dark:border-none shadow-md shadow-gray-600 dark:shadow-none transform transition-ease-in-out duration-500 ease-in-out scale-y-0 origin-top"
       >
         <li>
-          <a href="index.html" class="hover:text-blue-600">Home</a>
+          <a href="index.html" class="mobileNavLinks">Home</a>
         </li>
         <li>
-          <a href="transitions.html" class="hover:text-blue-600">Transitions</a>
+          <a href="motionEffects.html" class="mobileNavLinks">Motion Effects</a>
         </li>
         <li>
-          <a href="#contact" class="hover:text-blue-600">Contact</a>
+          <a href="./index.html#contact" class="mobileNavLinks">Contact</a>
         </li>
         <li>
-          <a
-            href="#"
-            class="bg-blue-600 text-white px-4 py-1 rounded hover:scale-105 hover:shadow-md shadow-gray-400 dark:hover:shadow-none dark:bg-blue-950 dark:hover:bg-blue-600 duration-300"
-            >Login</a
-          >
+          <a href="#" class="mobileNavButtons">Login</a>
         </li>
       </ul>
     </header>
@@ -125,8 +104,8 @@
             custom and responsive User Interfaces.
           </p>
           <button
-            href="https://tailwindcss.com/"
             class="w-[145px] lg:w-[150px] bg-blue-600 text-white px-6 py-3 rounded hover:scale-105 hover:shadow-md shadow-blue-400 dark:hover:shadow-none dark:bg-blue-950 dark:hover:bg-blue-600 transition-ease-in-out duration-450"
+            onclick="location.href='motionEffects.html'"
           >
             Get Started
           </button>
