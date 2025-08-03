@@ -1,0 +1,30 @@
+const anchor = {
+  HOME: "../components/index.html",
+  CONTACT_US: "../components/index.html#contactUs",
+  MOTION_EFFECTS: "../components/motionEffects.html",
+  LOGIN: "#",
+  SPIN: "../components/animations/spin.html",
+  TRANSITION_PROPERTY: "../components/transitions/transitionProperty.html",
+  SCALE: "../components/transforms/scale.html",
+};
+
+const moduleAnchor = {
+  HOME: "../index.html",
+  CONTACT_US: "../index.html#contactUs",
+  MOTION_EFFECTS: "../motionEffects.html",
+  LOGIN: "#",
+  TRANSITION_PROPERTY: "../transitions/transitionProperty.html",
+  DURATION: "../transitions/duration.html",
+  DELAY: "../transitions/delay.html",
+  TRANSITION_TIMING_FUNCTION: "../transitions/transitionTimingFunction.html",
+  SCALE: "../transforms/scale.html",
+  ROTATE: "../transforms/rotate.html",
+  TRANSLATE: "../transforms/translate.html",
+  SKEW: "../transforms/skew.html",
+  TRANSFORM_STYLE: "../transforms/transformStyle.html",
+  BACKFACE_VISIBILITY: "../transforms/backfaceVisibility.html",
+  SPIN: "../animations/spin.html",
+  BOUNCE: "../animations/bounce.html",
+  PING: "../animations/ping.html",
+  PULSE: "../animations/pulse.html",
+};

@@ -15,9 +15,11 @@
       src="https://kit.fontawesome.com/93ab4da208.js"
       crossorigin="anonymous"
     ></script>
+    <script src="../utils/autoConfig.js"></script>
     <link rel="icon" type="image/svg+xml" href="/assets/tailwindCssSvg.svg" />
     <title>Motion Effects</title>
   </head>
+
   <body
     class="font-poppins no-scrollbar flex-col justify-center items-center bg-white dark:bg-gray-950 space-y-1 sm:overflow-y-hidden"
   >
@@ -49,18 +51,18 @@
           id="navMenu"
         >
           <li>
-            <a href="index.html" class="navLinks">Home</a>
+            <a id="home" href="" class="navLinks">Home</a>
           </li>
           <li>
-            <a href="motionEffects.html" class="navLinks text-blue-600"
+            <a id="motionEffects" href="" class="navLinks text-blue-600"
               >Motion Effects</a
             >
           </li>
           <li>
-            <a href="./index.html#contact" class="navLinks">Contact</a>
+            <a id="contact" href="" class="navLinks">Contact</a>
           </li>
           <li>
-            <a href="#" class="navButtons">Login</a>
+            <a id="login" href="" class="navButtons">Login</a>
           </li>
         </ul>
       </div>
@@ -71,16 +73,18 @@
         class="absolute top-13 left-0 w-full md:hidden grid grid-cols-1 sm:grid-cols-4 justify-center space-y-5 sm:space-y-0 text-left sm:text-center bg-white dark:bg-gray-900 px-8 py-5 text-gray-700 dark:text-gray-300 font-medium border-t border-gray-200 dark:border-none shadow-md shadow-gray-600 dark:shadow-none transform transition-ease-in-out duration-500 ease-in-out scale-y-0 origin-top"
       >
         <li>
-          <a href="index.html" class="mobileNavLinks">Home</a>
+          <a id="mobileHome" href="" class="mobileNavLinks">Home</a>
         </li>
         <li>
-          <a href="motionEffects.html" class="mobileNavLinks">Motion Effects</a>
+          <a id="mobileMotionEffects" href="" class="mobileNavLinks"
+            >Motion Effects</a
+          >
         </li>
         <li>
-          <a href="./index.html#contact" class="mobileNavLinks">Contact</a>
+          <a id="mobileContact" href="" class="mobileNavLinks">Contact</a>
         </li>
         <li>
-          <a href="#" class="mobileNavButtons">Login</a>
+          <a id="mobileLogin" href="" class="mobileNavButtons">Login</a>
         </li>
       </ul>
     </header>
@@ -90,7 +94,7 @@
     >
       <section id="contentLeft" class="flex flex-col space-y-2">
         <h2
-          class="text-2xl lg:text-4xl text-gray-700 dark:text-gray-200 font-bold"
+          class="text-2xl lg:text-3xl text-gray-700 dark:text-gray-200 font-bold"
         >
           <a
             href="https://tailwindcss.com/"
@@ -99,7 +103,7 @@
           >
           Motion Effects
         </h2>
-        <p class="dark:text-gray-200 text-md lg:text-lg pt-3">
+        <p class="dark:text-gray-200 text-sm lg:text-lg pt-3">
           Discover the power of Motion in Modern Web Design using Tailwind CSS.
         </p>
         <p class="text-gray-500 dark:text-gray-400 text-[10px] lg:text-sm">
@@ -119,37 +123,43 @@
               class="relative w-32 h-32 transform-3d rotate-x-50 rotate-y-45"
             >
               <a
-                href="animations.html"
+                id="animationsFace1"
+                href=""
                 class="face translate-z-19 sm:translate-z-27 lg:translate-z-35 rotate-z-180 hover:translate-z-21 sm:hover:translate-z-29 lg:hover:translate-z-38"
               >
                 <div class="rotate-z-90">Animations</div>
               </a>
               <a
-                href="animations.html"
+                id="animationsFace2"
+                href=""
                 class="face -translate-z-19 sm:-translate-z-27 lg:-translate-z-35 hover:-translate-z-21 sm:hover:-translate-z-29 lg:hover:-translate-z-38 rotate-y-180"
               >
-                <div href="animations.html">Animations</div>
+                <div>Animations</div>
               </a>
               <a
-                href="transitions.html"
+                id="transitionsFace1"
+                href=""
                 class="face translate-x-19 sm:translate-x-27 lg:translate-x-35 rotate-z-180 hover:translate-x-21 sm:hover:translate-x-29 lg:hover:translate-x-38 rotate-y-90"
               >
                 <div class="rotate-z-90">Transitions</div>
               </a>
               <a
-                href="transitions.html"
+                id="transitionsFace2"
+                href=""
                 class="face -translate-x-19 sm:-translate-x-27 lg:-translate-x-35 hover:-translate-x-21 sm:hover:-translate-x-29 lg:hover:-translate-x-38 -rotate-y-90"
               >
                 <div>Transitions</div>
               </a>
               <a
-                href="transforms.html"
+                id="transformsFace1"
+                href=""
                 class="face -translate-y-19 sm:-translate-y-27 lg:-translate-y-35 hover:-translate-y-21 sm:hover:-translate-y-29 lg:hover:-translate-y-38 rotate-x-90"
               >
                 <div class="-rotate-z-180">Transforms</div>
               </a>
               <a
-                href="transforms.html"
+                id="transformsFace2"
+                href=""
                 class="face translate-y-19 sm:translate-y-27 lg:translate-y-35 hover:translate-y-21 sm:hover:translate-y-29 lg:hover:translate-y-38 -rotate-x-90"
               >
                 <div class="-rotate-z-90">Transforms</div>
@@ -160,6 +170,7 @@
       </section>
     </main>
   </body>
+
   <script>
     // Toggle navbar on mobile
     document.addEventListener("DOMContentLoaded", () => {
@@ -171,5 +182,25 @@
         mobileMenu.classList.toggle("scale-y-100");
       });
     });
+
+    // Fetch Navbar Anchor Links
+    document.getElementById("home").href = anchor.HOME;
+    document.getElementById("motionEffects").href = anchor.MOTION_EFFECTS;
+    document.getElementById("contact").href = anchor.CONTACT_US;
+    document.getElementById("login").href = anchor.LOGIN;
+    document.getElementById("mobileHome").href = anchor.HOME;
+    document.getElementById("mobileMotionEffects").href = anchor.MOTION_EFFECTS;
+    document.getElementById("mobileContact").href = anchor.CONTACT_US;
+    document.getElementById("mobileLogin").href = anchor.LOGIN;
+
+    // Fetch Cube Anchor Links
+    document.getElementById("animationsFace1").href = anchor.SPIN;
+    document.getElementById("animationsFace2").href = anchor.SPIN;
+    document.getElementById("transitionsFace1").href =
+      anchor.TRANSITION_PROPERTY;
+    document.getElementById("transitionsFace2").href =
+      anchor.TRANSITION_PROPERTY;
+    document.getElementById("transformsFace1").href = anchor.SCALE;
+    document.getElementById("transformsFace2").href = anchor.SCALE;
   </script>
 </html>

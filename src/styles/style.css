@@ -26,7 +26,30 @@
   }
 
   .face {
-    @apply absolute w-35 h-35 sm:w-50 sm:h-50 lg:w-65 lg:h-65 flex items-center justify-center backface-hidden text-[15px] sm:text-xl lg:text-3xl dark:text-white font-bold bg-gradient-to-b dark:from-cyan-600/80 dark:to-blue-950/80 border-2 sm:border-3 md:border-4 dark:border-blue-950 dark:border-b-cyan-400/50 shadow-inner rounded-lg dark:hover:bg-cyan-600 dark:hover:text-shadow-lg dark:text-shadow-blue-950 duration-400 transition-all ease-in-out;
+    @apply absolute w-35 h-35 sm:w-50 sm:h-50 lg:w-65 lg:h-65 flex items-center justify-center backface-hidden text-[15px] sm:text-lg lg:text-2xl text-blue-900 dark:text-white font-bold bg-gradient-to-b from-white/80 to-white/80 dark:from-cyan-600/80 dark:to-blue-950/80 border-2 sm:border-3 md:border-4 border-blue-950 dark:border-blue-950 dark:border-b-cyan-400/50 shadow-inner rounded-lg hover:text-white dark:hover:text-white hover:from-blue-950 hover:to-blue-950 dark:hover:from-cyan-600/80 dark:hover:to-blue-950/80 dark:hover:bg-cyan-600 hover:text-shadow-lg text-shadow-blue-800 dark:text-shadow-blue-950 hover:border-blue-700 dark:hover:border-blue-950 dark:hover:border-b-cyan-400/50 duration-800 transition dark:duration-400 dark:transition-all ease-in-out;
+  }
+
+  .sideBar::before {
+    content: "";
+    @apply absolute left-2 w-[0.5px] h-full bg-blue-400 dark:bg-gray-700 rounded-sm;
+  }
+
+  .sideBarNavLinks {
+    @apply relative pl-6 flex items-center text-[12px] text-gray-700 dark:text-gray-300 hover:font-bold dark:hover:text-gray-100 duration-150 transition-all ease-in-out;
+  }
+
+  .sideBarNavLinks::before {
+    content: "";
+    @apply absolute left-2 w-1 h-[0.5px] rounded-2xl bg-blue-400 dark:bg-gray-700 duration-300 transition-all ease-in-out;
+  }
+
+  .sideBarNavLinks:hover::before,
+  .sideBarNavLinks.active::before {
+    @apply w-4;
+  }
+
+  .sideBarNavLinks.active {
+    @apply font-bold text-gray-900 dark:text-white;
   }
 }
 

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../styles/output.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/93ab4da208.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../../utils/autoConfig.js"></script>
+    <link rel="icon" type="image/svg+xml" href="/assets/tailwindCssSvg.svg" />
+    <title>rotate</title>
+  </head>
+
+  <body
+    class="font-poppins w-full no-scrollbar flex flex-col bg-white dark:bg-gray-950"
+  >
+    <header
+      class="sticky top-0 z-50 shadow shadow-gray-400 dark:shadow-none dark:border-b-1 bg-white dark:bg-gray-950 dark:border-gray-700 py-2 px-8"
+    >
+      <div class="flex justify-between items-center">
+        <div id="logo" class="flex items-center space-x-2">
+          <a
+            href="https://tailwindcss.com/"
+            class="flex items-center space-x-2 w-[30%]"
+          >
+            <img
+              src="/assets/tailwindCssLogo.png"
+              alt=""
+              class="w-[35px] h-[35px] hover:rotate-z-360 hover:scale-130 transition-ease-in-out duration-300"
+            />
+            <p class="text-xl text-blue-600 dark:text-white">tailwindcss</p>
+          </a>
+        </div>
+
+        <!-- Hamburger -->
+        <span class="md:hidden dark:text-gray-300" id="hamburger-btn"
+          ><i class="fa-solid fa-bars"></i
+        ></span>
+
+        <ul
+          class="hidden md:flex justify-center items-center space-x-4 text-gray-600 dark:text-white transition-ease-in-out"
+          id="navMenu"
+        >
+          <li>
+            <a id="home" href="" class="navLinks">Home</a>
+          </li>
+          <li>
+            <a id="motionEffects" href="" class="navLinks">Motion Effects</a>
+          </li>
+          <li>
+            <a id="contact" href="" class="navLinks">Contact</a>
+          </li>
+          <li>
+            <a id="login" href="" class="navButtons">Login</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Mobile Menu -->
+      <ul
+        id="mobileMenu"
+        class="absolute top-13 left-0 w-full md:hidden grid grid-cols-1 sm:grid-cols-4 justify-center space-y-5 sm:space-y-0 text-left sm:text-center bg-white dark:bg-gray-900 px-8 py-5 text-gray-700 dark:text-gray-300 font-medium border-t border-gray-200 dark:border-none shadow-md shadow-gray-600 dark:shadow-none transform transition-ease-in-out duration-500 ease-in-out scale-y-0 origin-top"
+      >
+        <li>
+          <a id="mobileHome" href="" class="mobileNavLinks">Home</a>
+        </li>
+        <li>
+          <a id="mobileMotionEffects" href="" class="mobileNavLinks"
+            >Motion Effects</a
+          >
+        </li>
+        <li>
+          <a id="mobileContact" href="" class="mobileNavLinks">Contact</a>
+        </li>
+        <li>
+          <a id="mobileLogin" href="" class="mobileNavButtons">Login</a>
+        </li>
+      </ul>
+    </header>
+
+    <main class="flex w-full h-full space-x-8">
+      <section
+        id="sideBarLeft"
+        class="sticky left-0 h-screen flex flex-col items-start justify-start space-y-8 py-5 px-8 pr-15 border-r-1 border-gray-300 dark:border-gray-700 text-white overflow-y"
+      >
+        <div id="navTransitions">
+          <h1 class="text-blue-500 dark:text-gray-500 py-1">Transitions</h1>
+          <nav
+            class="relative sideBar flex flex-col justify-center space-y-2 py-3"
+          >
+            <a id="transitionProperty" href="" class="sideBarNavLinks"
+              >transition-property</a
+            >
+            <a id="duration" href="" class="sideBarNavLinks">duration</a>
+            <a id="delay" href="" class="sideBarNavLinks">delay</a>
+            <a id="transitionTimingFunction" href="" class="sideBarNavLinks"
+              >transition-timing-function</a
+            >
+          </nav>
+        </div>
+
+        <div id="navTransforms">
+          <h1 class="text-blue-500 dark:text-gray-500 py-1">Transforms</h1>
+          <nav
+            class="relative sideBar flex flex-col justify-center space-y-2 py-3"
+          >
+            <a id="scale" href="" class="sideBarNavLinks">scale</a>
+            <a id="rotate" href="" class="sideBarNavLinks active">rotate</a>
+            <a id="translate" href="" class="sideBarNavLinks">translate</a>
+            <a id="skew" href="" class="sideBarNavLinks">skew</a>
+            <a id="transformStyle" href="" class="sideBarNavLinks"
+              >transform-style</a
+            >
+            <a id="backfaceVisibility" href="" class="sideBarNavLinks"
+              >backface-visibility</a
+            >
+          </nav>
+        </div>
+
+        <div id="navAnimations">
+          <h1 class="text-blue-500 dark:text-gray-500 py-1">Animations</h1>
+          <nav
+            class="relative sideBar flex flex-col justify-center space-y-2 py-3"
+          >
+            <a id="spin" href="" class="sideBarNavLinks">spin</a>
+            <a id="bounce" href="" class="sideBarNavLinks">bounce</a>
+            <a id="ping" href="" class="sideBarNavLinks">ping</a>
+            <a id="pulse" href="" class="sideBarNavLinks">pulse</a>
+          </nav>
+        </div>
+      </section>
+
+      <section
+        id="contentRight"
+        class="h-full flex flex-col items-center justify-center space-y-4 dark:border-l-1 border-gray-700"
+      >
+        <div></div>
+      </section>
+    </main>
+  </body>
+
+  <script>
+    // Toggle navbar on mobile
+    document.addEventListener("DOMContentLoaded", () => {
+      const toggleBtn = document.getElementById("hamburger-btn");
+      const mobileMenu = document.getElementById("mobileMenu");
+
+      toggleBtn.addEventListener("click", () => {
+        mobileMenu.classList.toggle("scale-y-0");
+        mobileMenu.classList.toggle("scale-y-100");
+      });
+    });
+
+    // Fetch Anchor Links
+    document.getElementById("home").href = moduleAnchor.HOME;
+    document.getElementById("motionEffects").href = moduleAnchor.MOTION_EFFECTS;
+    document.getElementById("contact").href = moduleAnchor.CONTACT_US;
+    document.getElementById("login").href = moduleAnchor.LOGIN;
+    document.getElementById("mobileHome").href = moduleAnchor.HOME;
+    document.getElementById("mobileMotionEffects").href =
+      moduleAnchor.MOTION_EFFECTS;
+    document.getElementById("mobileContact").href = moduleAnchor.CONTACT_US;
+    document.getElementById("mobileLogin").href = moduleAnchor.LOGIN;
+
+    // Fetch SideBar Anchor Links
+    document.getElementById("transitionProperty").href =
+      moduleAnchor.TRANSITION_PROPERTY;
+    document.getElementById("duration").href = moduleAnchor.DURATION;
+    document.getElementById("delay").href = moduleAnchor.DELAY;
+    document.getElementById("transitionTimingFunction").href =
+      moduleAnchor.TRANSITION_TIMING_FUNCTION;
+    document.getElementById("scale").href = moduleAnchor.SCALE;
+    document.getElementById("rotate").href = moduleAnchor.ROTATE;
+    document.getElementById("translate").href = moduleAnchor.TRANSLATE;
+    document.getElementById("skew").href = moduleAnchor.SKEW;
+    document.getElementById("transformStyle").href =
+      moduleAnchor.TRANSFORM_STYLE;
+    document.getElementById("backfaceVisibility").href =
+      moduleAnchor.BACKFACE_VISIBILITY;
+    document.getElementById("spin").href = moduleAnchor.SPIN;
+    document.getElementById("bounce").href = moduleAnchor.BOUNCE;
+    document.getElementById("ping").href = moduleAnchor.PING;
+    document.getElementById("pulse").href = moduleAnchor.PULSE;
+  </script>
+</html>
