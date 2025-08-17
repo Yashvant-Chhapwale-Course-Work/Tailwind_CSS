@@ -9,6 +9,7 @@
 }
 
 @layer components {
+  /* Navbar */
   .navLinks {
     @apply inline-block hover:text-blue-600 duration-180;
   }
@@ -25,8 +26,14 @@
     @apply bg-blue-600 text-white px-4 py-1 rounded hover:scale-105 hover:shadow-md shadow-gray-400 dark:hover:shadow-none dark:bg-blue-950 dark:hover:bg-blue-600 duration-300;
   }
 
+  /* Cube */
   .face {
     @apply absolute w-35 h-35 sm:w-50 sm:h-50 lg:w-65 lg:h-65 flex items-center justify-center backface-hidden text-[15px] sm:text-lg lg:text-2xl text-blue-900 dark:text-white font-bold bg-gradient-to-b from-white/80 to-white/80 dark:from-cyan-600/80 dark:to-blue-950/80 border-2 sm:border-3 md:border-4 border-blue-950 dark:border-blue-950 dark:border-b-cyan-400/50 shadow-inner rounded-lg hover:text-white dark:hover:text-white hover:from-blue-950 hover:to-blue-950 dark:hover:from-cyan-600/80 dark:hover:to-blue-950/80 dark:hover:bg-cyan-600 hover:text-shadow-lg text-shadow-blue-800 dark:text-shadow-blue-950 hover:border-blue-700 dark:hover:border-blue-950 dark:hover:border-b-cyan-400/50 duration-800 transition dark:duration-400 dark:transition-all ease-in-out;
+  }
+
+  /* MotionEffects */
+  .sideBarNav {
+    @apply sticky left-0 flex flex-col items-start justify-start space-y-8 py-5 px-5 pr-15 border-r-1 border-gray-300 dark:border-gray-700 text-white overflow-y-auto;
   }
 
   .sideBar::before {
@@ -50,6 +57,35 @@
 
   .sideBarNavLinks.active {
     @apply font-bold text-gray-900 dark:text-white;
+  }
+
+  /* Animations Page*/
+  .animationCardsLayout {
+    @apply w-full grid grid-cols-1 lg:grid-cols-2 px-[10%] py-[5%] lg:px-[5%] lg:py-[5%] gap-8 transition-all ease-in-out overflow-y-auto;
+  }
+
+  .animationCard {
+    @apply relative w-[100%] h-[100%] flex items-center justify-center p-15 lg:p-0 bg-gradient-to-br dark:from-gray-950 dark:to-gray-900 dark:border border-gray-900 dark:text-gray-400 rounded-lg;
+  }
+
+  .animationCard.active {
+    @apply dark:from-gray-900 dark:to-gray-700 border-gray-800;
+  }
+
+  .animationCopy {
+    @apply absolute top-2 right-4 p-2 rounded-md dark:text-gray-400 transition-colors ease-in-out duration-300;
+  }
+
+  .animationCopy:hover {
+    @apply dark:text-gray-200 dark:bg-gray-700 scale-105;
+  }
+
+  .animationButtons {
+    @apply w-50 h-10 lg:w-55 lg:h-12 flex items-center justify-center rounded-md space-x-2 py-2 dark:bg-blue-500 dark:text-white hover:scale-105 duration-350;
+  }
+
+  .circleSvg {
+    @apply w-5 h-5 lg:w-8 lg:h-8;
   }
 }
 

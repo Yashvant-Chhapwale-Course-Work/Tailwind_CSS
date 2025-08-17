@@ -285,6 +285,9 @@
   .inset-y-2 {
     inset-block: calc(var(--spacing) * 2);
   }
+  .-top-1 {
+    top: calc(var(--spacing) * -1);
+  }
   .-top-2 {
     top: calc(var(--spacing) * -2);
   }
@@ -305,6 +308,9 @@
   }
   .-right-2 {
     right: calc(var(--spacing) * -2);
+  }
+  .-right-3\.5 {
+    right: calc(var(--spacing) * -3.5);
   }
   .right-2 {
     right: calc(var(--spacing) * 2);
@@ -510,6 +516,12 @@
   .h-1\/2 {
     height: calc(1/2 * 100%);
   }
+  .h-4 {
+    height: calc(var(--spacing) * 4);
+  }
+  .h-8 {
+    height: calc(var(--spacing) * 8);
+  }
   .h-10 {
     height: calc(var(--spacing) * 10);
   }
@@ -581,6 +593,12 @@
   }
   .w-1\/2 {
     width: calc(1/2 * 100%);
+  }
+  .w-4 {
+    width: calc(var(--spacing) * 4);
+  }
+  .w-8 {
+    width: calc(var(--spacing) * 8);
   }
   .w-10 {
     width: calc(var(--spacing) * 10);
@@ -1531,6 +1549,9 @@
   .text-fuchsia-500 {
     color: var(--color-fuchsia-500);
   }
+  .text-gray-200 {
+    color: var(--color-gray-200);
+  }
   .text-gray-500 {
     color: var(--color-gray-500);
   }
@@ -2415,6 +2436,11 @@
       gap: calc(var(--spacing) * 20);
     }
   }
+  .lg\:overflow-hidden {
+    @media (width >= 64rem) {
+      overflow: hidden;
+    }
+  }
   .lg\:rounded-lg {
     @media (width >= 64rem) {
       border-radius: var(--radius-lg);
@@ -2423,6 +2449,11 @@
   .lg\:rounded-md {
     @media (width >= 64rem) {
       border-radius: var(--radius-md);
+    }
+  }
+  .lg\:pt-5 {
+    @media (width >= 64rem) {
+      padding-top: calc(var(--spacing) * 5);
     }
   }
   .lg\:text-2xl {
@@ -3047,6 +3078,30 @@
       }
     }
   }
+  .sideBarNav {
+    position: sticky;
+    left: calc(var(--spacing) * 0);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    :where(& > :not(:last-child)) {
+      --tw-space-y-reverse: 0;
+      margin-block-start: calc(calc(var(--spacing) * 8) * var(--tw-space-y-reverse));
+      margin-block-end: calc(calc(var(--spacing) * 8) * calc(1 - var(--tw-space-y-reverse)));
+    }
+    overflow-y: auto;
+    border-right-style: var(--tw-border-style);
+    border-right-width: 1px;
+    border-color: var(--color-gray-300);
+    padding-inline: calc(var(--spacing) * 5);
+    padding-block: calc(var(--spacing) * 5);
+    padding-right: calc(var(--spacing) * 15);
+    color: var(--color-white);
+    @media (prefers-color-scheme: dark) {
+      border-color: var(--color-gray-700);
+    }
+  }
   .sideBar::before {
     content: "";
     position: absolute;
@@ -3118,6 +3173,146 @@
     color: var(--color-gray-900);
     @media (prefers-color-scheme: dark) {
       color: var(--color-white);
+    }
+  }
+  .animationCardsLayout {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    gap: calc(var(--spacing) * 8);
+    overflow-y: auto;
+    padding-inline: 10%;
+    padding-block: 5%;
+    transition-property: all;
+    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+    transition-duration: var(--tw-duration, var(--default-transition-duration));
+    --tw-ease: var(--ease-in-out);
+    transition-timing-function: var(--ease-in-out);
+    @media (width >= 64rem) {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    @media (width >= 64rem) {
+      padding-inline: 5%;
+    }
+    @media (width >= 64rem) {
+      padding-block: 5%;
+    }
+  }
+  .animationCard {
+    position: relative;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    border-radius: var(--radius-lg);
+    border-color: var(--color-gray-900);
+    --tw-gradient-position: to bottom right in oklab;
+    background-image: linear-gradient(var(--tw-gradient-stops));
+    padding: calc(var(--spacing) * 15);
+    @media (width >= 64rem) {
+      padding: calc(var(--spacing) * 0);
+    }
+    @media (prefers-color-scheme: dark) {
+      border-style: var(--tw-border-style);
+      border-width: 1px;
+    }
+    @media (prefers-color-scheme: dark) {
+      --tw-gradient-from: var(--color-gray-950);
+      --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+    }
+    @media (prefers-color-scheme: dark) {
+      --tw-gradient-to: var(--color-gray-900);
+      --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+    }
+    @media (prefers-color-scheme: dark) {
+      color: var(--color-gray-400);
+    }
+  }
+  .animationCard.active {
+    border-color: var(--color-gray-800);
+    @media (prefers-color-scheme: dark) {
+      --tw-gradient-from: var(--color-gray-900);
+      --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+    }
+    @media (prefers-color-scheme: dark) {
+      --tw-gradient-to: var(--color-gray-700);
+      --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+    }
+  }
+  .animationCopy {
+    position: absolute;
+    top: calc(var(--spacing) * 2);
+    right: calc(var(--spacing) * 4);
+    border-radius: var(--radius-md);
+    padding: calc(var(--spacing) * 2);
+    transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to;
+    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+    transition-duration: var(--tw-duration, var(--default-transition-duration));
+    --tw-duration: 300ms;
+    transition-duration: 300ms;
+    --tw-ease: var(--ease-in-out);
+    transition-timing-function: var(--ease-in-out);
+    @media (prefers-color-scheme: dark) {
+      color: var(--color-gray-400);
+    }
+  }
+  .animationCopy:hover {
+    --tw-scale-x: 105%;
+    --tw-scale-y: 105%;
+    --tw-scale-z: 105%;
+    scale: var(--tw-scale-x) var(--tw-scale-y);
+    @media (prefers-color-scheme: dark) {
+      background-color: var(--color-gray-700);
+    }
+    @media (prefers-color-scheme: dark) {
+      color: var(--color-gray-200);
+    }
+  }
+  .animationButtons {
+    display: flex;
+    height: calc(var(--spacing) * 10);
+    width: calc(var(--spacing) * 50);
+    align-items: center;
+    justify-content: center;
+    :where(& > :not(:last-child)) {
+      --tw-space-x-reverse: 0;
+      margin-inline-start: calc(calc(var(--spacing) * 2) * var(--tw-space-x-reverse));
+      margin-inline-end: calc(calc(var(--spacing) * 2) * calc(1 - var(--tw-space-x-reverse)));
+    }
+    border-radius: var(--radius-md);
+    padding-block: calc(var(--spacing) * 2);
+    --tw-duration: 350ms;
+    transition-duration: 350ms;
+    &:hover {
+      @media (hover: hover) {
+        --tw-scale-x: 105%;
+        --tw-scale-y: 105%;
+        --tw-scale-z: 105%;
+        scale: var(--tw-scale-x) var(--tw-scale-y);
+      }
+    }
+    @media (width >= 64rem) {
+      height: calc(var(--spacing) * 12);
+    }
+    @media (width >= 64rem) {
+      width: calc(var(--spacing) * 55);
+    }
+    @media (prefers-color-scheme: dark) {
+      background-color: var(--color-blue-500);
+    }
+    @media (prefers-color-scheme: dark) {
+      color: var(--color-white);
+    }
+  }
+  .circleSvg {
+    height: calc(var(--spacing) * 5);
+    width: calc(var(--spacing) * 5);
+    @media (width >= 64rem) {
+      height: calc(var(--spacing) * 8);
+    }
+    @media (width >= 64rem) {
+      width: calc(var(--spacing) * 8);
     }
   }
 }
